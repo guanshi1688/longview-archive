@@ -1,6 +1,6 @@
 /* =========================================================
    Longview Archive / 观势档案
-   MkDocs Material - Publishing System 2.0
+   MkDocs Material - Publishing System 2.0 Clean
    ========================================================= */
 
 
@@ -21,13 +21,16 @@
   --lv-accent-dark: #38545e;
   --lv-accent-soft: rgba(84, 111, 120, 0.10);
 
-  --lv-sidebar-width: 19.5rem;
-  --lv-content-width: 760px;
+  /* 全局布局核心参数 */
+  --lv-sidebar-width: 23rem;
+  --lv-content-width: 780px;
+  --lv-grid-width: 104rem;
+  --lv-content-left-gap: 2.8rem;
 }
 
 
 /* =========================================================
-   1. Base: make the whole site feel like a publication
+   1. Base: publication feeling
    ========================================================= */
 
 html {
@@ -43,27 +46,16 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* 主体背景 */
 .md-main {
   background: var(--lv-bg);
 }
 
-/* 内容区 */
 .md-content {
   background: var(--lv-bg);
 }
 
-/* 正文容器 */
-.md-content__inner {
-  max-width: var(--lv-content-width);
-  margin: 0 auto;
-  padding-top: 2.2rem;
-  padding-bottom: 5rem;
-}
-
-/* 取消默认过宽布局 */
 .md-grid {
-  max-width: 92rem;
+  max-width: var(--lv-grid-width);
 }
 
 
@@ -92,7 +84,6 @@ body {
   margin-right: 0.4rem;
 }
 
-/* 搜索框：去按钮感 */
 .md-search__form {
   background-color: rgba(0, 0, 0, 0.20);
   border-radius: 2px;
@@ -109,31 +100,79 @@ body {
 
 
 /* =========================================================
-   3. Sidebar Layout: wider, calmer, no accidental wrapping
+   3. Main Layout: content breathing space
    ========================================================= */
 
-.md-sidebar--primary {
-  width: var(--lv-sidebar-width);
+@media screen and (min-width: 76.25em) {
+  .md-content {
+    padding-left: var(--lv-content-left-gap);
+  }
 }
 
-.md-sidebar--primary .md-sidebar__scrollwrap {
-  margin: 0;
+.md-content__inner {
+  max-width: var(--lv-content-width);
+  margin-left: 0;
+  margin-right: auto;
   padding-top: 2.2rem;
-  padding-right: 1.4rem;
+  padding-bottom: 5rem;
 }
 
-/* 防止滚动条压迫文字 */
+
+/* =========================================================
+   4. Sidebar Layout: real global width control
+   ========================================================= */
+
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    width: var(--lv-sidebar-width) !important;
+    min-width: var(--lv-sidebar-width) !important;
+    max-width: var(--lv-sidebar-width) !important;
+    flex: 0 0 var(--lv-sidebar-width) !important;
+  }
+
+  .md-sidebar--primary .md-sidebar__inner {
+    width: var(--lv-sidebar-width) !important;
+    min-width: var(--lv-sidebar-width) !important;
+    max-width: var(--lv-sidebar-width) !important;
+  }
+
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0;
+    padding-top: 2.2rem;
+    padding-right: 0.6rem;
+    overflow-x: hidden;
+  }
+
+  .md-sidebar--primary .md-nav {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .md-sidebar--primary .md-nav__link,
+  .md-sidebar--primary .md-nav__title {
+    display: block;
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box;
+  }
+}
+
 .md-sidebar__scrollwrap {
   scrollbar-width: thin;
 }
 
-/* 左侧整体字号压小 */
+
+/* =========================================================
+   5. Left Navigation: thought tree system
+   ========================================================= */
+
 .md-nav {
   font-size: 0.82rem;
   line-height: 1.45;
 }
 
-/* 所有导航项默认不换行 */
 .md-nav__link,
 .md-nav__title {
   white-space: nowrap;
@@ -141,27 +180,25 @@ body {
   text-overflow: ellipsis;
 }
 
-/* 普通导航项 */
 .md-nav__link {
   color: #383838;
   padding-top: 0.42rem;
   padding-bottom: 0.42rem;
-  padding-left: 0.45rem;
-  padding-right: 0.45rem;
+  padding-left: 0.55rem;
+  padding-right: 0.35rem;
   border-radius: 0;
+  font-variant-numeric: tabular-nums;
   transition:
     color 0.15s ease,
     background-color 0.15s ease,
     border-color 0.15s ease;
 }
 
-/* hover 轻微提示 */
 .md-nav__link:hover {
   color: var(--lv-accent-dark);
   background-color: var(--lv-accent-soft);
 }
 
-/* 顶层标题 */
 .md-nav__title {
   font-size: 0.84rem;
   font-weight: 600;
@@ -170,12 +207,10 @@ body {
   padding-bottom: 0.7rem;
 }
 
-/* 顶层 section 之间留呼吸 */
 .md-nav__item--section {
   margin-top: 0.55rem;
 }
 
-/* section 标题更像思想树节点 */
 .md-nav__item--section > .md-nav__link {
   font-weight: 650;
   color: #6b6b6b;
@@ -183,31 +218,22 @@ body {
   margin-top: 0.55rem;
 }
 
-/* 第二层缩进 */
-.md-nav__item .md-nav .md-nav__link {
-  padding-left: 1rem;
-}
-
-/* 第三层缩进 */
-.md-nav__item .md-nav .md-nav .md-nav__link {
-  padding-left: 1.65rem;
-  font-size: 0.79rem;
-  color: #555;
-}
-
-
-/* =========================================================
-   4. Thought Tree: Obsidian + Notion hybrid
-   ========================================================= */
-
-/* 给展开层级一条淡线 */
 .md-nav__item .md-nav {
   border-left: 1px solid var(--lv-line);
   margin-left: 0.45rem;
   padding-left: 0.35rem;
 }
 
-/* 当前激活项：Kindle 式锁定 */
+.md-nav__item .md-nav .md-nav__link {
+  padding-left: 1rem;
+}
+
+.md-nav__item .md-nav .md-nav .md-nav__link {
+  padding-left: 1.65rem;
+  font-size: 0.79rem;
+  color: #555;
+}
+
 .md-nav__item .md-nav__link--active,
 .md-nav__item--active > .md-nav__link {
   color: var(--lv-accent-dark);
@@ -217,45 +243,21 @@ body {
   padding-left: 0.75rem;
 }
 
-/* 当前项前面加强“被钉住”的感觉 */
-.md-nav__link--active::before,
-.md-nav__item--active > .md-nav__link::before {
-  content: "";
+.md-nav__link--active {
+  position: relative;
 }
 
-/* 当前项所在父级 */
-.md-nav__item--active > .md-nav__link {
-  color: var(--lv-accent-dark);
+.md-nav__link--active:hover {
+  background: transparent;
 }
 
-/* 折叠箭头更轻 */
 .md-nav__icon {
   color: var(--lv-faint);
 }
 
 
 /* =========================================================
-   5. Left nav chapter-number system
-   ========================================================= */
-
-/* 让 01 | 标题这种形式更稳 */
-.md-nav__link {
-  font-variant-numeric: tabular-nums;
-}
-
-/* 当前章节高亮更像目录定位 */
-.md-nav__link--active {
-  position: relative;
-}
-
-/* 激活项右侧不要太吵 */
-.md-nav__link--active:hover {
-  background: transparent;
-}
-
-
-/* =========================================================
-   6. Breadcrumbs: small, archival feeling
+   6. Breadcrumbs: archival feeling
    ========================================================= */
 
 .md-path {
@@ -283,14 +285,12 @@ body {
   line-height: 1.82;
 }
 
-/* 正文段落 */
 .md-typeset p {
   margin: 0.85rem 0;
   line-height: 1.86;
   letter-spacing: 0.01em;
 }
 
-/* 一级标题：章节标题 */
 .md-typeset h1 {
   font-size: 2.15rem;
   line-height: 1.18;
@@ -301,7 +301,6 @@ body {
   margin-bottom: 1.65rem;
 }
 
-/* 二级标题：论文章节 */
 .md-typeset h2 {
   font-size: 1.35rem;
   line-height: 1.35;
@@ -313,7 +312,6 @@ body {
   color: #343434;
 }
 
-/* 三级标题 */
 .md-typeset h3 {
   font-size: 1.08rem;
   font-weight: 700;
@@ -322,7 +320,6 @@ body {
   color: #333;
 }
 
-/* 四级标题 */
 .md-typeset h4 {
   font-size: 0.96rem;
   font-weight: 700;
@@ -330,18 +327,15 @@ body {
   margin-top: 1.6rem;
 }
 
-/* 标题链接图标弱化 */
 .md-typeset .headerlink {
   color: var(--lv-faint);
 }
 
-/* 加粗文字 */
 .md-typeset strong {
   font-weight: 700;
   color: #161616;
 }
 
-/* 链接 */
 .md-typeset a {
   color: var(--lv-accent-dark);
   text-decoration: none;
@@ -352,26 +346,19 @@ body {
   border-bottom-color: var(--lv-accent-dark);
 }
 
-
-/* =========================================================
-   8. H1 chapter-number visual system
-   Example: "# 01｜现实世界总纲"
-   ========================================================= */
-
 .md-typeset h1:first-of-type {
   display: flex;
   align-items: baseline;
   gap: 0.75rem;
 }
 
-/* 如果你标题写成 01｜标题，会自动更有结构感 */
 .md-typeset h1:first-of-type::after {
   content: "";
 }
 
 
 /* =========================================================
-   9. Blockquotes: doctrine / thesis blocks
+   8. Blockquotes: doctrine / thesis blocks
    ========================================================= */
 
 .md-typeset blockquote {
@@ -388,7 +375,7 @@ body {
 
 
 /* =========================================================
-   10. Lists: controlled density
+   9. Lists: controlled density
    ========================================================= */
 
 .md-typeset ul,
@@ -407,7 +394,7 @@ body {
 
 
 /* =========================================================
-   11. Tables: clean archive style
+   10. Tables: clean archive style
    ========================================================= */
 
 .md-typeset table:not([class]) {
@@ -427,7 +414,7 @@ body {
 
 
 /* =========================================================
-   12. Code: low-noise
+   11. Code: low-noise
    ========================================================= */
 
 .md-typeset code {
@@ -448,11 +435,17 @@ body {
 
 
 /* =========================================================
-   13. Right TOC: reduce noise
+   12. Right TOC: reduce noise
    ========================================================= */
 
 .md-sidebar--secondary {
   font-size: 0.76rem;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--secondary {
+    margin-left: 2rem;
+  }
 }
 
 .md-sidebar--secondary .md-nav__title {
@@ -474,7 +467,7 @@ body {
 
 
 /* =========================================================
-   14. Footer: make it disappear
+   13. Footer: quiet
    ========================================================= */
 
 .md-footer {
@@ -491,7 +484,7 @@ body {
 
 
 /* =========================================================
-   15. Admonitions: essay note style
+   14. Admonitions: essay note style
    ========================================================= */
 
 .md-typeset .admonition,
@@ -509,7 +502,7 @@ body {
 
 
 /* =========================================================
-   16. Mobile tuning
+   15. Mobile tuning
    ========================================================= */
 
 @media screen and (max-width: 76.1875em) {
@@ -517,8 +510,14 @@ body {
     width: 15rem;
   }
 
+  .md-content {
+    padding-left: 0;
+  }
+
   .md-content__inner {
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -544,113 +543,4 @@ body {
   .md-header__title {
     font-size: 0.84rem;
   }
-}
-
-/* =========================================================
-   Longview Archive - Layout Patch 2.1
-   Fix sidebar width + content breathing space
-   ========================================================= */
-
-
-/* 1. 加宽左侧导航整体区域 */
-:root {
-  --lv-sidebar-width: 22rem;
-  --lv-content-width: 780px;
-}
-
-
-/* 2. 让左侧导航文字区域更宽，不要太早省略 */
-.md-sidebar--primary {
-  width: var(--lv-sidebar-width);
-}
-
-.md-sidebar--primary .md-sidebar__scrollwrap {
-  padding-right: 1.8rem;
-}
-
-
-/* 3. 正文离左侧分割线远一点 */
-.md-content {
-  padding-left: 2.4rem;
-}
-
-
-/* 4. 页面整体中间区域稍微展开 */
-.md-grid {
-  max-width: 96rem;
-}
-
-
-/* 5. 正文不要贴边，保持档案纸张感 */
-.md-content__inner {
-  max-width: var(--lv-content-width);
-  margin-left: 0;
-  margin-right: auto;
-}
-
-
-/* 6. 右侧目录不要太挤正文 */
-.md-sidebar--secondary {
-  margin-left: 2rem;
-}
-
-/* =========================================================
-   Longview Archive - Sidebar Hard Override 2.2
-   Force primary sidebar to really become wider
-   ========================================================= */
-
-
-/* 1. 强制左侧栏真实宽度 */
-:root {
-  --lv-sidebar-width: 24rem;
-}
-
-
-/* 2. Material 的 sidebar 不只吃 width，还要吃 flex-basis / min-width */
-.md-sidebar--primary {
-  width: var(--lv-sidebar-width) !important;
-  min-width: var(--lv-sidebar-width) !important;
-  flex-basis: var(--lv-sidebar-width) !important;
-}
-
-
-/* 3. 里面的滚动容器也要跟着撑开 */
-.md-sidebar--primary .md-sidebar__scrollwrap,
-.md-sidebar--primary .md-sidebar__inner,
-.md-sidebar--primary .md-nav {
-  width: 100% !important;
-  max-width: none !important;
-}
-
-
-/* 4. 减少右侧内边距，给文字更多空间 */
-.md-sidebar--primary .md-sidebar__scrollwrap {
-  padding-right: 0.8rem !important;
-}
-
-
-/* 5. 左侧导航文字不要过早省略 */
-.md-sidebar--primary .md-nav__link,
-.md-sidebar--primary .md-nav__title {
-  max-width: none !important;
-}
-
-
-/* 6. 顶层导航标题允许完整显示 */
-.md-sidebar--primary > .md-sidebar__scrollwrap .md-nav__title {
-  white-space: nowrap;
-}
-
-
-/* 7. 章节项仍然保持一行省略，避免太长破坏树形 */
-.md-sidebar--primary .md-nav__link {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-
-/* 8. 页面整体再展开一点，否则左侧变宽会挤正文 */
-.md-grid {
-  max-width: 104rem !important;
 }
