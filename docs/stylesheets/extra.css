@@ -1,60 +1,308 @@
-/* 隐藏左侧重复站名 */
+/* =========================================================
+   Longview Archive｜观势档案
+   Custom CSS for Material for MkDocs
+   目标：
+   1. 隐藏右侧目录
+   2. 加宽左侧树形目录
+   3. 拉开左侧目录与正文距离
+   4. 增强目录层级感
+   5. 增强正文标题与阅读气质
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. 隐藏左侧顶部重复站名
+   --------------------------------------------------------- */
+
 .md-nav--primary > .md-nav__title {
   display: none !important;
 }
 
-/* 隐藏右侧文章目录 */
+
+/* ---------------------------------------------------------
+   2. 隐藏右侧文章目录
+   --------------------------------------------------------- */
+
 .md-sidebar--secondary {
   display: none !important;
 }
 
-/* 整体页面宽度 */
+
+/* ---------------------------------------------------------
+   3. 整体页面宽度
+   --------------------------------------------------------- */
+
 .md-grid {
-  max-width: 1500px !important;
+  max-width: 1600px !important;
 }
 
-/* 正文区域稍微右移，和左侧目录拉开距离 */
+
+/* ---------------------------------------------------------
+   4. 左侧目录宽度
+   --------------------------------------------------------- */
+
+.md-sidebar--primary {
+  width: 19rem !important;
+}
+
+/* 左侧目录与正文之间拉开距离 */
+.md-main__inner {
+  gap: 3.2rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   5. 正文区域
+   --------------------------------------------------------- */
+
 .md-content {
   max-width: none !important;
 }
 
-.md-main__inner {
-  gap: 2.8rem;
+/* 正文不要太贴边 */
+.md-content__inner {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0.6rem;
+  padding-right: 1.2rem;
 }
 
-/* 左侧目录宽一点，不要挤 */
-.md-sidebar--primary {
-  width: 15.5rem;
+/* 正文最大阅读宽度，不让文字无限拉长 */
+.md-typeset {
+  max-width: 980px;
 }
 
-/* 左侧目录整体字体和行距 */
+
+/* ---------------------------------------------------------
+   6. 顶部栏
+   --------------------------------------------------------- */
+
+.md-header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* 顶部站名 */
+.md-header__title {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* 搜索框稍微稳一点 */
+.md-search__form {
+  border-radius: 3px;
+}
+
+
+/* ---------------------------------------------------------
+   7. 左侧目录基础字体
+   --------------------------------------------------------- */
+
 .md-nav {
-  font-size: 0.78rem;
-  line-height: 1.65;
+  font-size: 0.82rem;
+  line-height: 1.72;
 }
 
-/* 一级栏目更像章节标题 */
-.md-nav__item--section > .md-nav__link {
-  font-weight: 700;
-  margin-top: 0.8rem;
-  color: #444;
+/* 所有目录项 */
+.md-nav__link {
+  color: #2f2f2f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-/* 子目录缩进更明显 */
-.md-nav__list .md-nav__list {
-  padding-left: 0.65rem;
-  border-left: 1px solid #e0e0e0;
-  margin-left: 0.25rem;
-}
-
-/* 子文章条目更清楚 */
-.md-nav__list .md-nav__list .md-nav__link {
-  padding-left: 0.35rem;
-  color: #333;
-}
-
-/* 当前选中项更有档案感 */
-.md-nav__link--active {
-  font-weight: 700;
+/* 鼠标经过 */
+.md-nav__link:hover {
   color: #2f5f6b !important;
+}
+
+
+/* ---------------------------------------------------------
+   8. 一级栏目：Home / Core Terms / Longview Essays
+   --------------------------------------------------------- */
+
+.md-nav__item--section > .md-nav__link {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #555;
+  margin-top: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Longview Essays 这种章节标题更有重量 */
+.md-nav__item--section > .md-nav__link .md-ellipsis {
+  white-space: normal;
+  line-height: 1.5;
+}
+
+
+/* ---------------------------------------------------------
+   9. 子目录层级：Reality / Future
+   --------------------------------------------------------- */
+
+.md-nav__list .md-nav__list {
+  margin-left: 0.35rem;
+  padding-left: 0.85rem;
+  border-left: 1px solid #d9d9d9;
+}
+
+/* 子目录项 */
+.md-nav__list .md-nav__list .md-nav__link {
+  font-size: 0.82rem;
+  padding-top: 0.18rem;
+  padding-bottom: 0.18rem;
+}
+
+/* Reality / Future 这一层 */
+.md-nav__item .md-nav__toggle ~ .md-nav__link,
+.md-nav__item .md-nav__link[for] {
+  font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------
+   10. 当前选中目录项
+   --------------------------------------------------------- */
+
+.md-nav__link--active {
+  font-weight: 700 !important;
+  color: #2f5f6b !important;
+}
+
+/* 当前选中项左侧加一点“档案标记感” */
+.md-nav__link--active::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background: #2f5f6b;
+  margin-right: 0.45rem;
+  vertical-align: -0.12em;
+}
+
+
+/* ---------------------------------------------------------
+   11. 左侧滚动条弱化
+   --------------------------------------------------------- */
+
+.md-sidebar__scrollwrap {
+  scrollbar-width: thin;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar {
+  width: 6px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+  border-radius: 6px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+/* ---------------------------------------------------------
+   12. 面包屑路径
+   --------------------------------------------------------- */
+
+.md-path {
+  font-size: 0.72rem;
+  color: #777;
+  margin-bottom: 0.8rem;
+}
+
+
+/* ---------------------------------------------------------
+   13. 正文标题层级
+   --------------------------------------------------------- */
+
+.md-typeset h1 {
+  font-size: 2.05rem;
+  font-weight: 650;
+  letter-spacing: 0.5px;
+  color: #5e5e5e;
+  margin-bottom: 1.4rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 2.1rem;
+  margin-bottom: 0.85rem;
+}
+
+.md-typeset h3 {
+  font-size: 1.15rem;
+  font-weight: 650;
+  color: #333;
+  margin-top: 1.6rem;
+}
+
+
+/* ---------------------------------------------------------
+   14. 正文段落
+   --------------------------------------------------------- */
+
+.md-typeset p {
+  font-size: 0.96rem;
+  line-height: 1.85;
+  color: #222;
+}
+
+/* 列表 */
+.md-typeset ul,
+.md-typeset ol {
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+
+/* ---------------------------------------------------------
+   15. 链接颜色
+   --------------------------------------------------------- */
+
+.md-typeset a {
+  color: #2f5f6b;
+}
+
+.md-typeset a:hover {
+  color: #1f4852;
+}
+
+
+/* ---------------------------------------------------------
+   16. 页脚
+   --------------------------------------------------------- */
+
+.md-footer {
+  margin-top: 2rem;
+}
+
+.md-footer-meta {
+  background: #111 !important;
+}
+
+
+/* ---------------------------------------------------------
+   17. 移动端适配
+   --------------------------------------------------------- */
+
+@media screen and (max-width: 960px) {
+  .md-sidebar--primary {
+    width: 12rem !important;
+  }
+
+  .md-main__inner {
+    gap: 1rem !important;
+  }
+
+  .md-typeset {
+    max-width: none;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.65rem;
+  }
 }
