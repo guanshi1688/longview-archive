@@ -1,15 +1,60 @@
+/* 隐藏左侧重复站名 */
 .md-nav--primary > .md-nav__title {
   display: none !important;
 }
 
+/* 隐藏右侧文章目录 */
 .md-sidebar--secondary {
   display: none !important;
 }
 
+/* 整体页面宽度 */
+.md-grid {
+  max-width: 1500px !important;
+}
+
+/* 正文区域稍微右移，和左侧目录拉开距离 */
 .md-content {
   max-width: none !important;
 }
 
-.md-grid {
-  max-width: 1440px !important;
+.md-main__inner {
+  gap: 2.8rem;
+}
+
+/* 左侧目录宽一点，不要挤 */
+.md-sidebar--primary {
+  width: 15.5rem;
+}
+
+/* 左侧目录整体字体和行距 */
+.md-nav {
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+/* 一级栏目更像章节标题 */
+.md-nav__item--section > .md-nav__link {
+  font-weight: 700;
+  margin-top: 0.8rem;
+  color: #444;
+}
+
+/* 子目录缩进更明显 */
+.md-nav__list .md-nav__list {
+  padding-left: 0.65rem;
+  border-left: 1px solid #e0e0e0;
+  margin-left: 0.25rem;
+}
+
+/* 子文章条目更清楚 */
+.md-nav__list .md-nav__list .md-nav__link {
+  padding-left: 0.35rem;
+  color: #333;
+}
+
+/* 当前选中项更有档案感 */
+.md-nav__link--active {
+  font-weight: 700;
+  color: #2f5f6b !important;
 }
