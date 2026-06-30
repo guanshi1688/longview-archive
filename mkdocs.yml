@@ -1,0 +1,13 @@
+site_name: Longview Archive｜观势档案
+site_description: Public text archive for long-view essays, observation notes, and theoretical terms.
+site_author: 星衡｜Aster Vale
+
+theme:
+  name: mkdocs
+
+nav:
+  - Home｜首页: index.md
+  - Core Terms｜理论核心术语: core-terms.md
+  - Longview Essays｜长线观势文章: essays/index.md
+  - Aster Vale Notes｜星衡札记: notes/index.md
+  - Version Records｜版本记录: versions.md
