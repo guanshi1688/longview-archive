@@ -22,7 +22,7 @@
   --lv-accent-soft: rgba(84, 111, 120, 0.10);
 
   /* 全局布局核心参数 */
-  --lv-sidebar-width: 23rem;
+  --lv-sidebar-width: 24rem;
   --lv-content-width: 780px;
   --lv-grid-width: 104rem;
   --lv-content-left-gap: 2.8rem;
@@ -119,7 +119,7 @@ body {
 
 
 /* =========================================================
-   4. Sidebar Layout: real global width control
+   4. Sidebar Layout: real visible width control
    ========================================================= */
 
 @media screen and (min-width: 76.25em) {
@@ -141,18 +141,13 @@ body {
     max-width: none !important;
     margin: 0;
     padding-top: 2.2rem;
-    padding-right: 0.6rem;
+    padding-right: 0.4rem;
     overflow-x: hidden;
   }
 
-  .md-sidebar--primary .md-nav {
-    width: 100% !important;
-    max-width: none !important;
-  }
-
-  .md-sidebar--primary .md-nav__link,
-  .md-sidebar--primary .md-nav__title {
-    display: block;
+  .md-sidebar--primary .md-nav,
+  .md-sidebar--primary .md-nav__list,
+  .md-sidebar--primary .md-nav__item {
     width: 100% !important;
     max-width: none !important;
     box-sizing: border-box;
@@ -165,7 +160,7 @@ body {
 
 
 /* =========================================================
-   5. Left Navigation: thought tree system
+   5. Left Navigation: full-width thought tree
    ========================================================= */
 
 .md-nav {
@@ -173,19 +168,37 @@ body {
   line-height: 1.45;
 }
 
-.md-nav__link,
-.md-nav__title {
+/* 关键：让 Material 的真实文字容器吃满宽度 */
+.md-sidebar--primary .md-ellipsis {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: none !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 链接本体必须是 flex，否则箭头和文字宽度会异常 */
+.md-sidebar--primary .md-nav__link,
+.md-sidebar--primary .md-nav__title {
+  display: flex !important;
+  align-items: center;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0;
+  box-sizing: border-box;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+/* 普通导航项 */
 .md-nav__link {
   color: #383838;
   padding-top: 0.42rem;
   padding-bottom: 0.42rem;
-  padding-left: 0.55rem;
-  padding-right: 0.35rem;
+  padding-left: 0.45rem;
+  padding-right: 0.25rem;
   border-radius: 0;
   font-variant-numeric: tabular-nums;
   transition:
@@ -207,6 +220,7 @@ body {
   padding-bottom: 0.7rem;
 }
 
+/* 顶层 section */
 .md-nav__item--section {
   margin-top: 0.55rem;
 }
@@ -218,29 +232,33 @@ body {
   margin-top: 0.55rem;
 }
 
-.md-nav__item .md-nav {
+/* 树线：缩小缩进，给文字更多空间 */
+.md-sidebar--primary .md-nav__item .md-nav {
   border-left: 1px solid var(--lv-line);
-  margin-left: 0.45rem;
-  padding-left: 0.35rem;
+  margin-left: 0.25rem;
+  padding-left: 0.25rem;
 }
 
-.md-nav__item .md-nav .md-nav__link {
-  padding-left: 1rem;
+/* 第二层缩进：从 1rem 压到 0.7rem */
+.md-sidebar--primary .md-nav__item .md-nav .md-nav__link {
+  padding-left: 0.7rem;
 }
 
-.md-nav__item .md-nav .md-nav .md-nav__link {
-  padding-left: 1.65rem;
+/* 第三层缩进：从 1.65rem 压到 1.05rem */
+.md-sidebar--primary .md-nav__item .md-nav .md-nav .md-nav__link {
+  padding-left: 1.05rem;
   font-size: 0.79rem;
   color: #555;
 }
 
+/* 当前激活项 */
 .md-nav__item .md-nav__link--active,
 .md-nav__item--active > .md-nav__link {
   color: var(--lv-accent-dark);
   font-weight: 700;
   background: transparent;
   border-left: 3px solid var(--lv-accent-dark);
-  padding-left: 0.75rem;
+  padding-left: 0.65rem;
 }
 
 .md-nav__link--active {
@@ -253,8 +271,8 @@ body {
 
 .md-nav__icon {
   color: var(--lv-faint);
+  flex: 0 0 auto;
 }
-
 
 /* =========================================================
    6. Breadcrumbs: archival feeling
