@@ -1,350 +1,547 @@
 /* =========================================================
-   Longview Archive｜观势档案
-   Material for MkDocs Custom CSS
-   Version: clean-book-layout-01
-
-   目标：
-   - 顶部保持干净
-   - 左侧目录更宽，不轻易换行
-   - 左侧目录有书籍目录层级感
-   - 隐藏右侧文章目录
-   - 正文区域更舒展
-   - 当前章节高亮更清楚
+   Longview Archive / 观势档案
+   MkDocs Material - Publishing System 2.0
    ========================================================= */
 
 
 /* =========================================================
-   1. 全局页面宽度
+   0. Global Variables
    ========================================================= */
 
-.md-grid {
-  max-width: 1680px !important;
+:root {
+  --lv-bg: #f8f8f5;
+  --lv-paper: #ffffff;
+  --lv-text: #242424;
+  --lv-muted: #6f6f6f;
+  --lv-faint: #a8a8a8;
+  --lv-line: rgba(0, 0, 0, 0.08);
+  --lv-line-strong: rgba(0, 0, 0, 0.16);
+
+  --lv-accent: #546f78;
+  --lv-accent-dark: #38545e;
+  --lv-accent-soft: rgba(84, 111, 120, 0.10);
+
+  --lv-sidebar-width: 19.5rem;
+  --lv-content-width: 760px;
 }
 
 
 /* =========================================================
-   2. 顶部栏
+   1. Base: make the whole site feel like a publication
+   ========================================================= */
+
+html {
+  font-size: 15px;
+  background: var(--lv-bg);
+}
+
+body {
+  background: var(--lv-bg);
+  color: var(--lv-text);
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* 主体背景 */
+.md-main {
+  background: var(--lv-bg);
+}
+
+/* 内容区 */
+.md-content {
+  background: var(--lv-bg);
+}
+
+/* 正文容器 */
+.md-content__inner {
+  max-width: var(--lv-content-width);
+  margin: 0 auto;
+  padding-top: 2.2rem;
+  padding-bottom: 5rem;
+}
+
+/* 取消默认过宽布局 */
+.md-grid {
+  max-width: 92rem;
+}
+
+
+/* =========================================================
+   2. Header: minimal publishing bar
    ========================================================= */
 
 .md-header {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  background: var(--lv-accent);
+  box-shadow: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  height: 3rem;
+}
+
+.md-header__inner {
+  min-height: 3rem;
 }
 
 .md-header__title {
-  font-weight: 700;
-  letter-spacing: 0.2px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-size: 0.92rem;
 }
 
+.md-header__button.md-logo {
+  margin-right: 0.4rem;
+}
+
+/* 搜索框：去按钮感 */
 .md-search__form {
-  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.20);
+  border-radius: 2px;
+  height: 2.1rem;
+}
+
+.md-search__input {
+  font-size: 0.82rem;
+}
+
+.md-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.68);
 }
 
 
 /* =========================================================
-   3. 隐藏左侧重复站名
+   3. Sidebar Layout: wider, calmer, no accidental wrapping
    ========================================================= */
 
-.md-nav--primary > .md-nav__title {
-  display: none !important;
-}
-
-
-/* =========================================================
-   4. 隐藏右侧文章目录
-   ========================================================= */
-
-.md-sidebar--secondary {
-  display: none !important;
-}
-
-
-/* =========================================================
-   5. 主体布局：左侧目录 + 正文
-   ========================================================= */
-
-.md-main__inner {
-  gap: 4rem !important;
-}
-
-/* 左侧目录加宽，防止“长线观势文章”换行 */
 .md-sidebar--primary {
-  width: 23rem !important;
+  width: var(--lv-sidebar-width);
 }
 
-/* 左侧目录滚动区域 */
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  margin: 0;
+  padding-top: 2.2rem;
+  padding-right: 1.4rem;
+}
+
+/* 防止滚动条压迫文字 */
 .md-sidebar__scrollwrap {
   scrollbar-width: thin;
 }
 
-.md-sidebar__scrollwrap::-webkit-scrollbar {
-  width: 6px;
+/* 左侧整体字号压小 */
+.md-nav {
+  font-size: 0.82rem;
+  line-height: 1.45;
 }
 
-.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
-  background: #c7c7c7;
-  border-radius: 6px;
+/* 所有导航项默认不换行 */
+.md-nav__link,
+.md-nav__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.md-sidebar__scrollwrap::-webkit-scrollbar-track {
+/* 普通导航项 */
+.md-nav__link {
+  color: #383838;
+  padding-top: 0.42rem;
+  padding-bottom: 0.42rem;
+  padding-left: 0.45rem;
+  padding-right: 0.45rem;
+  border-radius: 0;
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+/* hover 轻微提示 */
+.md-nav__link:hover {
+  color: var(--lv-accent-dark);
+  background-color: var(--lv-accent-soft);
+}
+
+/* 顶层标题 */
+.md-nav__title {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #333;
+  padding-top: 0.4rem;
+  padding-bottom: 0.7rem;
+}
+
+/* 顶层 section 之间留呼吸 */
+.md-nav__item--section {
+  margin-top: 0.55rem;
+}
+
+/* section 标题更像思想树节点 */
+.md-nav__item--section > .md-nav__link {
+  font-weight: 650;
+  color: #6b6b6b;
+  letter-spacing: 0.015em;
+  margin-top: 0.55rem;
+}
+
+/* 第二层缩进 */
+.md-nav__item .md-nav .md-nav__link {
+  padding-left: 1rem;
+}
+
+/* 第三层缩进 */
+.md-nav__item .md-nav .md-nav .md-nav__link {
+  padding-left: 1.65rem;
+  font-size: 0.79rem;
+  color: #555;
+}
+
+
+/* =========================================================
+   4. Thought Tree: Obsidian + Notion hybrid
+   ========================================================= */
+
+/* 给展开层级一条淡线 */
+.md-nav__item .md-nav {
+  border-left: 1px solid var(--lv-line);
+  margin-left: 0.45rem;
+  padding-left: 0.35rem;
+}
+
+/* 当前激活项：Kindle 式锁定 */
+.md-nav__item .md-nav__link--active,
+.md-nav__item--active > .md-nav__link {
+  color: var(--lv-accent-dark);
+  font-weight: 700;
+  background: transparent;
+  border-left: 3px solid var(--lv-accent-dark);
+  padding-left: 0.75rem;
+}
+
+/* 当前项前面加强“被钉住”的感觉 */
+.md-nav__link--active::before,
+.md-nav__item--active > .md-nav__link::before {
+  content: "";
+}
+
+/* 当前项所在父级 */
+.md-nav__item--active > .md-nav__link {
+  color: var(--lv-accent-dark);
+}
+
+/* 折叠箭头更轻 */
+.md-nav__icon {
+  color: var(--lv-faint);
+}
+
+
+/* =========================================================
+   5. Left nav chapter-number system
+   ========================================================= */
+
+/* 让 01 | 标题这种形式更稳 */
+.md-nav__link {
+  font-variant-numeric: tabular-nums;
+}
+
+/* 当前章节高亮更像目录定位 */
+.md-nav__link--active {
+  position: relative;
+}
+
+/* 激活项右侧不要太吵 */
+.md-nav__link--active:hover {
   background: transparent;
 }
 
 
 /* =========================================================
-   6. 正文区域
-   ========================================================= */
-
-.md-content {
-  max-width: none !important;
-}
-
-.md-content__inner {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 0.8rem;
-  padding-right: 2rem;
-}
-
-/* 控制正文阅读宽度，不让文字无限拉长 */
-.md-typeset {
-  max-width: 1050px;
-}
-
-
-/* =========================================================
-   7. 左侧目录：基础字体与间距
-   ========================================================= */
-
-.md-nav {
-  font-size: 0.86rem;
-  line-height: 1.85;
-}
-
-/* 所有目录链接 */
-.md-nav__link {
-  color: #2f2f2f;
-  font-size: 0.86rem;
-  line-height: 1.85;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-top: 0.12rem;
-  padding-bottom: 0.12rem;
-}
-
-/* 鼠标悬停 */
-.md-nav__link:hover {
-  color: #2f5f6b !important;
-}
-
-
-/* =========================================================
-   8. 左侧目录：一级栏目
-   Home / Core Terms / Longview Essays / Aster Vale Notes
-   ========================================================= */
-
-.md-nav__item--section > .md-nav__link {
-  font-size: 0.96rem;
-  font-weight: 750;
-  color: #555;
-  letter-spacing: 0.2px;
-  margin-top: 0.95rem;
-  margin-bottom: 0.35rem;
-}
-
-/* 一级栏目允许自然显示，但不强制挤压 */
-.md-nav__item--section > .md-nav__link .md-ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-
-/* =========================================================
-   9. 左侧目录：子层级缩进线
-   ========================================================= */
-
-.md-nav__list .md-nav__list {
-  margin-left: 0.55rem;
-  padding-left: 1.05rem;
-  border-left: 1px solid rgba(0, 0, 0, 0.10);
-}
-
-/* 第二层、第三层条目稍微轻一点 */
-.md-nav__list .md-nav__list .md-nav__link {
-  font-size: 0.84rem;
-  color: #333;
-}
-
-
-/* =========================================================
-   10. Reality / Future 这种可展开目录
-   ========================================================= */
-
-.md-nav__item .md-nav__toggle ~ .md-nav__link {
-  font-weight: 650;
-  color: #333;
-}
-
-/* 展开箭头不要太抢眼 */
-.md-nav__icon {
-  color: #555;
-}
-
-
-/* =========================================================
-   11. 当前选中目录项
-   ========================================================= */
-
-.md-nav__link--active {
-  font-weight: 700 !important;
-  color: #2f5f6b !important;
-  background: rgba(47, 95, 107, 0.08);
-  border-radius: 6px;
-  padding-left: 0.45rem;
-  padding-right: 0.45rem;
-}
-
-/* 当前选中项左侧档案标记 */
-.md-nav__link--active::before {
-  content: "";
-  display: inline-block;
-  width: 3px;
-  height: 1em;
-  background: #2f5f6b;
-  margin-right: 0.45rem;
-  vertical-align: -0.12em;
-}
-
-
-/* =========================================================
-   12. 面包屑路径
+   6. Breadcrumbs: small, archival feeling
    ========================================================= */
 
 .md-path {
-  font-size: 0.74rem;
-  color: #777;
-  margin-bottom: 0.9rem;
-}
-
-
-/* =========================================================
-   13. 正文标题层级
-   ========================================================= */
-
-.md-typeset h1 {
-  font-size: 2.15rem;
-  font-weight: 700;
-  letter-spacing: 0.6px;
-  color: #5a5a5a;
-  margin-top: 0.8rem;
+  font-size: 0.72rem;
+  color: var(--lv-muted);
   margin-bottom: 1.6rem;
 }
 
-.md-typeset h2 {
-  font-size: 1.45rem;
-  font-weight: 700;
-  color: #333;
-  margin-top: 2.2rem;
-  margin-bottom: 0.9rem;
-  padding-bottom: 0.3rem;
-  border-bottom: 1px solid #eeeeee;
+.md-path__link {
+  color: var(--lv-muted);
 }
 
-.md-typeset h3 {
-  font-size: 1.16rem;
-  font-weight: 650;
-  color: #333;
-  margin-top: 1.7rem;
-  margin-bottom: 0.7rem;
+.md-path__link:hover {
+  color: var(--lv-accent-dark);
 }
 
 
 /* =========================================================
-   14. 正文段落与列表
+   7. Typography: paper / essay mode
    ========================================================= */
 
+.md-typeset {
+  color: var(--lv-text);
+  font-size: 0.92rem;
+  line-height: 1.82;
+}
+
+/* 正文段落 */
 .md-typeset p {
-  font-size: 0.98rem;
-  line-height: 1.88;
-  color: #222;
+  margin: 0.85rem 0;
+  line-height: 1.86;
+  letter-spacing: 0.01em;
 }
 
-.md-typeset ul,
-.md-typeset ol {
+/* 一级标题：章节标题 */
+.md-typeset h1 {
+  font-size: 2.15rem;
+  line-height: 1.18;
+  font-weight: 720;
+  letter-spacing: 0.01em;
+  color: #5e5e5e;
+  margin-top: 0;
+  margin-bottom: 1.65rem;
+}
+
+/* 二级标题：论文章节 */
+.md-typeset h2 {
+  font-size: 1.35rem;
+  line-height: 1.35;
+  font-weight: 700;
+  margin-top: 2.8rem;
+  margin-bottom: 1rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--lv-line);
+  color: #343434;
+}
+
+/* 三级标题 */
+.md-typeset h3 {
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+/* 四级标题 */
+.md-typeset h4 {
   font-size: 0.96rem;
-  line-height: 1.78;
+  font-weight: 700;
+  color: #444;
+  margin-top: 1.6rem;
 }
 
-.md-typeset li {
-  margin-top: 0.15rem;
-  margin-bottom: 0.15rem;
+/* 标题链接图标弱化 */
+.md-typeset .headerlink {
+  color: var(--lv-faint);
 }
 
+/* 加粗文字 */
+.md-typeset strong {
+  font-weight: 700;
+  color: #161616;
+}
 
-/* =========================================================
-   15. 正文链接
-   ========================================================= */
-
+/* 链接 */
 .md-typeset a {
-  color: #2f5f6b;
+  color: var(--lv-accent-dark);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(56, 84, 94, 0.25);
 }
 
 .md-typeset a:hover {
-  color: #1f4852;
+  border-bottom-color: var(--lv-accent-dark);
 }
 
 
 /* =========================================================
-   16. 页脚
+   8. H1 chapter-number visual system
+   Example: "# 01｜现实世界总纲"
+   ========================================================= */
+
+.md-typeset h1:first-of-type {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+/* 如果你标题写成 01｜标题，会自动更有结构感 */
+.md-typeset h1:first-of-type::after {
+  content: "";
+}
+
+
+/* =========================================================
+   9. Blockquotes: doctrine / thesis blocks
+   ========================================================= */
+
+.md-typeset blockquote {
+  margin: 1.4rem 0;
+  padding: 0.9rem 1.1rem;
+  color: #333;
+  border-left: 3px solid var(--lv-accent);
+  background: rgba(84, 111, 120, 0.055);
+}
+
+.md-typeset blockquote p {
+  margin: 0.45rem 0;
+}
+
+
+/* =========================================================
+   10. Lists: controlled density
+   ========================================================= */
+
+.md-typeset ul,
+.md-typeset ol {
+  margin-top: 0.65rem;
+  margin-bottom: 0.9rem;
+}
+
+.md-typeset li {
+  margin-bottom: 0.28rem;
+}
+
+.md-typeset li p {
+  margin: 0.35rem 0;
+}
+
+
+/* =========================================================
+   11. Tables: clean archive style
+   ========================================================= */
+
+.md-typeset table:not([class]) {
+  font-size: 0.82rem;
+  border: 1px solid var(--lv-line);
+}
+
+.md-typeset table:not([class]) th {
+  background: rgba(0, 0, 0, 0.035);
+  font-weight: 700;
+}
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  border-color: var(--lv-line);
+}
+
+
+/* =========================================================
+   12. Code: low-noise
+   ========================================================= */
+
+.md-typeset code {
+  font-size: 0.82em;
+  background: rgba(0, 0, 0, 0.045);
+  color: #333;
+  border-radius: 2px;
+}
+
+.md-typeset pre {
+  background: #f1f1ee;
+  border: 1px solid var(--lv-line);
+}
+
+.md-typeset pre code {
+  background: transparent;
+}
+
+
+/* =========================================================
+   13. Right TOC: reduce noise
+   ========================================================= */
+
+.md-sidebar--secondary {
+  font-size: 0.76rem;
+}
+
+.md-sidebar--secondary .md-nav__title {
+  font-size: 0.76rem;
+  color: var(--lv-muted);
+  font-weight: 600;
+}
+
+.md-sidebar--secondary .md-nav__link {
+  color: var(--lv-muted);
+  padding-top: 0.32rem;
+  padding-bottom: 0.32rem;
+}
+
+.md-sidebar--secondary .md-nav__link--active {
+  color: var(--lv-accent-dark);
+  border-left: 2px solid var(--lv-accent-dark);
+}
+
+
+/* =========================================================
+   14. Footer: make it disappear
    ========================================================= */
 
 .md-footer {
-  margin-top: 2rem;
+  background: #141414;
 }
 
 .md-footer-meta {
-  background: #111 !important;
+  background: #111;
+}
+
+.md-footer-meta__inner {
+  font-size: 0.72rem;
 }
 
 
 /* =========================================================
-   17. 移动端适配
+   15. Admonitions: essay note style
    ========================================================= */
 
-@media screen and (max-width: 1220px) {
-  .md-sidebar--primary {
-    width: 19rem !important;
-  }
-
-  .md-main__inner {
-    gap: 2.5rem !important;
-  }
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.86rem;
+  border: 1px solid var(--lv-line);
+  box-shadow: none;
+  background: #fbfbf8;
 }
 
-@media screen and (max-width: 960px) {
-  .md-sidebar--primary {
-    width: 12rem !important;
-  }
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-weight: 700;
+}
 
-  .md-main__inner {
-    gap: 1rem !important;
+
+/* =========================================================
+   16. Mobile tuning
+   ========================================================= */
+
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--primary {
+    width: 15rem;
   }
 
   .md-content__inner {
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
-  }
-
-  .md-typeset {
-    max-width: none;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .md-typeset h1 {
-    font-size: 1.7rem;
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 44.984375em) {
+  html {
+    font-size: 14px;
   }
 
-  .md-typeset h2 {
-    font-size: 1.3rem;
+  .md-typeset {
+    font-size: 0.95rem;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.55rem;
+  }
+
+  .md-header__title {
+    font-size: 0.84rem;
   }
 }
