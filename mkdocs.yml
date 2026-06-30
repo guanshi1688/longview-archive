@@ -3,7 +3,7 @@ site_description: Public text archive for long-view essays, observation notes, a
 site_author: 星衡｜Aster Vale
 
 theme:
-  name: mkdocs
+  name: readthedocs
 
 nav:
   - Home｜首页: index.md
