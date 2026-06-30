@@ -545,3 +545,51 @@ body {
     font-size: 0.84rem;
   }
 }
+
+/* =========================================================
+   Longview Archive - Layout Patch 2.1
+   Fix sidebar width + content breathing space
+   ========================================================= */
+
+
+/* 1. 加宽左侧导航整体区域 */
+:root {
+  --lv-sidebar-width: 22rem;
+  --lv-content-width: 780px;
+}
+
+
+/* 2. 让左侧导航文字区域更宽，不要太早省略 */
+.md-sidebar--primary {
+  width: var(--lv-sidebar-width);
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  padding-right: 1.8rem;
+}
+
+
+/* 3. 正文离左侧分割线远一点 */
+.md-content {
+  padding-left: 2.4rem;
+}
+
+
+/* 4. 页面整体中间区域稍微展开 */
+.md-grid {
+  max-width: 96rem;
+}
+
+
+/* 5. 正文不要贴边，保持档案纸张感 */
+.md-content__inner {
+  max-width: var(--lv-content-width);
+  margin-left: 0;
+  margin-right: auto;
+}
+
+
+/* 6. 右侧目录不要太挤正文 */
+.md-sidebar--secondary {
+  margin-left: 2rem;
+}
