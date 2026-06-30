@@ -19,7 +19,7 @@ theme:
 nav:
   - Home｜首页: index.md
   - Core Terms｜理论核心术语: core-terms.md
-  - Longview Essays｜长线观势文章:
+  - Longview Essays｜长线观势:
       - Essays Home｜文章首页: essays/index.md
       - Reality｜现实世界:
           - 01｜现实世界总纲: essays/reality/01.md
