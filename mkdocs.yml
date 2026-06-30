@@ -3,7 +3,18 @@ site_description: Public text archive for long-view essays, observation notes, a
 site_author: 星衡｜Aster Vale
 
 theme:
-  name: mkdocs-material
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: blue
 
 nav:
   - Home｜首页: index.md
