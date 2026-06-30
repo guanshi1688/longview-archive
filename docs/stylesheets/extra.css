@@ -1,0 +1,15 @@
+.md-nav--primary > .md-nav__title {
+  display: none;
+}
+
+.md-sidebar--secondary {
+  display: none;
+}
+
+.md-content {
+  max-width: none;
+}
+
+.md-grid {
+  max-width: 1440px;
+}
