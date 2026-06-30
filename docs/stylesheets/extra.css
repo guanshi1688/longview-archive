@@ -562,3 +562,37 @@ body {
     font-size: 0.84rem;
   }
 }
+
+/* =========================================================
+   Longview Archive - Sidebar Sticky Title Fix
+   Disable sticky nav section headers
+   ========================================================= */
+
+/* 关闭左侧导航标题吸顶 */
+.md-sidebar--primary .md-nav__title {
+  position: static !important;
+  top: auto !important;
+  z-index: auto !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 关闭嵌套导航标题吸顶 */
+.md-sidebar--primary .md-nav .md-nav__title {
+  position: static !important;
+  top: auto !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 防止滚动时标题变成白色浮层 */
+.md-sidebar--primary .md-nav__title[for] {
+  position: static !important;
+  background: transparent !important;
+}
+
+/* 去掉左侧导航标题浮动卡片感 */
+.md-sidebar--primary .md-nav__title {
+  box-shadow: none !important;
+  border: none !important;
+}
