@@ -22,9 +22,9 @@ nav:
   - Longview Essays｜长线观势文章:
       - Essays Home｜文章首页: essays/index.md
       - Reality｜现实世界:
-          - 0A: essays/reality/01.md
-          - 02: essays/reality/02.md
-          - 03: essays/reality/03.md
+          - 01｜现实世界总纲: essays/reality/01.md
+          - 02｜人为假顶: essays/reality/02.md
+          - 03｜变现封锁双线策略: essays/reality/03.md
           - 04: essays/reality/04.md
           - 05: essays/reality/05.md
           - 06: essays/reality/06.md
