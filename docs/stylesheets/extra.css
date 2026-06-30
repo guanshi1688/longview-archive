@@ -593,3 +593,64 @@ body {
 .md-sidebar--secondary {
   margin-left: 2rem;
 }
+
+/* =========================================================
+   Longview Archive - Sidebar Hard Override 2.2
+   Force primary sidebar to really become wider
+   ========================================================= */
+
+
+/* 1. 强制左侧栏真实宽度 */
+:root {
+  --lv-sidebar-width: 24rem;
+}
+
+
+/* 2. Material 的 sidebar 不只吃 width，还要吃 flex-basis / min-width */
+.md-sidebar--primary {
+  width: var(--lv-sidebar-width) !important;
+  min-width: var(--lv-sidebar-width) !important;
+  flex-basis: var(--lv-sidebar-width) !important;
+}
+
+
+/* 3. 里面的滚动容器也要跟着撑开 */
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-sidebar--primary .md-sidebar__inner,
+.md-sidebar--primary .md-nav {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+
+/* 4. 减少右侧内边距，给文字更多空间 */
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  padding-right: 0.8rem !important;
+}
+
+
+/* 5. 左侧导航文字不要过早省略 */
+.md-sidebar--primary .md-nav__link,
+.md-sidebar--primary .md-nav__title {
+  max-width: none !important;
+}
+
+
+/* 6. 顶层导航标题允许完整显示 */
+.md-sidebar--primary > .md-sidebar__scrollwrap .md-nav__title {
+  white-space: nowrap;
+}
+
+
+/* 7. 章节项仍然保持一行省略，避免太长破坏树形 */
+.md-sidebar--primary .md-nav__link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* 8. 页面整体再展开一点，否则左侧变宽会挤正文 */
+.md-grid {
+  max-width: 104rem !important;
+}
