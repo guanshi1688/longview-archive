@@ -10,7 +10,27 @@ nav:
   - Core Terms｜理论核心术语: core-terms.md
   - Longview Essays｜长线观势文章:
       - Essays Home｜文章首页: essays/index.md
-      - Reality｜现实世界: essays/reality/index.md
-      - Future Path｜未来的路: essays/future/index.md
+      - Reality｜现实世界:
+          - 01: essays/reality/01.md
+          - 02: essays/reality/02.md
+          - 03: essays/reality/03.md
+          - 04: essays/reality/04.md
+          - 05: essays/reality/05.md
+          - 06: essays/reality/06.md
+          - 07: essays/reality/07.md
+          - 08: essays/reality/08.md
+          - 09: essays/reality/09.md
+          - 10: essays/reality/10.md
+      - Future Path｜未来的路:
+          - 01: essays/future/01.md
+          - 02: essays/future/02.md
+          - 03: essays/future/03.md
+          - 04: essays/future/04.md
+          - 05: essays/future/05.md
+          - 06: essays/future/06.md
+          - 07: essays/future/07.md
+          - 08: essays/future/08.md
+          - 09: essays/future/09.md
+          - 10: essays/future/10.md
   - Aster Vale Notes｜星衡札记: notes/index.md
   - Version Records｜版本记录: versions.md
