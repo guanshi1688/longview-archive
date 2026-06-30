@@ -8,6 +8,9 @@ theme:
 nav:
   - Home｜首页: index.md
   - Core Terms｜理论核心术语: core-terms.md
-  - Longview Essays｜长线观势文章: essays/index.md
+  - Longview Essays｜长线观势文章:
+      - Essays Home｜文章首页: essays/index.md
+      - Reality｜现实世界: essays/reality/index.md
+      - Future Path｜未来的路: essays/future/index.md
   - Aster Vale Notes｜星衡札记: notes/index.md
   - Version Records｜版本记录: versions.md
