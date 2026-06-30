@@ -46,5 +46,5 @@ nav:
   - Aster Vale Notes｜星衡札记: notes/index.md
   - Version Records｜版本记录: versions.md
 
-  extra_css:
+extra_css:
   - stylesheets/extra.css
