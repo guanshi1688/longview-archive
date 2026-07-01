@@ -9,7 +9,6 @@ theme:
   features:
     - navigation.sections
     - navigation.indexes
-    - navigation.expand
     - navigation.path
     - navigation.top
     - search.highlight
@@ -31,15 +30,11 @@ nav:
           - 02｜人为假顶: essays/reality/02.md
           - 03｜变现封锁双线策略: essays/reality/03.md
 
-      - Future Path｜未来之路:
-          - future/index.md
+      - Future Path｜未来之路: essays/future/index.md
 
   - Aster Vale Notes｜星衡札记: notes/index.md
 
   - Version Records｜版本记录: versions.md
-
-extra_css:
-  - stylesheets/extra.css
 
 extra_css:
   - stylesheets/extra.css
