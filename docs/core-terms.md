@@ -52,18 +52,21 @@ A Endowment-Based Civilization is a civilizational type that maintains long-term
 
 ---
 
-### 汲取型敛生文明
+### 汲取型敛生文明｜Global Rentier Civilization
 
-<span class="term-en">Global Rentier Civilization</span>
+汲取型敛生文明，是指一种不以完整承担内生生产体系全部成本为主要存续依托，而是依托外部资源、外部市场、外部劳动、全球规则、秩序结构与跨境接口，构筑并维系自身核心收益循环的文明类型。
 
-**定义：**  
-汲取型敛生文明，是指不承担完整内生生产成本，而通过外部资源、外部市场、外部劳动、外部规则、外部秩序和全球接口维系核心收益的文明类型。
+#### 核心含义
 
-**核心含义：**  
-它不一定生产最多，却掌握金融、规则、技术标准、平台、通道、市场准入、法律秩序和全球定价权，从而把外部世界纳入自身核心收益循环。
+该文明并非没有生产能力，也并非单纯依靠直接掠夺维持存在。
 
-**English note:**  
-A global rentier civilization sustains its core advantages by drawing value from external resources, markets, labor, rules, order, and global interfaces, rather than by bearing the full cost of internal production.
+它的关键特征在于：不把全域产能生产、长期工程积累和完整社会承接作为自身核心发展底盘，而是通过掌控金融体系、顶层规则、技术标准、流通平台、跨境通道、市场准入机制与全球定价体系，将外部经济体系纳入自身价值运行闭环。
+
+因此，它更擅长组织外部价值回流，而不是完整承担内部全域做功成本。
+
+#### English note
+
+A Global Rentier Civilization is a civilizational type that sustains its core advantages and steady operation by integrating external resources, markets, labor, global rules, institutional order, and cross-border interfaces into its value cycle, rather than primarily bearing the full operational cost of an endogenous production system.
 
 ---
 
