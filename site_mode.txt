@@ -1,0 +1,6 @@
+# 可选模式：
+# normal       = 正常公开网站
+# maintenance  = 维护页模式
+
+normal
+# maintenance
