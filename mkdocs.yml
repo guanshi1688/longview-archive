@@ -49,11 +49,13 @@ nav:
           - 07｜热战不是最优解: essays/future/07.md
           - 08｜中国出海进入秩序闭环阶段: essays/future/08.md
           - 09｜打破闭环与建立闭环: essays/future/09.md
-          - 阅读后约束:  essays/future/10.md
+          - 阅读后约束: essays/future/10.md
 
   - Aster Vale Notes｜星衡札记: notes/index.md
 
   - Version Records｜版本记录: versions.md
+
+  - Author｜作者: author.md
 
 extra_css:
   - stylesheets/extra.css
