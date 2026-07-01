@@ -17,7 +17,7 @@ theme:
       accent: blue
 
 nav:
-  - Home｜首页: index.md
+  - Index｜索引: index.md
 
   - Core Terms｜理论核心术语: core-terms.md
 
