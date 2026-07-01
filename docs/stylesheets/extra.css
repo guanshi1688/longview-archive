@@ -1,6 +1,6 @@
 /* =========================================================
    Longview Archive / 观势档案
-   MkDocs Material - Publishing System 2.0 Clean
+   MkDocs Material - Publishing System 2.1 Clean
    ========================================================= */
 
 
@@ -22,10 +22,10 @@
   --lv-accent-soft: rgba(84, 111, 120, 0.10);
 
   /* 全局布局核心参数 */
-  --lv-sidebar-width: 24rem;
+  --lv-sidebar-width: 25rem;
   --lv-content-width: 780px;
-  --lv-grid-width: 104rem;
-  --lv-content-left-gap: 2.8rem;
+  --lv-grid-width: 108rem;
+  --lv-content-left-gap: 2.6rem;
 }
 
 
@@ -128,20 +128,24 @@ body {
     min-width: var(--lv-sidebar-width) !important;
     max-width: var(--lv-sidebar-width) !important;
     flex: 0 0 var(--lv-sidebar-width) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .md-sidebar--primary .md-sidebar__inner {
     width: var(--lv-sidebar-width) !important;
     min-width: var(--lv-sidebar-width) !important;
     max-width: var(--lv-sidebar-width) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .md-sidebar--primary .md-sidebar__scrollwrap {
     width: 100% !important;
     max-width: none !important;
-    margin: 0;
+    margin: 0 !important;
     padding-top: 2.2rem;
-    padding-right: 0.4rem;
+    padding-right: 0.2rem !important;
     overflow-x: hidden;
   }
 
@@ -160,7 +164,7 @@ body {
 
 
 /* =========================================================
-   5. Left Navigation: full-width thought tree
+   5. Left Navigation: thought tree, wide text lane
    ========================================================= */
 
 .md-nav {
@@ -168,111 +172,217 @@ body {
   line-height: 1.45;
 }
 
-/* 关键：让 Material 的真实文字容器吃满宽度 */
-.md-sidebar--primary .md-ellipsis {
-  flex: 1 1 auto;
-  min-width: 0;
-  max-width: none !important;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+
+/* ---------------------------------------------------------
+   5.1 Remove duplicated Material nested titles
+   --------------------------------------------------------- */
+
+/* 默认隐藏左侧导航标题层，避免 Home / Essays / Reality 重复 */
+.md-sidebar--primary .md-nav__title {
+  display: none !important;
+  position: static !important;
+  top: auto !important;
+  z-index: auto !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
-/* 链接本体必须是 flex，否则箭头和文字宽度会异常 */
-.md-sidebar--primary .md-nav__link,
-.md-sidebar--primary .md-nav__title {
+/* 保留最顶部站点标题 */
+.md-sidebar--primary .md-nav--primary > .md-nav__title,
+.md-sidebar--primary > .md-sidebar__scrollwrap > .md-nav > .md-nav__title {
   display: flex !important;
   align-items: center;
+  width: 100%;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #333;
+  padding-top: 0.4rem;
+  padding-bottom: 0.7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 彻底关闭嵌套 nav title 的 sticky / floating 效果 */
+.md-sidebar--primary .md-nav .md-nav__title,
+.md-sidebar--primary .md-nav__title[for] {
+  display: none !important;
+  position: static !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   5.2 Link base
+   --------------------------------------------------------- */
+
+.md-sidebar--primary .md-nav__link {
+  display: flex !important;
+  align-items: flex-start;
   width: 100% !important;
   max-width: none !important;
   min-width: 0;
   box-sizing: border-box;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* 普通导航项 */
-.md-nav__link {
   color: #383838;
-  padding-top: 0.42rem;
-  padding-bottom: 0.42rem;
+  padding-top: 0.38rem;
+  padding-bottom: 0.38rem;
   padding-left: 0.45rem;
-  padding-right: 0.25rem;
+  padding-right: 0.15rem;
   border-radius: 0;
   font-variant-numeric: tabular-nums;
+  column-gap: 0.22rem;
   transition:
     color 0.15s ease,
     background-color 0.15s ease,
     border-color 0.15s ease;
 }
 
-.md-nav__link:hover {
+.md-sidebar--primary .md-nav__link:hover {
   color: var(--lv-accent-dark);
   background-color: var(--lv-accent-soft);
 }
 
-.md-nav__title {
-  font-size: 0.84rem;
-  font-weight: 600;
-  color: #333;
-  padding-top: 0.4rem;
-  padding-bottom: 0.7rem;
+/* 真正文字容器：尽量吃满左侧宽度 */
+.md-sidebar--primary .md-nav__link .md-ellipsis {
+  flex: 1 1 auto !important;
+  width: auto !important;
+  max-width: calc(var(--lv-sidebar-width) - 3rem) !important;
+  min-width: 0 !important;
+  line-height: 1.45;
 }
 
-/* 顶层 section */
-.md-nav__item--section {
-  margin-top: 0.55rem;
+
+/* ---------------------------------------------------------
+   5.3 Top-level nav: keep one line
+   --------------------------------------------------------- */
+
+.md-sidebar--primary > .md-sidebar__scrollwrap > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link,
+.md-sidebar--primary > .md-sidebar__scrollwrap > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link .md-ellipsis {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
 
-.md-nav__item--section > .md-nav__link {
+
+/* ---------------------------------------------------------
+   5.4 Section nodes
+   --------------------------------------------------------- */
+
+.md-sidebar--primary .md-nav__item--section {
+  margin-top: 0.28rem !important;
+}
+
+.md-sidebar--primary .md-nav__item--section > .md-nav__link {
   font-weight: 650;
   color: #6b6b6b;
   letter-spacing: 0.015em;
-  margin-top: 0.55rem;
+  margin-top: 0.24rem !important;
 }
 
-/* 树线：缩小缩进，给文字更多空间 */
+/* 展开的树线：缩小缩进，把空间还给文字 */
 .md-sidebar--primary .md-nav__item .md-nav {
   border-left: 1px solid var(--lv-line);
-  margin-left: 0.25rem;
-  padding-left: 0.25rem;
+  margin-left: 0.12rem !important;
+  padding-left: 0.12rem !important;
+  margin-top: 0.08rem !important;
+  margin-bottom: 0.18rem !important;
 }
 
-/* 第二层缩进：从 1rem 压到 0.7rem */
+
+/* ---------------------------------------------------------
+   5.5 Second level: groups can wrap if needed
+   --------------------------------------------------------- */
+
 .md-sidebar--primary .md-nav__item .md-nav .md-nav__link {
-  padding-left: 0.7rem;
+  padding-left: 0.45rem !important;
+  padding-right: 0.12rem !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
 }
 
-/* 第三层缩进：从 1.65rem 压到 1.05rem */
+.md-sidebar--primary .md-nav__item .md-nav .md-nav__link .md-ellipsis {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  display: block !important;
+  line-height: 1.45;
+  max-width: calc(var(--lv-sidebar-width) - 3.4rem) !important;
+}
+
+
+/* ---------------------------------------------------------
+   5.6 Third level: article titles wrap naturally
+   --------------------------------------------------------- */
+
 .md-sidebar--primary .md-nav__item .md-nav .md-nav .md-nav__link {
-  padding-left: 1.05rem;
+  padding-left: 0.65rem !important;
+  padding-right: 0.1rem !important;
+  padding-top: 0.42rem !important;
+  padding-bottom: 0.42rem !important;
   font-size: 0.79rem;
   color: #555;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
 }
 
-/* 当前激活项 */
-.md-nav__item .md-nav__link--active,
-.md-nav__item--active > .md-nav__link {
+.md-sidebar--primary .md-nav__item .md-nav .md-nav .md-nav__link .md-ellipsis {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  display: block !important;
+  line-height: 1.5;
+  max-width: calc(var(--lv-sidebar-width) - 3.8rem) !important;
+}
+
+
+/* ---------------------------------------------------------
+   5.7 Active state: Kindle-like lock
+   --------------------------------------------------------- */
+
+.md-sidebar--primary .md-nav__item .md-nav__link--active,
+.md-sidebar--primary .md-nav__item--active > .md-nav__link {
   color: var(--lv-accent-dark);
   font-weight: 700;
   background: transparent;
   border-left: 3px solid var(--lv-accent-dark);
-  padding-left: 0.65rem;
+  padding-left: 0.62rem !important;
 }
 
-.md-nav__link--active {
+.md-sidebar--primary .md-nav__link--active {
   position: relative;
 }
 
-.md-nav__link--active:hover {
+.md-sidebar--primary .md-nav__link--active:hover {
   background: transparent;
 }
 
-.md-nav__icon {
+
+/* ---------------------------------------------------------
+   5.8 Icons / arrows
+   --------------------------------------------------------- */
+
+.md-sidebar--primary .md-nav__icon {
   color: var(--lv-faint);
-  flex: 0 0 auto;
+  flex: 0 0 0.8rem !important;
+  width: 0.8rem !important;
+  min-width: 0.8rem !important;
+  margin-left: 0.18rem !important;
+  margin-top: 0.12rem !important;
 }
+
+
+/* ---------------------------------------------------------
+   5.9 Empty nav protection
+   --------------------------------------------------------- */
+
+.md-sidebar--primary .md-nav__list:empty {
+  display: none !important;
+}
+
 
 /* =========================================================
    6. Breadcrumbs: archival feeling
@@ -560,54 +670,5 @@ body {
 
   .md-header__title {
     font-size: 0.84rem;
-  }
-}
-
-/* =========================================================
-   Longview Archive - Sidebar Sticky Title Fix
-   Disable sticky nav section headers
-   ========================================================= */
-
-/* 关闭左侧导航标题吸顶 */
-.md-sidebar--primary .md-nav__title {
-  position: static !important;
-  top: auto !important;
-  z-index: auto !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/* 关闭嵌套导航标题吸顶 */
-.md-sidebar--primary .md-nav .md-nav__title {
-  position: static !important;
-  top: auto !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/* 防止滚动时标题变成白色浮层 */
-.md-sidebar--primary .md-nav__title[for] {
-  position: static !important;
-  background: transparent !important;
-}
-
-/* 去掉左侧导航标题浮动卡片感 */
-.md-sidebar--primary .md-nav__title {
-  box-shadow: none !important;
-  border: none !important;
-}
-
-/* =========================================================
-   Longview Archive - Nav Duplicate Title Fix
-   Hide Material nested nav titles that duplicate section links
-   ========================================================= */
-
-@media screen and (min-width: 76.25em) {
-  .md-sidebar--primary .md-nav:not(.md-nav--primary) > .md-nav__title {
-    display: none !important;
-  }
-
-  .md-sidebar--primary .md-nav__title[for] {
-    display: none !important;
   }
 }
