@@ -1,0 +1,21 @@
+site_name: Longview Archive｜观势档案
+site_description: Public text archive for long-view essays, observation notes, and theoretical terms.
+site_author: 星衡｜Aster Vale
+site_url: https://longview-archive.org
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.top
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: blue
+
+nav:
+  - Home｜首页: maintenance.md
+
+extra_css:
+  - stylesheets/extra.css
