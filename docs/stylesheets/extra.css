@@ -596,3 +596,18 @@ body {
   box-shadow: none !important;
   border: none !important;
 }
+
+/* =========================================================
+   Longview Archive - Nav Duplicate Title Fix
+   Hide Material nested nav titles that duplicate section links
+   ========================================================= */
+
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary .md-nav:not(.md-nav--primary) > .md-nav__title {
+    display: none !important;
+  }
+
+  .md-sidebar--primary .md-nav__title[for] {
+    display: none !important;
+  }
+}
