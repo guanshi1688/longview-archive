@@ -1,4 +1,4 @@
-# Longview Essays｜长线观势
+# 总览｜Longview Essays｜长线观势
 
 本节保存观势文章体系中的长线正文。
 
