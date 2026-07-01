@@ -8,7 +8,6 @@ theme:
   language: zh
   features:
     - navigation.sections
-    - navigation.indexes
     - navigation.path
     - navigation.top
     - search.highlight
@@ -23,14 +22,15 @@ nav:
   - Core Terms｜理论核心术语: core-terms.md
 
   - Longview Essays｜长线观势:
-      - essays/index.md
+      - Overview｜总览: essays/index.md
 
       - Reality｜现实世界:
           - 01｜现实世界总纲: essays/reality/01.md
           - 02｜人为假顶: essays/reality/02.md
           - 03｜变现封锁双线策略: essays/reality/03.md
 
-      - Future Path｜未来之路: essays/future/index.md
+      - Future Path｜未来之路:
+          - Overview｜整理中: essays/future/index.md
 
   - Aster Vale Notes｜星衡札记: notes/index.md
 
