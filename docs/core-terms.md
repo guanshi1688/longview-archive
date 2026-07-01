@@ -39,7 +39,7 @@ A work-driven civilization is a civilizational type whose long-term survival and
 
 ### 稳态敛生型文明
 
-<span class="term-en">Steady-State Civilization</span>
+<span class="term-en">Endowment-Based Civilization</span>
 
 **定义：**  
 稳态敛生型文明，是指主要依靠自然禀赋、低能耗生活、本土节律、共同体稳定和较低强度生产来维持长期存续的文明类型。
@@ -48,7 +48,7 @@ A work-driven civilization is a civilizational type whose long-term survival and
 它不天然追求持续工业增殖，也不必然把高强度生产组织作为社会第一目标。
 
 **English note:**  
-A steady-state civilization is a civilizational type that maintains long-term stability through low-intensity production, local rhythms, communal continuity, and relative alignment with natural conditions.
+A Endowment-Based Civilization is a civilizational type that maintains long-term stability through low-intensity production, local rhythms, communal continuity, and relative alignment with natural conditions.
 
 ---
 
