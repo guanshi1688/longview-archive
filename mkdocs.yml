@@ -25,9 +25,11 @@ nav:
       - Overview｜总览: essays/index.md
 
       - Reality｜现实世界:
-          - 01｜现实世界总纲: essays/reality/01.md
-          - 02｜人为假顶: essays/reality/02.md
-          - 03｜变现封锁双线策略: essays/reality/03.md
+          - 阅读前约束: essays/reality/00.md
+          - 01｜人类文明的三种底层模式: essays/reality/01.md
+          - 02｜中国制度与做功机器: essays/reality/02.md
+          - 03｜全球南方不是第二个中国: essays/reality/03.md
+          - 阅读后约束: essays/reality/11.md
 
       - Future Path｜未来之路:
           - Overview｜整理中: essays/future/index.md
