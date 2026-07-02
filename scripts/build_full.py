@@ -105,6 +105,7 @@ def main():
     common_prefix = [
         "essays/index.md",
         "core-terms.md",
+        "essays/reading-rules.md",
     ]
 
     build_full(
