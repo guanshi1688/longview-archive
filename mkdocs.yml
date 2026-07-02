@@ -19,7 +19,8 @@ theme:
 nav:
   - Index｜索引: index.md
 
-  - Core Terms｜理论核心术语: core-terms.md
+  - 理论核心术语｜Core Terms: core-terms.md
+  - 阅读评判规则｜How to Read This Framework: essays/reading-rules.md
 
   - Longview Essays｜长线观势:
       - Overview｜总览: essays/index.md
