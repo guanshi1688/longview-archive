@@ -41,6 +41,24 @@ def clean_article(text: str) -> str:
     return text.strip()
 
 
+def read_doc(relative_path: str) -> str:
+    path = DOCS / relative_path
+
+    if not path.exists():
+        raise FileNotFoundError(f"Missing file: {path}")
+
+    return clean_article(path.read_text(encoding="utf-8"))
+
+
+def read_group_file(source_dir: Path, filename: str) -> str:
+    path = source_dir / filename
+
+    if not path.exists():
+        raise FileNotFoundError(f"Missing file: {path}")
+
+    return clean_article(path.read_text(encoding="utf-8"))
+
+
 def build_full(
     source_dir: Path,
     files: list[str],
@@ -48,6 +66,7 @@ def build_full(
     title: str,
     intro: str,
     footer_group: str,
+    prefix_files: list[str] | None = None,
 ):
     parts = []
 
@@ -55,15 +74,16 @@ def build_full(
     parts.append(intro.strip())
     parts.append("\n\n---\n")
 
+    # 合订本前置内容：总览 + Core Terms
+    if prefix_files:
+        for relative_path in prefix_files:
+            text = read_doc(relative_path)
+            parts.append(text)
+            parts.append("\n\n---\n")
+
+    # 本组合订正文
     for filename in files:
-        path = source_dir / filename
-
-        if not path.exists():
-            raise FileNotFoundError(f"Missing file: {path}")
-
-        text = path.read_text(encoding="utf-8")
-        text = clean_article(text)
-
+        text = read_group_file(source_dir, filename)
         parts.append(text)
         parts.append("\n\n---\n")
 
@@ -82,6 +102,11 @@ Longview Archive｜观势档案
 
 
 def main():
+    common_prefix = [
+        "essays/index.md",
+        "core-terms/index.md",
+    ]
+
     build_full(
         source_dir=REALITY_DIR,
         files=[
@@ -103,8 +128,11 @@ def main():
         intro="""本文为 Reality｜现实世界 组文章的连续阅读与归档版本。  
 分篇阅读请使用左侧目录。
 
+本合订本作为独立阅读版本，已前置收录《总览｜Longview Essays｜长线观势》与《Core Terms｜理论核心术语》，用于统一核心变量、概念边界与阅读坐标。
+
 Reality｜现实世界 用于说明旧世界为什么走到边界。""",
         footer_group="Reality｜现实世界",
+        prefix_files=common_prefix,
     )
 
     build_full(
@@ -127,8 +155,11 @@ Reality｜现实世界 用于说明旧世界为什么走到边界。""",
         intro="""本文为 Future Path｜未来之路 组文章的连续阅读与归档版本。  
 分篇阅读请使用左侧目录。
 
+本合订本作为独立阅读版本，已前置收录《总览｜Longview Essays｜长线观势》与《Core Terms｜理论核心术语》，用于统一核心变量、概念边界与阅读坐标。
+
 Future Path｜未来之路 与 Reality｜现实世界 不是两套理论，而是同一套底层概念在另一方向上的展开。""",
         footer_group="Future Path｜未来之路",
+        prefix_files=common_prefix,
     )
 
 
