@@ -1,72 +1,148 @@
 # Core Terms｜理论核心术语
 
-本页用于整理观势文章体系中的核心概念。
+本页用于整理 Longview Archive｜观势档案 文章体系中的核心概念。
 
-这些术语不是普通名词解释，而是整组文章的推导骨架。  
+这些术语不是普通名词解释，而是整组文章的推导骨架。
+
 如果不先理解这些词，读者很容易把这组文章误读成普通经济分析、产能过剩分析、内需不足分析、一带一路分析或中美竞争评论。
 
 这组文章真正讨论的是：
 
-一个极致做功型文明，在工业 2.0 后生产能力系统性超过原有承接体系，由此引发的外部变现困境、内部闭环压力与文明级战略转型。
+> 一个极致做功型文明，在工业 2.0 后生产能力系统性超过原有承接体系，由此引发的外部变现困境、内部闭环压力与文明级战略转型。
 
-现实组文章，更多从现实压力、外部变现、市场战、内部承接和旧闭环退潮切入。  
-未来组文章，更多从生产富余、文明闭环、新闭环和共产主义入口展开。  
+现实组文章，更多从现实压力、外部变现、市场战、内部承接和旧闭环退潮切入。
 
-两组文章使用的是同一套底层概念，只是推导方向不同：  
-一端通向现实世界，一端通向未来世界。
+未来组文章，更多从生产富余、文明闭环、新闭环和共产主义入口展开。
 
-英文术语用于概念索引、海外引用与搜索收录。  
+两组文章使用的是同一套底层概念，只是推导方向不同：
+
+一端通向 Reality｜现实世界。
+
+一端通向 Future Path｜未来之路。
+
+英文术语用于概念索引、海外引用与搜索收录。
+
 中文定义为主，英文注释为辅助。
 
----
+## 基础定义：什么是文明
+
+在本体系中，文明不是单纯的文化共同体、民族共同体、宗教共同体、语言共同体或国家共同体。
+
+文明首先是一套长期运行系统。
+
+它决定一个群体如何获得生产资料，如何组织生产力，如何承担成本，如何创造富余，如何完成承接，如何维持秩序，如何分配收益，如何处理风险，并最终如何形成自身的长期再生产闭环。
+
+因此，本文体系讨论文明时，第一标尺不是风俗、信仰、族群、制度口号或价值宣称，而是生产力与承接能力。
+
+换言之：
+
+> 文明，是一种围绕生产力生成、成本承担、富余承接、秩序维持和价值闭环而形成的长期运行系统。
+
+人文、家庭、风俗、宗教、繁衍制度、地方习惯和价值观念并非不重要。
+
+但在本体系中，它们主要被视为生产力组织方式、成本承接方式和秩序再生产方式之上的次生配套结构，而不是文明分型的第一推导起点。
+
+这也是本页所有核心术语的共同前提。
+
+所谓“做功型文明”“稳态敛生型文明”“汲取型敛生文明”，都不是道德标签，不是文明优劣排序，不是种族分类，也不是文化审判。
+
+它们只是三种生产力组织方式、成本承接方式和价值闭环方式的原型参照。
 
 ## 一、文明运行模式
 
 ### 做功型文明
 
-<span class="term-en">Work-Driven Civilization</span>
+**Work-Driven Civilization**
 
-**定义：**  
-做功型文明，是指主要依靠持续做功、长期积累、工程组织、基础设施建设、制度动员和生产能力提升，来创造富余、抵御风险并维系长期存续的文明类型。
+#### 定义
 
-**核心含义：**  
-做功型文明的强项是创造富余，难题是如何承接富余。
+做功型文明，是指主要依靠持续做功、长期积累、工程组织、基础设施建设、制度动员、人口组织和生产能力提升，来创造富余、抵御风险、突破环境约束并维系长期存续的文明类型。
 
-**English note:**  
-A work-driven civilization is a civilizational type whose long-term survival and expansion depend on organized work, cumulative effort, infrastructure building, engineering capacity, institutional mobilization, and the continuous creation of productive surplus.
+#### 核心含义
+
+做功型文明的强项，是创造富余。
+
+它通过持续组织人力、土地、技术、工程、教育、产业、税赋和国家能力，把自然压力、人口压力和生存压力转化为建设任务与生产能力。
+
+它的根本问题，不是能不能生产，而是当生产能力系统性扩大之后，如何把富余稳定转化为收入、消费、利润、公共服务、安全感、长期预期和文明闭环。
+
+一句话概括：
+
+> 做功型文明创造富余，但最终必须回答承接问题。
+
+#### English note
+
+A work-driven civilization is a civilizational type whose long-term survival and expansion depend on organized work, cumulative effort, infrastructure building, engineering capacity, institutional mobilization, population organization, and the continuous creation of productive surplus.
+
+Its core strength is the creation of surplus; its central challenge is the absorption and organization of that surplus into a durable social and civilizational loop.
 
 ---
 
 ### 稳态敛生型文明
 
-<span class="term-en">Endowment-Based Civilization</span>
+**Endowment-Based Civilization**
 
-**定义：**  
+#### 定义
+
 稳态敛生型文明，是指主要依靠自然禀赋、低能耗生活、本土节律、共同体稳定和较低强度生产来维持长期存续的文明类型。
-
-**核心含义：**  
-它不天然追求持续工业增殖，也不必然把高强度生产组织作为社会第一目标。
-
-**English note:**  
-A Endowment-Based Civilization is a civilizational type that maintains long-term stability through low-intensity production, local rhythms, communal continuity, and relative alignment with natural conditions.
-
----
-
-### 汲取型敛生文明｜Global Rentier Civilization
-
-汲取型敛生文明，是指一种不以完整承担内生生产体系全部成本为主要存续依托，而是依托外部资源、外部市场、外部劳动、全球规则、秩序结构与跨境接口，构筑并维系自身核心收益循环的文明类型。
 
 #### 核心含义
 
-该文明并非没有生产能力，也并非单纯依靠直接掠夺维持存在。
+稳态敛生型文明不以持续扩大生产能力为默认目标，也不天然把高强度组织、长期储蓄、工业增殖和全社会动员作为第一运行逻辑。
 
-它的关键特征在于：不把全域产能生产、长期工程积累和完整社会承接作为自身核心发展底盘，而是通过掌控金融体系、顶层规则、技术标准、流通平台、跨境通道、市场准入机制与全球定价体系，将外部经济体系纳入自身价值运行闭环。
+它的优势，是低能耗、低内卷、生活节奏稳定、共同体关系连续，并能在相对适宜的自然条件下维持长期自洽。
 
-因此，它更擅长组织外部价值回流，而不是完整承担内部全域做功成本。
+它的难题，是当现代工业体系、全球资本体系、国家竞争、人口增长和技术迭代压入本土社会时，原有的低能耗稳态结构未必能够迅速转化为高强度工业承接体系。
+
+一句话概括：
+
+> 稳态敛生型文明维持自洽，但面对现代工业体系时容易承接不足。
 
 #### English note
 
-A Global Rentier Civilization is a civilizational type that sustains its core advantages and steady operation by integrating external resources, markets, labor, global rules, institutional order, and cross-border interfaces into its value cycle, rather than primarily bearing the full operational cost of an endogenous production system.
+An endowment-based civilization is a civilizational type that maintains long-term stability through natural endowments, low-intensity production, local rhythms, communal continuity, and relative alignment with natural conditions.
+
+Its strength lies in low-energy stability and social continuity; its challenge lies in absorbing and sustaining high-intensity industrial systems under modern global pressure.
+
+---
+
+### 汲取型敛生文明
+
+**Global Rentier Civilization**
+
+#### 定义
+
+汲取型敛生文明，是指不以完整承担内生生产体系全部成本为主要存续依托，而是依托外部资源、外部市场、外部劳动、全球规则、秩序结构、金融体系、技术标准、跨境接口和定价权，构筑并维系自身核心收益循环的文明类型。
+
+#### 核心含义
+
+汲取型敛生文明并非没有生产能力，也并非单纯依靠直接掠夺维持存在。
+
+它的关键特征在于：
+
+它不把全域产能生产、长期工程积累和完整社会承接作为自身核心发展底盘，而是通过掌控金融体系、顶层规则、技术标准、流通平台、跨境通道、市场准入机制、法律秩序、货币信用和全球定价体系，将外部经济体系纳入自身价值运行闭环。
+
+因此，它更擅长组织外部价值回流，而不是完整承担内部全域做功成本。
+
+它可以不生产最多的商品，却获得最高的利润。
+
+可以不承担最重的劳动，却掌握定价规则。
+
+可以不保留完整产业链，却控制金融、品牌、专利、标准、渠道和市场准入。
+
+它的优势，是掌握规则、接口、信用、价格和高端收益分配权。
+
+它的弱点，是一旦外部世界不再愿意承担底层成本，一旦生产型文明完成技术追赶，一旦规则权威、金融信用、海权通道、货币体系和高端市场准入权被挑战，它的核心收益循环就会受到冲击。
+
+一句话概括：
+
+> 汲取型敛生文明掌握规则与分配权，但一旦外部世界不再配合，它就必须保住核心闭环。
+
+#### English note
+
+A global rentier civilization is a civilizational type that sustains its core advantages and steady operation by integrating external resources, markets, labor, global rules, institutional order, financial systems, technical standards, cross-border interfaces, and pricing power into its value cycle, rather than primarily bearing the full operational cost of an endogenous production system.
+
+Its strength lies in organizing external value return through rules, interfaces, credit, pricing, and high-end distribution. Its vulnerability appears when external systems no longer absorb the underlying costs or when productive civilizations challenge its rules, standards, financial credibility, and market access.
 
 ---
 
