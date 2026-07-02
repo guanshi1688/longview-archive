@@ -104,7 +104,7 @@ Longview Archive｜观势档案
 def main():
     common_prefix = [
         "essays/index.md",
-        "core-terms/index.md",
+        "core-terms.md",
     ]
 
     build_full(
