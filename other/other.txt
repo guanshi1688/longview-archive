@@ -1,0 +1,6 @@
+longview-archive> git pull
+python scripts/build_full.py
+git status
+git add .
+git commit -m "Update collection build script"
+git push
