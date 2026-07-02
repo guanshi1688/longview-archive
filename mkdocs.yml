@@ -58,7 +58,7 @@ nav:
 
   - Version Records｜版本记录: versions.md
 
-  # Author｜作者
+  # Author｜作者: author.md
 
 extra_css:
   - stylesheets/extra.css
