@@ -1,626 +1,445 @@
 /* =========================================================
-   Longview Archive / 观势档案
-   MkDocs Material - Publishing System 2.1 Clean
+   Longview Archive｜观势档案
+   extra.css v2
+   Desktop: 思想树 / 档案馆 / 论文站
+   Mobile : 阅读器 / 单栏 / 防横向溢出
    ========================================================= */
 
 
 /* =========================================================
-   0. Global Variables
+   01. Global Design Tokens
    ========================================================= */
 
 :root {
-  --lv-bg: #f8f8f5;
-  --lv-paper: #ffffff;
-  --lv-text: #242424;
-  --lv-muted: #6f6f6f;
-  --lv-faint: #a8a8a8;
-  --lv-line: rgba(0, 0, 0, 0.08);
-  --lv-line-strong: rgba(0, 0, 0, 0.16);
+  --lv-bg: #f7f4ee;
+  --lv-bg-soft: #fbfaf7;
+  --lv-paper: #fffdf8;
+  --lv-paper-deep: #f1ece3;
 
-  --lv-accent: #546f78;
-  --lv-accent-dark: #38545e;
-  --lv-accent-soft: rgba(84, 111, 120, 0.10);
+  --lv-text: #1f1d1a;
+  --lv-text-soft: #4b4740;
+  --lv-text-muted: #7a7369;
 
-  /* 全局布局核心参数 */
-  --lv-sidebar-width: 25rem;
-  --lv-content-width: 780px;
-  --lv-grid-width: 108rem;
-  --lv-content-left-gap: 2.6rem;
+  --lv-line: rgba(70, 60, 45, 0.14);
+  --lv-line-strong: rgba(70, 60, 45, 0.24);
+
+  --lv-accent: #6f3f1d;
+  --lv-accent-soft: rgba(111, 63, 29, 0.09);
+  --lv-accent-line: rgba(111, 63, 29, 0.28);
+
+  --lv-shadow-soft: 0 10px 35px rgba(40, 31, 20, 0.06);
+
+  --lv-content-width: 760px;
+  --lv-content-wide: 880px;
+  --lv-sidebar-width: 15.5rem;
+
+  --md-primary-fg-color: #2b2118;
+  --md-primary-fg-color--light: #4a3929;
+  --md-primary-fg-color--dark: #1c1510;
+  --md-accent-fg-color: #8a4f24;
+
+  --md-default-bg-color: var(--lv-bg);
+  --md-default-fg-color: var(--lv-text);
+  --md-default-fg-color--light: var(--lv-text-soft);
+  --md-default-fg-color--lighter: var(--lv-text-muted);
+
+  --md-typeset-a-color: #7b461f;
 }
 
 
 /* =========================================================
-   1. Base: publication feeling
+   02. Base Page Structure
    ========================================================= */
 
 html {
-  font-size: 15px;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
   background: var(--lv-bg);
 }
 
 body {
-  background: var(--lv-bg);
   color: var(--lv-text);
-  letter-spacing: 0.01em;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
 
-.md-main {
-  background: var(--lv-bg);
-}
-
-.md-content {
-  background: var(--lv-bg);
+.md-container {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(111, 63, 29, 0.055), transparent 34rem),
+    linear-gradient(180deg, var(--lv-bg-soft), var(--lv-bg));
 }
 
 .md-grid {
-  max-width: var(--lv-grid-width);
+  max-width: 91rem;
+}
+
+.md-main__inner {
+  margin-top: 0;
+}
+
+.md-content {
+  min-width: 0;
+}
+
+.md-content__inner {
+  max-width: var(--lv-content-width);
+  margin: 0 auto;
+  padding-top: 2.6rem;
+  padding-bottom: 4rem;
+}
+
+.md-content__inner::before {
+  display: none;
 }
 
 
 /* =========================================================
-   2. Header: minimal publishing bar
+   03. Header: 极简出版栏
    ========================================================= */
 
 .md-header {
-  background: var(--lv-accent);
+  background: rgba(43, 33, 24, 0.96);
+  color: #fffaf0;
   box-shadow: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  height: 3rem;
+  border-bottom: 1px solid rgba(255, 250, 240, 0.08);
 }
 
 .md-header__inner {
-  min-height: 3rem;
+  min-height: 3.05rem;
 }
 
 .md-header__title {
   font-weight: 600;
   letter-spacing: 0.02em;
-  font-size: 0.92rem;
 }
 
-.md-header__button.md-logo {
-  margin-right: 0.4rem;
+.md-header__topic {
+  font-weight: 600;
+}
+
+.md-header__button {
+  color: rgba(255, 250, 240, 0.88);
 }
 
 .md-search__form {
-  background-color: rgba(0, 0, 0, 0.20);
-  border-radius: 2px;
-  height: 2.1rem;
+  background: rgba(255, 250, 240, 0.1);
+  border: 1px solid rgba(255, 250, 240, 0.12);
+  border-radius: 999px;
+}
+
+.md-search__form:hover {
+  background: rgba(255, 250, 240, 0.14);
 }
 
 .md-search__input {
-  font-size: 0.82rem;
+  color: #fffaf0;
 }
 
 .md-search__input::placeholder {
-  color: rgba(255, 255, 255, 0.68);
+  color: rgba(255, 250, 240, 0.62);
+}
+
+.md-tabs {
+  background: #2b2118;
+  border-bottom: 1px solid rgba(255, 250, 240, 0.08);
+}
+
+.md-tabs__link {
+  opacity: 0.74;
+  font-weight: 500;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  opacity: 1;
 }
 
 
 /* =========================================================
-   3. Main Layout: content breathing space
+   04. Desktop Sidebar: 思想树
    ========================================================= */
 
 @media screen and (min-width: 76.25em) {
-  .md-content {
-    padding-left: var(--lv-content-left-gap);
+  .md-sidebar {
+    width: var(--lv-sidebar-width);
   }
-}
 
-.md-content__inner {
-  max-width: var(--lv-content-width);
-  margin-left: 0;
-  margin-right: auto;
-  padding-top: 2.2rem;
-  padding-bottom: 5rem;
-}
-
-
-/* =========================================================
-   4. Sidebar Layout: real visible width control
-   ========================================================= */
-
-@media screen and (min-width: 76.25em) {
   .md-sidebar--primary {
-    width: var(--lv-sidebar-width) !important;
-    min-width: var(--lv-sidebar-width) !important;
-    max-width: var(--lv-sidebar-width) !important;
-    flex: 0 0 var(--lv-sidebar-width) !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-right: 0.8rem;
   }
 
-  .md-sidebar--primary .md-sidebar__inner {
-    width: var(--lv-sidebar-width) !important;
-    min-width: var(--lv-sidebar-width) !important;
-    max-width: var(--lv-sidebar-width) !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  .md-sidebar--secondary {
+    padding-left: 0.9rem;
   }
 
-  .md-sidebar--primary .md-sidebar__scrollwrap {
-    width: 100% !important;
-    max-width: none !important;
-    margin: 0 !important;
-    padding-top: 2.2rem;
-    padding-right: 0.2rem !important;
-    overflow-x: hidden;
+  .md-sidebar__scrollwrap {
+    margin: 0;
+    padding: 1.25rem 0.45rem 2rem;
   }
 
-  .md-sidebar--primary .md-nav,
-  .md-sidebar--primary .md-nav__list,
-  .md-sidebar--primary .md-nav__item {
-    width: 100% !important;
-    max-width: none !important;
-    box-sizing: border-box;
+  .md-sidebar__inner {
+    padding: 0;
   }
-}
 
-.md-sidebar__scrollwrap {
-  scrollbar-width: thin;
+  .md-nav {
+    font-size: 0.69rem;
+    line-height: 1.45;
+  }
+
+  .md-nav__title {
+    margin: 0 0 0.55rem;
+    padding: 0.72rem 0.8rem;
+    color: var(--lv-text);
+    background: rgba(255, 253, 248, 0.74);
+    border: 1px solid var(--lv-line);
+    border-radius: 0.7rem;
+    box-shadow: 0 8px 22px rgba(40, 31, 20, 0.045);
+    font-weight: 700;
+    letter-spacing: 0.025em;
+  }
+
+  .md-nav__list {
+    padding-left: 0.18rem;
+  }
+
+  .md-nav__item {
+    margin: 0.06rem 0;
+  }
+
+  .md-nav__link {
+    min-height: 1.65rem;
+    margin-top: 0;
+    padding: 0.34rem 0.56rem;
+    color: var(--lv-text-soft);
+    border-radius: 0.55rem;
+    transition:
+      background 120ms ease,
+      color 120ms ease,
+      border-color 120ms ease;
+  }
+
+  .md-nav__link:hover {
+    color: var(--lv-accent);
+    background: var(--lv-accent-soft);
+  }
+
+  .md-nav__link--active,
+  .md-nav__item .md-nav__link--active {
+    color: var(--lv-accent);
+    background: rgba(111, 63, 29, 0.12);
+    border-left: 3px solid var(--lv-accent);
+    font-weight: 700;
+  }
+
+  .md-nav__item--active > .md-nav__link {
+    color: var(--lv-accent);
+    font-weight: 700;
+  }
+
+  .md-nav__toggle ~ .md-nav {
+    padding-left: 0.32rem;
+    border-left: 1px solid rgba(111, 63, 29, 0.15);
+  }
+
+  .md-sidebar--secondary .md-nav__title {
+    font-size: 0.66rem;
+    color: var(--lv-text-muted);
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding-left: 0.3rem;
+  }
+
+  .md-sidebar--secondary .md-nav__link {
+    color: var(--lv-text-muted);
+  }
+
+  .md-sidebar--secondary .md-nav__link--active {
+    color: var(--lv-accent);
+    background: transparent;
+    border-left: 2px solid var(--lv-accent);
+  }
 }
 
 
 /* =========================================================
-   5. Left Navigation: thought tree, wide text lane
+   05. Optional Nav Group Emphasis
+   适合你的 Reality / Future Path / Core Terms 结构
    ========================================================= */
 
-.md-nav {
-  font-size: 0.82rem;
-  line-height: 1.45;
-}
+@media screen and (min-width: 76.25em) {
+  .md-nav__link[href*="/essays/reality/"],
+  .md-nav__link[href*="/reality/"] {
+    position: relative;
+  }
 
+  .md-nav__link[href*="/essays/reality/"]::before,
+  .md-nav__link[href*="/reality/"]::before {
+    content: "";
+    width: 0.34rem;
+    height: 0.34rem;
+    margin-right: 0.36rem;
+    border-radius: 999px;
+    background: rgba(111, 63, 29, 0.55);
+    flex: 0 0 auto;
+  }
 
-/* ---------------------------------------------------------
-   5.1 Remove duplicated Material nested titles
-   --------------------------------------------------------- */
+  .md-nav__link[href*="/future/"]::before,
+  .md-nav__link[href*="/future-path/"]::before {
+    content: "";
+    width: 0.34rem;
+    height: 0.34rem;
+    margin-right: 0.36rem;
+    border-radius: 999px;
+    background: rgba(88, 88, 88, 0.5);
+    flex: 0 0 auto;
+  }
 
-/* 默认隐藏左侧导航标题层，避免 Home / Essays / Reality 重复 */
-.md-sidebar--primary .md-nav__title {
-  display: none !important;
-  position: static !important;
-  top: auto !important;
-  z-index: auto !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
-}
-
-/* 保留最顶部站点标题 */
-.md-sidebar--primary .md-nav--primary > .md-nav__title,
-.md-sidebar--primary > .md-sidebar__scrollwrap > .md-nav > .md-nav__title {
-  display: flex !important;
-  align-items: center;
-  width: 100%;
-  font-size: 0.84rem;
-  font-weight: 700;
-  color: #333;
-  padding-top: 0.4rem;
-  padding-bottom: 0.7rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* 彻底关闭嵌套 nav title 的 sticky / floating 效果 */
-.md-sidebar--primary .md-nav .md-nav__title,
-.md-sidebar--primary .md-nav__title[for] {
-  display: none !important;
-  position: static !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-
-/* ---------------------------------------------------------
-   5.2 Link base
-   --------------------------------------------------------- */
-
-.md-sidebar--primary .md-nav__link {
-  display: flex !important;
-  align-items: flex-start;
-  width: 100% !important;
-  max-width: none !important;
-  min-width: 0;
-  box-sizing: border-box;
-  color: #383838;
-  padding-top: 0.38rem;
-  padding-bottom: 0.38rem;
-  padding-left: 0.45rem;
-  padding-right: 0.15rem;
-  border-radius: 0;
-  font-variant-numeric: tabular-nums;
-  column-gap: 0.22rem;
-  transition:
-    color 0.15s ease,
-    background-color 0.15s ease,
-    border-color 0.15s ease;
-}
-
-.md-sidebar--primary .md-nav__link:hover {
-  color: var(--lv-accent-dark);
-  background-color: var(--lv-accent-soft);
-}
-
-/* 真正文字容器：尽量吃满左侧宽度 */
-.md-sidebar--primary .md-nav__link .md-ellipsis {
-  flex: 1 1 auto !important;
-  width: auto !important;
-  max-width: calc(var(--lv-sidebar-width) - 3rem) !important;
-  min-width: 0 !important;
-  line-height: 1.45;
-}
-
-
-/* ---------------------------------------------------------
-   5.3 Top-level nav: keep one line
-   --------------------------------------------------------- */
-
-.md-sidebar--primary > .md-sidebar__scrollwrap > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link,
-.md-sidebar--primary > .md-sidebar__scrollwrap > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link .md-ellipsis {
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-}
-
-
-/* ---------------------------------------------------------
-   5.4 Section nodes
-   --------------------------------------------------------- */
-
-.md-sidebar--primary .md-nav__item--section {
-  margin-top: 0.28rem !important;
-}
-
-.md-sidebar--primary .md-nav__item--section > .md-nav__link {
-  font-weight: 650;
-  color: #6b6b6b;
-  letter-spacing: 0.015em;
-  margin-top: 0.24rem !important;
-}
-
-/* 展开的树线：缩小缩进，把空间还给文字 */
-.md-sidebar--primary .md-nav__item .md-nav {
-  border-left: 1px solid var(--lv-line);
-  margin-left: 0.12rem !important;
-  padding-left: 0.12rem !important;
-  margin-top: 0.08rem !important;
-  margin-bottom: 0.18rem !important;
-}
-
-
-/* ---------------------------------------------------------
-   5.5 Second level: groups can wrap if needed
-   --------------------------------------------------------- */
-
-.md-sidebar--primary .md-nav__item .md-nav .md-nav__link {
-  padding-left: 0.45rem !important;
-  padding-right: 0.12rem !important;
-  white-space: normal !important;
-  overflow: visible !important;
-  text-overflow: unset !important;
-}
-
-.md-sidebar--primary .md-nav__item .md-nav .md-nav__link .md-ellipsis {
-  white-space: normal !important;
-  overflow: visible !important;
-  text-overflow: unset !important;
-  display: block !important;
-  line-height: 1.45;
-  max-width: calc(var(--lv-sidebar-width) - 3.4rem) !important;
-}
-
-
-/* ---------------------------------------------------------
-   5.6 Third level: article titles wrap naturally
-   --------------------------------------------------------- */
-
-.md-sidebar--primary .md-nav__item .md-nav .md-nav .md-nav__link {
-  padding-left: 0.65rem !important;
-  padding-right: 0.1rem !important;
-  padding-top: 0.42rem !important;
-  padding-bottom: 0.42rem !important;
-  font-size: 0.79rem;
-  color: #555;
-  white-space: normal !important;
-  overflow: visible !important;
-  text-overflow: unset !important;
-}
-
-.md-sidebar--primary .md-nav__item .md-nav .md-nav .md-nav__link .md-ellipsis {
-  white-space: normal !important;
-  overflow: visible !important;
-  text-overflow: unset !important;
-  display: block !important;
-  line-height: 1.5;
-  max-width: calc(var(--lv-sidebar-width) - 3.8rem) !important;
-}
-
-
-/* ---------------------------------------------------------
-   5.7 Active state: Kindle-like lock
-   --------------------------------------------------------- */
-
-.md-sidebar--primary .md-nav__item .md-nav__link--active,
-.md-sidebar--primary .md-nav__item--active > .md-nav__link {
-  color: var(--lv-accent-dark);
-  font-weight: 700;
-  background: transparent;
-  border-left: 3px solid var(--lv-accent-dark);
-  padding-left: 0.62rem !important;
-}
-
-.md-sidebar--primary .md-nav__link--active {
-  position: relative;
-}
-
-.md-sidebar--primary .md-nav__link--active:hover {
-  background: transparent;
-}
-
-
-/* ---------------------------------------------------------
-   5.8 Icons / arrows
-   --------------------------------------------------------- */
-
-.md-sidebar--primary .md-nav__icon {
-  color: var(--lv-faint);
-  flex: 0 0 0.8rem !important;
-  width: 0.8rem !important;
-  min-width: 0.8rem !important;
-  margin-left: 0.18rem !important;
-  margin-top: 0.12rem !important;
-}
-
-
-/* ---------------------------------------------------------
-   5.9 Empty nav protection
-   --------------------------------------------------------- */
-
-.md-sidebar--primary .md-nav__list:empty {
-  display: none !important;
+  .md-nav__link[href*="/core-terms/"]::before {
+    content: "";
+    width: 0.34rem;
+    height: 0.34rem;
+    margin-right: 0.36rem;
+    border-radius: 999px;
+    background: rgba(35, 80, 95, 0.5);
+    flex: 0 0 auto;
+  }
 }
 
 
 /* =========================================================
-   6. Breadcrumbs: archival feeling
-   ========================================================= */
-
-.md-path {
-  font-size: 0.72rem;
-  color: var(--lv-muted);
-  margin-bottom: 1.6rem;
-}
-
-.md-path__link {
-  color: var(--lv-muted);
-}
-
-.md-path__link:hover {
-  color: var(--lv-accent-dark);
-}
-
-
-/* =========================================================
-   7. Typography: paper / essay mode
+   06. Article Body: 论文阅读排版
    ========================================================= */
 
 .md-typeset {
   color: var(--lv-text);
-  font-size: 0.92rem;
-  line-height: 1.82;
-}
-
-.md-typeset p {
-  margin: 0.85rem 0;
+  font-size: 0.86rem;
   line-height: 1.86;
   letter-spacing: 0.01em;
 }
 
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  color: var(--lv-text);
+  font-weight: 750;
+  letter-spacing: 0.005em;
+}
+
 .md-typeset h1 {
-  font-size: 2.15rem;
-  line-height: 1.18;
-  font-weight: 720;
-  letter-spacing: 0.01em;
-  color: #5e5e5e;
-  margin-top: 0;
-  margin-bottom: 1.65rem;
+  margin: 0 0 1.45rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--lv-line-strong);
+  font-size: 2rem;
+  line-height: 1.28;
+}
+
+.md-typeset h1::after {
+  content: "";
+  display: block;
+  width: 3.2rem;
+  height: 3px;
+  margin-top: 0.85rem;
+  background: var(--lv-accent);
+  border-radius: 999px;
 }
 
 .md-typeset h2 {
-  font-size: 1.35rem;
-  line-height: 1.35;
-  font-weight: 700;
-  margin-top: 2.8rem;
-  margin-bottom: 1rem;
-  padding-top: 0.25rem;
-  border-top: 1px solid var(--lv-line);
-  color: #343434;
+  margin-top: 2.45rem;
+  margin-bottom: 0.95rem;
+  padding-top: 0.35rem;
+  font-size: 1.36rem;
+  line-height: 1.4;
+}
+
+.md-typeset h2::before {
+  content: "";
+  display: inline-block;
+  width: 0.42rem;
+  height: 0.42rem;
+  margin-right: 0.52rem;
+  transform: translateY(-0.08rem);
+  border-radius: 999px;
+  background: var(--lv-accent);
+  opacity: 0.72;
 }
 
 .md-typeset h3 {
+  margin-top: 1.9rem;
+  margin-bottom: 0.65rem;
   font-size: 1.08rem;
-  font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
-  color: #333;
+  line-height: 1.45;
 }
 
 .md-typeset h4 {
-  font-size: 0.96rem;
-  font-weight: 700;
-  color: #444;
-  margin-top: 1.6rem;
+  margin-top: 1.35rem;
+  font-size: 0.95rem;
+  color: var(--lv-text-soft);
 }
 
-.md-typeset .headerlink {
-  color: var(--lv-faint);
+.md-typeset p {
+  margin: 0.88rem 0;
 }
 
 .md-typeset strong {
-  font-weight: 700;
-  color: #161616;
+  color: #17130f;
+  font-weight: 760;
 }
 
 .md-typeset a {
-  color: var(--lv-accent-dark);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(56, 84, 94, 0.25);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 .md-typeset a:hover {
-  border-bottom-color: var(--lv-accent-dark);
+  color: #9a5726;
 }
 
-.md-typeset h1:first-of-type {
-  display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
+.md-typeset hr {
+  margin: 2.4rem 0;
+  border-bottom: 1px solid var(--lv-line);
 }
-
-.md-typeset h1:first-of-type::after {
-  content: "";
-}
-
-
-/* =========================================================
-   8. Blockquotes: doctrine / thesis blocks
-   ========================================================= */
-
-.md-typeset blockquote {
-  margin: 1.4rem 0;
-  padding: 0.9rem 1.1rem;
-  color: #333;
-  border-left: 3px solid var(--lv-accent);
-  background: rgba(84, 111, 120, 0.055);
-}
-
-.md-typeset blockquote p {
-  margin: 0.45rem 0;
-}
-
-
-/* =========================================================
-   9. Lists: controlled density
-   ========================================================= */
 
 .md-typeset ul,
 .md-typeset ol {
-  margin-top: 0.65rem;
+  margin-top: 0.75rem;
   margin-bottom: 0.9rem;
 }
 
 .md-typeset li {
-  margin-bottom: 0.28rem;
+  margin-bottom: 0.22rem;
 }
 
-.md-typeset li p {
+.md-typeset li > p {
   margin: 0.35rem 0;
 }
 
 
 /* =========================================================
-   10. Tables: clean archive style
+   07. Quote / Admonition / Cards
    ========================================================= */
 
-.md-typeset table:not([class]) {
-  font-size: 0.82rem;
-  border: 1px solid var(--lv-line);
+.md-typeset blockquote {
+  margin: 1.35rem 0;
+  padding: 0.1rem 0 0.1rem 1rem;
+  color: var(--lv-text-soft);
+  border-left: 0.18rem solid var(--lv-accent-line);
+  background: linear-gradient(90deg, rgba(111, 63, 29, 0.055), transparent);
 }
 
-.md-typeset table:not([class]) th {
-  background: rgba(0, 0, 0, 0.035);
-  font-weight: 700;
+.md-typeset blockquote p {
+  margin: 0.65rem 0;
 }
-
-.md-typeset table:not([class]) td,
-.md-typeset table:not([class]) th {
-  border-color: var(--lv-line);
-}
-
-
-/* =========================================================
-   11. Code: low-noise
-   ========================================================= */
-
-.md-typeset code {
-  font-size: 0.82em;
-  background: rgba(0, 0, 0, 0.045);
-  color: #333;
-  border-radius: 2px;
-}
-
-.md-typeset pre {
-  background: #f1f1ee;
-  border: 1px solid var(--lv-line);
-}
-
-.md-typeset pre code {
-  background: transparent;
-}
-
-
-/* =========================================================
-   12. Right TOC: reduce noise
-   ========================================================= */
-
-.md-sidebar--secondary {
-  font-size: 0.76rem;
-}
-
-@media screen and (min-width: 76.25em) {
-  .md-sidebar--secondary {
-    margin-left: 2rem;
-  }
-}
-
-.md-sidebar--secondary .md-nav__title {
-  font-size: 0.76rem;
-  color: var(--lv-muted);
-  font-weight: 600;
-}
-
-.md-sidebar--secondary .md-nav__link {
-  color: var(--lv-muted);
-  padding-top: 0.32rem;
-  padding-bottom: 0.32rem;
-}
-
-.md-sidebar--secondary .md-nav__link--active {
-  color: var(--lv-accent-dark);
-  border-left: 2px solid var(--lv-accent-dark);
-}
-
-
-/* =========================================================
-   13. Footer: quiet
-   ========================================================= */
-
-.md-footer {
-  background: #141414;
-}
-
-.md-footer-meta {
-  background: #111;
-}
-
-.md-footer-meta__inner {
-  font-size: 0.72rem;
-}
-
-
-/* =========================================================
-   14. Admonitions: essay note style
-   ========================================================= */
 
 .md-typeset .admonition,
 .md-typeset details {
-  font-size: 0.86rem;
+  background: var(--lv-paper);
   border: 1px solid var(--lv-line);
-  box-shadow: none;
-  background: #fbfbf8;
+  border-radius: 0.85rem;
+  box-shadow: var(--lv-shadow-soft);
 }
 
 .md-typeset .admonition-title,
@@ -630,57 +449,364 @@ body {
 
 
 /* =========================================================
-   15. Mobile tuning
+   08. Code / Tables / Images 防崩
+   ========================================================= */
+
+.md-typeset code {
+  border-radius: 0.28rem;
+}
+
+.md-typeset pre {
+  border-radius: 0.75rem;
+}
+
+.md-typeset pre > code {
+  white-space: pre;
+}
+
+.md-typeset .highlight {
+  border-radius: 0.75rem;
+}
+
+.md-typeset table:not([class]) {
+  border-radius: 0.65rem;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px var(--lv-line);
+}
+
+.md-typeset table:not([class]) th {
+  background: rgba(111, 63, 29, 0.08);
+  color: var(--lv-text);
+  font-weight: 750;
+}
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  border-color: var(--lv-line);
+}
+
+.md-typeset img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.45rem;
+}
+
+.md-typeset figure {
+  margin: 1.6rem 0;
+}
+
+.md-typeset figcaption {
+  color: var(--lv-text-muted);
+  font-size: 0.72rem;
+}
+
+
+/* =========================================================
+   09. Footer / Pagination
+   ========================================================= */
+
+.md-footer {
+  background: #211913;
+}
+
+.md-footer-meta {
+  background: #1a140f;
+}
+
+.md-typeset .md-button {
+  border-radius: 999px;
+}
+
+.md-typeset .md-button--primary {
+  background: var(--lv-accent);
+  border-color: var(--lv-accent);
+}
+
+
+/* =========================================================
+   10. Desktop Wide Article Option
+   如果某些页面需要更宽，可在 markdown 顶部加：
+   ---
+   body_class: wide-page
+   ---
+   但这个需要 theme 支持 body_class；不用也没事。
+   ========================================================= */
+
+body.wide-page .md-content__inner {
+  max-width: var(--lv-content-wide);
+}
+
+
+/* =========================================================
+   11. Mobile: 阅读器模式
+   核心：不要在手机上复刻桌面左栏
    ========================================================= */
 
 @media screen and (max-width: 76.1875em) {
-  .md-sidebar--primary {
-    width: 15rem;
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .md-grid {
+    max-width: 100%;
+  }
+
+  .md-main__inner {
+    margin: 0;
   }
 
   .md-content {
-    padding-left: 0;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
   }
 
   .md-content__inner {
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .md-typeset h1 {
-    font-size: 1.75rem;
-  }
-}
-
-@media screen and (max-width: 44.984375em) {
-  html {
-    font-size: 14px;
+    margin: 0;
+    padding: 1.35rem 1.05rem 2.8rem;
   }
 
   .md-typeset {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
+    line-height: 1.86;
   }
 
   .md-typeset h1 {
-    font-size: 1.55rem;
+    margin-top: 0.55rem;
+    margin-bottom: 1.05rem;
+    padding-bottom: 0.85rem;
+    font-size: 1.52rem;
+    line-height: 1.34;
+  }
+
+  .md-typeset h1::after {
+    width: 2.6rem;
+    height: 2px;
+    margin-top: 0.72rem;
+  }
+
+  .md-typeset h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.72rem;
+    font-size: 1.17rem;
+    line-height: 1.46;
+  }
+
+  .md-typeset h2::before {
+    width: 0.34rem;
+    height: 0.34rem;
+    margin-right: 0.42rem;
+  }
+
+  .md-typeset h3 {
+    margin-top: 1.55rem;
+    font-size: 1.01rem;
+    line-height: 1.5;
+  }
+
+  .md-typeset h4 {
+    font-size: 0.92rem;
+  }
+
+  .md-typeset p {
+    margin: 0.82rem 0;
+  }
+
+  .md-typeset ul,
+  .md-typeset ol {
+    padding-left: 1.15rem;
+  }
+
+  .md-typeset blockquote {
+    margin: 1.15rem 0;
+    padding-left: 0.82rem;
+  }
+
+  .md-typeset table:not([class]) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .md-typeset pre,
+  .md-typeset .highlight {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .md-typeset pre > code {
+    white-space: pre;
+  }
+
+  .md-typeset img,
+  .md-typeset svg,
+  .md-typeset video,
+  .md-typeset iframe {
+    max-width: 100%;
   }
 
   .md-header__title {
-    font-size: 0.84rem;
+    font-size: 0.78rem;
+  }
+
+  .md-search__inner {
+    width: 100%;
+  }
+
+  .md-tabs {
+    display: none;
   }
 }
 
-/* Core Terms English label */
-.term-en {
-  display: block;
-  margin-top: -0.55rem;
-  margin-bottom: 1rem;
-  font-size: 0.76rem;
-  line-height: 1.45;
-  color: #7a7a7a;
-  letter-spacing: 0.025em;
-  font-style: italic;
+
+/* =========================================================
+   12. Small Mobile: 竖屏手机强化
+   ========================================================= */
+
+@media screen and (max-width: 480px) {
+  .md-content__inner {
+    padding-left: 0.92rem;
+    padding-right: 0.92rem;
+  }
+
+  .md-typeset {
+    font-size: 0.86rem;
+    line-height: 1.88;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.42rem;
+  }
+
+  .md-typeset h2 {
+    font-size: 1.12rem;
+  }
+
+  .md-typeset h3 {
+    font-size: 0.98rem;
+  }
+
+  .md-typeset blockquote {
+    font-size: 0.84rem;
+  }
+
+  .md-header__title {
+    max-width: 72vw;
+  }
+}
+
+
+/* =========================================================
+   13. Prevent Common Overflow Bugs
+   ========================================================= */
+
+.md-typeset,
+.md-content,
+.md-content__inner,
+.md-main,
+.md-main__inner {
+  overflow-wrap: break-word;
+}
+
+.md-typeset p,
+.md-typeset li,
+.md-typeset blockquote,
+.md-typeset td,
+.md-typeset th {
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+.md-typeset pre,
+.md-typeset code,
+.md-typeset kbd {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+
+/* =========================================================
+   14. Dark Mode 保底
+   ========================================================= */
+
+[data-md-color-scheme="slate"] {
+  --lv-bg: #15120f;
+  --lv-bg-soft: #1b1713;
+  --lv-paper: #211c17;
+  --lv-paper-deep: #2a231d;
+
+  --lv-text: #efe7da;
+  --lv-text-soft: #d1c4b2;
+  --lv-text-muted: #a89b8b;
+
+  --lv-line: rgba(239, 231, 218, 0.13);
+  --lv-line-strong: rgba(239, 231, 218, 0.22);
+
+  --lv-accent: #d2955b;
+  --lv-accent-soft: rgba(210, 149, 91, 0.12);
+  --lv-accent-line: rgba(210, 149, 91, 0.32);
+
+  --md-default-bg-color: var(--lv-bg);
+  --md-default-fg-color: var(--lv-text);
+  --md-typeset-a-color: #e0a269;
+}
+
+[data-md-color-scheme="slate"] .md-container {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(210, 149, 91, 0.065), transparent 34rem),
+    linear-gradient(180deg, var(--lv-bg-soft), var(--lv-bg));
+}
+
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background: #17120e;
+}
+
+[data-md-color-scheme="slate"] .md-nav__title {
+  background: rgba(33, 28, 23, 0.76);
+  border-color: var(--lv-line);
+}
+
+[data-md-color-scheme="slate"] .md-typeset strong {
+  color: #fff5e8;
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background: linear-gradient(90deg, rgba(210, 149, 91, 0.08), transparent);
+}
+
+
+/* =========================================================
+   15. Print Mode
+   ========================================================= */
+
+@media print {
+  .md-header,
+  .md-sidebar,
+  .md-footer,
+  .md-tabs {
+    display: none !important;
+  }
+
+  .md-content__inner {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .md-typeset {
+    font-size: 11pt;
+    line-height: 1.7;
+  }
+
+  .md-typeset h1,
+  .md-typeset h2,
+  .md-typeset h3 {
+    page-break-after: avoid;
+  }
 }
