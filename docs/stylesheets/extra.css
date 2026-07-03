@@ -923,3 +923,113 @@ body.wide-page .md-content__inner {
     padding-bottom: 0.22rem;
   }
 }
+
+/* =========================================================
+   v2.2 Desktop Compact + Center Correction Patch
+   目标：
+   1. 桌面正文整体缩小
+   2. 正文视觉右移
+   3. 右侧目录更窄
+   4. 手机端完全不动
+   ========================================================= */
+
+@media screen and (min-width: 76.25em) {
+
+  /* 整体不要过宽，否则右侧空白太夸张 */
+  .md-grid {
+    max-width: 92rem;
+  }
+
+  /* 左侧保持够用，不继续放大 */
+  .md-sidebar--primary {
+    width: 17rem;
+    padding-right: 0.8rem;
+  }
+
+  /* 右侧目录收窄，降低右侧空白感 */
+  .md-sidebar--secondary {
+    width: 9.5rem;
+    padding-left: 0.4rem;
+  }
+
+  /* 核心：正文栏缩小，并向右修正 */
+  .md-content__inner {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(3.2rem);
+    padding-top: 2.15rem;
+  }
+
+  /* 正文压小一点 */
+  .md-typeset {
+    font-size: 0.76rem;
+    line-height: 1.78;
+  }
+
+  .md-typeset p {
+    margin: 0.72rem 0;
+  }
+
+  /* 标题压小 */
+  .md-typeset h1 {
+    font-size: 1.58rem;
+    line-height: 1.28;
+    margin-bottom: 1.05rem;
+    padding-bottom: 0.85rem;
+  }
+
+  .md-typeset h1::after {
+    width: 2.5rem;
+    height: 2px;
+    margin-top: 0.65rem;
+  }
+
+  .md-typeset h2 {
+    font-size: 1.08rem;
+    line-height: 1.42;
+    margin-top: 2rem;
+  }
+
+  .md-typeset h3 {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .md-typeset h4 {
+    font-size: 0.84rem;
+  }
+
+  /* 引用块也压一点 */
+  .md-typeset blockquote {
+    margin: 1.05rem 0;
+    padding-left: 0.75rem;
+  }
+
+  /* 左侧导航也略微压缩，减少“散” */
+  .md-sidebar--primary .md-nav {
+    font-size: 0.66rem;
+    line-height: 1.34;
+  }
+
+  .md-sidebar--primary .md-nav__link {
+    padding-top: 0.24rem;
+    padding-bottom: 0.24rem;
+  }
+
+  .md-sidebar--primary .md-nav__title {
+    font-size: 0.68rem;
+    padding: 0.58rem 0.72rem;
+  }
+
+  /* 右侧目录弱化 */
+  .md-sidebar--secondary .md-nav {
+    font-size: 0.62rem;
+    line-height: 1.34;
+  }
+
+  .md-sidebar--secondary .md-nav__link {
+    padding-top: 0.18rem;
+    padding-bottom: 0.18rem;
+  }
+}
