@@ -810,3 +810,116 @@ body.wide-page .md-content__inner {
     page-break-after: avoid;
   }
 }
+
+* =========================================================
+   v2.1 Desktop Rebalance Patch
+   目标：
+   1. 左栏更宽
+   2. 正文更宽
+   3. 右侧目录更收敛
+   4. 桌面字体略缩小
+   5. 手机端不动
+   ========================================================= */
+
+:root {
+  --lv-content-width: 840px;     /* 原来偏窄，现在加宽正文 */
+  --lv-content-wide: 960px;
+  --lv-sidebar-width: 18rem;     /* 左栏加宽 */
+  --lv-toc-width: 12rem;         /* 右侧目录收窄 */
+}
+
+/* 整体画布略放宽 */
+.md-grid {
+  max-width: 96rem;
+}
+
+
+/* =========================================================
+   Desktop only
+   ========================================================= */
+
+@media screen and (min-width: 76.25em) {
+
+  /* 左侧主导航更宽 */
+  .md-sidebar--primary {
+    width: var(--lv-sidebar-width);
+  }
+
+  /* 右侧目录更窄，减少“正文偏左”感 */
+  .md-sidebar--secondary {
+    width: var(--lv-toc-width);
+  }
+
+  /* 左右栏内边距再微调 */
+  .md-sidebar--primary {
+    padding-right: 1rem;
+  }
+
+  .md-sidebar--secondary {
+    padding-left: 0.5rem;
+  }
+
+  /* 正文区域加宽，并保持居中 */
+  .md-content__inner {
+    max-width: var(--lv-content-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.3rem;
+  }
+
+  /* 桌面正文稍微缩小一点，更像论文站 */
+  .md-typeset {
+    font-size: 0.82rem;
+    line-height: 1.82;
+  }
+
+  /* 标题同步微缩，不然会显得头重脚轻 */
+  .md-typeset h1 {
+    font-size: 1.82rem;
+    line-height: 1.28;
+    margin-bottom: 1.25rem;
+  }
+
+  .md-typeset h2 {
+    font-size: 1.24rem;
+    line-height: 1.42;
+  }
+
+  .md-typeset h3 {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .md-typeset h4 {
+    font-size: 0.92rem;
+  }
+
+  /* 左栏导航字体略紧一点，更像“树” */
+  .md-sidebar--primary .md-nav {
+    font-size: 0.71rem;
+    line-height: 1.42;
+  }
+
+  /* 左栏标题更稳 */
+  .md-sidebar--primary .md-nav__title {
+    margin-bottom: 0.6rem;
+    padding: 0.68rem 0.78rem;
+  }
+
+  /* 子项略收紧，减少散感 */
+  .md-sidebar--primary .md-nav__link {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+
+  /* 右侧目录更安静一点 */
+  .md-sidebar--secondary .md-nav {
+    font-size: 0.67rem;
+    line-height: 1.38;
+  }
+
+  .md-sidebar--secondary .md-nav__link {
+    padding-top: 0.22rem;
+    padding-bottom: 0.22rem;
+  }
+}
