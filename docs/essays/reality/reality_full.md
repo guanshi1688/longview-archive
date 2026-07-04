@@ -3,7 +3,7 @@
 本文为 Reality｜现实世界 组文章的连续阅读与归档版本。  
 分篇阅读请使用左侧目录。
 
-本合订本作为独立阅读版本，已前置收录《总览｜Longview Essays｜长线观势》与《Core Terms｜理论核心术语》，用于统一核心变量、概念边界与阅读坐标。
+本合订本作为独立阅读版本，已前置收录《总览｜Longview Essays｜长线观势》《Core Terms｜理论核心术语》与《How to Read This Framework｜阅读评判规则》，用于统一核心变量、概念边界与阅读坐标。
 
 Reality｜现实世界 用于说明旧世界为什么走到边界。
 
@@ -149,7 +149,7 @@ Reality｜现实世界 用于说明旧世界为什么走到边界。
 
 现实组文章，更多从现实压力、外部变现、市场战、内部承接和旧闭环退潮切入。
 
-未来组文章，更多从生产富余、文明闭环、新闭环和共产主义入口展开。
+未来组文章，更多从生产富余、文明闭环、新闭环、后稀缺入口与人的自由发展展开。
 
 两组文章使用的是同一套底层概念，只是推导方向不同：
 
@@ -583,19 +583,25 @@ The principle–technique boundary separates strategic direction from operationa
 
 ---
 
-### 共产主义入口
-
-<span class="term-en">Threshold of Communism</span>
+## 后稀缺入口
+Post-Scarcity Threshold
 
 **定义：**  
-共产主义入口，不是宣布共产主义已经到来，也不是提供具体制度方案，而是指当生产富余被成功组织成文明闭环后，人类长期梦想中的按需分配才可能作为历史结果逐渐显现。
+后稀缺入口，不是宣布后稀缺社会已经到来，也不是提供具体制度方案，而是指当生产富余被成功组织成稳定的文明闭环后，人类长期梦想中的更高水平自由发展、基本需求充分保障与按需分配，才可能作为历史结果逐渐显现。
 
 **核心含义：**  
-它不是口号入口，而是生产富余、文明闭环与人的自由发展之间形成历史连接的入口。  
-文章不说门后已经有完整答案。文章只说：门已经出现。
+它不是口号入口，也不是乌托邦宣告，而是生产富余、文明闭环、承接能力与人的自由发展之间形成历史连接的入口。
+
+本文不说门后已经有完整答案。
+
+本文只说：门已经开始出现。
+
+在更古老的政治理想中，这一问题曾被表述为共产主义远景；但本文不从意识形态口号进入，而从生产富余能否被组织成稳定文明闭环这一结构条件进入。
 
 **English note:**  
-The threshold of communism is not the declaration that communism has arrived. It refers to a historical threshold at which productive surplus, once organized into a durable civilizational loop, may begin to make human freedom and distribution according to need historically conceivable.
+The post-scarcity threshold is not the declaration that a post-scarcity society has arrived. It refers to a historical threshold at which productive surplus, once organized into a durable civilizational loop, may begin to make higher human freedom, secured basic needs, and distribution according to need historically conceivable.
+
+It is not treated here as an ideological slogan, but as a structural condition emerging from productive surplus, absorptive capacity, and a stable civilizational reproduction loop.
 
 ---
 
@@ -1062,12 +1068,7 @@ Future Path 说明新世界为什么必须打开。
 
 > 一个极致做功型文明，在生产力抵达新阶段之后，如何穿越旧闭环退潮、外部变现受阻和内部承接不足的历史门槛，并最终建立新的文明闭环。
 
----
-
-星衡｜Aster Vale  
-Longview Archive｜观势档案  
-Longview Essays｜长线观势  
-2026.07
+<br>
 
 
 ---
@@ -1591,12 +1592,7 @@ Longview Essays｜长线观势
 没有这个约束，后面的正文不会成立。
 
 
----
-
-**星衡｜Aster Vale**  
-Longview Archive｜观势档案  
-Reality｜现实世界  
-2026.07
+<br>
 
 
 ---
@@ -2115,12 +2111,7 @@ Reality｜现实世界
 > 中国制度为什么不是消费机器，而是做功机器。
 
 
----
-
-**星衡｜Aster Vale**  
-Longview Archive｜观势档案  
-Reality｜现实世界  
-2026.07
+<br>
 
 
 ---
@@ -2819,12 +2810,7 @@ Reality｜现实世界
 > 全球南方为什么不是第二个中国。
 
 
----
-
-**星衡｜Aster Vale**  
-Longview Archive｜观势档案  
-Reality｜现实世界  
-2026.07
+<br>
 
 
 ---
@@ -3479,12 +3465,7 @@ Reality｜现实世界
 > 中国不能把自己的生存方式当作世界答案。
 
 
----
-
-**星衡｜Aster Vale**  
-Longview Archive｜观势档案  
-Reality｜现实世界  
-2026.07
+<br>
 
 
 ---
@@ -4210,12 +4191,7 @@ Reality｜现实世界
 那么，成熟市场为什么不愿接？
 
 
----
-
-**星衡｜Aster Vale**  
-Longview Archive｜观势档案  
-Reality｜现实世界  
-2026.07
+<br>
 
 
 ---
@@ -4973,12 +4949,7 @@ Reality｜现实世界
 > 西方为什么不摧毁中国生产，而是约束中国变现。
 
 
----
-
-**星衡｜Aster Vale**  
-Longview Archive｜观势档案  
-Reality｜现实世界  
-2026.07
+<br>
 
 
 ---
@@ -5728,12 +5699,7 @@ Reality｜现实世界
 > 热战不是最优解。
 
 
----
-
-**星衡｜Aster Vale**  
-Longview Archive｜观势档案  
-Reality｜现实世界  
-2026.07
+<br>
 
 
 ---
@@ -6601,12 +6567,7 @@ Reality｜现实世界
 > 低成本全球秩序结束后，中国出海进入秩序闭环阶段。
 
 
----
-
-**星衡｜Aster Vale**  
-Longview Archive｜观势档案  
-Reality｜现实世界  
-2026.07
+<br>
 
 
 ---
@@ -7529,12 +7490,7 @@ Reality｜现实世界
 > 从做功机器到闭环机器。
 
 
----
-
-**星衡｜Aster Vale**  
-Longview Archive｜观势档案  
-Reality｜现实世界  
-2026.07
+<br>
 
 
 ---
@@ -8307,12 +8263,7 @@ Reality｜现实世界
 > 中国是开放问题，西方是封闭策略。
 
 
----
-
-**星衡｜Aster Vale**  
-Longview Archive｜观势档案  
-Reality｜现实世界  
-2026.07
+<br>
 
 
 ---
@@ -9127,6 +9078,8 @@ Reality｜现实世界 组文章走到这里，真正的结构已经显影。
 
 它必须被组织出来。
 
+<br>
+
 
 ---
 
@@ -9699,11 +9652,13 @@ Reality｜现实世界 到这里停止。
 
 <br>
 
+
+---
+
 星衡｜Aster Vale<br>
 Longview Archive｜观势档案<br>
-Future Path｜未来之路<br>
+Reality｜现实世界<br>
 2026.07
-
 
 ---
 
