@@ -446,19 +446,25 @@ The principle–technique boundary separates strategic direction from operationa
 
 ---
 
-### 共产主义入口
-
-<span class="term-en">Threshold of Communism</span>
+## 后稀缺入口
+Post-Scarcity Threshold
 
 **定义：**  
-共产主义入口，不是宣布共产主义已经到来，也不是提供具体制度方案，而是指当生产富余被成功组织成文明闭环后，人类长期梦想中的按需分配才可能作为历史结果逐渐显现。
+后稀缺入口，不是宣布后稀缺社会已经到来，也不是提供具体制度方案，而是指当生产富余被成功组织成稳定的文明闭环后，人类长期梦想中的更高水平自由发展、基本需求充分保障与按需分配，才可能作为历史结果逐渐显现。
 
 **核心含义：**  
-它不是口号入口，而是生产富余、文明闭环与人的自由发展之间形成历史连接的入口。  
-文章不说门后已经有完整答案。文章只说：门已经出现。
+它不是口号入口，也不是乌托邦宣告，而是生产富余、文明闭环、承接能力与人的自由发展之间形成历史连接的入口。
+
+本文不说门后已经有完整答案。
+
+本文只说：门已经开始出现。
+
+在更古老的政治理想中，这一问题曾被表述为共产主义远景；但本文不从意识形态口号进入，而从生产富余能否被组织成稳定文明闭环这一结构条件进入。
 
 **English note:**  
-The threshold of communism is not the declaration that communism has arrived. It refers to a historical threshold at which productive surplus, once organized into a durable civilizational loop, may begin to make human freedom and distribution according to need historically conceivable.
+The post-scarcity threshold is not the declaration that a post-scarcity society has arrived. It refers to a historical threshold at which productive surplus, once organized into a durable civilizational loop, may begin to make higher human freedom, secured basic needs, and distribution according to need historically conceivable.
+
+It is not treated here as an ideological slogan, but as a structural condition emerging from productive surplus, absorptive capacity, and a stable civilizational reproduction loop.
 
 ---
 
