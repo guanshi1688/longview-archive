@@ -26,11 +26,11 @@ The distinction matters because such a civilization operates by securing externa
 
 The terms used here are intentionally restrained.
 
-A **work-performing civilization** may also be understood as a production-centered civilizational mode, but the term “work-performing” is retained because it emphasizes the transformation of pressure into organized productive capacity.
+A **work-performing civilization** may also be understood as a **production-centered civilizational mode**, but the term “work-performing” is retained because it emphasizes the transformation of pressure into organized productive capacity.
 
-A **steady-state subsistence civilization** should not be reduced to an endowment-based civilization. Natural endowments may matter, but the concept refers primarily to a low-expansion mode of reproduction organized around local continuity, ecological rhythm, customary order, and limited systemic pressure.
+A **steady-state subsistence civilization** should not be reduced to an **endowment-based civilization**. Natural endowments may matter, but the concept refers primarily to a low-expansion mode of reproduction organized around local continuity, ecological rhythm, customary order, and limited systemic pressure.
 
-An **extractive-rentier civilization** may resemble what is often called a global rentier civilization, but the emphasis here is not moral accusation or direct plunder. The concept refers to a system that sustains its reproduction by controlling interfaces of valuation and exchange, including rules, finance, standards, channels, market access, security arrangements, and legitimacy.
+An **extractive-rentier civilization** may resemble what is often called a **global rentier civilization**, but the emphasis here is not moral accusation or direct plunder. The concept refers to a system that sustains its reproduction by controlling interfaces of valuation and exchange, including rules, finance, standards, channels, market access, security arrangements, and legitimacy.
 
 These three archetypes should not be treated as rigid boxes. Real civilizations are complex, historically layered, and often mixed. A single society may contain more than one mode across different periods, regions, or institutional layers.
 
@@ -56,11 +56,10 @@ How does it reproduce the conditions of its own existence over time?
 
 Only after these questions are asked can culture, institutions, power, and historical direction be understood at their proper depth.
 
-Aster Vale  
-Longview Archive  
-English Essays  
+Aster Vale<br>
+Longview Archive<br>
+English Essays<br>
 2026.07
-
 
 ---
 
