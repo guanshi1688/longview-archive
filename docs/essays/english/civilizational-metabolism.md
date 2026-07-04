@@ -22,6 +22,16 @@ An **extractive-rentier civilization**, or **interface-based rentier civilizatio
 
 The distinction matters because such a civilization operates by securing external value realization rather than bearing the full internal costs of an endogenous production base.
 
+## Terminological Note
+
+The terms used here are intentionally restrained.
+
+A **work-performing civilization** may also be understood as a production-centered civilizational mode, but the term “work-performing” is retained because it emphasizes the transformation of pressure into organized productive capacity.
+
+A **steady-state subsistence civilization** should not be reduced to an endowment-based civilization. Natural endowments may matter, but the concept refers primarily to a low-expansion mode of reproduction organized around local continuity, ecological rhythm, customary order, and limited systemic pressure.
+
+An **extractive-rentier civilization** may resemble what is often called a global rentier civilization, but the emphasis here is not moral accusation or direct plunder. The concept refers to a system that sustains its reproduction by controlling interfaces of valuation and exchange, including rules, finance, standards, channels, market access, security arrangements, and legitimacy.
+
 These three archetypes should not be treated as rigid boxes. Real civilizations are complex, historically layered, and often mixed. A single society may contain more than one mode across different periods, regions, or institutional layers.
 
 The purpose of this typology is therefore not to classify civilizations once and for all. It is to provide a structural vocabulary for observing how different civilizational systems produce, consume, absorb costs, organize surplus, and maintain long-term reproduction.
