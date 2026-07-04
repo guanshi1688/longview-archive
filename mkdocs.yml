@@ -64,5 +64,7 @@ nav:
 
   - Author｜作者: author.md
 
+  - Copyright｜版权声明: copyright.md
+
 extra_css:
   - stylesheets/extra.css
