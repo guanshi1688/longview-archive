@@ -45,3 +45,13 @@ How does it respond to pressure?
 How does it reproduce the conditions of its own existence over time?
 
 Only after these questions are asked can culture, institutions, power, and historical direction be understood at their proper depth.
+
+
+---
+
+
+© Longview Archive｜观势档案。除特别说明外，本文采用 CC BY-NC-ND 4.0 许可协议：允许署名非商业分享，禁止未经授权的改写、翻译、重组与商业使用。
+
+© Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
+
+For details, see [Copyright｜版权声明](/copyright/).
