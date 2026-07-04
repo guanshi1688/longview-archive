@@ -12,8 +12,8 @@ Future Path｜未来之路 说明同一套边界如何打开新的世界。
 
 ---
 
-© Longview Archive｜观势档案。除特别说明外，本文采用 CC BY-NC-ND 4.0 许可协议：允许署名非商业分享，禁止未经授权的改写、翻译、重组与商业使用。
+© 2026 Longview Archive｜观势档案。除特别说明外，本文采用 CC BY-NC-ND 4.0 许可协议：允许署名非商业分享，禁止未经授权的改写、翻译、重组与商业使用。
 
-© Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
+© 2026 Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
 
 For details, see [Copyright｜版权声明](/copyright/).
