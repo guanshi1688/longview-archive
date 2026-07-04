@@ -16,7 +16,7 @@ Absorptive capacity refers to the ability of a social or civilizational system t
 
 The concept matters because production does not complete itself.
 
-A system may be able to produce goods, infrastructure, technologies, services, administrative capacity, or material surplus. But unless these outputs can be absorbed into a stable social and institutional order, productive capacity may become pressure rather than reproduction.
+A system may be able to produce goods, infrastructure, technologies, services, administrative capacity, or material surplus. But unless these outputs can be absorbed into a stable social and institutional order, productive capacity may turn into internal systemic pressure rather than a force of reproduction.
 
 Absorption is therefore not a passive process. It is not merely the act of receiving output. It involves conversion, distribution, valuation, cost-bearing, and reintegration.
 
@@ -42,6 +42,12 @@ A system may become increasingly capable of production while its internal mechan
 
 Conversely, a system may possess strong absorptive capacity without bearing the full internal cost of production. It may absorb value through rules, finance, standards, market access, security arrangements, symbolic legitimacy, or control over interfaces of exchange.
 
+Absorption may also occur across space. A system may preserve its internal reproduction loop by relocating costs, risks, or production burdens beyond its own core institutions, while retaining the capacity to absorb value through interfaces of exchange.
+
+Absorptive capacity also has a temporal dimension. A system may absorb present output by shifting costs into the future, through debt, deferred maintenance, exhausted institutions, weakened expectations, or environmental depletion.
+
+In such cases, absorption has not disappeared; it has been displaced across time. The question is whether the system can smooth costs and benefits across generations without undermining its own reproduction loop.
+
 For this reason, absorptive capacity should not be reduced to the ordinary language of consumption.
 
 Consumption is one visible form of absorption, but absorption also includes taxation, public investment, institutional maintenance, welfare provision, infrastructure renewal, technological reinvestment, social trust, risk distribution, and the reproduction of stable expectations.
@@ -50,7 +56,7 @@ A society that consumes more is not necessarily absorbing better.
 
 A society that produces more is not necessarily reproducing better.
 
-The structural question is whether production, consumption, cost-bearing, surplus distribution, and institutional renewal can form a sustainable loop.
+The structural question is whether production, consumption, cost-bearing, surplus distribution, institutional renewal, and temporal stability can form a sustainable loop.
 
 When such a loop exists, productive capacity can be transformed into long-term reproduction.
 
@@ -66,7 +72,7 @@ It is not a moral judgment. It does not rank societies by superiority or inferio
 
 The purpose of the concept is not to prescribe a universal model.
 
-Its purpose is to make visible a structural relation: the relation between what a system can generate and what it can sustainably carry.
+Its purpose is to make visible a structural relation: the relation between what a system can generate and what it can sustainably carry across society, institutions, space, and time.
 
 In this sense, absorptive capacity is one of the central variables of civilizational metabolism.
 
@@ -74,10 +80,9 @@ To understand a civilization, one must ask not only how much it can produce, but
 
 Only then can productive strength be understood not merely as output, but as a condition of long-term civilizational stability.
 
-
-Aster Vale  
-Longview Archive  
-English Essays  
+Aster Vale<br>
+Longview Archive<br>
+English Essays<br>
 2026.07
 
 ---
