@@ -9,6 +9,8 @@ The English section is therefore intentionally limited. It should be read as a s
 ## Notes
 
 - [An Introductory Note on Civilizational Metabolism](civilizational-metabolism.md)
+- [Absorptive Capacity](absorptive-capacity.md)
+- [Surplus, Absorption, and Reproduction in Civilizational Systems](surplus-absorption-and-reproduction.md)
 
 
 ---
