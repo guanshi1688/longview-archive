@@ -54,6 +54,10 @@ nav:
           - 阅读后约束: essays/future/10.md
           - 合订本｜未来世界: essays/future/future_full.md
 
+      - English:
+          - Overview: essays/english/index.md
+          - Civilizational Metabolism: essays/english/civilizational-metabolism.md
+
   - Aster Vale Notes｜星衡札记: notes/index.md
 
   - Version Records｜版本记录: versions.md
