@@ -471,3 +471,11 @@ The threshold of communism is not the declaration that communism has arrived. It
 英文术语用于外部索引、搜索收录、跨语境引用和概念锚定。
 
 如后续版本调整英文标准译名，应在版本记录中注明。
+
+---
+
+© Longview Archive｜观势档案。除特别说明外，本文采用 CC BY-NC-ND 4.0 许可协议：允许署名非商业分享，禁止未经授权的改写、翻译、重组与商业使用。
+
+© Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
+
+For details, see [Copyright｜版权声明](/copyright/).
