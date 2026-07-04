@@ -448,11 +448,11 @@ Future Path 说明新世界为什么必须打开。
 
 > 一个极致做功型文明，在生产力抵达新阶段之后，如何穿越旧闭环退潮、外部变现受阻和内部承接不足的历史门槛，并最终建立新的文明闭环。
 
----
+<br>
 
-星衡｜Aster Vale  
-Longview Archive｜观势档案  
-Longview Essays｜长线观势  
+星衡｜Aster Vale<br>
+Longview Archive｜观势档案<br>
+Future Path｜未来之路<br>
 2026.07
 
 ---
