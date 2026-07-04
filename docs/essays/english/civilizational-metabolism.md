@@ -46,6 +46,11 @@ How does it reproduce the conditions of its own existence over time?
 
 Only after these questions are asked can culture, institutions, power, and historical direction be understood at their proper depth.
 
+Aster Vale  
+Longview Archive  
+English Essays  
+2026.07
+
 
 ---
 
