@@ -60,7 +60,47 @@ nav:
           - Absorptive Capacity: essays/english/absorptive-capacity.md
           - Surplus, Absorption, and Reproduction: essays/english/surplus-absorption-and-reproduction.md
 
-  - Aster Vale Notes｜星衡札记: notes/index.md
+       
+  - Aster Vale Notes｜星衡札记:
+      - Overview｜札记总览: notes/index.md
+
+      - Civilizational Expansion｜文明的扩张:
+          - 01｜为什么印度穆斯林能够成为东南亚文化的一部分？: docs/essays/notes/chinese/文明的扩张/扩张的边界/01-indian-muslims-in-southeast-asia.md
+          - 02｜雄踞东亚两千年的中原王朝，为什么始终没有成为东南亚的文明底色？: docs/essays/notes/chinese/文明的扩张/扩张的边界/02-southeast-asia-civilization-base.md
+          - 03｜中原文明最大规模的结构性扩张，为什么是河西走廊，而不是漠北或越南北部？: docs/essays/notes/chinese/文明的扩张/扩张的边界/03-hexi-corridor.md
+          - 04｜为什么中国古代很少出现欧洲式边境军阀和殖民集团自发扩张？: docs/essays/notes/chinese/文明的扩张/扩张的边界/04-border-warlords-and-colonial-groups.md
+          - 05｜为什么越南北部没有取代河西走廊: notes/historical-formation/05.md
+          - 06｜大一统不是偏好，而是生存结构: notes/historical-formation/06.md
+          - 07｜水利、粮食与王朝兜底能力: notes/historical-formation/07.md
+          - 08｜流民、土地与最低生存线: notes/historical-formation/08.md
+          - 09｜边疆不是远方，而是秩序成本: notes/historical-formation/09.md
+          - 10｜中国国家能力为什么首先是做功能力: notes/historical-formation/10.md
+
+      - Baseline-Support Civilization｜兜底文明:
+          - 01｜为什么全球南方不是第二个中国: notes/industrial-development/01.md
+          - 02｜为什么外部资本不能自动带来工业化: notes/industrial-development/02.md
+          - 03｜为什么基础设施不是工业化本身: notes/industrial-development/03.md
+          - 04｜为什么工业园不能自动长出工业体系: notes/industrial-development/04.md
+          - 05｜道路、电力与工厂之间缺了什么: notes/industrial-development/05.md
+          - 06｜人口红利为什么经常无法兑现: notes/industrial-development/06.md
+          - 07｜资源国家为什么容易停在资源出口: notes/industrial-development/07.md
+          - 08｜廉价劳动力为什么不等于产业能力: notes/industrial-development/08.md
+          - 09｜全球南方真正缺的不是钱: notes/industrial-development/09.md
+          - 10｜生产体系为什么不能被直接输入: notes/industrial-development/10.md
+
+      - Boundary of Production｜生产的边界:
+          - 01｜生产不是产出，而是文明维持能力: notes/production-institutions/01.md
+          - 02｜承接能力为什么比增长率更重要: notes/production-institutions/02.md
+          - 03｜文明不是文化，而是生产与再生产结构: notes/production-institutions/03.md
+          - 04｜剩余、吸收与社会再生产: notes/production-institutions/04.md
+          - 05｜汲取型敛生文明如何维持优势: notes/production-institutions/05.md
+          - 06｜接口型国家为什么依赖外部循环: notes/production-institutions/06.md
+          - 07｜成熟市场为什么抗拒外部产能冲击: notes/production-institutions/07.md
+          - 08｜工业外溢为什么会改变世界秩序: notes/production-institutions/08.md
+          - 09｜生产边界如何决定文明边界: notes/production-institutions/09.md
+          - 10｜生产论为什么是理解现代世界的底层外壳: notes/production-institutions/10.md
+
+  
 
   - Version Records｜版本记录: versions.md
 
