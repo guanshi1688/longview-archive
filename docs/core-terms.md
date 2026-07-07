@@ -466,6 +466,60 @@ The post-scarcity threshold is not the declaration that a post-scarcity society 
 
 It is not treated here as an ideological slogan, but as a structural condition emerging from productive surplus, absorptive capacity, and a stable civilizational reproduction loop.
 
+
+## 六、札记索引关键词
+
+以下术语主要用于连接 Longview Archive｜观势档案 的核心概念页与 Aster Vale Notes｜星衡札记中的公开札记系列。
+
+这些词不是完整总纲的展开，而是公开文本中的系列关键词，便于读者理解相关短文、案例分析与局部评论。
+
+### 扩张的边界
+Boundary of Expansion
+
+定义：
+扩张的边界，是指一个文明能够长期承接、治理、吸收并维持秩序的边界，而不只是军事抵达、地理进入或短期控制的边界。
+
+核心含义：
+一个区域可以被进入、影响、征服或短期控制，但如果不能稳定接入交通、财政、人口、制度、军事防御和日常治理系统，它就未必能够成为文明秩序的稳定组成部分。
+
+扩张的边界讨论的不是“能不能到达”，而是“能不能长期承接”。
+
+English note:
+The boundary of expansion refers not merely to the geographic or military reach of a civilization, but to the limit at which it can sustainably absorb, govern, defend, finance, and reproduce order over a given space.
+
+It distinguishes temporary reach from durable civilizational incorporation.
+
+### 兜底文明
+Baseline-Support Civilization
+
+定义：
+兜底文明，是指一种以维持最低生存线、内部秩序、灾变承接和社会再生产为核心任务的文明运行模式。
+
+核心含义：
+兜底文明关注的不是短期繁荣，而是一个政治共同体能否在水利、粮食、土地、人口、灾荒、流民、基层治理和风险冲击之间，维持基本生存秩序。
+
+在这一视角中，国家能力不只是财政、军队、行政效率或增长速度，也包括能否持续承担最低生存线与内部秩序成本。
+
+English note:
+A baseline-support civilization refers to a civilizational mode oriented toward maintaining minimum survival conditions, internal order, disaster absorption, and social reproduction.
+
+Its central concern is not short-term prosperity, but whether a political community can sustain basic order under pressure from land, population, food, water, disaster, migration, and local governance burdens.
+
+### 生产的边界
+Boundary of Production
+
+定义：
+生产的边界，是指一个社会、市场或文明体系，能够将资源、资本、劳动力、基础设施、技术输入和制度组织转化为持续生产体系的能力边界。
+
+核心含义：
+外部资本、道路、电力、工业园、廉价劳动力和资源禀赋可以提供工业化条件，但不能自动生成完整工业化。
+
+生产体系需要本地组织能力、技术吸收能力、供应链结构、制度承接能力、社会再生产能力和长期市场闭环共同支撑。
+
+English note:
+The boundary of production refers to the limit at which a society, market, or civilizational system can transform resources, capital, labor, infrastructure, technology, and institutional organization into a durable production system.
+
+External input may provide conditions for industrialization, but it does not automatically create a self-sustaining production system.
 ---
 
 ## 术语使用说明
