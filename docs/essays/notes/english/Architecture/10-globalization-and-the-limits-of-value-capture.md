@@ -211,3 +211,8 @@ But more importantly, it organized who would receive the gains from those goods.
 That was its power.
 
 And that is now its limit.
+
+
+---
+
+Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
