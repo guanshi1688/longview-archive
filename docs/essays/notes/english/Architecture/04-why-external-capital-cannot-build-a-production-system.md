@@ -1,4 +1,5 @@
-Why External Capital Cannot Build a Production System
+# 04｜Why External Capital Cannot Build a Production System
+
 Investment can finance factories, roads, ports, and power plants. But a production system requires more than money entering from outside.
 
 External capital is often treated as the missing key to development.
@@ -178,3 +179,20 @@ That is why external capital cannot build a production system by itself.
 It can finance the walls.
 
 It cannot become the foundation.
+
+Title:
+Why External Capital Cannot Build a Production System
+
+Subtitle:
+Investment can finance factories, roads, ports, and power plants. But a production system requires more than money entering from outside.
+
+Topics:
+Development
+Global South
+Industrialization
+Political Economy
+Foreign Investment
+
+它们共同打的是 生产的边界 / 承接能力 / 全球南方不能自动工业化，但外部读者看到的仍然是普通发展问题札记。
+
+
