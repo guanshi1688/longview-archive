@@ -1,4 +1,4 @@
-# 03｜The Problem of Absorptive Capacity
+# 03. The Problem of Absorptive Capacity
 
 Development is not only about receiving capital, technology, or infrastructure. It is about whether a society can turn them into lasting capability.
 
