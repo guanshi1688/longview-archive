@@ -124,6 +124,8 @@ That is why production is not just output.
 
 Output tells us what has been made.
 
+Production, in the deeper sense, tells us what kind of society can be sustained by what has been made.
+
 
 ---
 
