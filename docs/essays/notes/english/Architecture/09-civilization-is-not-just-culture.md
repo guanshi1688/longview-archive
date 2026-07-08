@@ -1,4 +1,4 @@
-# 09｜Civilization Is Not Just Culture
+# 09. Civilization Is Not Just Culture
 
 A civilization is not only what a society believes, remembers, or celebrates. It is also how that society organizes survival across time.
 
