@@ -1,4 +1,4 @@
-# 01｜Why Infrastructure Alone Does Not Create Industrialization
+# 01. Why Infrastructure Alone Does Not Create Industrialization
 
 Roads, power grids, and industrial parks matter — but they do not automatically create a production system.
 
