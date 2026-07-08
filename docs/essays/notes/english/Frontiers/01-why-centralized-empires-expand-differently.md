@@ -123,3 +123,8 @@ It had to be administered.
 It had to be absorbed.
 
 Only then could expansion become part of the empire’s long-term structure.
+
+
+---
+
+Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
