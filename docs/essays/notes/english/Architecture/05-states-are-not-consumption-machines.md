@@ -1,4 +1,4 @@
-# 05｜States Are Not Consumption Machines
+# 05. States Are Not Consumption Machines
 
 A state is not only a device for delivering consumption. In many societies, its deeper function is to organize work, absorb pressure, and keep the social system running.
 
