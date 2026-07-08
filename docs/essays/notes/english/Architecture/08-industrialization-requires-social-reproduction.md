@@ -1,4 +1,4 @@
-# Industrialization Requires Social Reproduction
+# 08｜Industrialization Requires Social Reproduction
 
 Factories do not stand alone. Industrialization depends on the families, schools, communities, institutions, and expectations that reproduce the people who make production possible.
 
