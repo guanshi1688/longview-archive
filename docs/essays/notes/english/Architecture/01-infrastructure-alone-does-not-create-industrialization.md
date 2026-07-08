@@ -124,20 +124,6 @@ It can open the door.
 
 But it cannot walk through it for a society.
 
+---
 
-
-
-Title:
-Why Infrastructure Alone Does Not Create Industrialization
-
-Subtitle:
-Roads, power grids, and industrial parks matter — but they do not automatically create a production system.
-
-Topics:
-Development
-Global South
-Industrialization
-Infrastructure
-Political Economy
-
-这一篇很适合作为第一篇。它安全、国际化、概念清楚，而且已经把 Boundary of Production / Absorptive Capacity 的英文钉子打下去了，但没有暴露总纲。
+Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
