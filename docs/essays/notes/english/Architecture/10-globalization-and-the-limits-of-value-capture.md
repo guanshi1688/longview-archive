@@ -1,4 +1,4 @@
-# Globalization and the Limits of Value Capture
+# 10｜Globalization and the Limits of Value Capture
 
 Globalization did not only move goods across borders. It also created systems for capturing value across distance.
 
