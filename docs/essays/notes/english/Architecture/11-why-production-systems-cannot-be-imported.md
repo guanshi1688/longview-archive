@@ -258,7 +258,6 @@ But the system that turns them into a civilization of production must be built a
 
 That is why production systems cannot be imported.
 
-
 ---
 
 Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
