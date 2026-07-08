@@ -1,4 +1,4 @@
-# 04｜Why External Capital Cannot Build a Production System
+# 04. Why External Capital Cannot Build a Production System
 
 Investment can finance factories, roads, ports, and power plants. But a production system requires more than money entering from outside.
 
