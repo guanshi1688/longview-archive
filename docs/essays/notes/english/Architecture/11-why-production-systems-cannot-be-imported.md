@@ -254,6 +254,10 @@ Capital can be imported.
 
 Experts can be imported.
 
+But the system that turns them into a civilization of production must be built at home.
+
+That is why production systems cannot be imported.
+
 
 ---
 
