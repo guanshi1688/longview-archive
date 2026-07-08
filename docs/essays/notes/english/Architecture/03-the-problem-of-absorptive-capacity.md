@@ -210,19 +210,8 @@ It is the difference between importing a factory and forming an industrial socie
 
 It is the difference between receiving development and becoming capable of development.
 
-Title:
-The Problem of Absorptive Capacity
 
-Subtitle:
-Development is not only about receiving capital, technology, or infrastructure. It is about whether a society can turn them into lasting capability.
+---
 
-Topics:
-Development
-Global South
-Industrialization
-Political Economy
-Infrastructure
-
-这篇是 Absorptive Capacity｜承接能力 的英文锚点。它比第一篇更概念化，但仍然是第三方札记语气，没有暴露总纲。
-
+Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
 
