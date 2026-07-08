@@ -180,19 +180,8 @@ It can finance the walls.
 
 It cannot become the foundation.
 
-Title:
-Why External Capital Cannot Build a Production System
 
-Subtitle:
-Investment can finance factories, roads, ports, and power plants. But a production system requires more than money entering from outside.
+---
 
-Topics:
-Development
-Global South
-Industrialization
-Political Economy
-Foreign Investment
-
-它们共同打的是 生产的边界 / 承接能力 / 全球南方不能自动工业化，但外部读者看到的仍然是普通发展问题札记。
-
+Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
 
