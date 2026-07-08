@@ -205,3 +205,8 @@ Not the boundary of investment announcements.
 Not the boundary of infrastructure maps.
 
 The boundary of production.
+
+
+---
+
+Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
