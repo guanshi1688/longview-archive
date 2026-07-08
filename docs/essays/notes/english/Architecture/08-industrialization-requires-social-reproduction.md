@@ -169,3 +169,8 @@ With social reproduction, it becomes a durable way of life.
 That is why factories do not stand alone.
 
 And that is why industrialization requires social reproduction.
+
+
+---
+
+Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
