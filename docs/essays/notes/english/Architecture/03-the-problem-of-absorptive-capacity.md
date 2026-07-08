@@ -1,4 +1,5 @@
-The Problem of Absorptive Capacity
+# 03｜The Problem of Absorptive Capacity
+
 Development is not only about receiving capital, technology, or infrastructure. It is about whether a society can turn them into lasting capability.
 
 Many development debates begin with a question of shortage.
@@ -208,3 +209,20 @@ It is the difference between borrowing a machine and building a machine age.
 It is the difference between importing a factory and forming an industrial society.
 
 It is the difference between receiving development and becoming capable of development.
+
+Title:
+The Problem of Absorptive Capacity
+
+Subtitle:
+Development is not only about receiving capital, technology, or infrastructure. It is about whether a society can turn them into lasting capability.
+
+Topics:
+Development
+Global South
+Industrialization
+Political Economy
+Infrastructure
+
+这篇是 Absorptive Capacity｜承接能力 的英文锚点。它比第一篇更概念化，但仍然是第三方札记语气，没有暴露总纲。
+
+
