@@ -165,17 +165,7 @@ That is the difference between output and reproduction.
 It is also the difference between a system that merely keeps working and a civilization that can keep living.
 
 
-Title:
-States Are Not Consumption Machines
+---
 
-Subtitle:
-A state is not only a device for delivering consumption. In many societies, its deeper function is to organize work, absorb pressure, and keep the social system running.
-
-Topics:
-Political Economy
-Development
-State Capacity
-China
-Civilization
-
+Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
 这篇是 Work-Driven Machine / 做功机器 的外部轻表达。它没有直接写“中国制度不是消费机器”，但读者能自然理解：有些国家的底层能力首先是组织生产、工程、秩序和风险承接，而不是直接释放消费。
