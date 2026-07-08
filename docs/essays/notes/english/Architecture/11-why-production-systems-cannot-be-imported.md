@@ -253,3 +253,8 @@ Machines can be imported.
 Capital can be imported.
 
 Experts can be imported.
+
+
+---
+
+Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
