@@ -1,4 +1,5 @@
-Why the Global South Is Not the Next China
+# 07｜Why the Global South Is Not the Next China
+
 The Global South does not lack ambition, labor, or infrastructure dreams. What it often lacks is the full production system that made China’s rise possible.
 
 It is common to say that the Global South may become the next China.
@@ -172,3 +173,21 @@ It needs to discover which parts of production it can truly absorb, organize, an
 That is a harder question.
 
 But it is also a more honest one.
+
+Title:
+Why the Global South Is Not the Next China
+
+Subtitle:
+The Global South does not lack ambition, labor, or infrastructure dreams. What it often lacks is the full production system that made China’s rise possible.
+
+Topics:
+Global South
+Development
+Industrialization
+China
+Political Economy
+
+
+这篇是第一批里最适合传播的一篇，标题直接、读者容易点开。它把前面几篇的概念自然串起来，但仍然没有暴露你的总纲，只是在英文外部层建立一个强判断：
+
+China was not a formula; it was a production system.
