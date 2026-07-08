@@ -1,4 +1,4 @@
-# The Boundary of Production
+# 06｜The Boundary of Production
 
 The deepest limit of development is not always capital, labor, resources, or infrastructure. It is the point where a society can no longer turn them into a living production system.
 
