@@ -1,4 +1,5 @@
-States Are Not Consumption Machines
+# 05｜States Are Not Consumption Machines
+
 A state is not only a device for delivering consumption. In many societies, its deeper function is to organize work, absorb pressure, and keep the social system running.
 
 Modern political debate often treats the state as a consumption manager.
@@ -162,3 +163,19 @@ The real question is whether a society can build a loop in which production sust
 That is the difference between output and reproduction.
 
 It is also the difference between a system that merely keeps working and a civilization that can keep living.
+
+
+Title:
+States Are Not Consumption Machines
+
+Subtitle:
+A state is not only a device for delivering consumption. In many societies, its deeper function is to organize work, absorb pressure, and keep the social system running.
+
+Topics:
+Political Economy
+Development
+State Capacity
+China
+Civilization
+
+这篇是 Work-Driven Machine / 做功机器 的外部轻表达。它没有直接写“中国制度不是消费机器”，但读者能自然理解：有些国家的底层能力首先是组织生产、工程、秩序和风险承接，而不是直接释放消费。
