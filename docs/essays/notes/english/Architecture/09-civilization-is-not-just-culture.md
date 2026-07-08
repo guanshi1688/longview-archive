@@ -191,3 +191,8 @@ But production and reproduction are its body.
 To understand civilization, we must listen to the voice.
 
 But we must also study the body that allows the voice to continue.
+
+
+---
+
+Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
