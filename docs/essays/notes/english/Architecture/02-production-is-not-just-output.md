@@ -1,4 +1,4 @@
-# Production Is Not Just Output
+# 02｜Production Is Not Just Output
 
 To understand development, we must look beyond how much a society produces and ask what its production is able to sustain.
 
