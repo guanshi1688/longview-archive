@@ -1,4 +1,4 @@
-# 07｜Why the Global South Is Not the Next China
+# 07. Why the Global South Is Not the Next China
 
 The Global South does not lack ambition, labor, or infrastructure dreams. What it often lacks is the full production system that made China’s rise possible.
 
