@@ -1,4 +1,4 @@
-# Why Producing More Does Not Mean Earning More
+# 01. Why Producing More Does Not Mean Earning More
 
 Production creates goods.
 
