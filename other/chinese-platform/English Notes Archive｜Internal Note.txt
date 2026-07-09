@@ -1,0 +1,70 @@
+# English Notes Archive｜Internal Note
+
+This directory contains the English notes archive of Longview Archive｜观势档案.
+
+These texts are not platform drafts in the ordinary sense. They are archive versions of short English essays, conceptual notes, and historical reflections related to production systems, institutional absorption, value capture, civilizational form, and long-term social change.
+
+Platform-published versions may appear on Medium, Substack, or other public channels under the name Evan Vale. Those versions may contain minor formatting differences, platform-specific headings, images, subtitles, or links.
+
+Unless otherwise stated, the archive version in this repository should be treated as the reference version.
+
+## Current Series
+
+### The Architecture of Production and Capture
+
+This series forms the main theoretical layer of the English notes archive.
+
+It examines production systems, absorptive capacity, external capital, state function, social reproduction, value capture, and the structural limits of development.
+
+### Frontiers
+
+This series forms the historical case layer of the English notes archive.
+
+It examines civilizational expansion, frontier absorption, state capacity, maritime limits, institutional replication, and the structural boundary of expansion.
+
+## Publication Principle
+
+The public-facing versions of these essays should remain restrained.
+
+They should avoid promotional language, personal appeals, exaggerated claims, aggressive branding, or unnecessary explanations of the broader project.
+
+The purpose of external publication is not immediate traffic acquisition.
+
+It is concept deposition, search presence, archive formation, and long-term recognition of a coherent theoretical structure.
+
+## Citation and Attribution
+
+These texts are original works of Longview Archive｜观势档案.
+
+Short quotation, discussion, and citation are acceptable with proper attribution to the author or archive source.
+
+Unauthorized reproduction, rewriting, translation, commercial use, bulk extraction, or republication is not permitted.
+
+## Internal Position
+
+The English notes archive is not the master outline of Longview Archive.
+
+It is an external-facing conceptual layer.
+
+Its purpose is to make selected terms, arguments, and structural explanations available in English without exposing the full Chinese master framework.
+
+
+第一阶段：2 个系列
+Architecture + Frontiers
+你已完成。
+
+第二阶段：第 3 个系列
+The Limits of Development
+重点打全球南方。
+
+第三阶段：第 4 个系列
+Value Capture and the Western System
+开始切西方结构。
+
+第四阶段：第 5 个系列
+China and the Burden of Production
+谨慎释放中国线。
+
+第五阶段：第 6 个系列
+Technology as Structural Amplifier
+接 AI。
