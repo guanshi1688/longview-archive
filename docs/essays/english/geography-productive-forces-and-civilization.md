@@ -296,6 +296,22 @@ They are productive adaptations.
 
 Over time, productive adaptation becomes civilization.
 
+These are not simply cultural preferences.
+
+They are productive adaptations.
+
+The usual language of national difference is too shallow for this level of analysis.
+
+States differ not only because they have different institutions, cultures, ideologies, or policies.
+
+They differ because the productive forces they can form, absorb, and reproduce are different.
+
+At sufficient historical depth, these differences are no longer merely national.
+
+They become civilizational.
+
+Over time, productive adaptation becomes civilization.
+
 ## Classification and Deep Time
 
 Civilizational classification cannot treat every historical formation as having equal weight.
