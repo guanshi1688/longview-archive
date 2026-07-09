@@ -134,7 +134,31 @@ Where can the group return?
 
 Where can life continue?
 
-Only later did these repeated biological responses become memory, habit, technique, ritual, route, territory, labor division, family structure, settlement, agriculture, defense, and political order.
+This animal foundation was never fully abolished.
+
+Human civilization did not emerge by eliminating biological instinct.
+
+It emerged by organizing it.
+
+Hunger became labor.
+
+Fear became defense.
+
+Reproduction became family.
+
+Attachment became community.
+
+Territory became order.
+
+Memory became tradition.
+
+Tool use became production.
+
+Repeated survival became institution.
+
+At the beginning of civilization lies not the disappearance of animal life, but the long transformation of animal survival into human organization.
+
+Only later did these repeated biological responses become habit, technique, ritual, route, territory, labor division, settlement, agriculture, defense, law, and political order.
 
 In this sense, geography enters civilization before civilization can name geography.
 
@@ -149,6 +173,12 @@ Then on memory.
 Then on institutions.
 
 Then on civilization.
+
+Culture does not appear before survival.
+
+Institution does not appear before repeated survival.
+
+Civilization does not appear before the long accumulation of survival responses.
 
 Geography does not write history by itself.
 
