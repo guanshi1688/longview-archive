@@ -1,209 +1,172 @@
+# build.py
+# Build an internal bundle for the Value-Capture series.
+# Put this file in:
+# docs/essays/notes/english/Value-Capture/
+
 from pathlib import Path
-import json
-import re
+from datetime import datetime
 
-ROOT = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent
 
-SERIES_DIR = ROOT / "docs" / "essays" / "notes" / "english" / "Value-Capture"
+OUTPUT_FILE = BASE_DIR / "_value-capture-bundle.md"
 
-SERIES_TITLE = "The Architecture of Value Capture"
+SERIES_TITLE = "The Architecture of Value Capture｜Internal Bundle"
 
-FILES = [
-    ("index.md", "The Architecture of Value Capture"),
-    ("01-why-producing-more-does-not-mean-earning-more.md", "Why Producing More Does Not Mean Earning More"),
-    ("02-why-value-is-captured-at-the-interface.md", "Why Value Is Captured at the Interface"),
-    ("03-why-pricing-power-matters-more-than-output.md", "Why Pricing Power Matters More Than Output"),
-    ("04-why-finance-can-command-production-without-owning-it.md", "Why Finance Can Command Production Without Owning It"),
-    ("05-why-standards-become-invisible-infrastructure.md", "Why Standards Become Invisible Infrastructure"),
-    ("06-why-platforms-capture-markets-without-bearing-production.md", "Why Platforms Capture Markets Without Bearing Production"),
-    ("07-why-brands-turn-production-into-hierarchy.md", "Why Brands Turn Production into Hierarchy"),
-    ("08-why-legal-systems-and-compliance-shape-global-value.md", "Why Legal Systems and Compliance Shape Global Value"),
-    ("09-why-reserve-currencies-are-civilizational-interfaces.md", "Why Reserve Currencies Are Civilizational Interfaces"),
-    ("10-why-mature-markets-defend-value-capture.md", "Why Mature Markets Defend Value Capture"),
-    ("11-why-the-global-rentier-system-faces-a-production-shock.md", "Why the Global Rentier System Faces a Production Shock"),
-]
+COPYRIGHT_NOTICE = """---
+
+Copyright notice: This bundle and the essays included in it are internal working materials of Longview Archive｜观势档案.
+
+Unless otherwise stated, all contents are original works by the author. They may not be reproduced, excerpted, rewritten, translated, used for training, commercialized, or republished in any form without permission.
+
+If platform-published versions differ from this archive, the archived version in this repository should be treated as the reference version.
+"""
 
 
-def slugify(text: str) -> str:
-    text = text.lower()
-    text = re.sub(r"[^\w\s-]", "", text)
-    text = re.sub(r"\s+", "-", text.strip())
-    return text
+def read_text(path: Path) -> str:
+    return path.read_text(encoding="utf-8").strip()
 
 
-def extract_h1(path: Path) -> str | None:
-    if not path.exists():
-        return None
+def get_article_files() -> list[Path]:
+    """
+    Collect article files from 01-*.md to 11-*.md.
+    Excludes index.md, build.py, bundle outputs, and any non-numbered notes.
+    """
+    files = []
 
-    text = path.read_text(encoding="utf-8", errors="ignore")
-    match = re.search(r"^#\s+(.+)$", text, re.MULTILINE)
+    for path in BASE_DIR.glob("*.md"):
+        name = path.name
 
-    if match:
-        return match.group(1).strip()
-
-    return None
-
-
-def count_words(text: str) -> int:
-    return len(re.findall(r"\b[\w'-]+\b", text))
-
-
-def build_manifest():
-    items = []
-
-    for filename, title in FILES:
-        path = SERIES_DIR / filename
-        h1 = extract_h1(path)
-
-        word_count = 0
-        if path.exists():
-            word_count = count_words(path.read_text(encoding="utf-8", errors="ignore"))
-
-        items.append(
-            {
-                "file": filename,
-                "title": title,
-                "exists": path.exists(),
-                "h1": h1,
-                "h1_matches": h1 == title if h1 else False,
-                "word_count": word_count,
-                "relative_path": str(path.relative_to(ROOT)).replace("\\", "/"),
-            }
-        )
-
-    manifest = {
-        "series": SERIES_TITLE,
-        "directory": str(SERIES_DIR.relative_to(ROOT)).replace("\\", "/"),
-        "count": len(FILES),
-        "complete": all(item["exists"] for item in items),
-        "total_word_count": sum(item["word_count"] for item in items),
-        "items": items,
-    }
-
-    out_path = SERIES_DIR / "manifest.json"
-    out_path.write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
-
-    return manifest, out_path
-
-
-def build_combined_markdown(manifest):
-    out_path = SERIES_DIR / "combined.md"
-
-    lines = []
-
-    lines.append(f"# {SERIES_TITLE}")
-    lines.append("")
-    lines.append("> Combined draft for structural review.")
-    lines.append("")
-    lines.append("## Review Notes")
-    lines.append("")
-    lines.append("This file is generated automatically from the series source files.")
-    lines.append("")
-    lines.append("Use this combined version to review:")
-    lines.append("")
-    lines.append("- overall structure")
-    lines.append("- repeated arguments")
-    lines.append("- weak transitions")
-    lines.append("- title consistency")
-    lines.append("- conceptual progression")
-    lines.append("- series-level rhythm")
-    lines.append("")
-    lines.append("## Table of Contents")
-    lines.append("")
-
-    for item in manifest["items"]:
-        if item["exists"]:
-            anchor = slugify(item["title"])
-            lines.append(f"- [{item['title']}](#{anchor})")
-        else:
-            lines.append(f"- MISSING: {item['title']}")
-
-    lines.append("")
-    lines.append("---")
-    lines.append("")
-
-    for index, item in enumerate(manifest["items"]):
-        path = SERIES_DIR / item["file"]
-
-        lines.append("")
-        lines.append("---")
-        lines.append("")
-        lines.append(f"<!-- Source: {item['file']} -->")
-        lines.append(f"<!-- Word count: {item['word_count']} -->")
-        lines.append("")
-
-        if not path.exists():
-            lines.append(f"# MISSING: {item['title']}")
-            lines.append("")
+        if name == "index.md":
             continue
 
-        text = path.read_text(encoding="utf-8", errors="ignore").strip()
+        if name.startswith("_"):
+            continue
 
-        # 保持原文，不改标题、不改正文
-        lines.append(text)
-        lines.append("")
+        if name in {"collected.md", "bundle.md", "combined.md"}:
+            continue
 
-    out_path.write_text("\n".join(lines), encoding="utf-8")
+        prefix = name[:2]
 
-    return out_path
+        if prefix.isdigit():
+            number = int(prefix)
+            if 1 <= number <= 11:
+                files.append(path)
 
-
-def print_report(manifest, manifest_path: Path, combined_path: Path):
-    print()
-    print(f"Series: {manifest['series']}")
-    print(f"Directory: {manifest['directory']}")
-    print(f"Manifest: {manifest_path.relative_to(ROOT)}")
-    print(f"Combined: {combined_path.relative_to(ROOT)}")
-    print(f"Total word count: {manifest['total_word_count']}")
-    print()
-
-    missing = [item for item in manifest["items"] if not item["exists"]]
-    h1_mismatch = [
-        item
-        for item in manifest["items"]
-        if item["exists"] and not item["h1_matches"]
-    ]
-
-    if not missing:
-        print("OK: all files exist.")
-    else:
-        print("Missing files:")
-        for item in missing:
-            print(f"  - {item['file']}")
-
-    if h1_mismatch:
-        print()
-        print("H1 mismatch:")
-        for item in h1_mismatch:
-            print(f"  - {item['file']}")
-            print(f"    expected: {item['title']}")
-            print(f"    found:    {item['h1']}")
-
-    print()
-    print("Word count:")
-    for item in manifest["items"]:
-        print(f"  - {item['file']}: {item['word_count']} words")
-
-    print()
-    print("MkDocs nav snippet:")
-    print()
-    print("      - The Architecture of Value Capture:")
-    for item in manifest["items"]:
-        nav_path = item["relative_path"].replace("docs/", "", 1)
-        print(f"          - {item['title']}: {nav_path}")
+    return sorted(files, key=lambda p: p.name)
 
 
-def main():
-    if not SERIES_DIR.exists():
-        raise FileNotFoundError(f"Series directory not found: {SERIES_DIR}")
+def make_toc(article_files: list[Path]) -> str:
+    lines = ["## Table of Contents", ""]
 
-    manifest, manifest_path = build_manifest()
-    combined_path = build_combined_markdown(manifest)
-    print_report(manifest, manifest_path, combined_path)
+    lines.append("0. [Index](#file-indexmd)")
+
+    for path in article_files:
+        title = extract_title(path)
+        anchor = make_anchor(path.name)
+        lines.append(f"{path.name[:2]}. [{title}](#{anchor})")
+
+    return "\n".join(lines)
+
+
+def extract_title(path: Path) -> str:
+    """
+    Extract the first Markdown H1 title from a file.
+    If no H1 is found, fall back to filename.
+    """
+    text = read_text(path)
+
+    for line in text.splitlines():
+        line = line.strip()
+        if line.startswith("# "):
+            return line[2:].strip()
+
+    return path.stem
+
+
+def make_anchor(filename: str) -> str:
+    """
+    Internal simple anchor used in this generated bundle.
+    """
+    safe = filename.lower()
+    safe = safe.replace(".", "")
+    safe = safe.replace("_", "-")
+    safe = safe.replace(" ", "-")
+    return f"file-{safe}"
+
+
+def make_file_block(path: Path) -> str:
+    filename = path.name
+    anchor = make_anchor(filename)
+    content = read_text(path)
+
+    return f"""---
+
+<a id="{anchor}"></a>
+
+<!-- FILE: {filename} -->
+
+{content}
+"""
+
+
+def build_bundle() -> None:
+    index_path = BASE_DIR / "index.md"
+
+    if not index_path.exists():
+        raise FileNotFoundError(f"Missing index.md in {BASE_DIR}")
+
+    article_files = get_article_files()
+
+    expected_numbers = {f"{i:02d}" for i in range(1, 12)}
+    found_numbers = {p.name[:2] for p in article_files}
+    missing = sorted(expected_numbers - found_numbers)
+
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    parts = []
+
+    parts.append(f"# {SERIES_TITLE}")
+    parts.append("")
+    parts.append("This document is automatically generated by `build.py` for internal archive review, structural checking, and bundle preview.")
+    parts.append("")
+    parts.append(f"Generated at: {now}")
+    parts.append("")
+    parts.append(f"Source directory: `{BASE_DIR.as_posix()}`")
+    parts.append("")
+
+    if missing:
+        parts.append("## Build Warning")
+        parts.append("")
+        parts.append("The following expected article numbers are missing:")
+        parts.append("")
+        for number in missing:
+            parts.append(f"- {number}")
+        parts.append("")
+
+    parts.append(make_toc(article_files))
+
+    parts.append("")
+    parts.append("---")
+    parts.append("")
+    parts.append(f'<a id="{make_anchor("index.md")}"></a>')
+    parts.append("")
+    parts.append("<!-- FILE: index.md -->")
+    parts.append("")
+    parts.append(read_text(index_path))
+
+    for path in article_files:
+        parts.append(make_file_block(path))
+
+    parts.append(COPYRIGHT_NOTICE)
+
+    OUTPUT_FILE.write_text("\n".join(parts).strip() + "\n", encoding="utf-8")
+
+    print(f"Built: {OUTPUT_FILE}")
+    print(f"Articles included: {len(article_files)}")
+
+    if missing:
+        print(f"Warning: missing article numbers: {', '.join(missing)}")
 
 
 if __name__ == "__main__":
-    main()
+    build_bundle()
