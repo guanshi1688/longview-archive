@@ -1,4 +1,4 @@
-# Why Value Is Captured at the Interface
+# 02. Why Value Is Captured at the Interface
 
 Production does not reach the market by itself.
 
