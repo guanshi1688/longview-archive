@@ -22,19 +22,39 @@ It is a production-bearing system.
 
 This series examines what that means.
 
+## Why This Series Comes Here
+
+Earlier series in this archive examined several structural boundaries.
+
+**Frontiers** examined why civilizational influence does not automatically become replication.
+
+**Architecture** examined why infrastructure, capital, markets, institutions, and technology do not automatically create durable production systems.
+
+**Development** examined why external inputs often fail to generate self-reproducing industrialization in the Global South.
+
+**The Architecture of Value Capture** examined why production does not automatically become income power, and why value is often captured through interfaces such as finance, standards, platforms, brands, legal systems, reserve currencies, and mature markets.
+
+This series turns the framework toward China.
+
+Not to present China as a slogan.
+
+Not to treat China as a simple model.
+
+Not to claim that China is the answer.
+
+But to examine China as one of the largest real cases of a production-bearing system.
+
+The question is no longer only:
+
+Can a society produce?
+
+The question becomes:
+
+What must a society carry once production succeeds at national scale?
+
 ## The Central Question
 
-Earlier series in this archive asked several connected questions:
-
-Why does influence not automatically become replication?
-
-Why does infrastructure not automatically create industrialization?
-
-Why do external inputs fail when societies cannot absorb them?
-
-Why does production not automatically become value capture?
-
-This series turns to a different but related question:
+This series asks:
 
 What happens when a country becomes responsible for carrying production at civilizational scale?
 
@@ -58,9 +78,11 @@ Why is domestic demand harder than it appears?
 
 Why does the burden of production eventually force institutional adaptation?
 
-This series does not treat China as a slogan.
+This series treats China as a structural case.
 
-It treats China as a structural case.
+Its purpose is not to praise China or condemn China.
+
+Its purpose is to understand the burden created by industrial strength.
 
 ## China Is Not Just a Manufacturing Country
 
@@ -302,6 +324,42 @@ China’s production system is powerful because it is dense.
 
 It is vulnerable because density creates interdependence.
 
+## Local Governments Carry Industrial Pressure
+
+China’s production system is also carried by local governments.
+
+Local governments prepare land, build infrastructure, develop industrial parks, attract firms, coordinate utilities, support employment, manage fiscal pressure, and connect firms, banks, developers, workers, and infrastructure projects.
+
+This gives China unusual industrial capacity.
+
+But it also creates local pressure.
+
+Local governments need revenue.
+
+They need employment.
+
+They need land value.
+
+They need infrastructure use.
+
+They need firms to survive.
+
+They need industrial parks to be filled.
+
+They need public services to be funded.
+
+They need debt to remain manageable.
+
+This means local governments are not outside the production system.
+
+They are one of its carriers.
+
+When production expands, they gain capacity.
+
+When production slows, they absorb pressure.
+
+This is why the burden of production is also a local government burden.
+
 ## Exports Are Powerful but Insufficient
 
 Exports helped China build scale, discipline, foreign exchange, employment, supplier networks, industrial learning, and global market position.
@@ -338,7 +396,7 @@ Domestic demand is often treated as the natural answer to export dependence.
 
 But domestic demand is not created by instruction.
 
-It requires income security, household confidence, stable employment, affordable housing, healthcare expectations, education costs, elder care, social protection, and belief in the future.
+It requires income security, household confidence, stable employment, affordable housing, healthcare expectations, education affordability, elder care, social protection, and belief in the future.
 
 A society may produce enormous quantities of goods while households remain cautious.
 
@@ -468,11 +526,15 @@ These are not merely business questions.
 
 They are institutional questions.
 
-A production-bearing system cannot survive indefinitely if production pressure is not converted into social stability, household confidence, technological upgrading, and durable internal demand.
+A production-bearing system cannot survive indefinitely if production pressure is not converted into social stability, household confidence, technological upgrading, durable internal demand, and value retention.
 
 This is why the burden of production points beyond factories.
 
-It points toward the structure of the state, the fiscal system, social welfare, local government incentives, industrial policy, household security, labor formation, and the distribution of value.
+It points toward the structure of the state, the fiscal system, social welfare, local government incentives, industrial policy, household security, labor formation, domestic demand, and the distribution of value.
+
+China’s challenge is not production capacity alone.
+
+It is the institutional absorption of production burden.
 
 ## Series Outline
 
@@ -518,7 +580,7 @@ Industrial strength creates power, but also locks the system into obligations, f
 
 ### 11. Why the Burden of Production Forces Institutional Change
 
-The final essay examines why China’s production burden eventually requires changes in fiscal systems, social security, local incentives, domestic demand, and value distribution.
+The final essay examines why China’s production burden eventually requires changes in fiscal systems, social security, local incentives, domestic demand, value distribution, and institutional absorption.
 
 ## Reading Boundary
 
@@ -539,6 +601,8 @@ The purpose is to understand why China’s industrial strength also creates soci
 To understand China, it is not enough to say that China produces.
 
 We must ask what China must carry in order to keep producing.
+
+And we must ask what institutions are required when production itself becomes one of the foundations of social order.
 
 ---
 
