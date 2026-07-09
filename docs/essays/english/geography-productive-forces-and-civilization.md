@@ -2,6 +2,14 @@
 
 *Why civilizations differ because societies transform survival constraints into productive systems.*
 
+This essay is not a general history of civilizations, nor a work of political philosophy.
+
+It is a structural inquiry into why some societies can carry high-intensity production systems while others struggle to absorb them.
+
+Its purpose is not to explain every historical variation, but to identify the deeper civilizational forms that determine what a society can produce, absorb, reproduce, and sustain.
+
+Only by identifying these forms can we avoid mistaking surface similarity for structural equivalence.
+
 Biology does not classify life by explaining every individual exception.
 
 It classifies life by identifying stable forms, inherited constraints, recurring structures, and adaptive patterns.
@@ -288,39 +296,63 @@ They are productive adaptations.
 
 Over time, productive adaptation becomes civilization.
 
-## The Problem of Classification
+## Classification and Deep Time
 
-No civilization is pure.
+Civilizational classification cannot treat every historical formation as having equal weight.
 
-No society belongs to only one type at every moment.
+Human history contains countless tribes, kingdoms, city-states, military empires, trading ports, religious polities, colonial enclaves, frontier regimes, and short-lived political formations.
 
-Every civilization contains mixtures, contradictions, regions, classes, historical layers, and changing forms.
+Many of them were powerful.
 
-A country may contain work-driven regions, endowment-based communities, and rentier structures at the same time.
+Some were brilliant.
 
-A civilization may bear production in one period, capture value in another, and depend on external input in yet another.
+Some were violent.
 
-A society may shift under war, technological change, demographic pressure, ecological stress, state collapse, industrialization, colonization, or globalization.
+Some were wealthy.
 
-These facts do not make classification useless.
+Some transformed history for a time.
 
-They make careful classification necessary.
+But not every historical formation constitutes a durable civilizational type.
 
-Biology cannot classify life if every hybrid, mutation, regional adaptation, and individual exception is treated as a refutation of classification itself.
+The standard used here is not momentary visibility.
 
-Civilizational analysis faces the same problem.
+It is long-term structural reproduction.
 
-A useful classification does not explain every exception.
+A formation matters for civilizational classification when it can sustain a recognizable chain across deep time: productive forces, social organization, cost-bearing, surplus absorption, institutional form, value circulation, and civilizational reproduction.
 
-It identifies the structure without which the exceptions cannot be understood.
+Short-lived formations may matter historically without carrying the same classificatory weight.
 
-The purpose of classification is not to erase complexity.
+They may represent transition, mutation, military overflow, external shock, commercial concentration, ecological accident, or failed stabilization.
 
-It is to identify the dominant operating logic through which a civilization organizes survival, production, cost-bearing, surplus absorption, and value circulation.
+They are part of history.
 
-In this framework, three civilizational operating modes can be identified.
+But they are not necessarily stable civilizational forms.
 
-They are not moral rankings.
+Biology faces a similar problem.
+
+If every hybrid, mutation, regional adaptation, or short-lived population variation were treated as a refutation of classification, taxonomy would become impossible.
+
+Classification does not deny variation.
+
+It distinguishes stable forms from transient variation.
+
+Civilizational analysis must do the same.
+
+The purpose is not to count every visible historical difference as a separate civilizational type.
+
+The purpose is to identify the dominant operating logics that survive long enough, reproduce deeply enough, and structure social life widely enough to become civilizational forms.
+
+In this sense, the three operating modes discussed below are not an exhaustive inventory of every historical society.
+
+They are structural prototypes identified at the level of long-duration survival systems.
+
+## Three Civilizational Operating Modes
+
+The claim is not that history contains only three societies or three cultures.
+
+The claim is that, at the level of deep-time survival systems, three recurrent operating modes can be identified with sufficient structural clarity.
+
+These three forms are not moral rankings.
 
 They are not racial categories.
 
@@ -331,8 +363,6 @@ They are not claims of superiority or inferiority.
 They are structural prototypes.
 
 They describe dominant patterns in how civilizations organize productive forces, carry costs, absorb surplus, and form value loops.
-
-## Three Civilizational Operating Modes
 
 ### Work-Driven Civilization
 
