@@ -296,8 +296,6 @@ They are productive adaptations.
 
 Over time, productive adaptation becomes civilization.
 
-These are not simply cultural preferences.
-
 They are productive adaptations.
 
 The usual language of national difference is too shallow for this level of analysis.
