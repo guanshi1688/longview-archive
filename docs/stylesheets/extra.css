@@ -1035,24 +1035,31 @@ body.wide-page .md-content__inner {
 }
 
 /* =========================================================
-   v2.4 Desktop Layout Rebalance (Grid Takeover)
+   v2.5 Ultimate Layout Grid Takeover (Visual Rebalance)
    ========================================================= */
 
 @media screen and (min-width: 76.25em) {
 
-  /* 1. 强行接管底层网格：彻底拉开左栏、正文、右栏的距离 */
-  .md-main__inner {
+  /* 1. 从最外层的容器网格直接开刀，硬性划分三栏 */
+  .md-grid {
+    max-width: 94rem !important;      /* 适度放宽大背景画布 */
     display: grid !important;
-    grid-template-columns: 16rem 1fr 10rem !important; 
-    gap: 5.5rem !important; /* 核心：用 gap 直接在三栏之间炸开 5.5rem 的呼吸感间距 */
+    grid-template-columns: 16rem 1fr 10rem !important; /* 核心：左栏16rem，中间吃满剩余，右栏10rem */
+    gap: 5.5rem !important;            /* 核心：在三栏之间暴力炸开 5.5rem 的无敌留白 */
   }
 
-  /* 2. 解除原本框架自带的、会引发冲突的浮动与宽度计算 */
-  .md-sidebar {
-    width: auto !important;
+  /* 2. 强行解除框架原有的 Flex 挤压和百分比宽度，让它们听从上面的 Grid 指挥 */
+  .md-main__inner {
+    display: block !important;         /* 废除原框架的弹性盒子 */
   }
+  
+  .md-sidebar {
+    width: 100% !important;            /* 宽度直接吃满各自的 Grid 格子 */
+    position: static !important;
+  }
+
   .md-sidebar--primary {
-    padding-right: 0 !important; 
+    padding-right: 0 !important;       /* 清除无用间距，完全靠 gap 控制 */
   }
 
   /* 解除左侧首个标题的强行固定，让它跟随菜单树一起正常上下滚动 */
@@ -1060,11 +1067,15 @@ body.wide-page .md-content__inner {
     position: static !important;
   }
 
-  /* 3. 让正文容器完全听话，放宽并取消生硬的位移 */
+  /* 3. 中间正文容器彻底解放：不位移、不瞎居中，定死最大宽度 */
+  .md-content {
+    width: 100% !important;
+  }
+
   .md-content__inner {
-    max-width: 820px !important; /* 直接在这里掌控你想要的正文宽度 */
-    margin: 0 !important;       /* 放弃原框架的自动居中，完全由外层 Grid 控制 */
-    transform: none !important;
+    max-width: 820px !important;       /* 在这里直接掌控你想要的正文宽度 */
+    margin: 0 !important;              /* 扔掉框架的 margin: 0 auto 居中，完全靠齐网格 */
+    transform: none !important;        /* 扔掉生硬的位移 */
     padding-top: 2.15rem;
   }
 
