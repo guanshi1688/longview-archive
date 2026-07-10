@@ -1125,3 +1125,42 @@ body.wide-page .md-content__inner {
     min-height: 3.05rem;
   }
 }
+/* =========================================================
+   Restore left navigation hierarchy
+   ========================================================= */
+
+@media screen and (min-width: 76.25em) {
+
+  /* 每进入下一层，增加缩进与竖线 */
+  .md-sidebar--primary .md-nav .md-nav {
+    padding-left: 0.62rem !important;
+    border-left: 1px solid rgba(111, 63, 29, 0.16);
+    box-sizing: border-box;
+  }
+
+  /* 第二层：Overview / Reality / Future Path / English */
+  .md-sidebar--primary
+  .md-nav--primary
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav__link {
+    padding-left: 0.18rem !important;
+  }
+
+  /* 第三层：Reality 和各札记系列内部文章 */
+  .md-sidebar--primary
+  .md-nav .md-nav .md-nav
+  .md-nav__link {
+    padding-left: 0.18rem !important;
+  }
+
+  /* 展开的系列标题稍微加强 */
+  .md-sidebar--primary
+  .md-nav__item--active
+  > .md-nav__link {
+    font-weight: 600;
+  }
+}
