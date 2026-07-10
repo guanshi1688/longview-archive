@@ -1060,7 +1060,7 @@ body.wide-page .md-content__inner {
     top: 0 !important;
     z-index: 1000;
 
-    min-height: 8.5rem;
+    min-height: 4.5rem;
 
     background:
       url("../assets/longview-header-banner.png")
@@ -1075,7 +1075,7 @@ body.wide-page .md-content__inner {
   }
 
   .md-header__inner {
-    min-height: 8.5rem;
+    min-height: 4.5rem;
     position: relative;
   }
 
