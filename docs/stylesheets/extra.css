@@ -979,9 +979,9 @@ body.wide-page .md-content__inner {
 
   /* 左栏外边界保持不动 */
   .md-sidebar--primary {
-    width: 20rem;
-    min-width: 20rem;
-    flex: 0 0 20rem;
+    width: 22rem;
+    min-width: 22rem;
+    flex: 0 0 22rem;
     padding-right: 1.2rem;
     box-sizing: border-box;
   }
