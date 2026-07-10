@@ -996,6 +996,16 @@ body.wide-page .md-content__inner {
     box-sizing: border-box;
   }
 
+   /* 只控制左栏具体文章标题的可用宽度 */
+.md-sidebar--primary .md-nav .md-nav .md-nav__link {
+  width: calc(100% - 1.2rem) !important;
+  max-width: calc(100% - 1.2rem) !important;
+  margin-right: 1.2rem !important;
+  padding-left: 0.12rem !important;
+  padding-right: 0.04rem !important;
+  box-sizing: border-box;
+}
+   
   .md-sidebar--primary .md-sidebar__scrollwrap {
     margin: 0 !important;
     padding-left: 0 !important;
