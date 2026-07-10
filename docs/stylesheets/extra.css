@@ -1533,3 +1533,56 @@ body.wide-page .md-content__inner {
     height: 2.05rem;
   }
 }
+/* =========================================================
+   Header Final Lock
+   顶栏固定 + 门楣句放大
+   ========================================================= */
+
+@media screen and (min-width: 90em) {
+
+  /* 顶部栏始终固定，不随向下滚动收起 */
+  .md-header {
+    position: sticky !important;
+    top: 0 !important;
+    transform: none !important;
+    z-index: 1000;
+  }
+
+  .md-header--shadow {
+    transform: none !important;
+  }
+
+  .md-header__inner {
+    min-height: 3.75rem;
+    position: relative;
+  }
+
+  /* 左侧站名 */
+  .md-header__title {
+    font-size: 0.72rem;
+    font-weight: 650;
+  }
+
+  /* 中间总门楣句进一步放大 */
+  .md-header__inner::after {
+    content: "一切从生产力开始  |  Everything begins with productive forces.";
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    color: rgba(255, 250, 240, 0.98);
+    font-size: 0.94rem;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 0.022em;
+
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  .md-search__form {
+    height: 2.1rem;
+  }
+}
