@@ -1047,11 +1047,21 @@ body.wide-page .md-content__inner {
     max-width: 94rem;
   }
 
-  /* 左侧目录更宽，并增加与正文之间的距离 */
+/* 左侧思想树：真正锁定宽度 */
+@media screen and (min-width: 76.25em) {
   .md-sidebar--primary {
-    width: 18.5rem;
-    padding-right: 1.35rem;
+    width: 19.5rem;
+    min-width: 19.5rem;
+    flex: 0 0 19.5rem;
+    padding-right: 1.5rem;
   }
+
+  .md-sidebar--primary .md-sidebar__inner,
+  .md-sidebar--primary .md-nav {
+    width: 100%;
+    max-width: none;
+  }
+}
 
   /* 右侧目录保持窄，避免挤压正文 */
   .md-sidebar--secondary {
