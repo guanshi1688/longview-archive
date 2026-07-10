@@ -1304,3 +1304,64 @@ body.wide-page .md-content__inner {
     display: none;
   }
 }
+
+/* =========================================================
+   Header Thesis — Bilingual Center
+   顶部栏中间双语门楣句
+   ========================================================= */
+
+.lv-header-wrap {
+  position: relative;
+}
+
+.lv-header-thesis {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  gap: 0.58rem;
+
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  pointer-events: none;
+
+  color: rgba(255, 250, 240, 0.9);
+  line-height: 1;
+}
+
+.lv-header-thesis-zh {
+  font-size: 0.76rem;
+  font-weight: 750;
+  letter-spacing: 0.045em;
+}
+
+.lv-header-thesis-sep {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgba(255, 250, 240, 0.42);
+}
+
+.lv-header-thesis-en {
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: rgba(255, 250, 240, 0.68);
+}
+
+/* 较窄桌面只保留中文，避免碰到站名和搜索框 */
+@media screen and (max-width: 92rem) {
+  .lv-header-thesis-en,
+  .lv-header-thesis-sep {
+    display: none;
+  }
+}
+
+/* 手机和平板隐藏 */
+@media screen and (max-width: 76.1875em) {
+  .lv-header-thesis {
+    display: none;
+  }
+}
