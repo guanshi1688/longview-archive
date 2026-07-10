@@ -1070,7 +1070,19 @@ body.wide-page .md-content__inner {
   }
 
   .md-sidebar--secondary {
-    width: 8rem;
+    width: 11.5rem;
+    min-width: 11.5rem;
+    flex: 0 0 11.5rem;
+    padding-left: 0.65rem;
+  }
+
+  .md-sidebar--secondary .md-nav {
+    font-size: 0.64rem;
+    line-height: 1.38;
+  }
+
+  .md-sidebar--secondary .md-nav__link {
     padding-left: 0.25rem;
+    padding-right: 0.2rem;
   }
 }
