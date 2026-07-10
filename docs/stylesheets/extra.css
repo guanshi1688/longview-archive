@@ -1035,66 +1035,52 @@ body.wide-page .md-content__inner {
 }
 
 /* =========================================================
-   v2.3 Desktop Layout Rebalance & Scroll Fix Patch
-   目标：
-   1. 解除左侧标题固定，使其随左栏自然滚动
-   2. 整体布局右移，加大左栏与正文的呼吸感
-   3. 稍微放宽正文，同时保持手机端完全不变
+   v2.4 Desktop Layout Rebalance (Grid Takeover)
    ========================================================= */
 
 @media screen and (min-width: 76.25em) {
 
-  /* 1. 扩大整体画布，为整体右移和加宽提供空间 */
-  .md-grid {
-    max-width: 95rem; /* 从 92rem 适度放宽 */
+  /* 1. 强行接管底层网格：彻底拉开左栏、正文、右栏的距离 */
+  .md-main__inner {
+    display: grid !important;
+    grid-template-columns: 16rem 1fr 10rem !important; 
+    gap: 5.5rem !important; /* 核心：用 gap 直接在三栏之间炸开 5.5rem 的呼吸感间距 */
   }
 
-  /* 2. 左侧侧边栏微调：保持骨架，加大右边距，制造呼吸感 */
+  /* 2. 解除原本框架自带的、会引发冲突的浮动与宽度计算 */
+  .md-sidebar {
+    width: auto !important;
+  }
   .md-sidebar--primary {
-    width: 16.5rem;   /* 稍微收敛宽度 */
-    padding-right: 1.8rem; /* 大幅度增加与正文的间距（原为 0.8rem），消除拥挤感 */
+    padding-right: 0 !important; 
   }
 
-  /* 解除左侧首个标题的强行固定，让它跟随侧边栏一起正常上下滚动 */
+  /* 解除左侧首个标题的强行固定，让它跟随菜单树一起正常上下滚动 */
   .md-sidebar--primary .md-sidebar__inner {
-    position: static !important; /* 破坏默认的吸顶黏性 */
+    position: static !important;
   }
 
-  /* 3. 右侧目录进一步收窄，把视觉中心彻底让给中、左侧 */
-  .md-sidebar--secondary {
-    width: 9rem;
-    padding-left: 0.5rem;
-  }
-
-  /* 4. 正文核心重构：稍微加宽、优雅右移 */
+  /* 3. 让正文容器完全听话，放宽并取消生硬的位移 */
   .md-content__inner {
-    max-width: 790px; /* 正文稍微再宽一些（原为 760px） */
-    
-    /* 取消生硬的 translateX 移动，改用不破坏文档流的 margin 组合 */
-    transform: none; 
-    margin-left: 5.5rem;  /* 核心：通过加大左外边距，将正文整体优雅地向右推 */
-    margin-right: auto;
-    
+    max-width: 820px !important; /* 直接在这里掌控你想要的正文宽度 */
+    margin: 0 !important;       /* 放弃原框架的自动居中，完全由外层 Grid 控制 */
+    transform: none !important;
     padding-top: 2.15rem;
   }
 
-  /* 5. 精细微调正文排版，使其在大一点的画布下更精致 */
+  /* 4. 精细化压缩字体，使其在大画布下更有论文、小册子的精致感 */
   .md-typeset {
     font-size: 0.76rem;
-    line-height: 1.82; /* 微调行高，提升长文阅读舒适度 */
+    line-height: 1.82;
   }
-
-  /* 保持左栏树状目录紧凑精致 */
   .md-sidebar--primary .md-nav {
     font-size: 0.66rem;
     line-height: 1.36;
   }
-
   .md-sidebar--primary .md-nav__link {
     padding-top: 0.26rem;
     padding-bottom: 0.26rem;
   }
-
   .md-sidebar--primary .md-nav__title {
     font-size: 0.68rem;
     padding: 0.6rem 0.75rem;
