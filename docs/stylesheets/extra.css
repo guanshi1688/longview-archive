@@ -1086,3 +1086,19 @@ body.wide-page .md-content__inner {
     padding-right: 0.2rem;
   }
 }
+
+@media screen and (min-width: 76.25em) {
+
+  .md-sidebar--primary {
+    width: 20rem;
+    min-width: 20rem;
+    flex: 0 0 20rem;
+    padding-right: 1.4rem;
+  }
+
+  .md-sidebar--primary .md-sidebar__inner,
+  .md-sidebar--primary .md-nav {
+    width: 100%;
+    max-width: none;
+  }
+}
