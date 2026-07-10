@@ -1033,3 +1033,29 @@ body.wide-page .md-content__inner {
     padding-bottom: 0.18rem;
   }
 }
+
+@media screen and (min-width: 76.25em) {
+  html[lang="en"] .md-content__inner {
+    max-width: 760px;
+  }
+
+  html[lang="en"] .md-typeset {
+    font-size: 0.76rem;
+    line-height: 1.78;
+  }
+
+  html[lang="en"] .md-typeset h1 {
+    font-size: 1.5rem;
+  }
+
+  html[lang="zh"] .md-content__inner,
+  html[lang="zh-CN"] .md-content__inner {
+    max-width: 790px;
+  }
+
+  html[lang="zh"] .md-typeset,
+  html[lang="zh-CN"] .md-typeset {
+    font-size: 0.76rem;
+    line-height: 1.72;
+  }
+}
