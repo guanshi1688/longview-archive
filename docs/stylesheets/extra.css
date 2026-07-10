@@ -1165,3 +1165,69 @@ body.wide-page .md-content__inner {
     box-sizing: border-box;
   }
 }
+/* =========================================================
+   Primary Sidebar Inner Expansion
+   外部边界不动，只扩展左栏内部可用宽度
+   ========================================================= */
+
+@media screen and (min-width: 76.25em) {
+
+  /*
+   不再修改 .md-sidebar--primary 的 width / flex
+   左侧外框与滚动条位置保持不变
+  */
+
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0.25rem;
+    padding-right: 0.35rem;
+    box-sizing: border-box;
+  }
+
+  .md-sidebar--primary .md-sidebar__inner {
+    width: 100% !important;
+    max-width: none !important;
+    padding-right: 0 !important;
+    box-sizing: border-box;
+  }
+
+  .md-sidebar--primary .md-nav {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box;
+  }
+
+  .md-sidebar--primary .md-nav__list {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box;
+  }
+
+  .md-sidebar--primary .md-nav__item {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box;
+  }
+
+  /* 顶部 Longview Archive 白色框扩展 */
+  .md-sidebar--primary .md-nav__title {
+    width: 100% !important;
+    max-width: none !important;
+    margin-right: 0 !important;
+    box-sizing: border-box;
+  }
+
+  /* 每个导航条目的文字区域和选中背景扩展 */
+  .md-sidebar--primary .md-nav__link {
+    display: flex;
+    width: 100% !important;
+    max-width: none !important;
+    margin-right: 0 !important;
+    padding-left: 0.48rem;
+    padding-right: 0.42rem;
+    box-sizing: border-box;
+  }
+}
