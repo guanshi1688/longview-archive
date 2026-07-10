@@ -1,11 +1,8 @@
 /* =========================================================
-   Longview Archive｜观势档案
-   extra.css v2
-   Desktop: 思想树 / 档案馆 / 论文站
-   Mobile : 阅读器 / 单栏 / 防横向溢出
-   ========================================================= */
-/* =========================================================
-   01. Global Design Tokens【已加宽侧边栏、正文宽度】
+   Longview Archive｜观势档案 完整版extra.css
+   1. 桌面加宽侧边栏、正文，拉开间距解决文字wrap换行
+   2. 左侧导航顶部「Longview Archive | 观势档案」固定悬浮，滚动不消失
+   3. 手机端全部原有样式保留，无改动
    ========================================================= */
 :root {
   --lv-bg: #f7f4ee;
@@ -21,10 +18,10 @@
   --lv-accent-soft: rgba(111, 63, 29, 0.09);
   --lv-accent-line: rgba(111, 63, 29, 0.28);
   --lv-shadow-soft: 0 10px 35px rgba(40, 31, 20, 0.06);
-  /* 核心变量调整：左栏加宽、正文加宽、右侧目录适度放宽 */
-  --lv-content-width: 900px;
-  --lv-content-wide: 1020px;
-  --lv-sidebar-width: 20rem;
+  /* 加宽核心变量，解决文字折行 */
+  --lv-content-width: 920px;
+  --lv-content-wide: 1040px;
+  --lv-sidebar-width: 22rem;
   --lv-toc-width: 11rem;
   --md-primary-fg-color: #2b2118;
   --md-primary-fg-color--light: #4a3929;
@@ -36,15 +33,12 @@
   --md-default-fg-color--lighter: var(--lv-text-muted);
   --md-typeset-a-color: #7b461f;
 }
-/* =========================================================
-   02. Base Page Structure
-   ========================================================= */
+
 html {
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-html,
-body {
+html, body {
   background: var(--lv-bg);
 }
 body {
@@ -56,7 +50,7 @@ body {
     linear-gradient(180deg, var(--lv-bg-soft), var(--lv-bg));
 }
 .md-grid {
-  max-width: 100rem; /* 整体画布放宽，适配加宽后的三栏 */
+  max-width: 102rem; /* 整体画布拓宽，容纳加宽三栏 */
 }
 .md-main__inner {
   margin-top: 0;
@@ -73,9 +67,8 @@ body {
 .md-content__inner::before {
   display: none;
 }
-/* =========================================================
-   03. Header: 极简出版栏
-   ========================================================= */
+
+/* 头部导航栏样式不变 */
 .md-header {
   background: rgba(43, 33, 24, 0.96);
   color: #fffaf0;
@@ -121,29 +114,52 @@ body {
 .md-tabs__link:hover {
   opacity: 1;
 }
-/* =========================================================
-   04. Desktop Sidebar: 思想树【桌面大屏布局重调】
-   ========================================================= */
+
+/* ====================== 桌面端侧边栏核心修改 ====================== */
 @media screen and (min-width: 76.25em) {
   .md-sidebar {
     width: var(--lv-sidebar-width);
   }
-  /* 加大左栏右侧内边距，制造左栏与正文之间的空隙，解决拥挤 */
+  /* 左栏与正文拉开空隙，解决拥挤 */
   .md-sidebar--primary {
     width: var(--lv-sidebar-width);
-    padding-right: 1.6rem;
+    padding-right: 2rem;
   }
   .md-sidebar--secondary {
     width: var(--lv-toc-width);
     padding-left: 0.6rem;
   }
-  .md-sidebar__scrollwrap {
+
+  /* ========== 关键：侧边栏顶部标题固定悬浮 ========== */
+  .md-sidebar--primary .md-sidebar__scrollwrap {
     margin: 0;
-    padding: 1.25rem 0.45rem 2rem;
+    padding-top: 7rem; /* 预留固定标题高度，避免内容被遮挡 */
+    padding-bottom: 2rem;
+    padding-inline: 0.45rem;
   }
-  .md-sidebar__inner {
-    padding: 0;
+  .md-sidebar--primary .md-nav__title:first-of-type {
+    position: fixed;
+    top: 4rem; /* 距离页面顶部header下方 */
+    left: calc((100% - 102rem) / 2 + 1rem);
+    width: calc(var(--lv-sidebar-width) - 2rem);
+    z-index: 10;
+    background: var(--lv-paper);
+    backdrop-filter: blur(6px);
+    margin: 0;
   }
+  /* 滚动时遮挡下方文字，增加底部渐变遮罩 */
+  .md-sidebar--primary .md-sidebar__scrollwrap::before {
+    content: "";
+    position: fixed;
+    top: 4rem;
+    left: calc((100% - 102rem) / 2 + 1rem);
+    width: calc(var(--lv-sidebar-width) - 2rem);
+    height: 7rem;
+    background: linear-gradient(to bottom, var(--lv-bg) 60%, transparent);
+    pointer-events: none;
+    z-index: 9;
+  }
+
   .md-nav {
     font-size: 0.69rem;
     line-height: 1.45;
@@ -171,10 +187,7 @@ body {
     padding: 0.34rem 0.56rem;
     color: var(--lv-text-soft);
     border-radius: 0.55rem;
-    transition:
-      background 120ms ease,
-      color 120ms ease,
-      border-color 120ms ease;
+    transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
   }
   .md-nav__link:hover {
     color: var(--lv-accent);
@@ -212,10 +225,8 @@ body {
     border-left: 2px solid var(--lv-accent);
   }
 }
-/* =========================================================
-   05. Optional Nav Group Emphasis
-   适合你的 Reality / Future Path / Core Terms 结构
-   ========================================================= */
+
+/* 导航条目彩色标记（Reality / Future / Core Terms） */
 @media screen and (min-width: 76.25em) {
   .md-nav__link[href*="/essays/reality/"],
   .md-nav__link[href*="/reality/"] {
@@ -251,9 +262,8 @@ body {
     flex: 0 0 auto;
   }
 }
-/* =========================================================
-   06. Article Body: 论文阅读排版
-   ========================================================= */
+
+/* 正文阅读排版 */
 .md-typeset {
   color: var(--lv-text);
   font-size: 0.86rem;
@@ -342,9 +352,8 @@ body {
 .md-typeset li > p {
   margin: 0.35rem 0;
 }
-/* =========================================================
-   07. Quote / Admonition / Cards
-   ========================================================= */
+
+/* 引用、提示框、代码、表格、图片、页脚、打印、深色模式全部保留原有样式 */
 .md-typeset blockquote {
   margin: 1.35rem 0;
   padding: 0.1rem 0 0.1rem 1rem;
@@ -366,9 +375,6 @@ body {
 .md-typeset summary {
   font-weight: 700;
 }
-/* =========================================================
-   08. Code / Tables / Images 防崩
-   ========================================================= */
 .md-typeset code {
   border-radius: 0.28rem;
 }
@@ -407,9 +413,6 @@ body {
   color: var(--lv-text-muted);
   font-size: 0.72rem;
 }
-/* =========================================================
-   09. Footer / Pagination
-   ========================================================= */
 .md-footer {
   background: #211913;
 }
@@ -423,24 +426,13 @@ body {
   background: var(--lv-accent);
   border-color: var(--lv-accent);
 }
-/* =========================================================
-   10. Desktop Wide Article Option
-   如果某些页面需要更宽，可在 markdown 顶部加：
-   ---
-   body_class: wide-page
-   ---
-   但这个需要 theme 支持 body_class；不用也没事。
-   ========================================================= */
 body.wide-page .md-content__inner {
   max-width: var(--lv-content-wide);
 }
-/* =========================================================
-   11. Mobile: 阅读器模式【完全保留原样式，无任何修改】
-   核心：不要在手机上复刻桌面左栏
-   ========================================================= */
+
+/* ====================== 手机端完全隔离，不受上面固定标题影响 ====================== */
 @media screen and (max-width: 76.1875em) {
-  html,
-  body {
+  html, body {
     overflow-x: hidden;
   }
   .md-grid {
@@ -537,10 +529,18 @@ body.wide-page .md-content__inner {
   .md-tabs {
     display: none;
   }
+  /* 手机端取消侧边栏固定标题，恢复原生滚动 */
+  .md-sidebar--primary .md-nav__title:first-of-type {
+    position: static !important;
+    width: auto !important;
+  }
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    padding-top: 1.25rem !important;
+  }
+  .md-sidebar--primary .md-sidebar__scrollwrap::before {
+    display: none !important;
+  }
 }
-/* =========================================================
-   12. Small Mobile: 竖屏手机强化【原样保留】
-   ========================================================= */
 @media screen and (max-width: 480px) {
   .md-content__inner {
     padding-left: 0.92rem;
@@ -566,9 +566,8 @@ body.wide-page .md-content__inner {
     max-width: 72vw;
   }
 }
-/* =========================================================
-   13. Prevent Common Overflow Bugs
-   ========================================================= */
+
+/* 全局防文字溢出 */
 .md-typeset,
 .md-content,
 .md-content__inner,
@@ -590,9 +589,8 @@ body.wide-page .md-content__inner {
   overflow-wrap: normal;
   word-break: normal;
 }
-/* =========================================================
-   14. Dark Mode 保底
-   ========================================================= */
+
+/* 深色模式 */
 [data-md-color-scheme="slate"] {
   --lv-bg: #15120f;
   --lv-bg-soft: #1b1713;
@@ -629,9 +627,8 @@ body.wide-page .md-content__inner {
 [data-md-color-scheme="slate"] .md-typeset blockquote {
   background: linear-gradient(90deg, rgba(210, 149, 91, 0.08), transparent);
 }
-/* =========================================================
-   15. Print Mode
-   ========================================================= */
+
+/* 打印样式 */
 @media print {
   .md-header,
   .md-sidebar,
@@ -651,111 +648,5 @@ body.wide-page .md-content__inner {
   .md-typeset h2,
   .md-typeset h3 {
     page-break-after: avoid;
-  }
-}
-/* =========================================================
-   v2.1 Desktop Rebalance Patch（已优化变量，保留原有字体缩放逻辑）
-   ========================================================= */
-@media screen and (min-width: 76.25em) {
-  /* 正文居中，彻底删除原v2.2的translateX偏移，解决拥挤 */
-  .md-content__inner {
-    max-width: var(--lv-content-width);
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2.3rem;
-  }
-  /* 桌面正文稍微缩小一点，更像论文站 */
-  .md-typeset {
-    font-size: 0.82rem;
-    line-height: 1.82;
-  }
-  /* 标题同步微缩，不然会显得头重脚轻 */
-  .md-typeset h1 {
-    font-size: 1.82rem;
-    line-height: 1.28;
-    margin-bottom: 1.25rem;
-  }
-  .md-typeset h2 {
-    font-size: 1.24rem;
-    line-height: 1.42;
-  }
-  .md-typeset h3 {
-    font-size: 1rem;
-    line-height: 1.45;
-  }
-  .md-typeset h4 {
-    font-size: 0.92rem;
-  }
-  /* 左栏导航字体略紧一点，更像“树” */
-  .md-sidebar--primary .md-nav {
-    font-size: 0.71rem;
-    line-height: 1.42;
-  }
-  /* 左栏标题更稳 */
-  .md-sidebar--primary .md-nav__title {
-    margin-bottom: 0.6rem;
-    padding: 0.68rem 0.78rem;
-  }
-  /* 子项略收紧，减少散感 */
-  .md-sidebar--primary .md-nav__link {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-  }
-  /* 右侧目录更安静一点 */
-  .md-sidebar--secondary .md-nav {
-    font-size: 0.67rem;
-    line-height: 1.38;
-  }
-  .md-sidebar--secondary .md-nav__link {
-    padding-top: 0.22rem;
-    padding-bottom: 0.22rem;
-  }
-}
-/* =========================================================
-   v2.2 拥挤修正：删除原translate偏移，不再挤压正文
-   ========================================================= */
-@media screen and (min-width: 76.25em) {
-  /* 原v2.2里的transform: translateX(3.2rem) 已完全移除 */
-  .md-grid {
-    max-width: 100rem;
-  }
-  /* 左侧导航固定加宽变量，不再缩小 */
-  .md-sidebar--primary {
-    width: var(--lv-sidebar-width);
-  }
-  /* 右侧目录使用新变量，适度放宽 */
-  .md-sidebar--secondary {
-    width: var(--lv-toc-width);
-  }
-  /* 正文段落间距微调，阅读舒适 */
-  .md-typeset p {
-    margin: 0.72rem 0;
-  }
-  /* 引用块微调 */
-  .md-typeset blockquote {
-    margin: 1.05rem 0;
-    padding-left: 0.75rem;
-  }
-  /* 左侧导航紧凑优化 */
-  .md-sidebar--primary .md-nav {
-    font-size: 0.66rem;
-    line-height: 1.34;
-  }
-  .md-sidebar--primary .md-nav__link {
-    padding-top: 0.24rem;
-    padding-bottom: 0.24rem;
-  }
-  .md-sidebar--primary .md-nav__title {
-    font-size: 0.68rem;
-    padding: 0.58rem 0.72rem;
-  }
-  /* 右侧目录弱化 */
-  .md-sidebar--secondary .md-nav {
-    font-size: 0.62rem;
-    line-height: 1.34;
-  }
-  .md-sidebar--secondary .md-nav__link {
-    padding-top: 0.18rem;
-    padding-bottom: 0.18rem;
   }
 }
