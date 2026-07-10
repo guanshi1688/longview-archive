@@ -1231,3 +1231,38 @@ body.wide-page .md-content__inner {
     box-sizing: border-box;
   }
 }
+/* =========================================================
+   Primary Sidebar Article Level
+   保持系列标题大小，只缩小系列内部文章目录
+   ========================================================= */
+
+@media screen and (min-width: 76.25em) {
+
+  /* Reality / Future Path / English 这一级保持不变 */
+  .md-sidebar--primary .md-nav__item--active > .md-nav__link {
+    font-size: 0.68rem;
+    font-weight: 750;
+  }
+
+  /* 系列内部文章：阅读前约束、01—10、阅读后约束 */
+  .md-sidebar--primary .md-nav .md-nav .md-nav__link {
+    font-size: 0.58rem;
+    line-height: 1.28;
+    font-weight: 430;
+    padding-top: 0.18rem;
+    padding-bottom: 0.18rem;
+  }
+
+  /* 当前文章稍微大一点，但仍小于系列标题 */
+  .md-sidebar--primary .md-nav .md-nav .md-nav__link--active {
+    font-size: 0.60rem;
+    font-weight: 700;
+  }
+
+  /* 子项前面的圆点缩小 */
+  .md-sidebar--primary .md-nav .md-nav .md-nav__link::before {
+    width: 0.26rem;
+    height: 0.26rem;
+    margin-right: 0.45rem;
+  }
+}
