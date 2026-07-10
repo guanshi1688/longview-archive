@@ -972,12 +972,12 @@ body.wide-page .md-content__inner {
 
 /* =========================================================
    Primary Sidebar Real Inner Width
-   固定左栏边界，强制内部导航真正吃满宽度
+   固定左栏边界，扩展文字空间，并给右侧留呼吸区
    ========================================================= */
 
 @media screen and (min-width: 76.25em) {
 
-  /* 左栏外边界 */
+  /* 左栏外边界固定 */
   .md-sidebar--primary {
     width: 20rem;
     min-width: 20rem;
@@ -986,34 +986,38 @@ body.wide-page .md-content__inner {
     box-sizing: border-box;
   }
 
-  /* 强制内部滚动区与导航使用实际宽度 */
-.md-sidebar--primary .md-sidebar__scrollwrap,
-.md-sidebar--primary .md-sidebar__inner,
-.md-sidebar--primary .md-nav {
-  width: calc(20rem - 1.6rem) !important;
-  min-width: calc(20rem - 1.6rem) !important;
-  max-width: calc(20rem - 1.6rem) !important;
-  box-sizing: border-box;
-}
+  /* 内部实际宽度 */
+  .md-sidebar--primary .md-sidebar__scrollwrap,
+  .md-sidebar--primary .md-sidebar__inner,
+  .md-sidebar--primary .md-nav {
+    width: calc(20rem - 1.6rem) !important;
+    min-width: calc(20rem - 1.6rem) !important;
+    max-width: calc(20rem - 1.6rem) !important;
+    box-sizing: border-box;
+  }
 
-.md-sidebar--primary .md-sidebar__scrollwrap {
-  overflow-x: hidden !important;
-}
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0.15rem !important;
+    overflow-x: hidden !important;
+  }
 
+  /* 容器保持吃满 */
   .md-sidebar--primary .md-nav__list,
-  .md-sidebar--primary .md-nav__item,
-  .md-sidebar--primary .md-nav__title,
-  .md-sidebar--primary .md-nav__link {
+  .md-sidebar--primary .md-nav__item {
     width: 100% !important;
     max-width: none !important;
     box-sizing: border-box;
   }
 
-  /* 压缩内部无效留白 */
-  .md-sidebar--primary .md-sidebar__scrollwrap {
-    margin: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0.15rem !important;
+  /* 标题框与导航项给右侧留空间 */
+  .md-sidebar--primary .md-nav__title,
+  .md-sidebar--primary .md-nav__link {
+    width: calc(100% - 0.65rem) !important;
+    max-width: calc(100% - 0.65rem) !important;
+    margin-right: 0.65rem !important;
+    box-sizing: border-box;
   }
 
   /* 减少树状层级缩进 */
@@ -1023,7 +1027,6 @@ body.wide-page .md-content__inner {
 
   /* 普通导航项 */
   .md-sidebar--primary .md-nav__link {
-    margin-right: 0 !important;
     padding-left: 0.24rem !important;
     padding-right: 0.08rem !important;
   }
