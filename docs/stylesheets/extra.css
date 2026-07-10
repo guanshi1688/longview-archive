@@ -1014,9 +1014,9 @@ body.wide-page .md-content__inner {
   /* 标题框与导航项给右侧留空间 */
   .md-sidebar--primary .md-nav__title,
   .md-sidebar--primary .md-nav__link {
-    width: calc(100% - 1.35rem) !important;
-    max-width: calc(100% - 1.35rem) !important;
-    margin-right: 1.35rem !important;
+    width: calc(100% - 1.55rem) !important;
+    max-width: calc(100% - 1.55rem) !important;
+    margin-right: 1.55rem !important;
     box-sizing: border-box;
   }
 
