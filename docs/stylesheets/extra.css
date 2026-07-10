@@ -1033,3 +1033,37 @@ body.wide-page .md-content__inner {
     padding-bottom: 0.18rem;
   }
 }
+
+/* =========================================================
+   v2.3 Desktop Layout Separation
+   左栏加宽、正文右移、左右区域拉开
+   手机端不动
+   ========================================================= */
+
+@media screen and (min-width: 76.25em) {
+
+  /* 整体画布略放宽 */
+  .md-grid {
+    max-width: 94rem;
+  }
+
+  /* 左侧目录更宽，并增加与正文之间的距离 */
+  .md-sidebar--primary {
+    width: 18.5rem;
+    padding-right: 1.35rem;
+  }
+
+  /* 右侧目录保持窄，避免挤压正文 */
+  .md-sidebar--secondary {
+    width: 9rem;
+    padding-left: 0.35rem;
+  }
+
+  /* 正文宽度不变，整体继续向右 */
+  .md-content__inner {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(4.2rem);
+  }
+}
