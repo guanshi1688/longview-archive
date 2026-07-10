@@ -31,7 +31,7 @@
 
   --lv-content-width: 820px;
   --lv-content-wide: 960px;
-  --lv-sidebar-width: 20rem;
+  --lv-sidebar-width: 22rem;
   --lv-toc-width: 11.5rem;
 
   --md-primary-fg-color: #2b2118;
@@ -381,7 +381,7 @@ body.wide-page .md-content__inner {
     width: var(--lv-sidebar-width);
     min-width: var(--lv-sidebar-width);
     flex: 0 0 var(--lv-sidebar-width);
-    padding-right: 1.2rem;
+    padding-right: 0.8rem;
     box-sizing: border-box;
   }
 
@@ -513,8 +513,8 @@ body.wide-page .md-content__inner {
     max-width: none !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    padding-left: 0.25rem;
-    padding-right: 0.35rem;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
     box-sizing: border-box;
   }
 
@@ -544,8 +544,8 @@ body.wide-page .md-content__inner {
     width: 100% !important;
     max-width: none !important;
     margin-right: 0 !important;
-    padding-left: 0.48rem;
-    padding-right: 0.42rem;
+    padding-left: 0.38rem;
+    padding-right: 0.20rem;
     box-sizing: border-box;
   }
 
