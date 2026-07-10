@@ -1415,3 +1415,39 @@ body.wide-page .md-content__inner {
     display: none;
   }
 }
+/* =========================================================
+   Header Thesis — CSS Direct Insert
+   直接在顶部栏中央生成总门楣句
+   ========================================================= */
+
+@media screen and (min-width: 90em) {
+
+  .md-header__inner {
+    position: relative;
+  }
+
+  .md-header__inner::after {
+    content: "一切从生产力开始  |  Everything begins with productive forces.";
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    color: rgba(255, 250, 240, 0.88);
+    font-size: 0.68rem;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.035em;
+
+    white-space: nowrap;
+    pointer-events: none;
+  }
+}
+
+/* 较窄桌面、平板和手机隐藏，防止挤压站名与搜索 */
+@media screen and (max-width: 89.9375em) {
+  .md-header__inner::after {
+    display: none;
+  }
+}
