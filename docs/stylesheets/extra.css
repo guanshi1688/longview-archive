@@ -971,58 +971,62 @@ body.wide-page .md-content__inner {
 }
 
 /* =========================================================
-   Temporary Primary Sidebar Inner Width Fix
-   固定左栏边界，只扩展内部文字空间
+   Primary Sidebar Real Inner Width
+   固定左栏边界，强制内部导航真正吃满宽度
    ========================================================= */
 
 @media screen and (min-width: 76.25em) {
 
-  /* 左栏外边界保持不动 */
+  /* 左栏外边界 */
   .md-sidebar--primary {
-    width: 22rem;
-    min-width: 22rem;
-    flex: 0 0 22rem;
+    width: 20rem;
+    min-width: 20rem;
+    flex: 0 0 20rem;
     padding-right: 1.2rem;
+    box-sizing: border-box;
+  }
+
+  /* 强制内部滚动区与导航使用实际宽度 */
+  .md-sidebar--primary .md-sidebar__scrollwrap,
+  .md-sidebar--primary .md-sidebar__inner,
+  .md-sidebar--primary .md-nav {
+    width: calc(20rem - 1.1rem) !important;
+    min-width: calc(20rem - 1.1rem) !important;
+    max-width: calc(20rem - 1.1rem) !important;
+    box-sizing: border-box;
+  }
+
+  .md-sidebar--primary .md-nav__list,
+  .md-sidebar--primary .md-nav__item,
+  .md-sidebar--primary .md-nav__title,
+  .md-sidebar--primary .md-nav__link {
+    width: 100% !important;
+    max-width: none !important;
     box-sizing: border-box;
   }
 
   /* 压缩内部无效留白 */
   .md-sidebar--primary .md-sidebar__scrollwrap {
-    width: 100% !important;
-    max-width: none !important;
     margin: 0 !important;
-    padding-left: 0.10rem !important;
-    padding-right: 0.10rem !important;
-    box-sizing: border-box;
-  }
-
-  .md-sidebar--primary .md-sidebar__inner,
-  .md-sidebar--primary .md-nav,
-  .md-sidebar--primary .md-nav__list,
-  .md-sidebar--primary .md-nav__item {
-    width: 100% !important;
-    max-width: none !important;
-    box-sizing: border-box;
+    padding-left: 0 !important;
+    padding-right: 0.15rem !important;
   }
 
   /* 减少树状层级缩进 */
   .md-sidebar--primary .md-nav__toggle ~ .md-nav {
-    padding-left: 0.14rem !important;
+    padding-left: 0.08rem !important;
   }
 
-  /* 普通导航项扩大文字可用宽度 */
+  /* 普通导航项 */
   .md-sidebar--primary .md-nav__link {
-    width: 100% !important;
-    max-width: none !important;
     margin-right: 0 !important;
-    padding-left: 0.30rem !important;
-    padding-right: 0.18rem !important;
-    box-sizing: border-box;
+    padding-left: 0.24rem !important;
+    padding-right: 0.08rem !important;
   }
 
-  /* 文章层进一步压缩左右内边距 */
+  /* 文章层 */
   .md-sidebar--primary .md-nav .md-nav .md-nav__link {
-    padding-left: 0.22rem !important;
-    padding-right: 0.12rem !important;
+    padding-left: 0.12rem !important;
+    padding-right: 0.04rem !important;
   }
 }
