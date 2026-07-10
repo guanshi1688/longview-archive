@@ -1490,3 +1490,46 @@ body.wide-page .md-content__inner {
     padding-top: 0.65rem;
   }
 }
+/* =========================================================
+   Header Final Scale
+   顶板增高，中间总门楣句增强
+   ========================================================= */
+
+@media screen and (min-width: 90em) {
+
+  /* 顶部主栏略增高 */
+  .md-header__inner {
+    min-height: 3.55rem;
+    position: relative;
+  }
+
+  /* 左侧站名同步垂直居中 */
+  .md-header__title {
+    font-size: 0.72rem;
+    font-weight: 650;
+  }
+
+  /* 中间总门楣句 */
+  .md-header__inner::after {
+    content: "一切从生产力开始  |  Everything begins with productive forces.";
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    color: rgba(255, 250, 240, 0.97);
+    font-size: 0.86rem;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 0.025em;
+
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  /* 搜索框随顶栏高度略增 */
+  .md-search__form {
+    height: 2.05rem;
+  }
+}
