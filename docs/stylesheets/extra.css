@@ -1048,4 +1048,80 @@ body.wide-page .md-content__inner {
   }
 }
 
+/* =========================================================
+   Longview Archive Image Header
+   桌面使用头图，保留真实搜索框
+   ========================================================= */
 
+@media screen and (min-width: 90em) {
+
+  .md-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000;
+
+    min-height: 8.5rem;
+
+    background:
+      url("../assets/longview-header-banner.png")
+      center center / cover no-repeat;
+
+    border-bottom: 1px solid rgba(111, 63, 29, 0.35);
+    box-shadow: none;
+  }
+
+  .md-header[data-md-state="hidden"] {
+    transform: none !important;
+  }
+
+  .md-header__inner {
+    min-height: 8.5rem;
+    position: relative;
+  }
+
+  /* 隐藏原来的站名和旧门楣句 */
+  .md-header__button.md-logo,
+  .md-header__title {
+    visibility: hidden;
+  }
+
+  .md-header__inner::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  /* 保留真实搜索框 */
+  .md-search {
+    position: absolute;
+    right: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .md-search__form {
+    width: 13.5rem;
+    height: 2.4rem;
+    background: rgba(255, 250, 240, 0.12);
+    border: 1px solid rgba(255, 250, 240, 0.24);
+    border-radius: 999px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .md-search__form:hover,
+  .md-search__form:focus-within {
+    background: rgba(255, 250, 240, 0.18);
+  }
+}
+
+/* 小屏幕继续使用原来的纯色顶栏 */
+@media screen and (max-width: 89.9375em) {
+  .md-header {
+    min-height: auto;
+    background: rgba(43, 33, 24, 0.96);
+  }
+
+  .md-header__inner {
+    min-height: 3.05rem;
+  }
+}
