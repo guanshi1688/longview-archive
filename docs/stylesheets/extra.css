@@ -1,10 +1,10 @@
 /* =========================================================
    Longview Archive｜观势档案
-   extra.css v2
+   extra.css v3 — Clean Edition
+
    Desktop: 思想树 / 档案馆 / 论文站
    Mobile : 阅读器 / 单栏 / 防横向溢出
    ========================================================= */
-
 
 /* =========================================================
    01. Global Design Tokens
@@ -29,9 +29,10 @@
 
   --lv-shadow-soft: 0 10px 35px rgba(40, 31, 20, 0.06);
 
-  --lv-content-width: 760px;
-  --lv-content-wide: 880px;
-  --lv-sidebar-width: 15.5rem;
+  --lv-content-width: 820px;
+  --lv-content-wide: 960px;
+  --lv-sidebar-width: 20rem;
+  --lv-toc-width: 11.5rem;
 
   --md-primary-fg-color: #2b2118;
   --md-primary-fg-color--light: #4a3929;
@@ -42,10 +43,8 @@
   --md-default-fg-color: var(--lv-text);
   --md-default-fg-color--light: var(--lv-text-soft);
   --md-default-fg-color--lighter: var(--lv-text-muted);
-
   --md-typeset-a-color: #7b461f;
 }
-
 
 /* =========================================================
    02. Base Page Structure
@@ -72,7 +71,7 @@ body {
 }
 
 .md-grid {
-  max-width: 91rem;
+  max-width: 92rem;
 }
 
 .md-main__inner {
@@ -86,14 +85,13 @@ body {
 .md-content__inner {
   max-width: var(--lv-content-width);
   margin: 0 auto;
-  padding-top: 2.6rem;
+  padding-top: 2.15rem;
   padding-bottom: 4rem;
 }
 
 .md-content__inner::before {
   display: none;
 }
-
 
 /* =========================================================
    03. Header: 极简出版栏
@@ -156,161 +154,8 @@ body {
   opacity: 1;
 }
 
-
 /* =========================================================
-   04. Desktop Sidebar: 思想树
-   ========================================================= */
-
-@media screen and (min-width: 76.25em) {
-  .md-sidebar {
-    width: var(--lv-sidebar-width);
-  }
-
-  .md-sidebar--primary {
-    padding-right: 0.8rem;
-  }
-
-  .md-sidebar--secondary {
-    padding-left: 0.9rem;
-  }
-
-  .md-sidebar__scrollwrap {
-    margin: 0;
-    padding: 1.25rem 0.45rem 2rem;
-  }
-
-  .md-sidebar__inner {
-    padding: 0;
-  }
-
-  .md-nav {
-    font-size: 0.69rem;
-    line-height: 1.45;
-  }
-
-  .md-nav__title {
-    margin: 0 0 0.55rem;
-    padding: 0.72rem 0.8rem;
-    color: var(--lv-text);
-    background: rgba(255, 253, 248, 0.74);
-    border: 1px solid var(--lv-line);
-    border-radius: 0.7rem;
-    box-shadow: 0 8px 22px rgba(40, 31, 20, 0.045);
-    font-weight: 700;
-    letter-spacing: 0.025em;
-  }
-
-  .md-nav__list {
-    padding-left: 0.18rem;
-  }
-
-  .md-nav__item {
-    margin: 0.06rem 0;
-  }
-
-  .md-nav__link {
-    min-height: 1.65rem;
-    margin-top: 0;
-    padding: 0.34rem 0.56rem;
-    color: var(--lv-text-soft);
-    border-radius: 0.55rem;
-    transition:
-      background 120ms ease,
-      color 120ms ease,
-      border-color 120ms ease;
-  }
-
-  .md-nav__link:hover {
-    color: var(--lv-accent);
-    background: var(--lv-accent-soft);
-  }
-
-  .md-nav__link--active,
-  .md-nav__item .md-nav__link--active {
-    color: var(--lv-accent);
-    background: rgba(111, 63, 29, 0.12);
-    border-left: 3px solid var(--lv-accent);
-    font-weight: 700;
-  }
-
-  .md-nav__item--active > .md-nav__link {
-    color: var(--lv-accent);
-    font-weight: 700;
-  }
-
-  .md-nav__toggle ~ .md-nav {
-    padding-left: 0.32rem;
-    border-left: 1px solid rgba(111, 63, 29, 0.15);
-  }
-
-  .md-sidebar--secondary .md-nav__title {
-    font-size: 0.66rem;
-    color: var(--lv-text-muted);
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    padding-left: 0.3rem;
-  }
-
-  .md-sidebar--secondary .md-nav__link {
-    color: var(--lv-text-muted);
-  }
-
-  .md-sidebar--secondary .md-nav__link--active {
-    color: var(--lv-accent);
-    background: transparent;
-    border-left: 2px solid var(--lv-accent);
-  }
-}
-
-
-/* =========================================================
-   05. Optional Nav Group Emphasis
-   适合你的 Reality / Future Path / Core Terms 结构
-   ========================================================= */
-
-@media screen and (min-width: 76.25em) {
-  .md-nav__link[href*="/essays/reality/"],
-  .md-nav__link[href*="/reality/"] {
-    position: relative;
-  }
-
-  .md-nav__link[href*="/essays/reality/"]::before,
-  .md-nav__link[href*="/reality/"]::before {
-    content: "";
-    width: 0.34rem;
-    height: 0.34rem;
-    margin-right: 0.36rem;
-    border-radius: 999px;
-    background: rgba(111, 63, 29, 0.55);
-    flex: 0 0 auto;
-  }
-
-  .md-nav__link[href*="/future/"]::before,
-  .md-nav__link[href*="/future-path/"]::before {
-    content: "";
-    width: 0.34rem;
-    height: 0.34rem;
-    margin-right: 0.36rem;
-    border-radius: 999px;
-    background: rgba(88, 88, 88, 0.5);
-    flex: 0 0 auto;
-  }
-
-  .md-nav__link[href*="/core-terms/"]::before {
-    content: "";
-    width: 0.34rem;
-    height: 0.34rem;
-    margin-right: 0.36rem;
-    border-radius: 999px;
-    background: rgba(35, 80, 95, 0.5);
-    flex: 0 0 auto;
-  }
-}
-
-
-/* =========================================================
-   06. Article Body: 论文阅读排版
+   04. Article Body
    ========================================================= */
 
 .md-typeset {
@@ -417,9 +262,8 @@ body {
   margin: 0.35rem 0;
 }
 
-
 /* =========================================================
-   07. Quote / Admonition / Cards
+   05. Quote / Admonition / Cards
    ========================================================= */
 
 .md-typeset blockquote {
@@ -447,9 +291,8 @@ body {
   font-weight: 700;
 }
 
-
 /* =========================================================
-   08. Code / Tables / Images 防崩
+   06. Code / Tables / Images
    ========================================================= */
 
 .md-typeset code {
@@ -500,9 +343,8 @@ body {
   font-size: 0.72rem;
 }
 
-
 /* =========================================================
-   09. Footer / Pagination
+   07. Footer / Buttons
    ========================================================= */
 
 .md-footer {
@@ -522,24 +364,343 @@ body {
   border-color: var(--lv-accent);
 }
 
-
-/* =========================================================
-   10. Desktop Wide Article Option
-   如果某些页面需要更宽，可在 markdown 顶部加：
-   ---
-   body_class: wide-page
-   ---
-   但这个需要 theme 支持 body_class；不用也没事。
-   ========================================================= */
-
 body.wide-page .md-content__inner {
   max-width: var(--lv-content-wide);
 }
 
+/* =========================================================
+   08. Desktop Layout / Navigation
+   ========================================================= */
+
+@media screen and (min-width: 76.25em) {
+  .md-grid {
+    max-width: 92rem;
+  }
+
+  .md-sidebar--primary {
+    width: var(--lv-sidebar-width);
+    min-width: var(--lv-sidebar-width);
+    flex: 0 0 var(--lv-sidebar-width);
+    padding-right: 1.2rem;
+    box-sizing: border-box;
+  }
+
+  .md-sidebar--secondary {
+    width: var(--lv-toc-width);
+    min-width: var(--lv-toc-width);
+    flex: 0 0 var(--lv-toc-width);
+    padding-left: 0.65rem;
+    box-sizing: border-box;
+  }
+
+  .md-content__inner {
+    max-width: var(--lv-content-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.15rem;
+    transform: translateX(4.2rem);
+  }
+
+  .md-typeset {
+    font-size: 0.76rem;
+    line-height: 1.72;
+  }
+
+  .md-typeset p {
+    margin: 0.72rem 0;
+  }
+
+  .md-typeset h1 {
+    margin-bottom: 1.05rem;
+    padding-bottom: 0.85rem;
+    font-size: 1.58rem;
+    line-height: 1.28;
+  }
+
+  .md-typeset h1::after {
+    width: 2.5rem;
+    height: 2px;
+    margin-top: 0.65rem;
+  }
+
+  .md-typeset h2 {
+    margin-top: 2rem;
+    font-size: 1.08rem;
+    line-height: 1.42;
+  }
+
+  .md-typeset h3 {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .md-typeset h4 {
+    font-size: 0.84rem;
+  }
+
+  .md-typeset blockquote {
+    margin: 1.05rem 0;
+    padding-left: 0.75rem;
+  }
+
+  .md-sidebar__scrollwrap {
+    margin: 0;
+    padding: 1.25rem 0.45rem 2rem;
+  }
+
+  .md-sidebar__inner {
+    padding: 0;
+  }
+
+  .md-nav__title {
+    margin: 0 0 0.55rem;
+    padding: 0.58rem 0.72rem;
+    color: var(--lv-text);
+    background: rgba(255, 253, 248, 0.74);
+    border: 1px solid var(--lv-line);
+    border-radius: 0.7rem;
+    box-shadow: 0 8px 22px rgba(40, 31, 20, 0.045);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+  }
+
+  .md-nav__list {
+    padding-left: 0.18rem;
+  }
+
+  .md-nav__item {
+    margin: 0.06rem 0;
+  }
+
+  .md-nav__link {
+    min-height: 1.65rem;
+    margin-top: 0;
+    padding: 0.24rem 0.56rem;
+    color: var(--lv-text-soft);
+    border-radius: 0.55rem;
+    transition:
+      background 120ms ease,
+      color 120ms ease,
+      border-color 120ms ease;
+  }
+
+  .md-nav__link:hover {
+    color: var(--lv-accent);
+    background: var(--lv-accent-soft);
+  }
+
+  .md-nav__link--active,
+  .md-nav__item .md-nav__link--active {
+    color: var(--lv-accent);
+    background: rgba(111, 63, 29, 0.12);
+    border-left: 3px solid var(--lv-accent);
+    font-weight: 700;
+  }
+
+  .md-nav__item--active > .md-nav__link {
+    color: var(--lv-accent);
+    font-weight: 700;
+  }
+
+  .md-nav__toggle ~ .md-nav {
+    padding-left: 0.32rem;
+    border-left: 1px solid rgba(111, 63, 29, 0.15);
+  }
+
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0.25rem;
+    padding-right: 0.35rem;
+    box-sizing: border-box;
+  }
+
+  .md-sidebar--primary .md-sidebar__inner,
+  .md-sidebar--primary .md-nav,
+  .md-sidebar--primary .md-nav__list,
+  .md-sidebar--primary .md-nav__item {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box;
+  }
+
+  .md-sidebar--primary .md-nav {
+    font-size: 0.66rem;
+    line-height: 1.34;
+  }
+
+  .md-sidebar--primary .md-nav__title {
+    width: 100% !important;
+    max-width: none !important;
+    margin-right: 0 !important;
+    box-sizing: border-box;
+  }
+
+  .md-sidebar--primary .md-nav__link {
+    display: flex;
+    width: 100% !important;
+    max-width: none !important;
+    margin-right: 0 !important;
+    padding-left: 0.48rem;
+    padding-right: 0.42rem;
+    box-sizing: border-box;
+  }
+
+  .md-sidebar--primary .md-nav__item--active > .md-nav__link {
+    font-size: 0.68rem;
+    font-weight: 750;
+  }
+
+  .md-sidebar--primary .md-nav .md-nav .md-nav__link {
+    padding-top: 0.18rem;
+    padding-bottom: 0.18rem;
+    font-size: 0.58rem;
+    line-height: 1.28;
+    font-weight: 430;
+  }
+
+  .md-sidebar--primary .md-nav .md-nav .md-nav__link--active {
+    font-size: 0.60rem;
+    font-weight: 700;
+  }
+
+  .md-sidebar--primary .md-nav .md-nav .md-nav__link::before {
+    width: 0.26rem;
+    height: 0.26rem;
+    margin-right: 0.45rem;
+  }
+
+  .md-sidebar--secondary .md-nav {
+    font-size: 0.64rem;
+    line-height: 1.38;
+  }
+
+  .md-sidebar--secondary .md-nav__title {
+    padding-left: 0.3rem;
+    color: var(--lv-text-muted);
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 0.66rem;
+  }
+
+  .md-sidebar--secondary .md-nav__link {
+    padding: 0.18rem 0.2rem 0.18rem 0.25rem;
+    color: var(--lv-text-muted);
+  }
+
+  .md-sidebar--secondary .md-nav__link--active {
+    color: var(--lv-accent);
+    background: transparent;
+    border-left: 2px solid var(--lv-accent);
+  }
+
+  .md-nav__link[href*="/essays/reality/"],
+  .md-nav__link[href*="/reality/"] {
+    position: relative;
+  }
+
+  .md-nav__link[href*="/essays/reality/"]::before,
+  .md-nav__link[href*="/reality/"]::before {
+    content: "";
+    width: 0.34rem;
+    height: 0.34rem;
+    margin-right: 0.36rem;
+    border-radius: 999px;
+    background: rgba(111, 63, 29, 0.55);
+    flex: 0 0 auto;
+  }
+
+  .md-nav__link[href*="/future/"]::before,
+  .md-nav__link[href*="/future-path/"]::before {
+    content: "";
+    width: 0.34rem;
+    height: 0.34rem;
+    margin-right: 0.36rem;
+    border-radius: 999px;
+    background: rgba(88, 88, 88, 0.5);
+    flex: 0 0 auto;
+  }
+
+  .md-nav__link[href*="/core-terms/"]::before {
+    content: "";
+    width: 0.34rem;
+    height: 0.34rem;
+    margin-right: 0.36rem;
+    border-radius: 999px;
+    background: rgba(35, 80, 95, 0.5);
+    flex: 0 0 auto;
+  }
+}
 
 /* =========================================================
-   11. Mobile: 阅读器模式
-   核心：不要在手机上复刻桌面左栏
+   09. Large Desktop Header Lock / Thesis
+   ========================================================= */
+
+@media screen and (min-width: 90em) {
+  .md-header {
+    position: sticky !important;
+    top: 0 !important;
+    transform: none !important;
+    z-index: 1000;
+  }
+
+  .md-header[data-md-state="hidden"],
+  .md-header--shadow {
+    transform: none !important;
+  }
+
+  .md-header__inner {
+    position: relative;
+    min-height: 3.75rem;
+  }
+
+  .md-header__title {
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.015em;
+  }
+
+  .md-header__inner::after {
+    content: "一切从生产力开始  |  Everything begins with productive forces.";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 250, 240, 0.98);
+    font-size: 0.94rem;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 0.022em;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  .md-search__form {
+    height: 2.1rem;
+  }
+
+  .md-content__inner {
+    padding-top: 1.35rem;
+  }
+
+  .md-sidebar--primary .md-sidebar__scrollwrap,
+  .md-sidebar--secondary .md-sidebar__scrollwrap {
+    padding-top: 0.65rem;
+  }
+}
+
+@media screen and (max-width: 89.9375em) {
+  .md-header__inner::after {
+    display: none;
+  }
+}
+
+/* =========================================================
+   10. Mobile
    ========================================================= */
 
 @media screen and (max-width: 76.1875em) {
@@ -566,6 +727,7 @@ body.wide-page .md-content__inner {
     max-width: 100%;
     margin: 0;
     padding: 1.35rem 1.05rem 2.8rem;
+    transform: none;
   }
 
   .md-typeset {
@@ -664,9 +826,8 @@ body.wide-page .md-content__inner {
   }
 }
 
-
 /* =========================================================
-   12. Small Mobile: 竖屏手机强化
+   11. Small Mobile
    ========================================================= */
 
 @media screen and (max-width: 480px) {
@@ -701,9 +862,8 @@ body.wide-page .md-content__inner {
   }
 }
 
-
 /* =========================================================
-   13. Prevent Common Overflow Bugs
+   12. Overflow Protection
    ========================================================= */
 
 .md-typeset,
@@ -730,9 +890,8 @@ body.wide-page .md-content__inner {
   word-break: normal;
 }
 
-
 /* =========================================================
-   14. Dark Mode 保底
+   13. Dark Mode
    ========================================================= */
 
 [data-md-color-scheme="slate"] {
@@ -781,9 +940,8 @@ body.wide-page .md-content__inner {
   background: linear-gradient(90deg, rgba(210, 149, 91, 0.08), transparent);
 }
 
-
 /* =========================================================
-   15. Print Mode
+   14. Print Mode
    ========================================================= */
 
 @media print {
@@ -797,6 +955,7 @@ body.wide-page .md-content__inner {
   .md-content__inner {
     max-width: 100%;
     padding: 0;
+    transform: none;
   }
 
   .md-typeset {
@@ -808,781 +967,5 @@ body.wide-page .md-content__inner {
   .md-typeset h2,
   .md-typeset h3 {
     page-break-after: avoid;
-  }
-}
-
-* =========================================================
-   v2.1 Desktop Rebalance Patch
-   目标：
-   1. 左栏更宽
-   2. 正文更宽
-   3. 右侧目录更收敛
-   4. 桌面字体略缩小
-   5. 手机端不动
-   ========================================================= */
-
-:root {
-  --lv-content-width: 840px;     /* 原来偏窄，现在加宽正文 */
-  --lv-content-wide: 960px;
-  --lv-sidebar-width: 18rem;     /* 左栏加宽 */
-  --lv-toc-width: 12rem;         /* 右侧目录收窄 */
-}
-
-/* 整体画布略放宽 */
-.md-grid {
-  max-width: 96rem;
-}
-
-
-/* =========================================================
-   Desktop only
-   ========================================================= */
-
-@media screen and (min-width: 76.25em) {
-
-  /* 左侧主导航更宽 */
-  .md-sidebar--primary {
-    width: var(--lv-sidebar-width);
-  }
-
-  /* 右侧目录更窄，减少“正文偏左”感 */
-  .md-sidebar--secondary {
-    width: var(--lv-toc-width);
-  }
-
-  /* 左右栏内边距再微调 */
-  .md-sidebar--primary {
-    padding-right: 1rem;
-  }
-
-  .md-sidebar--secondary {
-    padding-left: 0.5rem;
-  }
-
-  /* 正文区域加宽，并保持居中 */
-  .md-content__inner {
-    max-width: var(--lv-content-width);
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2.3rem;
-  }
-
-  /* 桌面正文稍微缩小一点，更像论文站 */
-  .md-typeset {
-    font-size: 0.82rem;
-    line-height: 1.82;
-  }
-
-  /* 标题同步微缩，不然会显得头重脚轻 */
-  .md-typeset h1 {
-    font-size: 1.82rem;
-    line-height: 1.28;
-    margin-bottom: 1.25rem;
-  }
-
-  .md-typeset h2 {
-    font-size: 1.24rem;
-    line-height: 1.42;
-  }
-
-  .md-typeset h3 {
-    font-size: 1rem;
-    line-height: 1.45;
-  }
-
-  .md-typeset h4 {
-    font-size: 0.92rem;
-  }
-
-  /* 左栏导航字体略紧一点，更像“树” */
-  .md-sidebar--primary .md-nav {
-    font-size: 0.71rem;
-    line-height: 1.42;
-  }
-
-  /* 左栏标题更稳 */
-  .md-sidebar--primary .md-nav__title {
-    margin-bottom: 0.6rem;
-    padding: 0.68rem 0.78rem;
-  }
-
-  /* 子项略收紧，减少散感 */
-  .md-sidebar--primary .md-nav__link {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-  }
-
-  /* 右侧目录更安静一点 */
-  .md-sidebar--secondary .md-nav {
-    font-size: 0.67rem;
-    line-height: 1.38;
-  }
-
-  .md-sidebar--secondary .md-nav__link {
-    padding-top: 0.22rem;
-    padding-bottom: 0.22rem;
-  }
-}
-
-/* =========================================================
-   v2.2 Desktop Compact + Center Correction Patch
-   目标：
-   1. 桌面正文整体缩小
-   2. 正文视觉右移
-   3. 右侧目录更窄
-   4. 手机端完全不动
-   ========================================================= */
-
-@media screen and (min-width: 76.25em) {
-
-  /* 整体不要过宽，否则右侧空白太夸张 */
-  .md-grid {
-    max-width: 92rem;
-  }
-
-  /* 左侧保持够用，不继续放大 */
-  .md-sidebar--primary {
-    width: 17rem;
-    padding-right: 0.8rem;
-  }
-
-  /* 右侧目录收窄，降低右侧空白感 */
-  .md-sidebar--secondary {
-    width: 9.5rem;
-    padding-left: 0.4rem;
-  }
-
-  /* 核心：正文栏缩小，并向右修正 */
-  .md-content__inner {
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateX(3.2rem);
-    padding-top: 2.15rem;
-  }
-
-  /* 正文压小一点 */
-  .md-typeset {
-    font-size: 0.76rem;
-    line-height: 1.78;
-  }
-
-  .md-typeset p {
-    margin: 0.72rem 0;
-  }
-
-  /* 标题压小 */
-  .md-typeset h1 {
-    font-size: 1.58rem;
-    line-height: 1.28;
-    margin-bottom: 1.05rem;
-    padding-bottom: 0.85rem;
-  }
-
-  .md-typeset h1::after {
-    width: 2.5rem;
-    height: 2px;
-    margin-top: 0.65rem;
-  }
-
-  .md-typeset h2 {
-    font-size: 1.08rem;
-    line-height: 1.42;
-    margin-top: 2rem;
-  }
-
-  .md-typeset h3 {
-    font-size: 0.92rem;
-    line-height: 1.45;
-  }
-
-  .md-typeset h4 {
-    font-size: 0.84rem;
-  }
-
-  /* 引用块也压一点 */
-  .md-typeset blockquote {
-    margin: 1.05rem 0;
-    padding-left: 0.75rem;
-  }
-
-  /* 左侧导航也略微压缩，减少“散” */
-  .md-sidebar--primary .md-nav {
-    font-size: 0.66rem;
-    line-height: 1.34;
-  }
-
-  .md-sidebar--primary .md-nav__link {
-    padding-top: 0.24rem;
-    padding-bottom: 0.24rem;
-  }
-
-  .md-sidebar--primary .md-nav__title {
-    font-size: 0.68rem;
-    padding: 0.58rem 0.72rem;
-  }
-
-  /* 右侧目录弱化 */
-  .md-sidebar--secondary .md-nav {
-    font-size: 0.62rem;
-    line-height: 1.34;
-  }
-
-  .md-sidebar--secondary .md-nav__link {
-    padding-top: 0.18rem;
-    padding-bottom: 0.18rem;
-  }
-}
-
-@media screen and (min-width: 76.25em) {
-  html[lang="en"] .md-content__inner {
-    max-width: 760px;
-  }
-
-  html[lang="en"] .md-typeset {
-    font-size: 0.76rem;
-    line-height: 1.78;
-  }
-
-  html[lang="en"] .md-typeset h1 {
-    font-size: 1.5rem;
-  }
-
-  html[lang="zh"] .md-content__inner,
-  html[lang="zh-CN"] .md-content__inner {
-    max-width: 790px;
-  }
-
-  html[lang="zh"] .md-typeset,
-  html[lang="zh-CN"] .md-typeset {
-    font-size: 0.76rem;
-    line-height: 1.72;
-  }
-}
-
-@media screen and (min-width: 76.25em) {
-
-  .md-content__inner {
-    max-width: 820px;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateX(4.2rem);
-  }
-
-  .md-sidebar--secondary {
-    width: 11.5rem;
-    min-width: 11.5rem;
-    flex: 0 0 11.5rem;
-    padding-left: 0.65rem;
-  }
-
-  .md-sidebar--secondary .md-nav {
-    font-size: 0.64rem;
-    line-height: 1.38;
-  }
-
-  .md-sidebar--secondary .md-nav__link {
-    padding-left: 0.25rem;
-    padding-right: 0.2rem;
-  }
-}
-
-@media screen and (min-width: 76.25em) {
-
-  .md-sidebar--primary {
-    width: 20rem;
-    min-width: 20rem;
-    flex: 0 0 20rem;
-    padding-right: 1.4rem;
-  }
-
-  .md-sidebar--primary .md-sidebar__inner,
-  .md-sidebar--primary .md-nav {
-    width: 100%;
-    max-width: none;
-  }
-}
-/* =========================================================
-   Desktop Primary Sidebar Inner Width Fix
-   左侧外壳、滚动区、导航树、链接统一占满宽度
-   ========================================================= */
-
-@media screen and (min-width: 76.25em) {
-
-  /* 左侧栏外壳 */
-  .md-sidebar--primary {
-    width: 20rem;
-    min-width: 20rem;
-    flex: 0 0 20rem;
-    padding-right: 1.2rem;
-    box-sizing: border-box;
-  }
-
-  /* 内部滚动区域也必须占满 */
-  .md-sidebar--primary .md-sidebar__scrollwrap {
-    width: 100%;
-    max-width: none;
-    box-sizing: border-box;
-  }
-
-  /* 导航内部容器占满 */
-  .md-sidebar--primary .md-sidebar__inner {
-    width: 100%;
-    max-width: none;
-    box-sizing: border-box;
-  }
-
-  /* 每一级导航占满 */
-  .md-sidebar--primary .md-nav {
-    width: 100%;
-    max-width: none;
-    box-sizing: border-box;
-  }
-
-  .md-sidebar--primary .md-nav__list {
-    width: 100%;
-    max-width: none;
-    box-sizing: border-box;
-  }
-
-  .md-sidebar--primary .md-nav__item {
-    width: 100%;
-    max-width: none;
-    box-sizing: border-box;
-  }
-
-  /* 链接背景和可用文字区域一起展开 */
-  .md-sidebar--primary .md-nav__link {
-    width: 100%;
-    max-width: none;
-    box-sizing: border-box;
-  }
-
-  /* 顶部 Longview Archive 白色标题框也展开 */
-  .md-sidebar--primary .md-nav__title {
-    width: 100%;
-    max-width: none;
-    box-sizing: border-box;
-  }
-}
-/* =========================================================
-   Primary Sidebar Inner Expansion
-   外部边界不动，只扩展左栏内部可用宽度
-   ========================================================= */
-
-@media screen and (min-width: 76.25em) {
-
-  /*
-   不再修改 .md-sidebar--primary 的 width / flex
-   左侧外框与滚动条位置保持不变
-  */
-
-  .md-sidebar--primary .md-sidebar__scrollwrap {
-    width: 100% !important;
-    max-width: none !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 0.25rem;
-    padding-right: 0.35rem;
-    box-sizing: border-box;
-  }
-
-  .md-sidebar--primary .md-sidebar__inner {
-    width: 100% !important;
-    max-width: none !important;
-    padding-right: 0 !important;
-    box-sizing: border-box;
-  }
-
-  .md-sidebar--primary .md-nav {
-    width: 100% !important;
-    max-width: none !important;
-    box-sizing: border-box;
-  }
-
-  .md-sidebar--primary .md-nav__list {
-    width: 100% !important;
-    max-width: none !important;
-    box-sizing: border-box;
-  }
-
-  .md-sidebar--primary .md-nav__item {
-    width: 100% !important;
-    max-width: none !important;
-    box-sizing: border-box;
-  }
-
-  /* 顶部 Longview Archive 白色框扩展 */
-  .md-sidebar--primary .md-nav__title {
-    width: 100% !important;
-    max-width: none !important;
-    margin-right: 0 !important;
-    box-sizing: border-box;
-  }
-
-  /* 每个导航条目的文字区域和选中背景扩展 */
-  .md-sidebar--primary .md-nav__link {
-    display: flex;
-    width: 100% !important;
-    max-width: none !important;
-    margin-right: 0 !important;
-    padding-left: 0.48rem;
-    padding-right: 0.42rem;
-    box-sizing: border-box;
-  }
-}
-/* =========================================================
-   Primary Sidebar Article Level
-   保持系列标题大小，只缩小系列内部文章目录
-   ========================================================= */
-
-@media screen and (min-width: 76.25em) {
-
-  /* Reality / Future Path / English 这一级保持不变 */
-  .md-sidebar--primary .md-nav__item--active > .md-nav__link {
-    font-size: 0.68rem;
-    font-weight: 750;
-  }
-
-  /* 系列内部文章：阅读前约束、01—10、阅读后约束 */
-  .md-sidebar--primary .md-nav .md-nav .md-nav__link {
-    font-size: 0.58rem;
-    line-height: 1.28;
-    font-weight: 430;
-    padding-top: 0.18rem;
-    padding-bottom: 0.18rem;
-  }
-
-  /* 当前文章稍微大一点，但仍小于系列标题 */
-  .md-sidebar--primary .md-nav .md-nav .md-nav__link--active {
-    font-size: 0.60rem;
-    font-weight: 700;
-  }
-
-  /* 子项前面的圆点缩小 */
-  .md-sidebar--primary .md-nav .md-nav .md-nav__link::before {
-    width: 0.26rem;
-    height: 0.26rem;
-    margin-right: 0.45rem;
-  }
-}
-/* =========================================================
-   Longview Thesis Bar
-   桌面显示中英双语，手机只显示一句
-   ========================================================= */
-
-.lv-thesis-bar {
-  padding: 0.42rem 1.15rem;
-  border-bottom: 1px solid var(--lv-line);
-  background: rgba(111, 63, 29, 0.035);
-  color: var(--lv-text-soft);
-  font-size: 0.66rem;
-  line-height: 1.4;
-  letter-spacing: 0.015em;
-}
-
-.lv-thesis-bar .lv-thesis-zh {
-  font-weight: 650;
-}
-
-.lv-thesis-bar .lv-thesis-en {
-  margin-left: 0.7rem;
-  color: var(--lv-text-muted);
-}
-
-/* 手机端：只保留一句，避免顶部过高 */
-@media screen and (max-width: 76.1875em) {
-  .lv-thesis-bar {
-    padding: 0.38rem 1rem;
-    font-size: 0.64rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .lv-thesis-bar .lv-thesis-en {
-    display: none;
-  }
-}
-
-/* =========================================================
-   Header Thesis — Bilingual Center
-   顶部栏中间双语门楣句
-   ========================================================= */
-
-.lv-header-wrap {
-  position: relative;
-}
-
-.lv-header-thesis {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 5;
-
-  display: flex;
-  align-items: center;
-  gap: 0.58rem;
-
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-  pointer-events: none;
-
-  color: rgba(255, 250, 240, 0.9);
-  line-height: 1;
-}
-
-.lv-header-thesis-zh {
-  font-size: 0.76rem;
-  font-weight: 750;
-  letter-spacing: 0.045em;
-}
-
-.lv-header-thesis-sep {
-  font-size: 0.7rem;
-  font-weight: 400;
-  color: rgba(255, 250, 240, 0.42);
-}
-
-.lv-header-thesis-en {
-  font-size: 0.66rem;
-  font-weight: 500;
-  letter-spacing: 0.025em;
-  color: rgba(255, 250, 240, 0.68);
-}
-
-/* 较窄桌面只保留中文，避免碰到站名和搜索框 */
-@media screen and (max-width: 92rem) {
-  .lv-header-thesis-en,
-  .lv-header-thesis-sep {
-    display: none;
-  }
-}
-
-/* 手机和平板隐藏 */
-@media screen and (max-width: 76.1875em) {
-  .lv-header-thesis {
-    display: none;
-  }
-}
-/* =========================================================
-   Header Thesis — Centered in Main Header
-   ========================================================= */
-
-.md-header {
-  position: relative;
-}
-
-.lv-header-thesis {
-  position: fixed;
-  top: 1.525rem;
-  left: 50%;
-  z-index: 20;
-
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-  pointer-events: none;
-
-  color: rgba(255, 250, 240, 0.92);
-  line-height: 1;
-}
-
-.lv-header-thesis-zh {
-  font-size: 0.74rem;
-  font-weight: 750;
-  letter-spacing: 0.04em;
-}
-
-.lv-header-thesis-sep {
-  font-size: 0.68rem;
-  color: rgba(255, 250, 240, 0.42);
-}
-
-.lv-header-thesis-en {
-  font-size: 0.65rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: rgba(255, 250, 240, 0.68);
-}
-
-/* 手机和平板不显示 */
-@media screen and (max-width: 76.1875em) {
-  .lv-header-thesis {
-    display: none;
-  }
-}
-/* =========================================================
-   Header Thesis — CSS Direct Insert
-   直接在顶部栏中央生成总门楣句
-   ========================================================= */
-
-@media screen and (min-width: 90em) {
-
-  .md-header__inner {
-    position: relative;
-  }
-
-  .md-header__inner::after {
-    content: "一切从生产力开始  |  Everything begins with productive forces.";
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    color: rgba(255, 250, 240, 0.88);
-    font-size: 0.68rem;
-    line-height: 1;
-    font-weight: 600;
-    letter-spacing: 0.035em;
-
-    white-space: nowrap;
-    pointer-events: none;
-  }
-}
-
-/* 较窄桌面、平板和手机隐藏，防止挤压站名与搜索 */
-@media screen and (max-width: 89.9375em) {
-  .md-header__inner::after {
-    display: none;
-  }
-}
-/* =========================================================
-   Header Final Balance
-   1. 中间门楣句增强
-   2. 左侧站名略缩小
-   3. 主内容与左栏向上收紧
-   ========================================================= */
-
-@media screen and (min-width: 90em) {
-
-  /* 左侧站名略小，把视觉中心让给总门楣句 */
-  .md-header__title {
-    font-size: 0.70rem;
-    font-weight: 650;
-    letter-spacing: 0.015em;
-  }
-
-  /* 中间总门楣句加大、加重 */
-  .md-header__inner::after {
-    font-size: 0.78rem;
-    font-weight: 750;
-    letter-spacing: 0.025em;
-    color: rgba(255, 250, 240, 0.96);
-  }
-
-  /* 正文、标题、面包屑整体向上收一点 */
-  .md-content__inner {
-    padding-top: 1.35rem;
-  }
-
-  /* 左侧目录顶部也同步向上 */
-  .md-sidebar--primary .md-sidebar__scrollwrap {
-    padding-top: 0.65rem;
-  }
-
-  /* 右侧目录同步向上，保持三栏整齐 */
-  .md-sidebar--secondary .md-sidebar__scrollwrap {
-    padding-top: 0.65rem;
-  }
-}
-/* =========================================================
-   Header Final Scale
-   顶板增高，中间总门楣句增强
-   ========================================================= */
-
-@media screen and (min-width: 90em) {
-
-  /* 顶部主栏略增高 */
-  .md-header__inner {
-    min-height: 3.55rem;
-    position: relative;
-  }
-
-  /* 左侧站名同步垂直居中 */
-  .md-header__title {
-    font-size: 0.72rem;
-    font-weight: 650;
-  }
-
-  /* 中间总门楣句 */
-  .md-header__inner::after {
-    content: "一切从生产力开始  |  Everything begins with productive forces.";
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    color: rgba(255, 250, 240, 0.97);
-    font-size: 0.86rem;
-    line-height: 1;
-    font-weight: 800;
-    letter-spacing: 0.025em;
-
-    white-space: nowrap;
-    pointer-events: none;
-  }
-
-  /* 搜索框随顶栏高度略增 */
-  .md-search__form {
-    height: 2.05rem;
-  }
-}
-/* =========================================================
-   Header Final Lock
-   顶栏固定 + 门楣句放大
-   ========================================================= */
-
-@media screen and (min-width: 90em) {
-
-  /* 顶部栏始终固定，不随向下滚动收起 */
-  .md-header {
-    position: sticky !important;
-    top: 0 !important;
-    transform: none !important;
-    z-index: 1000;
-  }
-
-  .md-header--shadow {
-    transform: none !important;
-  }
-
-  .md-header__inner {
-    min-height: 3.75rem;
-    position: relative;
-  }
-
-  /* 左侧站名 */
-  .md-header__title {
-    font-size: 0.72rem;
-    font-weight: 650;
-  }
-
-  /* 中间总门楣句进一步放大 */
-  .md-header__inner::after {
-    content: "一切从生产力开始  |  Everything begins with productive forces.";
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    color: rgba(255, 250, 240, 0.98);
-    font-size: 0.94rem;
-    line-height: 1;
-    font-weight: 800;
-    letter-spacing: 0.022em;
-
-    white-space: nowrap;
-    pointer-events: none;
-  }
-
-  .md-search__form {
-    height: 2.1rem;
   }
 }
