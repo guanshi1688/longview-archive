@@ -1451,3 +1451,42 @@ body.wide-page .md-content__inner {
     display: none;
   }
 }
+/* =========================================================
+   Header Final Balance
+   1. 中间门楣句增强
+   2. 左侧站名略缩小
+   3. 主内容与左栏向上收紧
+   ========================================================= */
+
+@media screen and (min-width: 90em) {
+
+  /* 左侧站名略小，把视觉中心让给总门楣句 */
+  .md-header__title {
+    font-size: 0.70rem;
+    font-weight: 650;
+    letter-spacing: 0.015em;
+  }
+
+  /* 中间总门楣句加大、加重 */
+  .md-header__inner::after {
+    font-size: 0.78rem;
+    font-weight: 750;
+    letter-spacing: 0.025em;
+    color: rgba(255, 250, 240, 0.96);
+  }
+
+  /* 正文、标题、面包屑整体向上收一点 */
+  .md-content__inner {
+    padding-top: 1.35rem;
+  }
+
+  /* 左侧目录顶部也同步向上 */
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    padding-top: 0.65rem;
+  }
+
+  /* 右侧目录同步向上，保持三栏整齐 */
+  .md-sidebar--secondary .md-sidebar__scrollwrap {
+    padding-top: 0.65rem;
+  }
+}
