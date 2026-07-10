@@ -603,6 +603,60 @@ The post-scarcity threshold is not the declaration that a post-scarcity society 
 
 It is not treated here as an ideological slogan, but as a structural condition emerging from productive surplus, absorptive capacity, and a stable civilizational reproduction loop.
 
+
+## 六、札记索引关键词
+
+以下术语主要用于连接 Longview Archive｜观势档案 的核心概念页与 Aster Vale Notes｜星衡札记中的公开札记系列。
+
+这些词不是完整总纲的展开，而是公开文本中的系列关键词，便于读者理解相关短文、案例分析与局部评论。
+
+### 扩张的边界
+Boundary of Expansion
+
+定义：
+扩张的边界，是指一个文明能够长期承接、治理、吸收并维持秩序的边界，而不只是军事抵达、地理进入或短期控制的边界。
+
+核心含义：
+一个区域可以被进入、影响、征服或短期控制，但如果不能稳定接入交通、财政、人口、制度、军事防御和日常治理系统，它就未必能够成为文明秩序的稳定组成部分。
+
+扩张的边界讨论的不是“能不能到达”，而是“能不能长期承接”。
+
+English note:
+The boundary of expansion refers not merely to the geographic or military reach of a civilization, but to the limit at which it can sustainably absorb, govern, defend, finance, and reproduce order over a given space.
+
+It distinguishes temporary reach from durable civilizational incorporation.
+
+### 兜底文明
+Baseline-Support Civilization
+
+定义：
+兜底文明，是指一种以维持最低生存线、内部秩序、灾变承接和社会再生产为核心任务的文明运行模式。
+
+核心含义：
+兜底文明关注的不是短期繁荣，而是一个政治共同体能否在水利、粮食、土地、人口、灾荒、流民、基层治理和风险冲击之间，维持基本生存秩序。
+
+在这一视角中，国家能力不只是财政、军队、行政效率或增长速度，也包括能否持续承担最低生存线与内部秩序成本。
+
+English note:
+A baseline-support civilization refers to a civilizational mode oriented toward maintaining minimum survival conditions, internal order, disaster absorption, and social reproduction.
+
+Its central concern is not short-term prosperity, but whether a political community can sustain basic order under pressure from land, population, food, water, disaster, migration, and local governance burdens.
+
+### 生产的边界
+Boundary of Production
+
+定义：
+生产的边界，是指一个社会、市场或文明体系，能够将资源、资本、劳动力、基础设施、技术输入和制度组织转化为持续生产体系的能力边界。
+
+核心含义：
+外部资本、道路、电力、工业园、廉价劳动力和资源禀赋可以提供工业化条件，但不能自动生成完整工业化。
+
+生产体系需要本地组织能力、技术吸收能力、供应链结构、制度承接能力、社会再生产能力和长期市场闭环共同支撑。
+
+English note:
+The boundary of production refers to the limit at which a society, market, or civilizational system can transform resources, capital, labor, infrastructure, technology, and institutional organization into a durable production system.
+
+External input may provide conditions for industrialization, but it does not automatically create a self-sustaining production system.
 ---
 
 ## 术语使用说明
@@ -2110,8 +2164,19 @@ Future Path 说明新世界为什么必须打开。
 
 > 中国制度为什么不是消费机器，而是做功机器。
 
+---
 
-<br>
+**文明冲突的底层，不是口号，而是运行方式。**
+
+做功型文明创造富余，最终必须回答承接问题。  
+敛生型文明维持自身，也必须面对外部结构变化。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Reality｜现实世界*  
+*2026.07*
 
 
 ---
@@ -2810,7 +2875,19 @@ Future Path 说明新世界为什么必须打开。
 > 全球南方为什么不是第二个中国。
 
 
-<br>
+---
+
+**中国最强的是做功，中国最难的是承接。**
+
+中国不是因为失败而进入压力期。  
+中国是因为做功成功，才进入承接压力期。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Reality｜现实世界*  
+*2026.07*
 
 
 ---
@@ -3465,7 +3542,19 @@ Future Path 说明新世界为什么必须打开。
 > 中国不能把自己的生存方式当作世界答案。
 
 
-<br>
+---
+
+**需求不是承接，人口不是购买力，基建缺口不是稳定回款。**
+
+全球南方可以接住一部分。  
+但它接不住中国工业 2.0 的全部生产富余。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Reality｜现实世界*  
+*2026.07*
 
 
 ---
@@ -4190,8 +4279,19 @@ Future Path 说明新世界为什么必须打开。
 
 那么，成熟市场为什么不愿接？
 
+---
 
-<br>
+**中国道路可以启发世界，但不能被简单复制。**
+
+中国不能替世界承担所有做功。  
+中国更不能把自己的力量消耗在无用功上。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Reality｜现实世界*  
+*2026.07*
 
 
 ---
@@ -4948,8 +5048,19 @@ Future Path 说明新世界为什么必须打开。
 
 > 西方为什么不摧毁中国生产，而是约束中国变现。
 
+---
 
-<br>
+**全球南方接不住，成熟市场不让进。**
+
+这不是中国生产力到顶。  
+这是旧外部变现路径制造出的假顶。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Reality｜现实世界*  
+*2026.07*
 
 
 ---
@@ -5698,8 +5809,19 @@ Future Path 说明新世界为什么必须打开。
 
 > 热战不是最优解。
 
+---
 
-<br>
+**不必摧毁生产，只要约束变现。**
+
+让中国继续生产，却越来越难卖、难回款、难盈利、难形成循环。  
+真正被争夺的，已经不是生产端，而是循环端。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Reality｜现实世界*  
+*2026.07*
 
 
 ---
@@ -6566,8 +6688,19 @@ Future Path 说明新世界为什么必须打开。
 
 > 低成本全球秩序结束后，中国出海进入秩序闭环阶段。
 
+---
 
-<br>
+**热战外部化压力，市场战内部化压力。**
+
+热战制造震撼，市场战制造疲惫。  
+热战可能激活中国，市场战更适合长期拖慢中国。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Reality｜现实世界*  
+*2026.07*
 
 
 ---
@@ -7489,8 +7622,19 @@ Future Path 说明新世界为什么必须打开。
 
 > 从做功机器到闭环机器。
 
+---
 
-<br>
+**卖货不是闭环，建项目不是闭环，产能出海也不是闭环。**
+
+真正的外部闭环，必须卖得出去、收得回来、守得住、转得久。  
+当低成本全球秩序退潮，出海本身就成为秩序能力的考验。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Reality｜现实世界*  
+*2026.07*
 
 
 ---
@@ -8262,8 +8406,19 @@ Future Path 说明新世界为什么必须打开。
 
 > 中国是开放问题，西方是封闭策略。
 
+---
 
-<br>
+**过去，中国解决的是如何组织人做功；未来，中国必须解决的是如何让做功成果回到人身上。**
+
+生产能力决定上限。  
+闭环能力决定存续。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Reality｜现实世界*  
+*2026.07*
 
 
 ---
@@ -9078,7 +9233,19 @@ Reality｜现实世界 组文章走到这里，真正的结构已经显影。
 
 它必须被组织出来。
 
-<br>
+---
+
+**中国必须修好整体，西方只需保住核心。**
+
+中国要回答开放问题，西方只需执行封闭策略。  
+中国赌组织，西方赌拖延。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Reality｜现实世界*  
+*2026.07*
 
 
 ---

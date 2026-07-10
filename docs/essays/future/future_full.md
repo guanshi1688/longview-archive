@@ -603,6 +603,60 @@ The post-scarcity threshold is not the declaration that a post-scarcity society 
 
 It is not treated here as an ideological slogan, but as a structural condition emerging from productive surplus, absorptive capacity, and a stable civilizational reproduction loop.
 
+
+## 六、札记索引关键词
+
+以下术语主要用于连接 Longview Archive｜观势档案 的核心概念页与 Aster Vale Notes｜星衡札记中的公开札记系列。
+
+这些词不是完整总纲的展开，而是公开文本中的系列关键词，便于读者理解相关短文、案例分析与局部评论。
+
+### 扩张的边界
+Boundary of Expansion
+
+定义：
+扩张的边界，是指一个文明能够长期承接、治理、吸收并维持秩序的边界，而不只是军事抵达、地理进入或短期控制的边界。
+
+核心含义：
+一个区域可以被进入、影响、征服或短期控制，但如果不能稳定接入交通、财政、人口、制度、军事防御和日常治理系统，它就未必能够成为文明秩序的稳定组成部分。
+
+扩张的边界讨论的不是“能不能到达”，而是“能不能长期承接”。
+
+English note:
+The boundary of expansion refers not merely to the geographic or military reach of a civilization, but to the limit at which it can sustainably absorb, govern, defend, finance, and reproduce order over a given space.
+
+It distinguishes temporary reach from durable civilizational incorporation.
+
+### 兜底文明
+Baseline-Support Civilization
+
+定义：
+兜底文明，是指一种以维持最低生存线、内部秩序、灾变承接和社会再生产为核心任务的文明运行模式。
+
+核心含义：
+兜底文明关注的不是短期繁荣，而是一个政治共同体能否在水利、粮食、土地、人口、灾荒、流民、基层治理和风险冲击之间，维持基本生存秩序。
+
+在这一视角中，国家能力不只是财政、军队、行政效率或增长速度，也包括能否持续承担最低生存线与内部秩序成本。
+
+English note:
+A baseline-support civilization refers to a civilizational mode oriented toward maintaining minimum survival conditions, internal order, disaster absorption, and social reproduction.
+
+Its central concern is not short-term prosperity, but whether a political community can sustain basic order under pressure from land, population, food, water, disaster, migration, and local governance burdens.
+
+### 生产的边界
+Boundary of Production
+
+定义：
+生产的边界，是指一个社会、市场或文明体系，能够将资源、资本、劳动力、基础设施、技术输入和制度组织转化为持续生产体系的能力边界。
+
+核心含义：
+外部资本、道路、电力、工业园、廉价劳动力和资源禀赋可以提供工业化条件，但不能自动生成完整工业化。
+
+生产体系需要本地组织能力、技术吸收能力、供应链结构、制度承接能力、社会再生产能力和长期市场闭环共同支撑。
+
+English note:
+The boundary of production refers to the limit at which a society, market, or civilizational system can transform resources, capital, labor, infrastructure, technology, and institutional organization into a durable production system.
+
+External input may provide conditions for industrialization, but it does not automatically create a self-sustaining production system.
 ---
 
 ## 术语使用说明
@@ -1265,7 +1319,19 @@ For details, see [Copyright｜版权声明](/copyright/).
 
 > 同一套边界，正在打开新的世界。 
   
-<br>
+---
+
+**同一套边界，在现实中表现为压力，在未来中打开新的世界。**
+
+Future Path 不是另一套理论。  
+它是生产富余之后，关于组织富余与建立新闭环的继续推演。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Future Path｜未来之路*  
+*2026.07*
 
 
 ---
@@ -1783,8 +1849,19 @@ For details, see [Copyright｜版权声明](/copyright/).
 
 > 中国制度为什么不是消费机器，而是做功机器。
 
+---
 
-<br>
+**文明的未来，取决于它如何生产，也取决于它如何承接生产。**
+
+做功能够创造富余。  
+只有承接与闭环，才能把富余变成新的文明条件。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Future Path｜未来之路*  
+*2026.07*
 
 
 ---
@@ -2485,8 +2562,19 @@ For details, see [Copyright｜版权声明](/copyright/).
 
 > 全球南方为什么不是第二个中国。
 
+---
 
-<br>
+**组织生产，是中国过去的历史能力；组织富余，是中国未来的历史任务。**
+
+过去，中国必须证明自己能够做功。  
+未来，中国必须证明做功成果能够回到人的生活。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Future Path｜未来之路*  
+*2026.07*
 
 
 ---
@@ -3143,8 +3231,19 @@ For details, see [Copyright｜版权声明](/copyright/).
 
 > 中国不能把自己的生存方式当作世界答案。
 
+---
 
-<br>
+**新的世界不能建立在把所有社会变成第二个中国之上。**
+
+真正的未来，不是向外复制中国的生存方式。  
+而是让不同社会拥有形成自身承接能力的条件。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Future Path｜未来之路*  
+*2026.07*
 
 
 ---
@@ -3872,8 +3971,19 @@ For details, see [Copyright｜版权声明](/copyright/).
 
 那么，成熟市场为什么不愿接？
 
+---
 
-<br>
+**中国的道路不是替世界做功，而是把自己的做功能力投入真正属于未来的方向。**
+
+不是替别人搬山。  
+而是让中国自己的生产富余打开新的生活与文明空间。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Future Path｜未来之路*  
+*2026.07*
 
 
 ---
@@ -4633,8 +4743,19 @@ For details, see [Copyright｜版权声明](/copyright/).
 
 > 西方为什么不摧毁中国生产，而是约束中国变现。
 
+---
 
-<br>
+**当旧外部承接走到边界，新的承接方式就必须从内部生成。**
+
+成熟市场不愿无限承接中国工业 2.0。  
+这不是未来终止，而是新闭环开始成为历史任务。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Future Path｜未来之路*  
+*2026.07*
 
 
 ---
@@ -5386,8 +5507,19 @@ For details, see [Copyright｜版权声明](/copyright/).
 
 > 热战不是最优解。
 
+---
 
-<br>
+**当外部变现受限，生产富余就必须转化为内部生活与长期再生产。**
+
+生产端已经证明了中国的能力。  
+未来真正要证明的，是中国能否组织自己的循环。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Future Path｜未来之路*  
+*2026.07*
 
 
 ---
@@ -6257,8 +6389,19 @@ For details, see [Copyright｜版权声明](/copyright/).
 
 > 低成本全球秩序结束后，中国出海进入秩序闭环阶段。
 
+---
 
-<br>
+**真正决定未来的，不是谁制造更大的震撼，而是谁建立更持久的闭环。**
+
+外部拖延可以延长压力。  
+内部闭环才能改变时间站在哪一边。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Future Path｜未来之路*  
+*2026.07*
 
 
 ---
@@ -7010,7 +7153,19 @@ For details, see [Copyright｜版权声明](/copyright/).
 
 下一阶段，中国必须证明自己能够组织富余。
 
-<br>
+---
+
+**中国出海的下一阶段，不只是输出产品，而是组织长期秩序。**
+
+卖得出去只是开始。  
+收得回来、守得住、转得久，才构成真正的外部闭环。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Future Path｜未来之路*  
+*2026.07*
 
 
 ---
@@ -7658,7 +7813,19 @@ For details, see [Copyright｜版权声明](/copyright/).
 
 至于如何走进去，那将由未来的中国实践回答。
 
-<br>
+---
+
+**文明竞争的终局，不只是打破对方闭环，而是建立自己的闭环。**
+
+生产富余必须回到人民生活。  
+工业能力必须转化为低风险生活、公共保障、自由发展与长期文明再生产。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Future Path｜未来之路*  
+*2026.07*
 
 
 ---
@@ -7857,7 +8024,19 @@ For details, see [Copyright｜版权声明](/copyright/).
 >
 > 至于如何走进去，那将由未来的中国实践回答。
 
-<br>
+---
+
+**本文不说门后已经有完整答案。本文只说：门已经出现。**
+
+新的世界正在显影。  
+至于如何走进去，将由未来的中国实践回答。
+
+**一切从生产力开始。**
+
+*星衡｜Aster Vale*  
+*Longview Archive｜观势档案*  
+*Future Path｜未来之路*  
+*2026.07*
 
 
 ---
