@@ -1165,82 +1165,181 @@ body.wide-page .md-content__inner {
   }
 }
 /* =========================================================
-   Left Navigation Fix
-   Make collapsible navigation rows aligned and remove split-pill active state
+   15. Left Navigation v4 — Clean Collapsible Tree Fix
+   目的：
+   1) 修复 Framework / Series / 中文 的行对齐
+   2) 去掉选中项的大块 pill 背景
+   3) 恢复展开层级的竖向分割线
+   4) 防止箭头区域单独形成背景块
    ========================================================= */
 
-/* 左侧导航整体行：统一宽度、统一对齐 */
-.md-sidebar--primary .md-nav__link {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
+@media screen and (min-width: 76.25em) {
 
-  width: 100% !important;
-  min-height: 2.25rem !important;
+  /* 左侧滚动区保持干净边界 */
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    padding-left: 0.35rem !important;
+    padding-right: 0.65rem !important;
+    overflow-x: hidden !important;
+  }
 
-  padding: 0.48rem 0.72rem !important;
-  margin: 0.08rem 0 !important;
+  /* 所有导航容器统一满宽 */
+  .md-sidebar--primary .md-sidebar__inner,
+  .md-sidebar--primary .md-nav,
+  .md-sidebar--primary .md-nav__list,
+  .md-sidebar--primary .md-nav__item {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
 
-  border-radius: 0.62rem !important;
-  box-sizing: border-box !important;
+  /* 顶部标题框保持宽度一致 */
+  .md-sidebar--primary .md-nav__title {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+  }
 
-  background: transparent !important;
-  box-shadow: none !important;
-}
+  /* 核心：每一行导航都作为同一个整体处理 */
+  .md-sidebar--primary .md-nav__link {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    align-items: center !important;
 
-/* 右侧展开箭头不要单独形成一个背景块 */
-.md-sidebar--primary .md-nav__link .md-nav__icon,
-.md-sidebar--primary .md-nav__item > .md-nav__link .md-nav__icon {
-  margin-left: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 1.9rem !important;
 
-  background: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
-  border-radius: 0 !important;
+    margin: 0.03rem 0 !important;
+    padding: 0.32rem 0.72rem !important;
 
-  width: 1.2rem !important;
-  min-width: 1.2rem !important;
-}
+    box-sizing: border-box !important;
 
-/* 当前选中项：整行统一高亮，而不是文字和箭头分裂 */
-.md-sidebar--primary .md-nav__link--active,
-.md-sidebar--primary .md-nav__item--active > .md-nav__link {
-  color: #7a3b16 !important;
-  font-weight: 700 !important;
+    color: var(--lv-text-soft) !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
 
-  background: rgba(132, 94, 55, 0.16) !important;
-  box-shadow: inset 3px 0 0 rgba(120, 62, 25, 0.95) !important;
-}
+  /* 文本部分不得单独生成背景 */
+  .md-sidebar--primary .md-nav__link > span,
+  .md-sidebar--primary .md-nav__link > label,
+  .md-sidebar--primary .md-nav__link > .md-ellipsis {
+    min-width: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
 
-/* hover 状态也统一整行 */
-.md-sidebar--primary .md-nav__link:hover {
-  color: #7a3b16 !important;
-  background: rgba(132, 94, 55, 0.10) !important;
-}
+  /* 展开箭头只做箭头，不做按钮背景 */
+  .md-sidebar--primary .md-nav__icon,
+  .md-sidebar--primary .md-nav__link .md-nav__icon {
+    justify-self: end !important;
+    margin-left: 0.65rem !important;
 
-/* 子级导航缩进：只缩进子项，不影响父级标题 */
-.md-sidebar--primary .md-nav .md-nav {
-  padding-left: 0.85rem !important;
-}
+    width: 1rem !important;
+    min-width: 1rem !important;
+    height: 1rem !important;
 
-/* 子级文章标题不要过粗，避免整棵树太重 */
-.md-sidebar--primary .md-nav .md-nav .md-nav__link {
-  font-weight: 500 !important;
-  font-size: 0.78rem !important;
-  line-height: 1.35 !important;
-}
+    color: currentColor !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
 
-/* 子级 active 项保持清楚，但不要像父级那么重 */
-.md-sidebar--primary .md-nav .md-nav .md-nav__link--active {
-  font-weight: 700 !important;
-  background: rgba(132, 94, 55, 0.12) !important;
-}
+  /* hover：只给极淡背景，避免大块按钮感 */
+  .md-sidebar--primary .md-nav__link:hover {
+    color: var(--lv-accent) !important;
+    background: rgba(111, 63, 29, 0.045) !important;
+    border-radius: 0.35rem !important;
+  }
 
-/* 防止旧 CSS 给 label / span / icon 单独加背景 */
-.md-sidebar--primary .md-nav__link > span,
-.md-sidebar--primary .md-nav__link > label,
-.md-sidebar--primary .md-nav__link > .md-ellipsis {
-  background: transparent !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
+  /* 当前路径上的父级：只加重文字，不给整块大背景 */
+  .md-sidebar--primary .md-nav__item--active > .md-nav__link {
+    color: var(--lv-accent) !important;
+    font-weight: 720 !important;
+
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* 当前具体页面：用左线标记，不使用大 pill */
+  .md-sidebar--primary .md-nav__link--active {
+    color: var(--lv-accent) !important;
+    font-weight: 760 !important;
+
+    background: transparent !important;
+    border-left: 2px solid var(--lv-accent) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    padding-left: 0.58rem !important;
+  }
+
+  /* 若当前页面同时是父级，也仍然只显示左线，不显示大块背景 */
+  .md-sidebar--primary .md-nav__item--active > .md-nav__link--active {
+    background: transparent !important;
+    border-left: 2px solid var(--lv-accent) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* 子树：恢复层级竖线 */
+  .md-sidebar--primary .md-nav .md-nav {
+    width: auto !important;
+    max-width: none !important;
+
+    margin-left: 0.72rem !important;
+    padding-left: 0.72rem !important;
+
+    border-left: 1px solid rgba(111, 63, 29, 0.18) !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 子级文章行：比父级轻一点，但保持同一行逻辑 */
+  .md-sidebar--primary .md-nav .md-nav .md-nav__link {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0.02rem 0 !important;
+    padding: 0.24rem 0.56rem !important;
+
+    font-size: 0.62rem !important;
+    line-height: 1.34 !important;
+    font-weight: 500 !important;
+
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* 子级当前文章 */
+  .md-sidebar--primary .md-nav .md-nav .md-nav__link--active {
+    color: var(--lv-accent) !important;
+    font-weight: 740 !important;
+
+    background: transparent !important;
+    border-left: 2px solid var(--lv-accent) !important;
+    padding-left: 0.46rem !important;
+  }
+
+  /* 顶层中文入口与英文栏目保持同一基线 */
+  .md-sidebar--primary
+  .md-nav--primary
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav__link {
+    padding-left: 0.72rem !important;
+    padding-right: 0.72rem !important;
+  }
+
+  /* 覆盖旧 CSS 中的宽度压缩和右边距设置 */
+  .md-sidebar--primary .md-nav__title,
+  .md-sidebar--primary .md-nav__link {
+    margin-right: 0 !important;
+  }
 }
