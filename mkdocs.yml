@@ -1,4 +1,4 @@
-site_name: Longview Archive
+site_name: Longview Archive 0001
 site_description: A public archive on productive forces, civilizational form, absorptive capacity, value capture, and long-term social change.
 site_author: Aster Vale
 site_url: https://longview-archive.org
@@ -28,7 +28,7 @@ nav:
       - Core Terms: essays/english/core-terms-eng.md
 
   - Framework:
-      - Overview: essays/english/index.md
+      - Framework Overview: essays/english/index.md
       - Productive Forces and Civilization: essays/english/geography-productive-forces-and-civilization.md
       - Civilizational Metabolism: essays/english/civilizational-metabolism.md
       - Absorptive Capacity: essays/english/absorptive-capacity.md
