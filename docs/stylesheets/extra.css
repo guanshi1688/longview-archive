@@ -1164,3 +1164,424 @@ body.wide-page .md-content__inner {
     font-weight: 600;
   }
 }
+
+
+/* =========================================================
+   15. Left Navigation v5 — Three-Level Clean Tree
+   目的：
+   1) 长标题自动换行，不伸出左栏
+   2) 顶层 Home / Start Here / Framework / Series / Archive / 中文 同基线
+   3) 取消大块选中背景，只保留文字加重 + 左线
+   4) 三层字体有区分：一级 > 二级 > 三级
+   ========================================================= */
+
+@media screen and (min-width: 76.25em) {
+
+  /* 左栏整体宽度与滚动区 */
+  .md-sidebar--primary {
+    width: 20rem !important;
+    min-width: 20rem !important;
+    flex: 0 0 20rem !important;
+    padding-right: 0.95rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0.72rem 0.55rem 2rem 0.45rem !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .md-sidebar--primary .md-sidebar__inner,
+  .md-sidebar--primary .md-nav,
+  .md-sidebar--primary .md-nav__list,
+  .md-sidebar--primary .md-nav__item {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 左栏标题框 */
+  .md-sidebar--primary .md-nav__title {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 0.72rem 0 !important;
+    padding: 0.58rem 0.72rem !important;
+    box-sizing: border-box !important;
+
+    color: var(--lv-text) !important;
+    background: rgba(255, 253, 248, 0.74) !important;
+    border: 1px solid var(--lv-line) !important;
+    border-radius: 0.7rem !important;
+    box-shadow: 0 8px 22px rgba(40, 31, 20, 0.045) !important;
+  }
+
+  /* 所有导航行：同一行布局，箭头独立但不单独成按钮 */
+  .md-sidebar--primary .md-nav__link {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 1.15rem !important;
+    column-gap: 0.35rem !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 1.78rem !important;
+
+    margin: 0.02rem 0 !important;
+    padding: 0.30rem 0.62rem !important;
+    box-sizing: border-box !important;
+
+    color: var(--lv-text-soft) !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  /* Material 默认 md-ellipsis 会 nowrap/ellipsis，这里强制允许换行 */
+  .md-sidebar--primary .md-nav__link .md-ellipsis,
+  .md-sidebar--primary .md-nav__link > span,
+  .md-sidebar--primary .md-nav__link > label {
+    min-width: 0 !important;
+    max-width: 100% !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* 展开箭头：只保留图标，不保留背景块 */
+  .md-sidebar--primary .md-nav__icon,
+  .md-sidebar--primary .md-nav__link .md-nav__icon {
+    grid-column: 2 !important;
+    justify-self: end !important;
+    align-self: center !important;
+
+    width: 1rem !important;
+    min-width: 1rem !important;
+    height: 1rem !important;
+    margin: 0 !important;
+
+    color: currentColor !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* 一级：Home / Start Here / Framework / Series / Archive / 中文 */
+  .md-sidebar--primary
+  .md-nav--primary
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav__link {
+    padding-left: 0.62rem !important;
+    padding-right: 0.62rem !important;
+
+    font-size: 0.76rem !important;
+    line-height: 1.32 !important;
+    font-weight: 520 !important;
+  }
+
+  /* 二级：Framework 下的主文 / Series 下的系列名 */
+  .md-sidebar--primary
+  .md-nav--primary
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav__link {
+    padding-left: 0.48rem !important;
+    padding-right: 0.50rem !important;
+
+    font-size: 0.67rem !important;
+    line-height: 1.34 !important;
+    font-weight: 620 !important;
+  }
+
+  /* 三级：系列内部文章 */
+  .md-sidebar--primary
+  .md-nav--primary
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav__link {
+    padding-left: 0.42rem !important;
+    padding-right: 0.42rem !important;
+
+    font-size: 0.61rem !important;
+    line-height: 1.30 !important;
+    font-weight: 500 !important;
+  }
+
+  /* 子树竖线：恢复层级感 */
+  .md-sidebar--primary .md-nav .md-nav {
+    width: auto !important;
+    max-width: none !important;
+
+    margin-left: 0.72rem !important;
+    padding-left: 0.72rem !important;
+
+    border-left: 1px solid rgba(111, 63, 29, 0.17) !important;
+    box-sizing: border-box !important;
+  }
+
+  /* hover 只给极淡底色，不做大按钮 */
+  .md-sidebar--primary .md-nav__link:hover {
+    color: var(--lv-accent) !important;
+    background: rgba(111, 63, 29, 0.045) !important;
+    border-radius: 0.32rem !important;
+  }
+
+  /* 当前路径上的父级：只加重文字 */
+  .md-sidebar--primary .md-nav__item--active > .md-nav__link {
+    color: var(--lv-accent) !important;
+    font-weight: 720 !important;
+
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* 当前具体页面：左线 + 加重，不要大块背景 */
+  .md-sidebar--primary .md-nav__link--active {
+    color: var(--lv-accent) !important;
+    font-weight: 760 !important;
+
+    background: transparent !important;
+    border-left: 2px solid var(--lv-accent) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    padding-left: 0.48rem !important;
+  }
+
+  /* 当前页是父级时也不加大背景 */
+  .md-sidebar--primary .md-nav__item--active > .md-nav__link--active {
+    background: transparent !important;
+    border-left: 2px solid var(--lv-accent) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* 覆盖旧 CSS 中对 reality/future/core-terms 的圆点，避免英文树里混乱 */
+  .md-sidebar--primary .md-nav__link[href*="/essays/reality/"]::before,
+  .md-sidebar--primary .md-nav__link[href*="/reality/"]::before,
+  .md-sidebar--primary .md-nav__link[href*="/future/"]::before,
+  .md-sidebar--primary .md-nav__link[href*="/future-path/"]::before,
+  .md-sidebar--primary .md-nav__link[href*="/core-terms/"]::before {
+    content: none !important;
+    display: none !important;
+  }
+}
+
+
+/* =========================================================
+   16. Longview Final Polish v6
+   1) 去掉正文标题下方双横线的“过重感”
+   2) 拉开左侧树线与箭头距离
+   3) 强制长标题换行
+   4) 保持三级字体层级
+   ========================================================= */
+
+/* 正文标题：去掉短棕线，只保留极轻长线 */
+.md-typeset h1 {
+  border-bottom: 1px solid rgba(70, 60, 45, 0.18) !important;
+  padding-bottom: 0.78rem !important;
+}
+
+.md-typeset h1::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* 左侧树最终微调 */
+@media screen and (min-width: 76.25em) {
+
+  /* 左栏右侧留一点空间，避免贴滚动条 */
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    padding-left: 0.42rem !important;
+    padding-right: 0.85rem !important;
+  }
+
+  /* 导航行：箭头列更宽，文字与箭头不挤 */
+  .md-sidebar--primary .md-nav__link {
+    grid-template-columns: minmax(0, 1fr) 1.45rem !important;
+    column-gap: 0.58rem !important;
+    padding-right: 0.42rem !important;
+  }
+
+  /* 箭头右侧留白 */
+  .md-sidebar--primary .md-nav__icon,
+  .md-sidebar--primary .md-nav__link .md-nav__icon {
+    justify-self: center !important;
+  }
+
+  /* 子树竖线与文字距离稍微拉开 */
+  .md-sidebar--primary .md-nav .md-nav {
+    margin-left: 0.82rem !important;
+    padding-left: 0.86rem !important;
+    border-left: 1px solid rgba(111, 63, 29, 0.14) !important;
+  }
+
+  /* 长标题必须换行，不能横向伸出 */
+  .md-sidebar--primary .md-nav__link,
+  .md-sidebar--primary .md-nav__link .md-ellipsis {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  /* 一级：更像目录大类 */
+  .md-sidebar--primary
+  .md-nav--primary
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav__link {
+    font-size: 0.76rem !important;
+    line-height: 1.34 !important;
+    font-weight: 540 !important;
+    padding-top: 0.34rem !important;
+    padding-bottom: 0.34rem !important;
+  }
+
+  /* 二级：系列名 / 框架文章 */
+  .md-sidebar--primary
+  .md-nav--primary
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav__link {
+    font-size: 0.67rem !important;
+    line-height: 1.36 !important;
+    font-weight: 630 !important;
+  }
+
+  /* 三级：系列内部文章，允许两行或三行，不外溢 */
+  .md-sidebar--primary
+  .md-nav--primary
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav__link {
+    font-size: 0.60rem !important;
+    line-height: 1.30 !important;
+    font-weight: 500 !important;
+    padding-top: 0.26rem !important;
+    padding-bottom: 0.26rem !important;
+  }
+
+  /* 当前项的左线更细，避免像两条分割线 */
+  .md-sidebar--primary .md-nav__link--active,
+  .md-sidebar--primary .md-nav__item--active > .md-nav__link--active {
+    border-left: 1.5px solid var(--lv-accent) !important;
+  }
+}
+
+
+/* =========================================================
+   17. Longview Final Polish v7
+   修复：
+   1) 隐藏嵌套导航的 md-nav__title，消除 Reader Map / Overview / Copyright 双显
+   2) 保留最顶层 Longview Archive 标题框
+   3) 轻化展开后的树状分割线，并拉开箭头距离
+   ========================================================= */
+
+@media screen and (min-width: 76.25em) {
+
+  /* 关键修复：Material 会在子导航里生成 .md-nav__title。
+     旧 CSS 把它显示出来后，就会看起来像“同一页面出现两次”。
+     这里只显示最顶层标题框，隐藏所有嵌套标题。 */
+  .md-sidebar--primary .md-nav__title {
+    display: none !important;
+  }
+
+  .md-sidebar--primary .md-nav--primary > .md-nav__title {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 0.72rem 0 !important;
+    padding: 0.58rem 0.72rem !important;
+    box-sizing: border-box !important;
+
+    color: var(--lv-text) !important;
+    background: rgba(255, 253, 248, 0.74) !important;
+    border: 1px solid var(--lv-line) !important;
+    border-radius: 0.7rem !important;
+    box-shadow: 0 8px 22px rgba(40, 31, 20, 0.045) !important;
+    font-size: 0.70rem !important;
+    font-weight: 740 !important;
+  }
+
+  /* 子树竖线：只在展开时出现是正常的，但这里把它淡化并与文字拉开 */
+  .md-sidebar--primary .md-nav .md-nav {
+    margin-left: 0.80rem !important;
+    padding-left: 0.98rem !important;
+    border-left: 1px solid rgba(111, 63, 29, 0.105) !important;
+  }
+
+  /* 箭头区域更宽，避免贴着分割线或文字 */
+  .md-sidebar--primary .md-nav__link {
+    grid-template-columns: minmax(0, 1fr) 1.70rem !important;
+    column-gap: 0.72rem !important;
+    padding-right: 0.42rem !important;
+  }
+
+  .md-sidebar--primary .md-nav__icon,
+  .md-sidebar--primary .md-nav__link .md-nav__icon {
+    justify-self: center !important;
+    opacity: 0.86 !important;
+  }
+
+  /* 防止隐藏嵌套 title 后，当前 index link 仍被旧规则制造出块状背景 */
+  .md-sidebar--primary .md-nav__link--index,
+  .md-sidebar--primary .md-nav__link--active {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* 当前具体页面保持左线，不使用大背景 */
+  .md-sidebar--primary .md-nav__link--active {
+    border-left: 1.5px solid var(--lv-accent) !important;
+  }
+
+  /* 三级长标题最终保护 */
+  .md-sidebar--primary .md-nav__link .md-ellipsis {
+    display: block !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+}
