@@ -1506,3 +1506,82 @@ body.wide-page .md-content__inner {
     border-left: 1.5px solid var(--lv-accent) !important;
   }
 }
+
+
+/* =========================================================
+   17. Longview Final Polish v7
+   修复：
+   1) 隐藏嵌套导航的 md-nav__title，消除 Reader Map / Overview / Copyright 双显
+   2) 保留最顶层 Longview Archive 标题框
+   3) 轻化展开后的树状分割线，并拉开箭头距离
+   ========================================================= */
+
+@media screen and (min-width: 76.25em) {
+
+  /* 关键修复：Material 会在子导航里生成 .md-nav__title。
+     旧 CSS 把它显示出来后，就会看起来像“同一页面出现两次”。
+     这里只显示最顶层标题框，隐藏所有嵌套标题。 */
+  .md-sidebar--primary .md-nav__title {
+    display: none !important;
+  }
+
+  .md-sidebar--primary .md-nav--primary > .md-nav__title {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 0.72rem 0 !important;
+    padding: 0.58rem 0.72rem !important;
+    box-sizing: border-box !important;
+
+    color: var(--lv-text) !important;
+    background: rgba(255, 253, 248, 0.74) !important;
+    border: 1px solid var(--lv-line) !important;
+    border-radius: 0.7rem !important;
+    box-shadow: 0 8px 22px rgba(40, 31, 20, 0.045) !important;
+    font-size: 0.70rem !important;
+    font-weight: 740 !important;
+  }
+
+  /* 子树竖线：只在展开时出现是正常的，但这里把它淡化并与文字拉开 */
+  .md-sidebar--primary .md-nav .md-nav {
+    margin-left: 0.80rem !important;
+    padding-left: 0.98rem !important;
+    border-left: 1px solid rgba(111, 63, 29, 0.105) !important;
+  }
+
+  /* 箭头区域更宽，避免贴着分割线或文字 */
+  .md-sidebar--primary .md-nav__link {
+    grid-template-columns: minmax(0, 1fr) 1.70rem !important;
+    column-gap: 0.72rem !important;
+    padding-right: 0.42rem !important;
+  }
+
+  .md-sidebar--primary .md-nav__icon,
+  .md-sidebar--primary .md-nav__link .md-nav__icon {
+    justify-self: center !important;
+    opacity: 0.86 !important;
+  }
+
+  /* 防止隐藏嵌套 title 后，当前 index link 仍被旧规则制造出块状背景 */
+  .md-sidebar--primary .md-nav__link--index,
+  .md-sidebar--primary .md-nav__link--active {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* 当前具体页面保持左线，不使用大背景 */
+  .md-sidebar--primary .md-nav__link--active {
+    border-left: 1.5px solid var(--lv-accent) !important;
+  }
+
+  /* 三级长标题最终保护 */
+  .md-sidebar--primary .md-nav__link .md-ellipsis {
+    display: block !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+}
