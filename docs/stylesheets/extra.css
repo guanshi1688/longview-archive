@@ -1394,3 +1394,115 @@ body.wide-page .md-content__inner {
     display: none !important;
   }
 }
+
+
+/* =========================================================
+   16. Longview Final Polish v6
+   1) 去掉正文标题下方双横线的“过重感”
+   2) 拉开左侧树线与箭头距离
+   3) 强制长标题换行
+   4) 保持三级字体层级
+   ========================================================= */
+
+/* 正文标题：去掉短棕线，只保留极轻长线 */
+.md-typeset h1 {
+  border-bottom: 1px solid rgba(70, 60, 45, 0.18) !important;
+  padding-bottom: 0.78rem !important;
+}
+
+.md-typeset h1::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* 左侧树最终微调 */
+@media screen and (min-width: 76.25em) {
+
+  /* 左栏右侧留一点空间，避免贴滚动条 */
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    padding-left: 0.42rem !important;
+    padding-right: 0.85rem !important;
+  }
+
+  /* 导航行：箭头列更宽，文字与箭头不挤 */
+  .md-sidebar--primary .md-nav__link {
+    grid-template-columns: minmax(0, 1fr) 1.45rem !important;
+    column-gap: 0.58rem !important;
+    padding-right: 0.42rem !important;
+  }
+
+  /* 箭头右侧留白 */
+  .md-sidebar--primary .md-nav__icon,
+  .md-sidebar--primary .md-nav__link .md-nav__icon {
+    justify-self: center !important;
+  }
+
+  /* 子树竖线与文字距离稍微拉开 */
+  .md-sidebar--primary .md-nav .md-nav {
+    margin-left: 0.82rem !important;
+    padding-left: 0.86rem !important;
+    border-left: 1px solid rgba(111, 63, 29, 0.14) !important;
+  }
+
+  /* 长标题必须换行，不能横向伸出 */
+  .md-sidebar--primary .md-nav__link,
+  .md-sidebar--primary .md-nav__link .md-ellipsis {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  /* 一级：更像目录大类 */
+  .md-sidebar--primary
+  .md-nav--primary
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav__link {
+    font-size: 0.76rem !important;
+    line-height: 1.34 !important;
+    font-weight: 540 !important;
+    padding-top: 0.34rem !important;
+    padding-bottom: 0.34rem !important;
+  }
+
+  /* 二级：系列名 / 框架文章 */
+  .md-sidebar--primary
+  .md-nav--primary
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav__link {
+    font-size: 0.67rem !important;
+    line-height: 1.36 !important;
+    font-weight: 630 !important;
+  }
+
+  /* 三级：系列内部文章，允许两行或三行，不外溢 */
+  .md-sidebar--primary
+  .md-nav--primary
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav
+  > .md-nav__list
+  > .md-nav__item
+  > .md-nav__link {
+    font-size: 0.60rem !important;
+    line-height: 1.30 !important;
+    font-weight: 500 !important;
+    padding-top: 0.26rem !important;
+    padding-bottom: 0.26rem !important;
+  }
+
+  /* 当前项的左线更细，避免像两条分割线 */
+  .md-sidebar--primary .md-nav__link--active,
+  .md-sidebar--primary .md-nav__item--active > .md-nav__link--active {
+    border-left: 1.5px solid var(--lv-accent) !important;
+  }
+}
