@@ -1,4 +1,4 @@
-site_name: Longview Archive 0002
+site_name: Longview Archive 
 site_description: A public archive on productive forces, civilizational form, absorptive capacity, value capture, and long-term social change.
 site_author: Aster Vale
 site_url: https://longview-archive.org
@@ -131,7 +131,7 @@ nav:
 # 放在主 nav 的最后一组，替换当前只有“中文入口”的简版中文导航。
 # 文件名请按你仓库里的真实文件名微调。
 
-  - 中文:
+  - Chinese:
       - 中文总览: essays/chinese/index.md
       - 核心术语: essays/chinese/core-terms-chinese.md
       - 阅读规则: essays/chinese/reading-rules.md
