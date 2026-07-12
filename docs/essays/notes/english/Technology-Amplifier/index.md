@@ -610,16 +610,10 @@ Technology creates new possibilities.
 
 But structure determines whether those possibilities become power, dependency, instability, or social transformation.
 
----
+## Copyright Notice
 
-**Series note:**  
-This essay is part of *Technology as Structural Amplifier*, a Longview Archive series on why technology does not replace structure, but amplifies the capacities, constraints, and fragilities already present in production systems, institutions, platforms, finance, and states.
+This document and the essays in this directory are English notes and theoretical materials of Longview Archive｜观势档案.
 
----
+Unless otherwise stated, all contents are original works by the author. They may not be reproduced, excerpted, rewritten, translated, used for training, commercialized, or republished in any form without permission.
 
-Aster Vale  
-Longview Archive｜观势档案  
-Technology as Structural Amplifier  
-2026.07
-
-© 2026 Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
+If platform-published versions differ from this archive, the archived version in this repository should be treated as the reference version.
