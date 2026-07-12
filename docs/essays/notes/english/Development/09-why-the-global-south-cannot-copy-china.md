@@ -552,4 +552,14 @@ But it is the only path that can become durable.
 
 ---
 
-Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
+**Series note:**  
+This essay is part of *The Boundaries of Development*, a Longview Archive series on why infrastructure, capital, factories, resources, cheap labor, foreign investment, and supply chains do not automatically create a functioning production system.
+
+---
+
+Aster Vale  
+Longview Archive｜观势档案  
+The Boundaries of Development  
+2026.07
+
+© 2026 Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
