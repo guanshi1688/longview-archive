@@ -892,4 +892,4 @@ They become civilization only when a society can organize them into life.
 
 ---
 
-This article is part of Evan Vale’s English notes on productive forces, civilizational form, absorptive capacity, value capture, production-bearing systems, technological amplification, and the structural limits of development.
+This article is part of English notes on productive forces, civilizational form, absorptive capacity, value capture, production-bearing systems, technological amplification, and the structural limits of development.

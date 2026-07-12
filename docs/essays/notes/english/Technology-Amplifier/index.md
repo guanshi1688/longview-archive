@@ -610,6 +610,10 @@ Technology creates new possibilities.
 
 But structure determines whether those possibilities become power, dependency, instability, or social transformation.
 
----
+## Copyright Notice
 
-This article is part of **Technology as Structural Amplifier** by Evan Vale — a series on AI, automation, data, platforms, finance, state capacity, labor, and the systems that determine whether technology becomes power or pressure.
+This document and the essays in this directory are English notes and theoretical materials of Longview Archive｜观势档案.
+
+Unless otherwise stated, all contents are original works by the author. They may not be reproduced, excerpted, rewritten, translated, used for training, commercialized, or republished in any form without permission.
+
+If platform-published versions differ from this archive, the archived version in this repository should be treated as the reference version.

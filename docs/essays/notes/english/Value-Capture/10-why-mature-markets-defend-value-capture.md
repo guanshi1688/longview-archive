@@ -1008,4 +1008,15 @@ Mature markets gather these layers together and defend the final authority to de
 
 ---
 
-This article is part of **The Architecture of Value Capture** by Evan Vale — a series on pricing power, standards, finance, platforms, market access, and the structures through which global production becomes unequal value.
+**Series note:**  
+This essay is part of *The Architecture of Value Capture*, a Longview Archive series on why production is not value capture, and why value is often captured at the interface.
+
+---
+
+Aster Vale  
+Longview Archive｜观势档案  
+The Architecture of Value Capture  
+2026.07
+
+© 2026 Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
+

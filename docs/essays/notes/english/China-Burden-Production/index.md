@@ -606,4 +606,4 @@ And we must ask what institutions are required when production itself becomes on
 
 ---
 
-This article is part of **China and the Burden of Production** by Evan Vale — a series on China as a production-bearing system, examining factories, employment, infrastructure, supply chains, local governments, domestic demand, and the institutional burden of industrial strength.
+© 2026 Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.

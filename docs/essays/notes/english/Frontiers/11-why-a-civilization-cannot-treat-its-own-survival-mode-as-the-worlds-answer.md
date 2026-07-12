@@ -468,4 +468,14 @@ Its boundary is the limit of another society’s capacity to make it its own.
 
 ---
 
-Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
+**Series note:**  
+This essay is part of *Frontiers*, a Longview Archive series on why civilizational influence is not the same as civilizational replication.
+
+---
+
+Aster Vale  
+Longview Archive｜观势档案  
+Frontiers  
+2026.07
+
+© 2026 Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.

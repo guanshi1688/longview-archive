@@ -350,6 +350,10 @@ To understand modern global production, it is not enough to ask where things are
 
 We must also ask where value is priced, recognized, protected, financed, distributed, settled, and captured.
 
----
+## Copyright Notice
 
-This article is part of **The Architecture of Value Capture** by Evan Vale — a series on pricing power, standards, finance, platforms, market access, and the structures through which global production becomes unequal value.
+This document and the essays in this directory are English notes and theoretical materials of Longview Archive｜观势档案.
+
+Unless otherwise stated, all contents are original works by the author. They may not be reproduced, excerpted, rewritten, translated, used for training, commercialized, or republished in any form without permission.
+
+If platform-published versions differ from this archive, the archived version in this repository should be treated as the reference version.
