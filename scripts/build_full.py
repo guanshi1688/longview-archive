@@ -1,11 +1,51 @@
 from pathlib import Path
 import re
 
-ROOT = Path(__file__).resolve().parents[1]
+"""
+Build Chinese full-reading bundles for Longview Archive.
+
+Current public Chinese paths:
+
+docs/essays/chinese/index.md
+docs/essays/chinese/core-terms-chinese.md
+docs/essays/chinese/reading-rules.md
+docs/essays/chinese/reality/
+docs/essays/chinese/future/
+
+This script generates:
+
+docs/essays/chinese/reality/reality_full.md
+docs/essays/chinese/future/future_full.md
+
+The generated full bundles are internal/review reading files.
+Do not add them to public mkdocs.yml navigation unless you explicitly want to publish them.
+"""
+
+
+def find_repo_root() -> Path:
+    """
+    Find repository root by walking upward until a docs/ folder is found.
+
+    This is more robust than Path(__file__).resolve().parents[1]:
+    - works if this script is placed at repo root;
+    - works if it is placed under scripts/;
+    - works if it is placed under tools/.
+    """
+    here = Path(__file__).resolve()
+
+    for candidate in [here.parent, *here.parents]:
+        if (candidate / "docs").is_dir():
+            return candidate
+
+    raise RuntimeError("Cannot find repository root: no docs/ folder found above this script.")
+
+
+ROOT = find_repo_root()
 DOCS = ROOT / "docs"
 
-REALITY_DIR = DOCS / "essays" / "reality"
-FUTURE_DIR = DOCS / "essays" / "future"
+CHINESE_DIR = DOCS / "essays" / "chinese"
+REALITY_DIR = CHINESE_DIR / "reality"
+FUTURE_DIR = CHINESE_DIR / "future"
 
 
 def clean_article(text: str) -> str:
@@ -20,18 +60,19 @@ def clean_article(text: str) -> str:
     text = text.strip()
 
     # 1. 去掉末尾版权声明块
-    # 标准版权块通常从 --- 开始，到 For details... 结束
+    # 兼容带 For details... 与不带 For details... 的版本
     copyright_patterns = [
-        # 中英版权完整块：中文在前，英文在后
-        r"\n---\s*\n\s*© 2026 Longview Archive｜观势档案。.*?For details, see \[Copyright｜版权声明\]\(/copyright/\)\.\s*$",
+        # 中英版权完整块，通常由 --- 开始
+        r"\n---\s*\n\s*© 2026 Longview Archive｜观势档案。.*?(?:For details, see \[Copyright｜版权声明\]\(/copyright/\)\.)?\s*$",
 
-        # 英文版权在前的版本
-        r"\n---\s*\n\s*© 2026 Longview Archive\. .*?For details, see \[Copyright｜版权声明\]\(/copyright/\)\.\s*$",
+        # 英文版权完整块，通常由 --- 开始
+        r"\n---\s*\n\s*© 2026 Longview Archive\. .*?(?:For details, see \[Copyright｜版权声明\]\(/copyright/\)\.)?\s*$",
 
-        # 如果没有前置 ---，也清理
-        r"\n\s*© 2026 Longview Archive｜观势档案。.*?For details, see \[Copyright｜版权声明\]\(/copyright/\)\.\s*$",
+        # 无前置 --- 的中文版权块
+        r"\n\s*© 2026 Longview Archive｜观势档案。.*?(?:For details, see \[Copyright｜版权声明\]\(/copyright/\)\.)?\s*$",
 
-        r"\n\s*© 2026 Longview Archive\. .*?For details, see \[Copyright｜版权声明\]\(/copyright/\)\.\s*$",
+        # 无前置 --- 的英文版权块
+        r"\n\s*© 2026 Longview Archive\. .*?(?:For details, see \[Copyright｜版权声明\]\(/copyright/\)\.)?\s*$",
     ]
 
     for pattern in copyright_patterns:
@@ -40,45 +81,28 @@ def clean_article(text: str) -> str:
     text = text.strip()
 
     # 2. 去掉末尾署名块
-    signature_patterns = [
-        # Reality：普通 Markdown 换行
-        r"\n\s*星衡｜Aster Vale\s*\nLongview Archive｜观势档案\s*\nReality｜现实世界\s*\n2026\.07\s*$",
+    # 先用通用新格式清理：
+    # 星衡｜Aster Vale
+    # Longview Archive｜观势档案
+    # 任意组名
+    # 2026.07
+    generic_signature_patterns = [
+        r"\n\s*星衡｜Aster Vale\s*\n\s*Longview Archive｜观势档案\s*\n\s*[^\n]+?\s*\n\s*2026\.07\s*$",
 
-        # Future Path：普通 Markdown 换行
-        r"\n\s*星衡｜Aster Vale\s*\nLongview Archive｜观势档案\s*\nFuture Path｜未来之路\s*\n2026\.07\s*$",
-
-        # Longview Essays / 总览等
-        r"\n\s*星衡｜Aster Vale\s*\nLongview Archive｜观势档案\s*\nLongview Essays｜长线观势\s*\n2026\.07\s*$",
-
-        # Core Terms / 理论术语等
-        r"\n\s*星衡｜Aster Vale\s*\nLongview Archive｜观势档案\s*\nCore Terms｜理论核心术语\s*\n2026\.07\s*$",
-
-        # Reading Rules / 阅读评判规则等
-        r"\n\s*星衡｜Aster Vale\s*\nLongview Archive｜观势档案\s*\nHow to Read This Framework｜阅读评判规则\s*\n2026\.07\s*$",
-
-        # Reality：HTML <br> 换行
-        r"\n\s*星衡｜Aster Vale<br>\s*\n?Longview Archive｜观势档案<br>\s*\n?Reality｜现实世界<br>\s*\n?2026\.07\s*$",
-
-        # Future Path：HTML <br> 换行
-        r"\n\s*星衡｜Aster Vale<br>\s*\n?Longview Archive｜观势档案<br>\s*\n?Future Path｜未来之路<br>\s*\n?2026\.07\s*$",
-
-        # Longview Essays：HTML <br> 换行
-        r"\n\s*星衡｜Aster Vale<br>\s*\n?Longview Archive｜观势档案<br>\s*\n?Longview Essays｜长线观势<br>\s*\n?2026\.07\s*$",
-
-        # Core Terms：HTML <br> 换行
-        r"\n\s*星衡｜Aster Vale<br>\s*\n?Longview Archive｜观势档案<br>\s*\n?Core Terms｜理论核心术语<br>\s*\n?2026\.07\s*$",
-
-        # Reading Rules：HTML <br> 换行
-        r"\n\s*星衡｜Aster Vale<br>\s*\n?Longview Archive｜观势档案<br>\s*\n?How to Read This Framework｜阅读评判规则<br>\s*\n?2026\.07\s*$",
-
-        # 旧署名格式：带分隔线
-        r"\n---\s*\n\s*星衡 / Aster Vale\s*\nX\.H\s*\n星衡札记・Aster Vale Notes\s*\n\s*于上海\s*\n2026/7\s*$",
-
-        # 旧署名格式：无分隔线
-        r"\n星衡 / Aster Vale\s*\nX\.H\s*\n星衡札记・Aster Vale Notes\s*\n\s*于上海\s*\n2026/7\s*$",
+        r"\n\s*星衡｜Aster Vale<br>\s*\n?Longview Archive｜观势档案<br>\s*\n?[^\n<]+(?:｜[^\n<]+)?<br>\s*\n?2026\.07\s*$",
     ]
 
-    for pattern in signature_patterns:
+    for pattern in generic_signature_patterns:
+        text = re.sub(pattern, "", text, flags=re.MULTILINE)
+
+    # 旧署名格式：带分隔线
+    legacy_signature_patterns = [
+        r"\n---\s*\n\s*星衡 / Aster Vale\s*\nX\.H\s*\n星衡札记・Aster Vale Notes\s*\n\s*于上海\s*\n2026/[67]\s*$",
+
+        r"\n星衡 / Aster Vale\s*\nX\.H\s*\n星衡札记・Aster Vale Notes\s*\n\s*于上海\s*\n2026/[67]\s*$",
+    ]
+
+    for pattern in legacy_signature_patterns:
         text = re.sub(pattern, "", text, flags=re.MULTILINE)
 
     text = text.strip()
@@ -99,7 +123,26 @@ def read_doc(relative_path: str) -> str:
 
 
 def read_group_file(source_dir: Path, filename: str) -> str:
+    """
+    Read article file inside a group directory.
+
+    Reality 08 had once appeared in mkdocs.yml as 08s.md.
+    To avoid breaking older local trees, this function allows a fallback from
+    08.md to 08s.md. Prefer normalizing the actual repo file to 08.md.
+    """
     path = source_dir / filename
+
+    fallback_names = {
+        "08.md": ["08s.md"],
+    }
+
+    if not path.exists():
+        for alt in fallback_names.get(filename, []):
+            alt_path = source_dir / alt
+            if alt_path.exists():
+                print(f"Using fallback file for {filename}: {alt_path}")
+                path = alt_path
+                break
 
     if not path.exists():
         raise FileNotFoundError(f"Missing file: {path}")
@@ -122,7 +165,7 @@ def build_full(
     parts.append(intro.strip())
     parts.append("\n\n---\n")
 
-    # 合订本前置内容：总览 + Core Terms + 阅读评判规则
+    # 合订本前置内容：中文入口 + 中文核心术语 + 阅读规则
     if prefix_files:
         for relative_path in prefix_files:
             text = read_doc(relative_path)
@@ -162,9 +205,9 @@ For details, see [Copyright｜版权声明](/copyright/).
 
 def main():
     common_prefix = [
-        "essays/index.md",
-        "core-terms.md",
-        "essays/reading-rules.md",
+        "essays/chinese/index.md",
+        "essays/chinese/core-terms-chinese.md",
+        "essays/chinese/reading-rules.md",
     ]
 
     build_full(
@@ -188,7 +231,7 @@ def main():
         intro="""本文为 Reality｜现实世界 组文章的连续阅读与归档版本。  
 分篇阅读请使用左侧目录。
 
-本合订本作为独立阅读版本，已前置收录《总览｜Longview Essays｜长线观势》《Core Terms｜理论核心术语》与《How to Read This Framework｜阅读评判规则》，用于统一核心变量、概念边界与阅读坐标。
+本合订本作为独立阅读版本，已前置收录《中文入口｜Longview Essays｜长线观势》《中文核心术语》与《阅读规则》，用于统一核心变量、概念边界与阅读坐标。
 
 Reality｜现实世界 用于说明旧世界为什么走到边界。""",
         footer_group="Reality｜现实世界",
@@ -215,7 +258,7 @@ Reality｜现实世界 用于说明旧世界为什么走到边界。""",
         intro="""本文为 Future Path｜未来之路 组文章的连续阅读与归档版本。  
 分篇阅读请使用左侧目录。
 
-本合订本作为独立阅读版本，已前置收录《总览｜Longview Essays｜长线观势》《Core Terms｜理论核心术语》与《How to Read This Framework｜阅读评判规则》，用于统一核心变量、概念边界与阅读坐标。
+本合订本作为独立阅读版本，已前置收录《中文入口｜Longview Essays｜长线观势》《中文核心术语》与《阅读规则》，用于统一核心变量、概念边界与阅读坐标。
 
 Future Path｜未来之路 与 Reality｜现实世界 不是两套理论，而是同一套底层概念在另一方向上的展开。""",
         footer_group="Future Path｜未来之路",
