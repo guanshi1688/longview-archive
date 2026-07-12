@@ -542,4 +542,8 @@ But in China, production also carries society.
 
 ---
 
-This article is part of **China and the Burden of Production** by Evan Vale — a series on China as a production-bearing system, examining factories, employment, infrastructure, supply chains, local governments, domestic demand, and the institutional burden of industrial strength.
+This article is part of **China and the Burden of Production** — a series on China as a production-bearing system, examining factories, employment, infrastructure, supply chains, local governments, domestic demand, and the institutional burden of industrial strength.
+
+---
+
+Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
