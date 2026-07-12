@@ -167,5 +167,14 @@ It is also the difference between a system that merely keeps working and a civil
 
 ---
 
-Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
-这篇是 Work-Driven Machine / 做功机器 的外部轻表达。它没有直接写“中国制度不是消费机器”，但读者能自然理解：有些国家的底层能力首先是组织生产、工程、秩序和风险承接，而不是直接释放消费。
+**Series note:**  
+This essay is part of *The Architecture of Production*, a Longview Archive series on how infrastructure, capital, states, absorptive capacity, social reproduction, globalization, and institutional conditions shape whether production becomes a functioning system.
+
+---
+
+Aster Vale  
+Longview Archive｜观势档案  
+The Architecture of Production  
+2026.07
+
+© 2026 Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
