@@ -213,5 +213,15 @@ It is the difference between receiving development and becoming capable of devel
 
 ---
 
-Copyright notice: This text is part of the English notes of Longview Archive｜观势档案. It may not be reproduced, rewritten, translated, commercialized, or republished without permission.
+**Series note:**  
+This essay is part of *The Architecture of Production*, a Longview Archive series on how infrastructure, capital, states, absorptive capacity, social reproduction, globalization, and institutional conditions shape whether production becomes a functioning system.
+
+---
+
+Aster Vale  
+Longview Archive｜观势档案  
+The Architecture of Production  
+2026.07
+
+© 2026 Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
 
