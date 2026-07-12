@@ -162,51 +162,51 @@ nav:
           - 09｜未来之路的边界: essays/chinese/future/09-boundaries-of-future-path.md
           - 10｜阅读后约束: essays/chinese/future/10-reading-after.md
 
-    - 中文札记:
-        - 扩张的边界:
+      - 中文札记:
+          - 扩张的边界:
             # 如果这个 index.md 存在，就保留；如果不存在，就删掉这一行
             # - 总览: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/index.md
 
-            - 01｜为什么印度穆斯林能够成为东南亚文化的一部分？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/01-indian-muslims-in-southeast-asia.md
-            - 02｜雄踞东亚两千年的中原王朝，为什么始终没有成为东南亚的文明底色？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/02-southeast-asia-civilization-base.md
-            - 03｜中原文明最大规模的结构性扩张，为什么是河西走廊，而不是漠北或越南北部？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/03-hexi-corridor.md
-            - 04｜为什么中国古代很少出现欧洲式边境军阀和殖民集团自发扩张？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/04-border-warlords-and-colonial-groups.md
-            - 05｜为什么中国古代没有出现威尼斯式海商共和国？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/05-maritime-merchant-republics.md
-            - 06｜为什么郑和下西洋没有变成中国版大航海时代？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/06-zheng-he-and-age-of-discovery.md
-            - 07｜为什么中国商人遍布东南亚，却没有建立东印度公司式殖民帝国？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/07-chinese-merchants-and-east-india-company.md
-            - 08｜为什么非洲至今没有成为任何外来文明的完整复制品？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/08-africa-and-civilization-replication.md
-            - 09｜为什么没有一种文明能把整个世界变成自己的复制品？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/09-why-no-civilization-can-copy-the-world.md
-            - 10｜文明为什么不能把自己的生存方式当作世界答案？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/10-civilization-boundary-and-working-civilization.md
+              - 01｜为什么印度穆斯林能够成为东南亚文化的一部分？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/01-indian-muslims-in-southeast-asia.md
+              - 02｜雄踞东亚两千年的中原王朝，为什么始终没有成为东南亚的文明底色？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/02-southeast-asia-civilization-base.md
+              - 03｜中原文明最大规模的结构性扩张，为什么是河西走廊，而不是漠北或越南北部？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/03-hexi-corridor.md
+              - 04｜为什么中国古代很少出现欧洲式边境军阀和殖民集团自发扩张？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/04-border-warlords-and-colonial-groups.md
+              - 05｜为什么中国古代没有出现威尼斯式海商共和国？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/05-maritime-merchant-republics.md
+              - 06｜为什么郑和下西洋没有变成中国版大航海时代？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/06-zheng-he-and-age-of-discovery.md
+              - 07｜为什么中国商人遍布东南亚，却没有建立东印度公司式殖民帝国？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/07-chinese-merchants-and-east-india-company.md
+              - 08｜为什么非洲至今没有成为任何外来文明的完整复制品？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/08-africa-and-civilization-replication.md
+              - 09｜为什么没有一种文明能把整个世界变成自己的复制品？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/09-why-no-civilization-can-copy-the-world.md
+              - 10｜文明为什么不能把自己的生存方式当作世界答案？: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/10-civilization-boundary-and-working-civilization.md
 
-        - 兜底文明:
+          - 兜底文明:
             # 如果这个 index.md 存在，就保留；如果不存在，就删掉这一行
             # - 总览: essays/notes/chinese/doudi-civilization/index.md
 
-            - 01｜为什么中国文明从一开始就不是城邦文明？: essays/notes/chinese/doudi-civilization/01-not-city-state-civilization.md
-            - 02｜为什么三皇五帝神话的核心，不是神权，而是治世？: essays/notes/chinese/doudi-civilization/02-myths-of-governance.md
-            - 03｜为什么治水是中原文明最早的国家能力原型？: essays/notes/chinese/doudi-civilization/03-flood-control-and-state-capacity.md
-            - 04｜为什么春秋战国五百年血雨，最终没有走向欧洲式封建均势？: essays/notes/chinese/doudi-civilization/04-spring-autumn-warring-states-selection.md
-            - 05｜为什么秦制不是偶然暴政，而是战争时代筛选出的组织机器？: essays/notes/chinese/doudi-civilization/05-qin-system-as-organization-machine.md
-            - 06｜为什么中国世家大族的衰亡具有历史必然性？: essays/notes/chinese/doudi-civilization/06-decline-of-aristocratic-clans.md
-            - 07｜为什么中国王朝必须压制地方军政集团？: essays/notes/chinese/doudi-civilization/07-why-central-state-suppresses-local-military-power.md
-            - 08｜为什么中国王朝是兜底文明，而不是契约文明？: essays/notes/chinese/doudi-civilization/08-why-chinese-dynasties-are-fallback-civilizations.md
-            - 09｜为什么西方可以长期苟住，而中国王朝兜不住就会改朝换代？: essays/notes/chinese/doudi-civilization/09-why-the-west-could-muddle-through.md
-            - 10｜大一统的极限成就：为什么中国文明必须把天下做成秩序？: essays/notes/chinese/doudi-civilization/10-great-unification-as-ultimate-order.md
+              - 01｜为什么中国文明从一开始就不是城邦文明？: essays/notes/chinese/doudi-civilization/01-not-city-state-civilization.md
+              - 02｜为什么三皇五帝神话的核心，不是神权，而是治世？: essays/notes/chinese/doudi-civilization/02-myths-of-governance.md
+              - 03｜为什么治水是中原文明最早的国家能力原型？: essays/notes/chinese/doudi-civilization/03-flood-control-and-state-capacity.md
+              - 04｜为什么春秋战国五百年血雨，最终没有走向欧洲式封建均势？: essays/notes/chinese/doudi-civilization/04-spring-autumn-warring-states-selection.md
+              - 05｜为什么秦制不是偶然暴政，而是战争时代筛选出的组织机器？: essays/notes/chinese/doudi-civilization/05-qin-system-as-organization-machine.md
+              - 06｜为什么中国世家大族的衰亡具有历史必然性？: essays/notes/chinese/doudi-civilization/06-decline-of-aristocratic-clans.md
+              - 07｜为什么中国王朝必须压制地方军政集团？: essays/notes/chinese/doudi-civilization/07-why-central-state-suppresses-local-military-power.md
+              - 08｜为什么中国王朝是兜底文明，而不是契约文明？: essays/notes/chinese/doudi-civilization/08-why-chinese-dynasties-are-fallback-civilizations.md
+              - 09｜为什么西方可以长期苟住，而中国王朝兜不住就会改朝换代？: essays/notes/chinese/doudi-civilization/09-why-the-west-could-muddle-through.md
+              - 10｜大一统的极限成就：为什么中国文明必须把天下做成秩序？: essays/notes/chinese/doudi-civilization/10-great-unification-as-ultimate-order.md
 
-        - 生产的边界:
+          - 生产的边界:
             # 如果这个 index.md 存在，就保留；如果不存在，就删掉这一行
             # - 总览: essays/notes/chinese/production-boundary/index.md
 
-            - 01｜为什么修路不等于工业化？: essays/notes/chinese/production-boundary/01-roads-do-not-equal-industrialization.md
-            - 02｜为什么建厂不等于制造业体系？: essays/notes/chinese/production-boundary/02-factories-do-not-equal-manufacturing-system.md
-            - 03｜为什么通电不等于产业能力？: essays/notes/chinese/production-boundary/03-electricity-does-not-equal-industrial-capacity.md
-            - 04｜为什么人口多不等于市场大？: essays/notes/chinese/production-boundary/04-population-does-not-equal-market.md
-            - 05｜为什么资源丰富的国家反而更难工业化？: essays/notes/chinese/production-boundary/05-resource-rich-countries-and-industrialization.md
-            - 06｜为什么工业园常常变成孤岛，而不是产业体系？: essays/notes/chinese/production-boundary/06-industrial-parks-as-islands.md
-            - 07｜为什么廉价劳动力不等于制造业优势？: essays/notes/chinese/production-boundary/07-cheap-labor-does-not-equal-manufacturing-advantage.md
-            - 08｜为什么承接产业转移，比建设工厂更难？: essays/notes/chinese/production-boundary/08-industrial-transfer-is-harder-than-building-factories.md
-            - 09｜为什么中国制造业不是几条产业链就能复制？: essays/notes/chinese/production-boundary/09-why-china-manufacturing-cannot-be-copied-by-supply-chains.md
-            - 10｜生产能力为什么是一种文明能力？: essays/notes/chinese/production-boundary/10-production-capacity-as-civilizational-capacity.md
+              - 01｜为什么修路不等于工业化？: essays/notes/chinese/production-boundary/01-roads-do-not-equal-industrialization.md
+              - 02｜为什么建厂不等于制造业体系？: essays/notes/chinese/production-boundary/02-factories-do-not-equal-manufacturing-system.md
+              - 03｜为什么通电不等于产业能力？: essays/notes/chinese/production-boundary/03-electricity-does-not-equal-industrial-capacity.md
+              - 04｜为什么人口多不等于市场大？: essays/notes/chinese/production-boundary/04-population-does-not-equal-market.md
+              - 05｜为什么资源丰富的国家反而更难工业化？: essays/notes/chinese/production-boundary/05-resource-rich-countries-and-industrialization.md
+              - 06｜为什么工业园常常变成孤岛，而不是产业体系？: essays/notes/chinese/production-boundary/06-industrial-parks-as-islands.md
+              - 07｜为什么廉价劳动力不等于制造业优势？: essays/notes/chinese/production-boundary/07-cheap-labor-does-not-equal-manufacturing-advantage.md
+              - 08｜为什么承接产业转移，比建设工厂更难？: essays/notes/chinese/production-boundary/08-industrial-transfer-is-harder-than-building-factories.md
+              - 09｜为什么中国制造业不是几条产业链就能复制？: essays/notes/chinese/production-boundary/09-why-china-manufacturing-cannot-be-copied-by-supply-chains.md
+              - 10｜生产能力为什么是一种文明能力？: essays/notes/chinese/production-boundary/10-production-capacity-as-civilizational-capacity.md
 
 extra_css:
   - stylesheets/extra.css
