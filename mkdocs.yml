@@ -164,6 +164,7 @@ nav:
           - 10｜阅读后约束: essays/chinese/future/10.md
 
       - 中文札记:
+          - 札记总览: ssays/notes/chinese/index.md
           - 扩张的边界:
             # 如果这个 index.md 存在，就保留；如果不存在，就删掉这一行
             # - 总览: essays/notes/chinese/civilizational-expansion/boundary-of-expansion/index.md
