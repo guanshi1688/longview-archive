@@ -19,9 +19,23 @@ Consumption capacity also requires:
 
 Therefore:
 
-> **Productive capacity creates goods. Absorptive capacity creates consumers.**
+> **Productive capacity creates goods. Bounded responsibility and social absorption create consumers.**
 
 The existence of goods does not mean that people can purchase them steadily.
+
+A production-centered order and a consumption-centered order do not merely differ in the share of output devoted to factories or households.
+
+They assign different institutional positions to the individual.
+
+> **A production-centered order organizes individuals primarily as workers, savers, taxpayers, debt bearers, family providers, and nodes of social reproduction.**
+
+> **A consumption-centered order must also recognize individuals as final claimants on the gains of production.**
+
+The distinction is therefore not between production and enjoyment.
+
+It is between two directions of organization:
+
+> **One system converts social resources back into productive capacity. The other must convert productive gains back into individual life capacity.**
 
 ## II. Where can the gains of production remain?
 
@@ -86,7 +100,21 @@ Therefore:
 
 Legally, the income belongs to the household.
 
-Within the structure of responsibility, it has already been marked as a risk reserve.
+Institutionally, the household may still lack control over its future.
+
+> **A household can legally own its income while lacking effective control over the future against which that income has already been pledged.**
+
+Consumption therefore requires more than disposable income.
+
+It also requires a **disposable future**.
+
+A disposable future exists when illness, unemployment, education, retirement, housing, business failure, and family collapse do not all remain open-ended claims against the same household balance sheet.
+
+This does not require the individual to become an irresponsible atom.
+
+It requires something narrower and more demanding:
+
+> **A consumption society does not require individuals to leave society. It requires them no longer to pledge their entire future against every social risk.**
 
 As long as the scope and endpoint of responsibility remain unclear, rising income will not necessarily become rising consumption.
 
@@ -134,9 +162,22 @@ Only when households no longer need to use most of their income to defend agains
 
 ## VII. Why do consumption incentives often produce only short-term effects?
 
-Consumption vouchers, trade-in subsidies, and lower purchase thresholds can improve the conditions of one transaction.
+Consumption vouchers, trade-in subsidies, lower purchase thresholds, and interest-rate adjustments can improve the conditions of one transaction.
 
 But they mainly act on the purchasing interface.
+
+> **Consumption vouchers reduce the price of today’s purchase. Household savings insure against tomorrow’s risk.**
+
+These tools are not useless.
+
+They can:
+
+- accelerate purchases that might otherwise occur later;
+- shift demand across time or product categories;
+- support selected sectors;
+- reduce inventories at the margin.
+
+But they do not change why households save defensively.
 
 Households are concerned with a different set of questions:
 
@@ -161,6 +202,30 @@ But when these structures remain combined in their current form, they jointly pr
 For consumption policy to have lasting effects, it cannot merely lower the cost of one purchase.
 
 It must also gradually change the institutional conditions of income security, risk absorption, and failure resolution.
+
+The recurring appeal of vouchers and temporary subsidies is itself institutionally revealing.
+
+They are:
+
+- temporary;
+- budgetable;
+- measurable;
+- reversible;
+- compatible with the existing allocation of long-term responsibility.
+
+They subsidize a transaction without creating a permanent claim on the system.
+
+Therefore:
+
+> **A voucher changes the terms of one purchase. A consumption society changes who bears the future.**
+
+This is the deeper contradiction:
+
+> **Policy increasingly asks households to behave as consumers while the underlying system continues to organize them as savers, debt bearers, family insurers, and balance sheets of last resort.**
+
+China is therefore not merely facing insufficient demand.
+
+It is attempting to generate consumption behavior without fully changing the institutional position of the consumer.
 
 ## VIII. Consumption is not the opposite of production
 
@@ -199,6 +264,13 @@ Therefore:
 Consumption stimulus can change one purchase.
 
 Only bounded responsibility, income security, and social absorption can create durable consumers.
+
+> **Without changing the responsibility structure, the system can subsidize consumption, but it cannot produce consumers.**
+
+China’s consumption problem is therefore not that households are unwilling to buy.
+
+It is that the system still requires them to remain responsible for too much of the future.
+
 
 ---
 
