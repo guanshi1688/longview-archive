@@ -102,10 +102,12 @@ The new scarcity is therefore not productive capacity alone.
 It is:
 
 - absorptive capacity;
+- bounded responsibility;
 - security of life;
-- reorganization of responsibility;
+- reorganization of risk;
 - social reproduction;
-- re-entry after failure.
+- re-entry after failure;
+- the capacity to convert productive success into individually usable life and future.
 
 ## V. Why has China found it difficult to explain its own success?
 
@@ -140,15 +142,19 @@ Neither fully explains:
 
 The task of Productive-Forces Economics is to restore these elements to one structure.
 
-## VI. From a production machine to social absorption
+## VI. From production mobilization to reciprocal responsibility
 
 China previously solved an extraordinarily difficult problem:
 
 > How can a poor, fragmented, technologically weak large society be organized into a modern production machine?
 
-The next problem is:
+That achievement required individuals, households, firms, and localities to function primarily as nodes of production, saving, investment, and risk-bearing.
 
-> How can that production machine turn back and absorb society?
+The next problem is not merely how the production machine can “absorb” society.
+
+It is:
+
+> **Can a system built through one-way mobilization develop reciprocal responsibility toward the people whose labor, savings, families, and future made that mobilization possible?**
 
 This means:
 
@@ -173,11 +179,20 @@ In the past, China built production through institutional momentum.
 
 Today, it must consciously answer the problems that appear after production.
 
-> **Productive capacity is no longer the only scarce good. Absorptive capacity is becoming the new scarcity.**
+> **Productive capacity is no longer the only scarce good. Bounded responsibility and reciprocal absorption are becoming new scarcities.**
+
+China succeeded by organizing society around production.
+
+Its next challenge is whether productive success can become individually usable life without dissolving the responsibility structure on which the earlier production system depended.
+
+This series identifies that structural tension.
+
+It does not prescribe a program of political or institutional transformation.
 
 The task of Productive-Forces Economics is therefore to explain:
 
 > How can a society move from being able to produce to being able to convert the gains of production into life, and then into the next cycle of reproduction?
+
 
 ---
 
