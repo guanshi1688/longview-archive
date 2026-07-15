@@ -1,4 +1,4 @@
-# 02 Why Did Long-Term Chinese Governance First Confront the Production System Itself?
+# Essay Two｜ Why Did Long-Term Chinese Governance First Confront the Production System Itself?
 
 ## Because a unified order must first answer not how exchange occurs, but how the whole society continues to produce
 
