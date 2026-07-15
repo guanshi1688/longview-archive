@@ -1,4 +1,4 @@
-# 01 Why Did Modern Western Economics Not Begin with Productive Forces?
+# Essay One｜ Why Did Modern Western Economics Not Begin with Productive Forces?
 
 ## It studies production, but rarely asks how the world of production was built
 
