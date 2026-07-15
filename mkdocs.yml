@@ -23,17 +23,17 @@ nav:
   - Home: index.md
 
   - Start Here:
-      - Reader Map: essays/english/reader-map.md
-      - Common Ground: essays/english/common-ground.md
-      - Core Terms: essays/english/core-terms-eng.md
+      - Reader Map: essays/english/framework/reader-map.md
+      - Common Ground: essays/english/framework/common-ground.md
+      - Core Terms: essays/english/framework/core-terms-eng.md
 
   - Framework:
-      - Framework Overview: essays/english/index.md
-      - Productive Forces and Civilization: essays/english/geography-productive-forces-and-civilization.md
-      - Civilizational Metabolism: essays/english/civilizational-metabolism.md
-      - Absorptive Capacity: essays/english/absorptive-capacity.md
-      - Surplus, Absorption, and Reproduction: essays/english/surplus-absorption-and-reproduction.md
-      - Value Capture and the Western System: essays/english/western-system.md
+      - Framework Overview: essays/english/framework/index.md
+      - Productive Forces and Civilization: essays/english/framework/geography-productive-forces-and-civilization.md
+      - Civilizational Metabolism: essays/english/framework/civilizational-metabolism.md
+      - Absorptive Capacity: essays/english/framework/absorptive-capacity.md
+      - Surplus, Absorption, and Reproduction: essays/english/framework/surplus-absorption-and-reproduction.md
+      - Value Capture and the Western System: essays/english/framework/western-system.md
       # Add after the file exists:
       # - The Western System: essays/english/western-system.md
       
