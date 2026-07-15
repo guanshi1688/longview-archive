@@ -151,16 +151,16 @@ nav:
       
       - 生产力经济学:
           - 总览: essays/chinese/productive-forces-economics/index.md
-          - 方法论备忘录: essays/chinese/productive-forces-economics/00-方法论备忘录.md
-          - 01｜为什么现代西方经济学没有从生产力出发: essays/chinese/productive-forces-economics/01-为什么当代西方经济学没有从生产力出发.md
-          - 02｜为什么中国长期治理首先面对生产系统: essays/chinese/productive-forces-economics/02-为什么中国长期治理思想首先面对的是生产系统本身.md
-          - 03｜生产系统与接口网络如何处理失效: essays/chinese/productive-forces-economics/03-生产系统与接口网络如何处理失效.md
-          - 04｜为什么系统贡献无法完全进入价格: essays/chinese/productive-forces-economics/04-为什么系统贡献无法完全进入价格.md
-          - 05｜为什么生产能力不能自动转化为有效消费: essays/chinese/productive-forces-economics/05-为什么生产能力不能自动转化为有效消费.md
-          - 06｜为什么有些生产能力不能等待市场自动生成: essays/chinese/productive-forces-economics/06-为什么有些生产能力不能等待市场自动生成.md
-          - 07｜生产系统为什么也会制造低效与格式化: essays/chinese/productive-forces-economics/07-生产系统为什么也会制造低效与格式化.md
-          - 08｜系统怎样使用接口完成局部纠错: essays/chinese/productive-forces-economics/08-系统怎样使用接口完成局部纠错.md
-          - 09｜中国现代化为什么成功又为什么必须进入下一阶段: essays/chinese/productive-forces-economics/09-中国现代化为什么成功又为什么必须进入下一阶段.md
+          - 方法论备忘录: essays/chinese/productive-forces-economics/00-c-methodological-memorandum.md
+          - 01｜为什么现代西方经济学没有从生产力出发: essays/chinese/productive-forces-economics/01-c-western-economics.md
+          - 02｜为什么中国长期治理首先面对生产系统: essays/chinese/productive-forces-economics/02-c-chinese-governance.md
+          - 03｜生产系统与接口网络如何处理失效: essays/chinese/productive-forces-economics/03-c-failure.md
+          - 04｜为什么系统贡献无法完全进入价格: essays/chinese/productive-forces-economics/04-c-system-contribution.md
+          - 05｜为什么生产能力不能自动转化为有效消费: essays/chinese/productive-forces-economics/05-c-consumption.md
+          - 06｜为什么有些生产能力不能等待市场自动生成: essays/chinese/productive-forces-economics/06-c-market-generation.md
+          - 07｜生产系统为什么也会制造低效与格式化: essays/chinese/productive-forces-economics/07-c-inefficiency.md
+          - 08｜系统怎样使用接口完成局部纠错: essays/chinese/productive-forces-economics/08-c-correction.md
+          - 09｜中国现代化为什么成功又为什么必须进入下一阶段: essays/chinese/productive-forces-economics/09-c-modernization.md
 
       - Reality｜现实世界:
           - 阅读前约束: essays/chinese/reality/00.md
