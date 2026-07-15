@@ -266,11 +266,23 @@ It describes two different institutional tendencies:
 - In an integrated production system, the individual is more readily understood as a node continuously embedded in family, household registration, land, debt, labor, and public chains of responsibility.
 - In a contractual interface system, the individual is more readily recognized as an independent subject who may end one obligation, exit one relationship, and re-enter the network through another contract.
 
+This series uses the term **responsibility embedding** to describe the first tendency.
+
+> **Responsibility embedding is a structure in which individuals, households, firms, and localities do not merely participate in production. They remain continuously incorporated into chains of debt, taxation, employment, household reproduction, public order, and political responsibility. Their exit does not eliminate responsibility; it transfers responsibility to other nodes or upward to the system.**
+
+Responsibility embedding and social absorption are two directions of the same structure:
+
+> **Absorption is the system’s upward assumption of failure costs. Responsibility embedding is the system’s downward organization of continuous obligation.**
+
+This means that an integrated production system is not merely a system that carries society after failure. It is also a system that keeps social actors inside continuing chains of responsibility before failure occurs.
+
 The comparison is therefore not that “Chinese people lack individuality” or that “Western people lack community.”
 
 It is:
 
 > **One structure finds it harder to allow a responsibility-bearing node to detach completely from the whole. The other is better able to terminate a local contractual relationship without requiring the individual to bear the original relationship permanently.**
+
+This series identifies the structural tension created by responsibility embedding. It does not prescribe a program for transforming the political structure in which that tension developed.
 
 ### IX. This is a theoretical outline, not a universal framework or policy manual
 
@@ -332,7 +344,7 @@ The series will maintain the following constraints:
 
 ---
 
-# Why Did Modern Western Economics Not Begin with Productive Forces?
+# Essay One｜ Why Did Modern Western Economics Not Begin with Productive Forces?
 
 ## It studies production, but rarely asks how the world of production was built
 
@@ -599,6 +611,8 @@ Therefore:
 
 > **The resilience of an interface network lies not in preventing every node from failing, but in allowing failure to remain local.**
 
+Because participation in such a network can survive the termination of a particular node or contract, individual exit from one relationship does not necessarily become exit from the social order as a whole.
+
 A larger network with more substitutable nodes can absorb more local failure.
 
 This same structure later supported global finance, supply chains, insurance, reserve currencies, legal jurisdictions, standards, and multinational production.
@@ -767,7 +781,7 @@ Productive-Forces Economics begins from the earlier question:
 
 ---
 
-# Why Did Long-Term Chinese Governance First Confront the Production System Itself?
+# Essay Two｜ Why Did Long-Term Chinese Governance First Confront the Production System Itself?
 
 ## Because a unified order must first answer not how exchange occurs, but how the whole society continues to produce
 
@@ -1187,7 +1201,20 @@ Its historical danger arose from the same source:
 
 Unification is not only the unification of geographic space.
 
-It is also an attempt to prevent the chain of responsibility from breaking.
+It also concentrates the transmission of responsibility.
+
+The state cannot permanently externalize the failure of the whole. Individuals, households, firms, and localities cannot easily externalize their own failure either.
+
+A unified production system is therefore not merely a structure of state absorption. It is a two-directional structure of responsibility:
+
+- the system bears consequences that cannot be transferred outside the whole;
+- responsibility-bearing nodes are expected to remain continuously embedded within it.
+
+This is responsibility embedding.
+
+The individual is not connected to the system through one contract alone. The individual is incorporated into overlapping chains of family responsibility, employment, debt, taxation, household reproduction, locality, and public order.
+
+Ending one relationship may therefore transfer costs elsewhere rather than terminate them.
 
 In the traditional structure, the individual was not a completely independent legal atom.
 
@@ -1226,6 +1253,8 @@ When it is fulfilled, terminated, or discharged in bankruptcy, the old relations
 Therefore:
 
 > **An integrated production system places greater emphasis on continuity of responsibility. A contractual interface system places greater emphasis on the termination of relationships and the re-entry of the subject.**
+
+> **A contractual order first asks where responsibility ends. A unified production system first asks who ultimately bears it.**
 
 This is not a moral difference.
 
@@ -1594,9 +1623,23 @@ Consumption capacity also requires:
 
 Therefore:
 
-> **Productive capacity creates goods. Absorptive capacity creates consumers.**
+> **Productive capacity creates goods. Bounded responsibility and social absorption create consumers.**
 
 The existence of goods does not mean that people can purchase them steadily.
+
+A production-centered order and a consumption-centered order do not merely differ in the share of output devoted to factories or households.
+
+They assign different institutional positions to the individual.
+
+> **A production-centered order organizes individuals primarily as workers, savers, taxpayers, debt bearers, family providers, and nodes of social reproduction.**
+
+> **A consumption-centered order must also recognize individuals as final claimants on the gains of production.**
+
+The distinction is therefore not between production and enjoyment.
+
+It is between two directions of organization:
+
+> **One system converts social resources back into productive capacity. The other must convert productive gains back into individual life capacity.**
 
 ## II. Where can the gains of production remain?
 
@@ -1661,7 +1704,21 @@ Therefore:
 
 Legally, the income belongs to the household.
 
-Within the structure of responsibility, it has already been marked as a risk reserve.
+Institutionally, the household may still lack control over its future.
+
+> **A household can legally own its income while lacking effective control over the future against which that income has already been pledged.**
+
+Consumption therefore requires more than disposable income.
+
+It also requires a **disposable future**.
+
+A disposable future exists when illness, unemployment, education, retirement, housing, business failure, and family collapse do not all remain open-ended claims against the same household balance sheet.
+
+This does not require the individual to become an irresponsible atom.
+
+It requires something narrower and more demanding:
+
+> **A consumption society does not require individuals to leave society. It requires them no longer to pledge their entire future against every social risk.**
 
 As long as the scope and endpoint of responsibility remain unclear, rising income will not necessarily become rising consumption.
 
@@ -1709,9 +1766,22 @@ Only when households no longer need to use most of their income to defend agains
 
 ## VII. Why do consumption incentives often produce only short-term effects?
 
-Consumption vouchers, trade-in subsidies, and lower purchase thresholds can improve the conditions of one transaction.
+Consumption vouchers, trade-in subsidies, lower purchase thresholds, and interest-rate adjustments can improve the conditions of one transaction.
 
 But they mainly act on the purchasing interface.
+
+> **Consumption vouchers reduce the price of today’s purchase. Household savings insure against tomorrow’s risk.**
+
+These tools are not useless.
+
+They can:
+
+- accelerate purchases that might otherwise occur later;
+- shift demand across time or product categories;
+- support selected sectors;
+- reduce inventories at the margin.
+
+But they do not change why households save defensively.
 
 Households are concerned with a different set of questions:
 
@@ -1736,6 +1806,30 @@ But when these structures remain combined in their current form, they jointly pr
 For consumption policy to have lasting effects, it cannot merely lower the cost of one purchase.
 
 It must also gradually change the institutional conditions of income security, risk absorption, and failure resolution.
+
+The recurring appeal of vouchers and temporary subsidies is itself institutionally revealing.
+
+They are:
+
+- temporary;
+- budgetable;
+- measurable;
+- reversible;
+- compatible with the existing allocation of long-term responsibility.
+
+They subsidize a transaction without creating a permanent claim on the system.
+
+Therefore:
+
+> **A voucher changes the terms of one purchase. A consumption society changes who bears the future.**
+
+This is the deeper contradiction:
+
+> **Policy increasingly asks households to behave as consumers while the underlying system continues to organize them as savers, debt bearers, family insurers, and balance sheets of last resort.**
+
+China is therefore not merely facing insufficient demand.
+
+It is attempting to generate consumption behavior without fully changing the institutional position of the consumer.
 
 ## VIII. Consumption is not the opposite of production
 
@@ -1774,6 +1868,12 @@ Therefore:
 Consumption stimulus can change one purchase.
 
 Only bounded responsibility, income security, and social absorption can create durable consumers.
+
+> **Without changing the responsibility structure, the system can subsidize consumption, but it cannot produce consumers.**
+
+China’s consumption problem is therefore not that households are unwilling to buy.
+
+It is that the system still requires them to remain responsible for too much of the future.
 
 ---
 
@@ -2029,6 +2129,12 @@ Bankruptcy handles failure.
 
 If a system allows extensive borrowing but does not allow failure to be formally recognized, debtors, assets, and households can remain locked in place for long periods.
 
+This lock does more than preserve an unpaid balance.
+
+It allows one failed relationship to occupy future income, credit, labor choices, entrepreneurship, and the possibility of beginning again.
+
+> **Without bankruptcy, one failure can attach itself to the entirety of a person’s future. With bankruptcy, failure can be confined to one reviewed and terminable relationship.**
+
 The meaning of personal bankruptcy is not that an individual escapes all responsibility. Nor is it to turn the individual into an atom detached from society.
 
 It allows something more precise:
@@ -2045,7 +2151,19 @@ A functioning process then:
 
 Therefore:
 
-> **Bankruptcy does not erase responsibility. It reconnects responsibility under new boundaries.**
+> **Bankruptcy does not erase responsibility. It makes responsibility reviewable, allocates losses, creates an endpoint, and reconnects the individual under new boundaries.**
+
+The deepest function of bankruptcy is not debt cancellation.
+
+> **It is the institutional creation of an endpoint to responsibility.**
+
+Bankruptcy does not allow an individual to leave society.
+
+It allows an individual to leave a failed contractual relationship while retaining the right to remain in economic and social life.
+
+This is why bankruptcy matters not only for finance, but also for consumption, entrepreneurship, and productive renewal.
+
+> **Limited liability and bankruptcy do not eliminate responsibility. They prevent responsibility from becoming total.**
 
 Bankruptcy is not a sufficient condition for a consumption society. But it is an important interface through which failed obligations gain limits and individuals recover control over their future.
 
@@ -2254,10 +2372,12 @@ The new scarcity is therefore not productive capacity alone.
 It is:
 
 - absorptive capacity;
+- bounded responsibility;
 - security of life;
-- reorganization of responsibility;
+- reorganization of risk;
 - social reproduction;
-- re-entry after failure.
+- re-entry after failure;
+- the capacity to convert productive success into individually usable life and future.
 
 ## V. Why has China found it difficult to explain its own success?
 
@@ -2292,15 +2412,19 @@ Neither fully explains:
 
 The task of Productive-Forces Economics is to restore these elements to one structure.
 
-## VI. From a production machine to social absorption
+## VI. From production mobilization to reciprocal responsibility
 
 China previously solved an extraordinarily difficult problem:
 
 > How can a poor, fragmented, technologically weak large society be organized into a modern production machine?
 
-The next problem is:
+That achievement required individuals, households, firms, and localities to function primarily as nodes of production, saving, investment, and risk-bearing.
 
-> How can that production machine turn back and absorb society?
+The next problem is not merely how the production machine can “absorb” society.
+
+It is:
+
+> **Can a system built through one-way mobilization develop reciprocal responsibility toward the people whose labor, savings, families, and future made that mobilization possible?**
 
 This means:
 
@@ -2325,7 +2449,15 @@ In the past, China built production through institutional momentum.
 
 Today, it must consciously answer the problems that appear after production.
 
-> **Productive capacity is no longer the only scarce good. Absorptive capacity is becoming the new scarcity.**
+> **Productive capacity is no longer the only scarce good. Bounded responsibility and reciprocal absorption are becoming new scarcities.**
+
+China succeeded by organizing society around production.
+
+Its next challenge is whether productive success can become individually usable life without dissolving the responsibility structure on which the earlier production system depended.
+
+This series identifies that structural tension.
+
+It does not prescribe a program of political or institutional transformation.
 
 The task of Productive-Forces Economics is therefore to explain:
 
