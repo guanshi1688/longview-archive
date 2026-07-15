@@ -257,32 +257,59 @@ The relationship is dynamic:
 - Systems can absorb failures that interfaces abandon.
 - Either side can also expand beyond its useful boundary.
 
-### VIII. The boundary between “responsibility-bearing nodes” and “atomized individuals”
+### VIII. The Boundary of “Responsibility Embedding,” “Responsibility-Bearing Nodes,” and the “Atomized Individual”
 
-The “atomized individual” described later in this series is not a real person completely detached from family, society, law, and public institutions.
+The “atomized individual” described in this series does not refer to a person who can literally exist outside family, society, law, or public institutions.
 
-It describes two different institutional tendencies:
+It refers to an institutional presumption:
 
-- In an integrated production system, the individual is more readily understood as a node continuously embedded in family, household registration, land, debt, labor, and public chains of responsibility.
-- In a contractual interface system, the individual is more readily recognized as an independent subject who may end one obligation, exit one relationship, and re-enter the network through another contract.
+> **The individual is recognized as a relatively independent legal subject whose responsibility can be bounded within a specific relationship, and who may, after the termination of a contract, bankruptcy discharge, or the dissolution of a relationship, re-enter other social and economic relations under a new status.**
 
-This series uses the term **responsibility embedding** to describe the first tendency.
+By contrast, a “responsibility-bearing node” refers to:
 
-> **Responsibility embedding is a structure in which individuals, households, firms, and localities do not merely participate in production. They remain continuously incorporated into chains of debt, taxation, employment, household reproduction, public order, and political responsibility. Their exit does not eliminate responsibility; it transfers responsibility to other nodes or upward to the system.**
+> **An individual, household, firm, or locality that remains continuously embedded in overlapping chains of debt, taxation, employment, household reproduction, local order, and public responsibility. The termination of one relationship does not necessarily terminate responsibility; it may transfer responsibility to other nodes or upward to the system.**
 
-Responsibility embedding and social absorption are two directions of the same structure:
+This series uses the term **responsibility embedding** to describe the institutional mechanism through which such responsibility-bearing nodes remain incorporated into continuing chains of obligation.
 
-> **Absorption is the system’s upward assumption of failure costs. Responsibility embedding is the system’s downward organization of continuous obligation.**
+It therefore identifies two different institutional tendencies:
 
-This means that an integrated production system is not merely a system that carries society after failure. It is also a system that keeps social actors inside continuing chains of responsibility before failure occurs.
+- In an integrated production system, the subject is more readily understood as a responsibility-bearing node continuously embedded in family, household registration, land, debt, labor, locality, and public chains of responsibility.
+- In a contractual interface system, the subject is more readily recognized as an independent legal actor whose responsibility can be bounded, terminated, and reorganized through new contractual relations.
 
-The comparison is therefore not that “Chinese people lack individuality” or that “Western people lack community.”
+The distinction between the “atomized individual” and the “responsibility-bearing node” is therefore not whether a person has social relations.
+
+It is whether:
+
+- responsibility can acquire a defined boundary;
+- an old relationship can genuinely terminate;
+- the subject retains the right and capacity to enter new relationships.
+
+A unified production system is therefore not merely a one-way structure of state absorption.
+
+It is a two-directional structure of responsibility:
+
+- the state bears the system-wide consequences that cannot be permanently externalized by localities, markets, or households;
+- individuals, households, firms, and localities bear a continuing obligation not to detach easily from the chain of responsibility.
+
+In this sense, absorption and responsibility embedding are two directions of the same structure:
+
+> **Absorption is the system’s upward assumption of the consequences of node failure. Responsibility embedding is the system’s downward organization of continuous obligation.**
+
+The comparison, therefore, is not that “Chinese people lack individuality” or that “Western people lack community.”
 
 It is:
 
-> **One structure finds it harder to allow a responsibility-bearing node to detach completely from the whole. The other is better able to terminate a local contractual relationship without requiring the individual to bear the original relationship permanently.**
+> **One structure finds it more difficult to allow responsibility-bearing nodes to detach completely from the whole. The other is better able to terminate a local contractual relationship without requiring the subject to bear the original relationship permanently.**
 
-This series identifies the structural tension created by responsibility embedding. It does not prescribe a program for transforming the political structure in which that tension developed.
+Social absorption is not a sentimental description of this structure.
+
+It answers a harder question:
+
+> **When a system requires subjects to remain inside the chain of responsibility, does the system also bear the cost of enabling them to continue living, producing, and beginning again within it?**
+
+Where responsibility embedding exists without sufficient social absorption, responsibility is pushed downward toward individuals and households.
+
+The subject may remain inside the system while losing the capacity to consume, innovate, take risks, and begin again.
 
 ### IX. This is a theoretical outline, not a universal framework or policy manual
 
