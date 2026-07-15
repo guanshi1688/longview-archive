@@ -298,3 +298,12 @@
 > **我们的任务不是证明世界只有一条路，而是证明这条路确实存在，并且从历史起点一直延伸到了现代。**
 
 ---
+
+星衡｜Aster Vale  
+Longview Archive｜观势档案  
+生产力经济学  
+2026.07
+
+© 2026 Longview Archive｜观势档案。除特别说明外，本文采用 CC BY-NC-ND 4.0 许可协议：允许署名非商业分享，禁止未经授权的改写、翻译、重组与商业使用。
+
+© 2026 Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
