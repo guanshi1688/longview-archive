@@ -218,11 +218,23 @@ It describes two different institutional tendencies:
 - In an integrated production system, the individual is more readily understood as a node continuously embedded in family, household registration, land, debt, labor, and public chains of responsibility.
 - In a contractual interface system, the individual is more readily recognized as an independent subject who may end one obligation, exit one relationship, and re-enter the network through another contract.
 
+This series uses the term **responsibility embedding** to describe the first tendency.
+
+> **Responsibility embedding is a structure in which individuals, households, firms, and localities do not merely participate in production. They remain continuously incorporated into chains of debt, taxation, employment, household reproduction, public order, and political responsibility. Their exit does not eliminate responsibility; it transfers responsibility to other nodes or upward to the system.**
+
+Responsibility embedding and social absorption are two directions of the same structure:
+
+> **Absorption is the system’s upward assumption of failure costs. Responsibility embedding is the system’s downward organization of continuous obligation.**
+
+This means that an integrated production system is not merely a system that carries society after failure. It is also a system that keeps social actors inside continuing chains of responsibility before failure occurs.
+
 The comparison is therefore not that “Chinese people lack individuality” or that “Western people lack community.”
 
 It is:
 
 > **One structure finds it harder to allow a responsibility-bearing node to detach completely from the whole. The other is better able to terminate a local contractual relationship without requiring the individual to bear the original relationship permanently.**
+
+This series identifies the structural tension created by responsibility embedding. It does not prescribe a program for transforming the political structure in which that tension developed.
 
 ### IX. This is a theoretical outline, not a universal framework or policy manual
 
@@ -281,6 +293,7 @@ The series will maintain the following constraints:
 - It will not equate market exit with moral legitimacy.
 - It will not treat technological change as the disappearance of the need to reproduce productive capacity.
 - It will not force the foundational theory to provide an immediate policy solution to every problem it identifies.
+
 
 ---
 
