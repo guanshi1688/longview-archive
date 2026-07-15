@@ -1,6 +1,6 @@
 # Longview Archive
 
-**A public archive on productive forces, civilizational form, absorptive capacity, value capture, and long-term social change.**
+**A public archive on productive forces, productive systems, civilizational form, absorptive capacity, value capture, and long-term social change.**
 
 Longview Archive is the public canonical archive of Aster Vale.
 
@@ -74,6 +74,35 @@ The framework layer defines the first principles of the archive.
 A future framework essay will examine the Western system more directly:
 
 **Production, Value Capture, and the Western System**
+
+---
+
+## Productive-Forces Economics
+
+Productive-Forces Economics develops the archive’s central principle into a more explicit analytical framework.
+
+It asks a prior question that mainstream economics often divides across separate fields:
+
+> **How is a productive world formed, maintained, organized, absorbed, corrected, and restarted?**
+
+The section distinguishes between:
+
+- production systems and interface networks;
+- system contribution and market value;
+- social absorption and responsibility embedding;
+- bounded responsibility and continuously embedded responsibility;
+- productive capacity and effective consumption;
+- local failure and systemic reformatting;
+- production mobilization and reciprocal responsibility.
+
+It includes one methodological memorandum and nine linked essays.
+
+- [Productive-Forces Economics](essays/english/productive-forces-economics/)
+- [Methodological Memorandum](essays/english/productive-forces-economics/00-methodological-memorandum.md)
+
+This section is not a policy program.
+
+It is a theoretical framework for explaining why different historical systems organize production, responsibility, failure, consumption, correction, and recovery in different ways.
 
 ---
 
