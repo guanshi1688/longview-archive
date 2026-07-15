@@ -32,7 +32,7 @@ This archive reads civilization from that level.
 
 ## The Basic Structure
 
-The public English archive has three main reading layers.
+The public English archive has four main reading layers.
 
 ### 1. Orientation
 
@@ -79,11 +79,54 @@ The four current foundational essays are:
 
 These essays are the ground.
 
-The series essays are built on them.
+The later analytical and series layers are built on them.
 
 ---
 
-### 3. Series Essays
+### 3. Productive-Forces Economics
+
+Productive-Forces Economics is the archive’s intermediate theoretical layer.
+
+The foundational essays define the archive’s first principles.
+
+Productive-Forces Economics develops those principles into a connected analytical sequence.
+
+It asks how societies:
+
+- construct and maintain productive systems;
+- organize responsibility;
+- distinguish system contribution from market value;
+- absorb failure;
+- create or fail to create durable consumers;
+- use interfaces for correction;
+- preserve or restart production after breakdown.
+
+The section contains one methodological memorandum and nine linked essays.
+
+Its central distinction is:
+
+> **Interface economics begins with already existing subjects and asks how they connect. Productive-Forces Economics asks how those subjects and their shared productive world are formed, maintained, and restarted.**
+
+This layer also distinguishes between:
+
+- production systems and interface networks;
+- social absorption and responsibility embedding;
+- bounded responsibility and continuously embedded responsibility;
+- local failure and systemic reformatting;
+- productive capacity and effective consumption;
+- production mobilization and reciprocal responsibility.
+
+It should be read before the more China-specific applications of the framework.
+
+- **Productive-Forces Economics**  
+  The section overview and reading sequence.
+
+- **Methodological Memorandum**  
+  The criteria used to distinguish mainstream theory, branch traditions, counterexamples, system-level analysis, and interface-level analysis.
+
+---
+
+### 4. Series Essays
 
 The series essays apply the framework.
 
@@ -139,7 +182,9 @@ The archive is easiest to read through the following relation:
 
 **Core Terms** provide the vocabulary.
 
-**Series Essays** provide the applications.
+**Productive-Forces Economics** provides the intermediate analytical structure.
+
+**Series Essays** provide the historical and thematic applications.
 
 **Chinese materials** provide the deeper mother-language layer.
 
@@ -169,6 +214,24 @@ Start here:
 4. One of the six series that matches your interest
 
 This path gives the basic framework before entering a specific topic.
+
+---
+
+### For readers interested in economic theory and institutional structure
+
+Read:
+
+1. **Methodological Memorandum**
+2. **Why Did Modern Western Economics Not Begin with Productive Forces?**
+3. **Why Did Long-Term Chinese Governance First Confront the Production System Itself?**
+4. **Why Can Productive Capacity Not Automatically Become Effective Consumption?**
+5. **How Can a System Use Interfaces for Localized Correction?**
+
+This path explains the distinction between production systems and interface networks, and why different structures organize responsibility, failure, consumption, and recovery differently.
+
+The key sentence is:
+
+**Interface economics explains connection. Productive-Forces Economics explains formation, continuity, and restart.**
 
 ---
 
@@ -335,6 +398,8 @@ It will be the structural counterpart to the archive’s analysis of production-
 This archive can be compressed into seven sentences:
 
 **Everything begins with productive forces.**
+
+**Interface economics explains connection. Productive-Forces Economics explains formation, continuity, and restart.**
 
 **Influence is not replication.**
 
