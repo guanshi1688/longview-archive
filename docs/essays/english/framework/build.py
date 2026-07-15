@@ -6,7 +6,7 @@ Build a full review bundle for the English Framework folder.
 
 Place this file here:
 
-docs/essays/english/build.py
+docs/essays/english/framework/build.py
 
 Run from this folder or from repo root:
 
@@ -14,7 +14,7 @@ python build.py
 
 It generates:
 
-docs/essays/english/_english-framework-bundle.md
+docs/essays/english/framework/_english-framework-bundle.md
 
 This bundle is for internal review. Do not add it to mkdocs.yml unless you
 explicitly want to publish the combined version.
