@@ -265,6 +265,16 @@ Therefore:
 
 > **The resilience of an interface network lies not in preventing every node from failing, but in allowing failure to remain local.**
 
+This principle also helps explain why political replacement does not always become systemic reformatting.
+
+In a contractual interface order, the failure of a government, dynasty, party, or political arrangement does not necessarily erase the legal personality of individuals, firms, cities, associations, or other organizations. Property, contracts, organizational continuity, and local social relations may survive political replacement or be recognized by other nodes.
+
+Political authority can therefore be reorganized while much of the underlying social interface remains intact.
+
+What a contractual network preserves is not any particular regime, but a language through which society can continue to recognize persons, property, organizations, and obligations after a regime fails.
+
+The distinction is not that one civilization collapses and another does not. It is that one structure is better able to localize political failure at the level of public authority, while another may allow political failure to penetrate the wider production-and-responsibility system.
+
 Because participation in such a network can survive the termination of a particular node or contract, individual exit from one relationship does not necessarily become exit from the social order as a whole.
 
 A larger network with more substitutable nodes can absorb more local failure.
