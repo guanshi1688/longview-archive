@@ -244,9 +244,105 @@ It is not identical with population size, purchasing power, market scale, or sho
 
 It involves conversion, distribution, valuation, cost-bearing, reintegration, and temporal stability.
 
+When the object of absorption is a failed individual, household, firm, or locality, absorptive capacity also appears as the ability to bear failure costs while preserving basic life, participation, and re-entry.
+
 **Key sentence**
 
 > Productive capacity asks what a system can generate. Absorptive capacity asks what the system can sustainably carry.
+
+---
+
+### Responsibility Embedding
+
+**Definition**
+
+Responsibility embedding is the institutional mechanism through which individuals, households, firms, and localities remain continuously incorporated into chains of debt, taxation, employment, household reproduction, public order, and systemic responsibility.
+
+The exit or failure of one node does not eliminate responsibility. It transfers responsibility elsewhere in the system.
+
+**Core meaning**
+
+Responsibility embedding does not refer merely to social connectedness.
+
+It describes how responsibility is continuously organized and retained within the system when a subject exits, fails, or loses function.
+
+**Key sentence**
+
+> Absorption is the system’s upward assumption of the consequences of node failure. Responsibility embedding is the system’s downward organization of continuous obligation.
+
+---
+
+### Responsibility-Bearing Node
+
+**Definition**
+
+A responsibility-bearing node is an individual, household, firm, or locality continuously embedded in overlapping productive, familial, financial, local, and public chains of responsibility.
+
+**Core meaning**
+
+A responsibility-bearing node is not simply a member of society.
+
+Its defining feature is that the termination of one relationship does not necessarily terminate the responsibility attached to it. Responsibility may continue through households, localities, other organizations, or higher levels of the system.
+
+**Key sentence**
+
+> A responsibility-bearing node may leave one relationship without causing responsibility to disappear from the system.
+
+---
+
+### Bounded Responsibility
+
+**Definition**
+
+Bounded responsibility means that an obligation can be confined to a specific relationship and brought to an institutional endpoint through fulfillment, settlement, bankruptcy, or lawful termination.
+
+**Core meaning**
+
+Bounded responsibility does not eliminate responsibility.
+
+It prevents one failure from occupying the entirety of a subject’s future and preserves the subject’s capacity to re-enter productive, consumptive, and social life after an old relationship ends.
+
+**Key sentence**
+
+> The boundary of responsibility does not abolish responsibility. It prevents responsibility from becoming total.
+
+---
+
+### The “Atomized Individual”
+
+**Definition**
+
+The “atomized individual” does not refer to a person literally detached from family, society, law, or public institutions.
+
+It refers to a relatively independent institutional subject whose responsibilities can be bounded, whose previous relations can terminate, and who can re-enter social and economic life through new contractual relations.
+
+**Core meaning**
+
+The “atomized individual” is an institutional presumption, not a moral description of real persons.
+
+Its distinction from a responsibility-bearing node lies not in whether social relations exist, but in whether responsibility can terminate and the subject can re-enter new relations.
+
+**Key sentence**
+
+> The “atomized individual” is not a person without relations, but a subject able to terminate old relations and enter new ones.
+
+---
+
+### Systemic Reformatting
+
+**Definition**
+
+Systemic reformatting is the historical process through which property, debt, status, fiscal, demographic, and political relations lose continuity after an old production system can no longer reproduce itself, forcing a new order to reconstruct the productive base.
+
+**Core meaning**
+
+Systemic reformatting is not a normal policy instrument or a desirable form of correction.
+
+It describes a hard reset after systemic failure, not ordinary reform, localized adjustment, or gradual institutional repair.
+
+**Key sentence**
+
+> Systemic reformatting does not repair the old system. It reconstructs the productive base after the old relations have failed at scale.
 
 ---
 
