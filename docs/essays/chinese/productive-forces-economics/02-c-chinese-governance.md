@@ -779,3 +779,14 @@
 也正是在这里，生产力经济学获得了另一条历史起点：
 
 > 现代西方经济学首先把接口变成理论，并主要通过货币化表达确认贡献；中国长期治理思想则首先被迫面对，接口所连接的整个生产世界能否继续存在，以及那些无法被充分货币化的系统贡献为什么仍必须被承担。
+
+---
+
+星衡｜Aster Vale  
+Longview Archive｜观势档案  
+生产力经济学  
+2026.07
+
+© 2026 Longview Archive｜观势档案。除特别说明外，本文采用 CC BY-NC-ND 4.0 许可协议：允许署名非商业分享，禁止未经授权的改写、翻译、重组与商业使用。
+
+© 2026 Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
