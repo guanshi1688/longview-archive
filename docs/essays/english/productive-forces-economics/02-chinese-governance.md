@@ -1,4 +1,4 @@
-# Why Did Long-Term Chinese Governance First Confront the Production System Itself?
+# 02 Why Did Long-Term Chinese Governance First Confront the Production System Itself?
 
 ## Because a unified order must first answer not how exchange occurs, but how the whole society continues to produce
 
@@ -418,7 +418,20 @@ Its historical danger arose from the same source:
 
 Unification is not only the unification of geographic space.
 
-It is also an attempt to prevent the chain of responsibility from breaking.
+It also concentrates the transmission of responsibility.
+
+The state cannot permanently externalize the failure of the whole. Individuals, households, firms, and localities cannot easily externalize their own failure either.
+
+A unified production system is therefore not merely a structure of state absorption. It is a two-directional structure of responsibility:
+
+- the system bears consequences that cannot be transferred outside the whole;
+- responsibility-bearing nodes are expected to remain continuously embedded within it.
+
+This is responsibility embedding.
+
+The individual is not connected to the system through one contract alone. The individual is incorporated into overlapping chains of family responsibility, employment, debt, taxation, household reproduction, locality, and public order.
+
+Ending one relationship may therefore transfer costs elsewhere rather than terminate them.
 
 In the traditional structure, the individual was not a completely independent legal atom.
 
@@ -458,9 +471,12 @@ Therefore:
 
 > **An integrated production system places greater emphasis on continuity of responsibility. A contractual interface system places greater emphasis on the termination of relationships and the re-entry of the subject.**
 
+> **A contractual order first asks where responsibility ends. A unified production system first asks who ultimately bears it.**
+
 This is not a moral difference.
 
 It reflects two structures making different judgments about the consequences of individual exit.
+
 
 ---
 
