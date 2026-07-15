@@ -32,6 +32,12 @@ Bankruptcy handles failure.
 
 If a system allows extensive borrowing but does not allow failure to be formally recognized, debtors, assets, and households can remain locked in place for long periods.
 
+This lock does more than preserve an unpaid balance.
+
+It allows one failed relationship to occupy future income, credit, labor choices, entrepreneurship, and the possibility of beginning again.
+
+> **Without bankruptcy, one failure can attach itself to the entirety of a person’s future. With bankruptcy, failure can be confined to one reviewed and terminable relationship.**
+
 The meaning of personal bankruptcy is not that an individual escapes all responsibility. Nor is it to turn the individual into an atom detached from society.
 
 It allows something more precise:
@@ -48,7 +54,19 @@ A functioning process then:
 
 Therefore:
 
-> **Bankruptcy does not erase responsibility. It reconnects responsibility under new boundaries.**
+> **Bankruptcy does not erase responsibility. It makes responsibility reviewable, allocates losses, creates an endpoint, and reconnects the individual under new boundaries.**
+
+The deepest function of bankruptcy is not debt cancellation.
+
+> **It is the institutional creation of an endpoint to responsibility.**
+
+Bankruptcy does not allow an individual to leave society.
+
+It allows an individual to leave a failed contractual relationship while retaining the right to remain in economic and social life.
+
+This is why bankruptcy matters not only for finance, but also for consumption, entrepreneurship, and productive renewal.
+
+> **Limited liability and bankruptcy do not eliminate responsibility. They prevent responsibility from becoming total.**
 
 Bankruptcy is not a sufficient condition for a consumption society. But it is an important interface through which failed obligations gain limits and individuals recover control over their future.
 
@@ -150,6 +168,7 @@ From the perspective of Productive-Forces Economics, they address the same probl
 In this sense, personal bankruptcy is not the surrender of a responsibility-based society to irresponsible atomization.
 
 It transforms unlimited, lifelong, non-terminating responsibility into an institutional interface that is bounded, reviewable, terminable, and open to re-entry.
+
 
 ---
 
