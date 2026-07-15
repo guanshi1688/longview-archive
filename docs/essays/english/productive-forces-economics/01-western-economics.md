@@ -1,4 +1,4 @@
-# Why Did Modern Western Economics Not Begin with Productive Forces?
+# 01 Why Did Modern Western Economics Not Begin with Productive Forces?
 
 ## It studies production, but rarely asks how the world of production was built
 
@@ -264,6 +264,8 @@ What matters is:
 Therefore:
 
 > **The resilience of an interface network lies not in preventing every node from failing, but in allowing failure to remain local.**
+
+Because participation in such a network can survive the termination of a particular node or contract, individual exit from one relationship does not necessarily become exit from the social order as a whole.
 
 A larger network with more substitutable nodes can absorb more local failure.
 
