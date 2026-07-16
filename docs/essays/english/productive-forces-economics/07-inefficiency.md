@@ -114,7 +114,7 @@ In the end, systemic reformatting completes delayed correction in the most bruta
 
 ---
 
-Evan Vale  
+Aster Vale  
 Longview Archive  
 Productive-Forces Economics  
 July 2026
