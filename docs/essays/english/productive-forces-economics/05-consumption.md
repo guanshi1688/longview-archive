@@ -274,7 +274,7 @@ It is that the system still requires them to remain responsible for too much of 
 
 ---
 
-Evan Vale  
+Aster Vale  
 Longview Archive  
 Productive-Forces Economics  
 July 2026
