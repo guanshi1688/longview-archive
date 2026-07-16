@@ -172,7 +172,7 @@ It transforms unlimited, lifelong, non-terminating responsibility into an instit
 
 ---
 
-Evan Vale  
+Aster Vale  
 Longview Archive  
 Productive-Forces Economics  
 July 2026
