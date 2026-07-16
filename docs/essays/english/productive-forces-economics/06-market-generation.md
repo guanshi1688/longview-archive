@@ -100,7 +100,7 @@ Otherwise, by the time the market proves their importance, the system may alread
 
 ---
 
-Evan Vale  
+Aster Vale  
 Longview Archive  
 Productive-Forces Economics  
 July 2026
