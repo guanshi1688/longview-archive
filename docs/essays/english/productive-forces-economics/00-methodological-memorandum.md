@@ -324,7 +324,7 @@ The series will maintain the following constraints:
 
 ---
 
-Evan Vale  
+Aster Vale  
 Longview Archive  
 Productive-Forces Economics  
 July 2026
