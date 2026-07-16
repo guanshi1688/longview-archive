@@ -1752,6 +1752,28 @@ It requires something narrower and more demanding:
 
 > **A consumption society does not require individuals to leave society. It requires them no longer to pledge their entire future against every social risk.**
 
+This is where consumption and bankruptcy reveal the same institutional foundation.
+
+Consumption and bankruptcy appear to belong to different domains. One concerns demand; the other concerns failure.
+
+But both require the individual to be separable from a specific chain of responsibility without being expelled from society as a whole.
+
+Bankruptcy limits the claims of past failure on the future.
+
+Consumption limits the extent to which future income must remain reserved against open-ended social obligation.
+
+> **Bankruptcy allows the subject to leave a failed relationship. Consumption allows the subject to use part of life without pledging the entire future to responsibility.**
+
+Both therefore depend on the same institutional condition:
+
+> **The individual must remain socially connected without remaining permanently bound to every specific chain of obligation.**
+
+Where this separation is weak, past failure and future risk converge on the same household balance sheet.
+
+The result is not merely low consumption.
+
+It is a subject whose legal income exists, but whose usable future does not.
+
 As long as the scope and endpoint of responsibility remain unclear, rising income will not necessarily become rising consumption.
 
 ## V. Why did real estate absorb savings without completing the consumption cycle?
@@ -2198,6 +2220,26 @@ This is why bankruptcy matters not only for finance, but also for consumption, e
 > **Limited liability and bankruptcy do not eliminate responsibility. They prevent responsibility from becoming total.**
 
 Bankruptcy is not a sufficient condition for a consumption society. But it is an important interface through which failed obligations gain limits and individuals recover control over their future.
+
+This is why bankruptcy and consumption share the same underlying logic.
+
+Bankruptcy prevents the past from occupying the whole future.
+
+Consumption requires that the future not be fully reserved against every possible obligation.
+
+Neither requires the individual to become detached from society.
+
+Both require something more precise:
+
+> **The subject must be able to exit a specific failed relationship while retaining the capacity to participate in the wider social order.**
+
+A system that cannot distinguish departure from one obligation from departure from society itself will remain cautious toward both bankruptcy and consumption.
+
+Bankruptcy terminates an old claim.
+
+Consumption exercises a present claim on life.
+
+Both enlarge the individual’s control over time.
 
 Corporate bankruptcy performs a similar function.
 
