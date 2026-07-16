@@ -198,7 +198,7 @@ It means the cost is left with the failed node, or that reconnection is postpone
 
 ---
 
-Evan Vale  
+Aster Vale  
 Longview Archive  
 Productive-Forces Economics  
 July 2026
