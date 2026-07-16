@@ -468,17 +468,31 @@ Responsibility embedding is not an isolated institution.
 
 It simultaneously shapes how a system understands the person, organizes social relations, and extracts and returns resources.
 
-Viewed from three angles, the same structure appears as three corresponding axes:
+First place the structure on a single horizontal axis:
+
+```text
+←—— Production / Responsibility / Embeddedness / Collective Continuity ——|—— Individual Settlement / Bounded Contract / Present Life ——→
+                                                                          ↑
+                                                            Current Institutional Position
+```
+
+> The entire argument rests on this horizontal axis. China has historically leaned toward its production, responsibility, and embeddedness end, while mature Western systems have leaned toward individual settlement, bounded contract, and present life. Neither is a fixed type. Both move along the same structural axis.
+
+The two ends are neither hierarchical nor moral categories.
+
+They represent different weightings between productive continuity and individual settlement.
+
+Viewed through the subject, relational, and fiscal layers, the same axis appears in three forms:
 
 ```text
 Subject:
-Atomic Individual  ←────────────→  Responsibility-Bearing Subject
+Responsibility-Bearing Subject  ←────────────→  Atomic Individual
 
 Relation:
-Bounded Contract  ←────────────→  Continuous Obligation
+Continuous Obligation  ←────────────→  Bounded Contract
 
 Fiscal Structure:
-Individual and Household Settlement  ←────────────→  Production-Node and Local Settlement
+Production-Node and Local Settlement  ←────────────→  Individual and Household Settlement
 ```
 
 These are not three separate theories.
@@ -544,6 +558,24 @@ Responsibility-Bearing Subject
 No real society occupies either endpoint completely.
 
 What matters is where the balance has settled—and where it moves under pressure.
+
+Institutional position cannot be moved at will.
+
+A civilization’s definition of the subject, boundaries of contract, fiscal structure, household behavior, and productive organization reinforce one another. Together they generate an institutional restoring force.
+
+When one axis is moved in isolation, the other modules tend to pull the system back toward its inherited position.
+
+Civilizational rebalancing therefore does not move weights across an empty line. It must overcome the institutional forces that made the existing equilibrium stable in the first place.
+
+At a deeper level, movement along the axis means, in part, becoming what the other side already is.
+
+This does not mean copying another civilization as a whole. It means incorporating a structural function that one’s own system historically suppressed and the other preserved.
+
+China’s movement to the right means stronger individual settlement, clearer terminal points of responsibility, and a more disposable future.
+
+The movement of mature Western systems to the left means stronger productive responsibility, long-term coordination, and collective cost sharing.
+
+> The paradox of civilizational reform is that a system often has to import part of the structure that once defined its opposite in order to correct its own extreme.
 
 ---
 
@@ -630,6 +662,14 @@ Mature Western systems face the reverse problem: how to re-embed capital, labor,
 Neither adjustment is a minor policy correction.
 
 Both require simultaneous movement along the subject, relation, and fiscal axes.
+
+Any such movement encounters the counterforce of the inherited structure.
+
+For China, expanding individual settlement affects not only fiscal distribution, but the existing interfaces among household responsibility, local finance, firms, and systemic absorption.
+
+For mature Western systems, re-embedding production affects not only industrial subsidies, but the established balance among shareholder returns, consumer prices, labor mobility, contractual exit, and public finance.
+
+In this sense, movement means partially becoming the other side—not through imitation, but by incorporating a function one’s own system has long lacked.
 
 Industrialization itself contains an intertemporal sacrifice. Society must divert present resources into productive capacities that are incomplete, unprofitable, or likely to fail.
 
