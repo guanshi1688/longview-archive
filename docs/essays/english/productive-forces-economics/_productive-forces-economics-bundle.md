@@ -10,11 +10,6 @@ Edit the individual source files and run build.py again.
 
 ## Methodological Memorandum and Nine Essays
 
-**Author:** Evan Vale  
-**Archive:** Longview Archive  
-**Version:** English V0.1  
-**Date:** July 2026
-
 ## Series Position
 
 Productive-Forces Economics asks how a society constructs, organizes, absorbs, preserves, and reproduces its productive capacity.
