@@ -445,7 +445,7 @@ Productive-Forces Economics begins from the earlier question:
 
 ---
 
-Evan Vale  
+Aster Vale  
 Longview Archive  
 Productive-Forces Economics  
 July 2026
