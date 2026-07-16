@@ -153,6 +153,7 @@ nav:
       - 生产力经济学:
           - 总览: essays/chinese/productive-forces-economics/index.md
           - 方法论备忘录: essays/chinese/productive-forces-economics/00-c-methodological-memorandum.md
+          - 从地理到消费: essays/chinese/productive-forces-economics/from-geography-to-consumption-chinese.md
           - 01｜为什么现代西方经济学没有从生产力出发: essays/chinese/productive-forces-economics/01-c-western-economics.md
           - 02｜为什么中国长期治理首先面对生产系统: essays/chinese/productive-forces-economics/02-c-chinese-governance.md
           - 03｜生产系统与接口网络如何处理失效: essays/chinese/productive-forces-economics/03-c-failure.md
@@ -192,9 +193,6 @@ nav:
 
       - 中文札记:
           - 札记总览: essays/notes/chinese/index.md
-
-          - 结构随笔:
-              - 从地理到消费: essays/notes/chinese/structural-notes/from-geography-to-consumption-chinese.md
               
           - 扩张的边界:
             # 如果这个 index.md 存在，就保留；如果不存在，就删掉这一行
