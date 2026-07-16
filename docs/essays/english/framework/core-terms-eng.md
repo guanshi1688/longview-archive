@@ -16,6 +16,10 @@ The English terms are designed for international readability, searchability, pub
 
 The Chinese terms preserve deeper mother-language intuition, historical weight, and sharper internal vocabulary.
 
+See key Chinese terms：
+
+Core Terms
+
 ---
 
 ## First Principle
