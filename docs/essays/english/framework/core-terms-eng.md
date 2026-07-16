@@ -18,7 +18,7 @@ The Chinese terms preserve deeper mother-language intuition, historical weight, 
 
 See key Chinese terms：
 
-Core Terms
+[Core Terms](../../chinese/core-terms-chinese.md)
 
 ---
 
