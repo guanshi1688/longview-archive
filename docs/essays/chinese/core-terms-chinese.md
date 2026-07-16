@@ -10,7 +10,7 @@
 
 英文核心术语另见：
 
-[Core Terms](core-terms-eng.md)
+[Core Terms](../english/framework/core-terms-eng.md)
 
 需要特别说明：
 
