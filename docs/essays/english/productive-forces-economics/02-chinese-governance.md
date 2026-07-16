@@ -480,7 +480,7 @@ It reflects two structures making different judgments about the consequences of 
 
 ---
 
-Evan Vale  
+Aster Vale  
 Longview Archive  
 Productive-Forces Economics  
 July 2026
