@@ -196,7 +196,7 @@ The task of Productive-Forces Economics is therefore to explain:
 
 ---
 
-Evan Vale  
+Aster Vale  
 Longview Archive  
 Productive-Forces Economics  
 July 2026
