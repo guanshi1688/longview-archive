@@ -818,4 +818,4 @@ Core Terms<br>
 
 © 2026 Longview Archive｜观势档案。Unless otherwise stated, this archive is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
 
-For details, see [Copyright｜版权声明](../../../copyright/).
+For details, see [Copyright｜版权声明](../../../../copyright/).
