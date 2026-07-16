@@ -116,6 +116,28 @@ It requires something narrower and more demanding:
 
 > **A consumption society does not require individuals to leave society. It requires them no longer to pledge their entire future against every social risk.**
 
+This is where consumption and bankruptcy reveal the same institutional foundation.
+
+Consumption and bankruptcy appear to belong to different domains. One concerns demand; the other concerns failure.
+
+But both require the individual to be separable from a specific chain of responsibility without being expelled from society as a whole.
+
+Bankruptcy limits the claims of past failure on the future.
+
+Consumption limits the extent to which future income must remain reserved against open-ended social obligation.
+
+> **Bankruptcy allows the subject to leave a failed relationship. Consumption allows the subject to use part of life without pledging the entire future to responsibility.**
+
+Both therefore depend on the same institutional condition:
+
+> **The individual must remain socially connected without remaining permanently bound to every specific chain of obligation.**
+
+Where this separation is weak, past failure and future risk converge on the same household balance sheet.
+
+The result is not merely low consumption.
+
+It is a subject whose legal income exists, but whose usable future does not.
+
 As long as the scope and endpoint of responsibility remain unclear, rising income will not necessarily become rising consumption.
 
 ## V. Why did real estate absorb savings without completing the consumption cycle?
