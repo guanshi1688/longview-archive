@@ -1217,6 +1217,31 @@ The individual must retain the right to leave any particular relation, organizat
 
 ---
 
+## XVIII. The Surface of Civilization: Where Politics, Religion, and Culture Come From
+
+Human beings are accustomed to explaining civilization through politics, religion, and culture.
+
+Why does one society emphasize order while another emphasizes freedom? Why does one civilization value family and continuous obligation while another emphasizes the independent individual and bounded contract? Why do some states prize unity while others tolerate dispersion? Why do some religions elevate obedience, relief, and community, while other traditions emphasize conscience, contract, and exit?
+
+These differences are real.
+
+But they are not the starting point of explanation.
+
+They are themselves outcomes that require explanation.
+
+Before politics, religion, and culture can take form, human beings must first answer more basic questions:
+
+```text
+How is food and energy secured?
+How are population and land organized?
+How is productive continuity maintained?
+Who absorbs disaster and failure?
+How are strangers connected?
+Where are the boundaries of responsibility drawn?
+How is value produced, exchanged, realized, and settled?
+
+---
+
 ## Conclusion: The Rise and Retreat of Globalization Belong to One Causal Line
 
 Globalization began when two systems discovered that they could amplify one another.
