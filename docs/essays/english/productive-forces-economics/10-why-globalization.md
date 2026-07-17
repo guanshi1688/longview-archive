@@ -1064,3 +1064,13 @@ It also enlarged their long-term structural gaps through specialization.
 The next essay asks the question this fusion left behind:
 
 > **Why did a structure that served both sides so well—and created such extraordinary prosperity—begin to retreat?**
+
+
+---
+
+Aster Vale  
+Longview Archive  
+Productive-Forces Economics  
+July 2026
+
+© 2026 Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
