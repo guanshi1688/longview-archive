@@ -19,6 +19,8 @@ FILES = [
     "07-c-inefficiency.md",
     "08-c-correction.md",
     "09-c-modernization.md",
+    "10-why-global-must.md",
+    "11-retreat-of-globalization.md",
 ]
 
 OUTPUT_FILE = "_生产力经济学-合订本.md"
