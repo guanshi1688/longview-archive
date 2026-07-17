@@ -1301,3 +1301,12 @@ And the final hope lies here:
 > **Production cannot swallow the interface, because collective continuity cannot replace individual exit. The interface cannot abolish production, because individual freedom cannot by itself sustain the physical foundations of civilization.**
 
 > **A complete world requires both: a collective capable of carrying continuity, and an individual who is not required to carry infinite responsibility.**
+
+---
+
+Aster Vale  
+Longview Archive  
+Productive-Forces Economics  
+July 2026
+
+© 2026 Longview Archive. Unless otherwise stated, this essay is licensed under CC BY-NC-ND 4.0: attribution required, non-commercial sharing only, no unauthorized modifications, translations, reorganizations, or commercial use.
