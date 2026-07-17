@@ -19,6 +19,8 @@ FILES = [
     "07-inefficiency.md",
     "08-correction.md",
     "09-modernization.md",
+    "10-why-globalization.md",
+    "11-why-globalization-retreat.md",
 ]
 
 OUTPUT_FILE = "_productive-forces-economics-bundle.md"
