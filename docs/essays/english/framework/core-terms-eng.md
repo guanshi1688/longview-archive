@@ -796,6 +796,32 @@ It is not treated here as an ideological slogan.
 It is treated as a structural condition emerging from productive surplus, absorptive capacity, and a stable civilizational reproduction loop.
 
 ---
+### Conjoined Systems
+
+**Definition**
+
+Conjoined systems are two systems with different core functions that, through long-term coupling, embed critical productive, realizational, settlement, risk-bearing, or reproductive functions inside one another to such a degree that neither can absorb, replace, or fully separate from the other at low cost.
+
+**Core meaning**
+
+Conjoined systems are not merely interdependent systems.
+
+Ordinary dependence can often be reduced by changing suppliers, shifting markets, or adding redundancy.
+
+Conjoined systems are formed through a deeper process:
+
+```text
+Long-term functional outsourcing
+↓
+Internal capabilities weaken or fail to form
+↓
+Critical systemic costs are transferred to the other side
+↓
+Both systems reorganize around the coupled structure
+↓
+Separation requires each side to rebuild the missing functions internally
+
+---
 
 ## Usage Note
 
