@@ -52,7 +52,34 @@ nav:
       - 09｜Why Did China’s Modernization Succeed, and Why Must It Enter a New Stage?: essays/english/productive-forces-economics/09-modernization.md
       - 10｜Why Globalization Became Historically Inevitable?: essays/english/productive-forces-economics/10-why-globalization.md
       - 11｜Why Globalization Began to Retreat?: essays/english/productive-forces-economics/11-why-globalization-retreat.md
-    
+
+# ============================================================
+# FUTURE RELEASE｜The Structural Algorithm of Civilization
+# Keep every line commented until the corresponding files exist.
+# Commented nav entries are ignored by MkDocs and will not create 404s.
+# Public file roots planned for release:
+#   docs/essays/english/structural-algorithm/
+#   docs/essays/chinese/structural-algorithm/
+# ============================================================
+
+# - The Structural Algorithm of Civilization:
+#     - Overview: essays/english/structural-algorithm/index.md
+#     - Preface: essays/english/structural-algorithm/00-preface.md
+#     - Introduction and Method: essays/english/structural-algorithm/01-introduction-and-method.md
+#     - 00｜First Principles and Analytical Boundaries: essays/english/structural-algorithm/02-layer-00-first-principles.md
+#     - 01｜Historical Formation: essays/english/structural-algorithm/03-layer-01-historical-formation.md
+#     - 02｜Core Mechanisms: essays/english/structural-algorithm/04-layer-02-core-mechanisms.md
+#     - 03｜Institutional Encoding: essays/english/structural-algorithm/05-layer-03-institutional-encoding.md
+#     - 04｜Expansion and Recovery: essays/english/structural-algorithm/06-layer-04-expansion-and-recovery.md
+#     - 05｜Ideological Projection: essays/english/structural-algorithm/07-layer-05-ideological-projection.md
+#     - 06｜Modern Amplification and Structural Prediction: essays/english/structural-algorithm/08-layer-06-modern-amplification.md
+#     - 07｜Subject Formation: essays/english/structural-algorithm/09-layer-07-subject-formation.md
+#     - 08｜Systemic Inertia: essays/english/structural-algorithm/10-layer-08-systemic-inertia.md
+#     - 09｜Governance — From Command to Condition-Shaping: essays/english/structural-algorithm/11-layer-09-governance.md
+#     - Synthesis: essays/english/structural-algorithm/12-synthesis.md
+#     - Open Questions: essays/english/structural-algorithm/13-open-questions.md
+#     - Core Terms: essays/english/structural-algorithm/14-core-terms.md
+#     - Methodological Appendix: essays/english/structural-algorithm/15-methodological-appendix.md
   - Series:
       - Frontiers:
           - Overview: essays/notes/english/Frontiers/index.md
@@ -167,6 +194,25 @@ nav:
           - 09｜中国现代化为什么成功又为什么必须进入下一阶段: essays/chinese/productive-forces-economics/09-c-modernization.md
           - 10｜全球化为什么成为历史必然: essays/chinese/productive-forces-economics/10-why-global-must.md
           - 11｜全球化为什么开始退缩: essays/chinese/productive-forces-economics/11-retreat-of-globalization.md
+
+  # - 文明结构算法:
+  #     - 总览: essays/chinese/structural-algorithm/index.md
+  #     - 序言: essays/chinese/structural-algorithm/00-preface.md
+  #     - 导论与方法: essays/chinese/structural-algorithm/01-introduction-and-method.md
+  #     - 00｜边界、第一性与文明投影: essays/chinese/structural-algorithm/02-layer-00-first-principles.md
+  #     - 01｜历史起点：治水、整体生产与碎片连接: essays/chinese/structural-algorithm/03-layer-01-historical-formation.md
+  #     - 02｜基础机制：责任闭环、路径锁定与生产—接口—承接: essays/chinese/structural-algorithm/04-layer-02-core-mechanisms.md
+  #     - 03｜制度生成：第一性如何写进国家、市场与社会: essays/chinese/structural-algorithm/05-layer-03-institutional-encoding.md
+  #     - 04｜扩张结构：重建底盘、迁移接口与文明碰撞: essays/chinese/structural-algorithm/06-layer-04-expansion-and-recovery.md
+  #     - 05｜思想映射：制度如何被翻译为道德、法律与政治语言: essays/chinese/structural-algorithm/07-layer-05-ideological-projection.md
+  #     - 06｜现代能力：统计方向、技术放大与文明预测: essays/chinese/structural-algorithm/08-layer-06-modern-amplification.md
+  #     - 07｜主体重构：从集体责任人到契约个人与家庭兜底: essays/chinese/structural-algorithm/09-layer-07-subject-formation.md
+  #     - 08｜系统惯性：破产、消费与中美反向调整: essays/chinese/structural-algorithm/10-layer-08-systemic-inertia.md
+  #     - 09｜管理体制：从命令控制到条件塑造: essays/chinese/structural-algorithm/11-layer-09-governance.md
+  #     - 总归纳: essays/chinese/structural-algorithm/12-synthesis.md
+  #     - 开放问题: essays/chinese/structural-algorithm/13-open-questions.md
+  #     - 核心术语: essays/chinese/structural-algorithm/14-core-terms.md
+  #     - 方法论附录: essays/chinese/structural-algorithm/15-methodological-appendix.md
 
       - Reality｜现实世界:
           - 阅读前约束: essays/chinese/reality/00.md
