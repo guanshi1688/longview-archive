@@ -203,22 +203,19 @@ nav:
           - 09｜中国现代化为什么成功又为什么必须进入下一阶段: essays/chinese/productive-forces-economics/09-c-modernization.md
           - 10｜全球化为什么成为历史必然: essays/chinese/productive-forces-economics/10-why-global-must.md
           - 11｜全球化为什么开始退缩: essays/chinese/productive-forces-economics/11-retreat-of-globalization.md
-
-  # ============================================================
-  # FUTURE RELEASE｜The Human Architecture of Industrialization
-  # Chinese master exists first; keep English lines commented until files exist.
-  # Public file roots:
-  #   docs/essays/english/industrial-people/
-  #   docs/essays/chinese/industrial-people/
-  # ============================================================
-  
-  # - The Human Architecture of Industrialization:
-  #     - Overview: essays/english/industrial-people/index.md
-  #     - Before Capital Arrived: essays/english/industrial-people/01-before-capital-arrived.md
-  #     - Spreading Modern Productive Order: essays/english/industrial-people/02-spreading-modern-order.md
-  #     - What China’s Industrial Results Prove: essays/english/industrial-people/03-what-industrial-results-prove.md
-  #     - Why Capital Cannot Replicate This Preparation: essays/english/industrial-people/04-why-capital-cannot-replicate.md
-  #     - Reading After: essays/english/industrial-people/05-reading-after.md
+      
+      - 工业化的人力架构:
+          - 总览: essays/chinese/industrial-people/index.md
+          - 阅读前约束: essays/chinese/industrial-people/00-reading-before.md
+          - 01｜在资本到来之前：中国经历了什么: essays/chinese/industrial-people/01-before-capital-arrived.md
+          - 02｜把能够理解工厂的人铺向全国: essays/chinese/industrial-people/02-spreading-modern-order.md
+          - 03｜中国的工业结果证明了什么: essays/chinese/industrial-people/03-what-industrial-results-prove.md
+          - 04｜为什么资本不能复制这段准备: essays/chinese/industrial-people/04-why-capital-cannot-replicate.md
+          - 阅读后约束: essays/chinese/industrial-people/05-reading-after.md
+          # Internal only; keep out of public navigation:
+          # - 未来改写与投稿备忘录: essays/chinese/industrial-people/90-submission-rewrite-memo.md
+          # - 证据与参考线索: essays/chinese/industrial-people/references.md
+          # - 旧九篇版本归档: essays/chinese/industrial-people/archive-v1-nine-chapters/index.md
 
   # - 文明结构算法:
   #     - 总览: essays/chinese/structural-algorithm/index.md
