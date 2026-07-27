@@ -204,6 +204,22 @@ nav:
           - 10｜全球化为什么成为历史必然: essays/chinese/productive-forces-economics/10-why-global-must.md
           - 11｜全球化为什么开始退缩: essays/chinese/productive-forces-economics/11-retreat-of-globalization.md
 
+  # ============================================================
+  # FUTURE RELEASE｜The Human Architecture of Industrialization
+  # Chinese master exists first; keep English lines commented until files exist.
+  # Public file roots:
+  #   docs/essays/english/industrial-people/
+  #   docs/essays/chinese/industrial-people/
+  # ============================================================
+  
+  # - The Human Architecture of Industrialization:
+  #     - Overview: essays/english/industrial-people/index.md
+  #     - Before Capital Arrived: essays/english/industrial-people/01-before-capital-arrived.md
+  #     - Spreading Modern Productive Order: essays/english/industrial-people/02-spreading-modern-order.md
+  #     - What China’s Industrial Results Prove: essays/english/industrial-people/03-what-industrial-results-prove.md
+  #     - Why Capital Cannot Replicate This Preparation: essays/english/industrial-people/04-why-capital-cannot-replicate.md
+  #     - Reading After: essays/english/industrial-people/05-reading-after.md
+
   # - 文明结构算法:
   #     - 总览: essays/chinese/structural-algorithm/index.md
   #     - 序言: essays/chinese/structural-algorithm/00-preface.md
