@@ -237,18 +237,18 @@ nav:
   #     - 方法论附录: essays/chinese/structural-algorithm/15-methodological-appendix.md
 
       - Reality｜现实世界:
-          - 阅读前约束: essays/chinese/reality/00.md
-          - 01｜人类文明的三种底层模式: essays/chinese/reality/01.md
-          - 02｜中国制度不是消费机器，而是做功机器: essays/chinese/reality/02.md
-          - 03｜全球南方不是第二个中国: essays/chinese/reality/03.md
-          - 04｜中国不能把自己的生存方式当作世界答案: essays/chinese/reality/04.md
-          - 05｜成熟市场为什么不愿承接中国工业 2.0: essays/chinese/reality/05.md
-          - 06｜不限制生产，只限制变现: essays/chinese/reality/06.md
-          - 07｜真正的市场战，不是打工厂，而是打变现: essays/chinese/reality/07.md
-          - 08｜旧闭环正在退潮: essays/chinese/reality/08s.md
-          - 09｜内部闭环的压力: essays/chinese/reality/09.md
-          - 10｜文明战略转型: essays/chinese/reality/10.md
-          - 阅读后约束: essays/chinese/reality/11.md
+          - 阅读前约束: essays/chinese/reality/00-c-reading-before.md
+          - 01｜人类文明的三种底层模式: essays/chinese/reality/01-c-three-patterns-civilization.md
+          - 02｜中国制度不是消费机器，而是做功机器: essays/chinese/reality/02-c-china-sys-work-not-consume.md
+          - 03｜全球南方不是第二个中国: essays/chinese/reality/03-c-global-south-not-second-china.md
+          - 04｜中国不能把自己的生存方式当作世界答案: essays/chinese/reality/04-c-china-unique-way-not-world-answer.md
+          - 05｜成熟市场为什么不愿承接中国工业 2.0: essays/chinese/reality/05-c-mature-markets-reject-china-industry2.md
+          - 06｜不限制生产，只限制变现: essays/chinese/reality/06-c-prod-free-circulation-restricted.md
+          - 07｜热战不是最优解: essays/chinese/reality/07-c-hotwar-not-opt-solution.md
+          - 08｜中国出海进入秩序闭环阶段: essays/chinese/reality/08-c-overseas-invest-closed-loop
+          - 09｜从做功机器到闭环机器: essays/chinese/reality/09-c-production-consumption-lifecycle.md
+          - 10｜中国是开放问题，西方是封闭策略: essays/chinese/reality/10-c-10-china-open-west-closed.md
+          - 阅读后约束: essays/chinese/reality/11-c-reading-after.md
 
       - Future Path｜未来之路:
           - 阅读前约束: essays/chinese/future/00.md
