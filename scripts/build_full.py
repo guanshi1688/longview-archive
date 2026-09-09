@@ -14,10 +14,12 @@ docs/essays/chinese/future/
 
 This script generates:
 
-docs/essays/chinese/reality/reality_full.md
-docs/essays/chinese/future/future_full.md
+docs/essays/chinese/reality/_reality_full.md
+docs/essays/chinese/future/_future_full.md
 
 The generated full bundles are internal/review reading files.
+Generated Markdown filenames start with '_' so corpus/index tooling can
+recognize them as derived files and exclude their duplicated body text.
 Do not add them to public mkdocs.yml navigation unless you explicitly want to publish them.
 """
 
@@ -124,25 +126,13 @@ def read_doc(relative_path: str) -> str:
 
 def read_group_file(source_dir: Path, filename: str) -> str:
     """
-    Read article file inside a group directory.
+    Read one source article from a group directory.
 
-    Reality 08 had once appeared in mkdocs.yml as 08s.md.
-    To avoid breaking older local trees, this function allows a fallback from
-    08.md to 08s.md. Prefer normalizing the actual repo file to 08.md.
+    Source filenames are expected to match the current normalized repository
+    names exactly. Missing files fail fast so stale paths are discovered
+    immediately instead of being silently masked by compatibility fallbacks.
     """
     path = source_dir / filename
-
-    fallback_names = {
-        "08.md": ["08s.md"],
-    }
-
-    if not path.exists():
-        for alt in fallback_names.get(filename, []):
-            alt_path = source_dir / alt
-            if alt_path.exists():
-                print(f"Using fallback file for {filename}: {alt_path}")
-                path = alt_path
-                break
 
     if not path.exists():
         raise FileNotFoundError(f"Missing file: {path}")
@@ -226,7 +216,7 @@ def main():
             "10-c-china-open-west-closed.md",
             "11-c-reading-after.md",
         ],
-        output_file="reality_full.md",
+        output_file="_reality_full.md",
         title="Reality｜现实世界｜合订本",
         intro="""本文为 Reality｜现实世界 组文章的连续阅读与归档版本。  
 分篇阅读请使用左侧目录。
@@ -253,7 +243,7 @@ Reality｜现实世界 用于说明旧世界为什么走到边界。""",
             "09-c-the-edge-of-tomorrow.md",
             "10-c-reading-after.md",
         ],
-        output_file="future_full.md",
+        output_file="_future_full.md",
         title="Future Path｜未来之路｜合订本",
         intro="""本文为 Future Path｜未来之路 组文章的连续阅读与归档版本。  
 分篇阅读请使用左侧目录。
