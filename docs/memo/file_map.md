@@ -1,26 +1,40 @@
 # file_map.md｜Longview Archive File Structure Map
 
-**Status:** synchronized with `mkdocs.yml` on 2026-07-17.  
-**Purpose:** canonical path reference, navigation map, and recovery memo for the entire Longview Archive mother archive.
+**Status:** internal repository-routing authority. Theoretical hierarchy is delegated to `memo/theory-map.md`.  
+**Purpose:** canonical path reference, navigation map, publication-state map, and recovery memo for the entire Longview Archive mother archive.
 
-When files are added, deleted, renamed, or moved under `docs/`, update this file first.  
+For theoretical hierarchy, article placement, and the relation between Civilizational Structure, Productive-Forces Economics, Reality, Future Path, and Transition Dynamics, read `memo/theory-map.md`.
+
+When files are added, deleted, renamed, or moved under `docs/`, update `memo/file_map.md` first.  
 Then update `mkdocs.yml`, internal links, and `sitemap.xml`.
 
 ---
 
 ## 0. Recovery Use
 
-This file is designed to restore the project in a new conversation without rereading more than one hundred articles.
+This file restores the repository and publication architecture without rereading the full archive.
 
 A new conversation should read, in this order:
 
-1. **Section 1 — Project identity and publication layers**
-2. **Section 2 — Current theoretical architecture**
-3. **Section 3 — Current site snapshot**
-4. **Section 6 — Current navigation tree**
-5. The specific article or series relevant to the next task
+1. `memo/file_map.md` — repository paths, publication states, navigation, and recovery routing.
+2. `memo/theory-map.md` — current theoretical hierarchy and article-placement rules.
+3. The Civilizational Structure introduction / synthesis when foundational reasoning is required.
+4. The specific mother text, series, or article relevant to the next task.
 
-The full archive is evidence and expansion. This file is the routing layer.
+Authority rule:
+
+```text
+Repository path / publication-state conflict
+→ memo/file_map.md
+
+Theoretical hierarchy / article-placement conflict
+→ memo/theory-map.md
+
+Substantive argument conflict
+→ the relevant canonical mother text
+```
+
+The full archive is evidence and expansion. These two memo files are the routing layer.
 
 ---
 
@@ -74,155 +88,85 @@ The public site is the standard edition, not the complete private theory.
 
 ## 2. Current Theoretical Architecture
 
-### 2.1 First explanatory coordinate
+### 2.1 Theory authority
 
-The framework does not begin with conventional economics, political science, or international relations.
-
-It begins with:
+The current theoretical hierarchy is maintained in:
 
 ```text
-Productive Forces
-→ Production System
-→ Absorptive Capacity
-→ Productive Surplus
-→ Value Capture
-→ Social Reproduction
+docs/memo/theory-map.md
 ```
 
-### 2.2 Three underlying civilizational modes
+Do not duplicate the full theory architecture in this repository map.
+
+The current top-level relationship is:
 
 ```text
-Work-performing Civilization
-Endowment-based Civilization
-Global Rentier Civilization
-```
-
-These are survival and reproduction structures, not moral rankings.
-
-### 2.3 Core terms
-
-```text
-Productive Forces
-Production System
-Absorptive Capacity
-Productive Surplus
-External Realization
-Interface Power
-Value Capture
-Civilizational Metabolism
-Responsibility Embedding
-Disposable Future
-```
-
-### 2.4 Productive-Forces Economics
-
-The formal Productive-Forces Economics sequence now exists in both English and Chinese.
-
-Its current execution model is:
-
-```text
-Geographic and Survival Pressures
+Civilizational Structure
+├── Productive-Forces Economics
+├── Reality / Future Path
+├── Six thematic series
+├── Structural syntheses
+└── Structural boundary
         ↓
-Continental Production System
-        ↓
-Unified Responsibility and Systemic Absorption
-        ↓
-Responsibility Embedded in Micro-Level Nodes
-        ↓
-Household as Residual Risk Account
-        ↓
-Failure Boundary
-        ↓
-Consumer Formation
-        ↓
-Productive Surplus and Internal Absorption
-        ↓
-New Absorptive Loop
+    Transition Dynamics / Movement
+
+All of the above
+        ↓ compile
+Public outputs
 ```
 
-### 2.5 Horizontal civilizational axis
+`Civilizational Structure` is the current foundational generative model.  
+`Productive-Forces Economics` is the first systematic derived analytical discipline.  
+Reality, Future Path, the six series, and structural syntheses are distinct projections or applications of the deeper structure rather than a single linear hierarchy.  
+Transition Dynamics begins where stable structural explanation gives way to open movement, leverage, strategic interaction, and branching outcomes.
 
-The current comparison model is not an upper/lower hierarchy.
+### 2.2 Material starting point vs. theoretical organization
+
+The archive retains its core sentence:
 
 ```text
-← Production / Responsibility / Embeddedness / Collective Continuity
-                              |
-                              |
-Individual Settlement / Bounded Contract / Present Life →
+Everything begins with productive forces.
+一切从生产力开始。
 ```
 
-Its three observable projections are:
+This remains the material explanatory starting point.
+
+It does **not** mean that Productive-Forces Economics is the lowest organizational layer of the theory.
+
+Current distinction:
 
 ```text
-Subject:
-Responsibility-Bearing Subject ←→ Atomic Individual
+Material starting point:
+Productive forces
 
-Relation:
-Continuous Obligation ←→ Bounded Contract
+Foundational theoretical organization:
+Civilizational Structure
 
-Fiscal Structure:
-Production-Node and Local Settlement ←→ Individual and Household Settlement
+First systematic derived discipline:
+Productive-Forces Economics
 ```
 
-China has historically leaned toward the production-responsibility end.  
-Mature Western systems have historically leaned toward the individual-settlement and bounded-contract end.
+### 2.3 Routing rule
 
-Neither is a fixed type. Both can move along the same structural axis.
-
-### 2.6 Institutional restoring force
-
-Civilizational position cannot be moved at will.
+For the full current hierarchy, including:
 
 ```text
-Subject definition
-+ contract boundaries
-+ fiscal structure
-+ household behavior
-+ productive organization
-= institutional restoring force
+Civilizational Structure
+Productive-Forces Economics
+Reality
+Future Path
+Six Series
+Structural Syntheses
+Transition / Movement
+Public Outputs
+LV article identity system
 ```
 
-When one module moves alone, the others may pull the system back toward its inherited equilibrium.
-
-Moving along the axis therefore means partially incorporating functions historically preserved by the opposite side, not copying the opposite civilization in full.
-
-### 2.7 Reform logic
+read:
 
 ```text
-Parameter Adjustment
-→ Interface Rewrite
-→ Module Replacement
-→ System Reconfiguration
-→ System Reset
+memo/theory-map.md
 ```
-
-Core boundary:
-
-> When correction can remain modular, reform remains possible.  
-> When modules begin reproducing one another’s failure, the system starts searching for a new initialization point.
-
-Do not turn this into deterministic collapse prophecy. It is a failure-boundary model, not a guaranteed terminal forecast.
-
-### 2.8 Current independent research branch
-
-A new branch has emerged:
-
-```text
-Interface Network
-→ Exit-capable Subject
-→ Bounded Contract
-→ Predictable Rules
-→ Limited Sovereignty
-→ Possible co-evolution with liberal and democratic institutions
-```
-
-Current boundary:
-
-Do not reduce democracy, liberty, or human rights to a fraudulent cover for capital.
-
-The stronger and more defensible claim is that interface economies and institutions protecting exit, contract, property, and constrained sovereignty may co-evolve and reinforce one another.
-
-This branch remains separate from the main causal-line article until developed as an independent essay.
 
 ---
 
@@ -248,7 +192,8 @@ features:
 
 ```yaml
 exclude_docs: |
-  file_map.md
+  memo/file_map.md
+  memo/theory-map.md
 ```
 
 ### Extra CSS
@@ -314,10 +259,16 @@ docs/sitemap.xml
 docs/assets/
 docs/stylesheets/
 docs/essays/
-docs/file_map.md
 ```
 
-`docs/file_map.md` remains excluded from the public build.
+### Internal routing docs
+
+```text
+docs/memo/file_map.md
+docs/memo/theory-map.md
+```
+
+Both routing documents remain excluded from the public build and are intended to be merged into the local corpus as `INTERNAL`.
 
 ### English framework
 
@@ -817,7 +768,7 @@ Do not rename casually. It is the half-exposed strategic blade inside the Framew
 If renamed, update:
 
 ```text
-file_map.md
+memo/file_map.md
 mkdocs.yml
 internal links
 sitemap.xml
@@ -863,7 +814,7 @@ Resolve all missing-file warnings before deployment.
 ### Add a public file
 
 1. Create the physical file.
-2. Update `file_map.md`.
+2. Update `memo/file_map.md`.
 3. Update related internal links.
 4. Add it to `mkdocs.yml` if it should appear in navigation.
 5. Regenerate `sitemap.xml`.
@@ -874,7 +825,7 @@ Resolve all missing-file warnings before deployment.
 
 1. Use `git mv`.
 2. Search the repository for the old path.
-3. Update `file_map.md`.
+3. Update `memo/file_map.md`.
 4. Update `mkdocs.yml`.
 5. Update internal and canonical links.
 6. Regenerate `sitemap.xml`.
@@ -936,4 +887,4 @@ When continuing the project:
 
 ## 13. One-Paragraph Recovery Memo
 
-Longview Archive is a bilingual public mother archive built around Productive-Forces Economics. Its first coordinate is productive forces and absorptive capacity rather than conventional economics or political science. The public English layer contains the framework, the formal Productive-Forces Economics sequence, and six eleven-essay series on production, frontiers, development, value capture, China’s production burden, and technology as a structural amplifier. The Chinese layer preserves the deeper mother-language root through Reality, Future Path, Productive-Forces Economics, and three historical/structural note groups. The current central algorithm runs from geography and survival pressure through continental production, unified responsibility, responsibility embedding, household risk, failure boundaries, consumer formation, productive surplus, and a new absorptive loop. China and mature Western systems are placed on one horizontal structural axis rather than treated as immutable types: responsibility-bearing subject versus atomic individual, continuous obligation versus bounded contract, and production-node settlement versus individual/household settlement. Movement along this axis faces institutional restoring force and means incorporating missing functions historically preserved by the opposite side. Reform should be analyzed as parameter adjustment, interface rewrite, module replacement, or system reconfiguration; system reset is a failure boundary, not a deterministic prophecy. The emerging interface-economy branch may explain the co-evolution of exit, contract, limited sovereignty, and liberal-democratic institutions, but must not be reduced to a claim that democracy and freedom are merely fraudulent covers for capital.
+Longview Archive is a bilingual theoretical mother archive whose current foundational organizational model is **Civilizational Structure**. Its material explanatory starting point remains productive forces: “Everything begins with productive forces.” Civilizational Structure asks how long-run pressures generate capability ordering, responsibility allocation, subject formation, interface organization, failure processing, continuity preservation, and recovery direction. **Productive-Forces Economics** is the first systematic derived analytical discipline, examining how those deeper structures enter production, value, absorption, consumption, correction, and restart. Reality and Future Path are two large vertical projections of the same deeper structure: Reality diagnoses already-visible pressure, while Future Path examines how productive surplus may require new forms of social absorption and reproduction. The six thematic series and structural syntheses apply or recombine the same underlying variables across expansion, development, value capture, China’s production burden, technology, history, institutions, and household behavior. **Transition Dynamics / Movement** begins at the boundary where stable structural explanation gives way to open branching: marginal adaptation, structural reform, restoring forces, leverage, conflict, and unknown new equilibria. Public essays, Reddit notes, Medium/Substack pieces, policy memos, and think-tank submissions are compiled outputs rather than new theoretical layers. For repository paths and publication status, this file is authoritative; for theoretical hierarchy and article placement, `memo/theory-map.md` is authoritative; for substantive claims, return to the relevant canonical mother text.
