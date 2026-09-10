@@ -1,7 +1,8 @@
 # Longview Archive｜理论关系图
 
 > 内部定位文件｜用于判断各类文章、系列与未来新稿在整个理论体系中的位置。  
-> 本文件不是理论正文，不替代任何母版；它只保存当前层级关系与归档规则。
+> 本文件不是理论正文，不替代任何母版；它只保存当前层级关系与归档规则。  
+> 仓库路径、导航与发布状态，以 `memo/file_map.md` 为准。
 
 ---
 
@@ -435,33 +436,53 @@ LV-0112
 
 ## 十、当前最简总公式
 
-整个 Longview Archive 当前可以先压缩成：
+整个 Longview Archive 可以先压缩成三个工作域：
 
 ```text
 STRUCTURE
 为什么系统成为这样
-        ↓
+
 ECONOMICS
 这种结构如何组织生产、价值、承接与生活
-        ↓
+
 MOVEMENT
 当旧结构不能继续时，它如何改变
 ```
 
-进一步展开：
+这三个词是**工作域的压缩表达**，不是严格的父子依赖链。
+
+严格的理论关系更接近：
 
 ```text
 Civilizational Structure
+│
+├── Productive-Forces Economics
+│   └── 第一套系统化派生分析学科
+│
+├── Reality / Future Path
+│   └── 现实压力与未来方向的纵向投影
+│
+├── Six Series
+│   └── 主题应用
+│
+├── Structural Syntheses
+│   └── 跨节点综合
+│
+└── Structural Boundary
         ↓
-Productive-Forces Economics
+    Transition Dynamics / Movement
         ↓
-Reality / Future / Series / Structural Essays
-        ↓
-Transition Dynamics
-        ↓
+    Open Game / Branching Outcomes
+
+以上各层
+        ↓ compile
 Public Outputs
-Reddit / Medium / Substack / Think Tank
+Reddit / Medium / Substack / Policy Memo / Think Tank
 ```
+
+因此，不能把 Reality、Future、六大系列和结构专题简单理解为 Productive-Forces Economics 的下级章节。
+
+生产力经济学是文明结构的一条重要派生路径；Reality、Future、六大系列与结构专题，则分别从不同问题域投影、组合或应用同一底层结构。
 
 ---
 
