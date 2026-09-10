@@ -787,6 +787,61 @@ def write_group(out, name: str, records: Sequence[FileRecord], purpose: str) -> 
     out.write(separator() + "\n\n")
 
 
+
+def write_machine_read_protocol(out) -> None:
+    """Emit a short machine-facing protocol before any corpus metadata or bodies."""
+    out.write("<<< MACHINE_READ_PROTOCOL_BEGIN >>>\n\n")
+    out.write("FILE_TYPE: ROUTED_KNOWLEDGE_CORPUS\n")
+    out.write("DEFAULT_READ_MODE: ROUTED_RETRIEVAL\n")
+    out.write("FULL_SEQUENTIAL_SCAN: NOT_REQUIRED\n\n")
+
+    out.write("BOOT_SEQUENCE:\n")
+    out.write("1. Read MACHINE_READ_PROTOCOL.\n")
+    out.write("2. Read CORPUS_METADATA.\n")
+    out.write("3. Read AI_READING_GUIDE.\n")
+    out.write("4. Read DOCUMENT_MANIFEST.\n")
+    out.write("5. Read memo/theory-map.md for theory topology and article placement.\n")
+    out.write("6. Read memo/file_map.md for repository paths and publication state.\n")
+    out.write("7. Stop broad sequential reading; retrieve further text only for the actual question.\n\n")
+
+    out.write("READ_MODES:\n")
+    out.write("- NORMAL: map first, then targeted retrieval. This is the default.\n")
+    out.write("- FULL_AUDIT: systematic corpus-wide reading only when explicitly requested for a full audit, exhaustive consistency review, corpus-wide inventory, or cold-start stress test.\n\n")
+
+    out.write("NORMAL_QUERY_PROTOCOL:\n")
+    out.write("1. Classify the question and identify the relevant theoretical domain.\n")
+    out.write("2. Route with DOCUMENT_MANIFEST plus PATH / ROLE / AUTHORITY / STATUS / title / theory terms.\n")
+    out.write("3. Prefer the relevant canonical mother text over derived or public articles.\n")
+    out.write("4. Read only the documents needed to answer the question.\n")
+    out.write("5. Expand outward only when comparison, evidence, or contradiction checking requires it.\n\n")
+
+    out.write("AUTHORITY_RULES:\n")
+    out.write("- Theory hierarchy / article placement -> memo/theory-map.md.\n")
+    out.write("- Repository paths / publication state -> memo/file_map.md.\n")
+    out.write("- Concrete theoretical claim -> corresponding canonical mother text.\n")
+    out.write("- Application or public text does not outrank its canonical source merely because it is newer, longer, or more specific.\n\n")
+
+    out.write("TOPOLOGY_GUARDRAILS:\n")
+    out.write("- Physical body order is a reading order, NOT a theoretical parent-child order.\n")
+    out.write("- Do NOT linearize Civilizational Structure -> Productive-Forces Economics -> Reality/Future -> Six Series.\n")
+    out.write("- Productive-Forces Economics, Reality/Future Path, Six Series, and Structural Syntheses are distinct derived/projection/application branches of Civilizational Structure.\n")
+    out.write("- Transition Dynamics / Movement begins after the boundary of stable structural explanation.\n")
+    out.write("- Public Outputs are compiled projections and do not constitute a theory layer.\n\n")
+
+    out.write("ARTICLE_VALIDATION_PROTOCOL:\n")
+    out.write("1. Identify the phenomenon and the Civilizational Structure node(s) or causal edge(s) used.\n")
+    out.write("2. Check the relevant canonical mother text.\n")
+    out.write("3. Separate canonical proposition, derived inference, empirical evidence, application hypothesis, and Movement/strategic speculation.\n")
+    out.write("4. A claim appearing in an application article is not automatically foundational.\n")
+    out.write("5. Peripheral articles are weakly coupled to one another and strongly coupled to canonical structure; do not compare every peripheral article unless the task requires it.\n\n")
+
+    out.write("INFERENCE_RULE:\n")
+    out.write("- Any model inference extending beyond canonical mother text should be labeled as inference or hypothesis.\n")
+    out.write("- If an inference conflicts with canonical mother text, do not preserve it merely by labeling it an inference; revise or reject it.\n\n")
+
+    out.write("<<< MACHINE_READ_PROTOCOL_END >>>\n\n")
+
+
 def write_manifest(out, ordered_groups: Sequence[tuple[str, Sequence[FileRecord]]]) -> None:
     out.write(separator() + "\n")
     out.write("<<< DOCUMENT_MANIFEST_BEGIN >>>\n")
@@ -947,11 +1002,15 @@ def write_corpus(
     ]
 
     with output_file.open("w", encoding="utf-8", newline="\n") as out:
+        # 0. Hard machine-facing read protocol. This must be the first corpus content.
+        write_machine_read_protocol(out)
+
         # 1. Metadata: compact and machine-readable.
         out.write("<<< CORPUS_METADATA >>>\n\n")
         out.write("CORPUS: Longview Archive Full Corpus\n")
         out.write("INCLUSION_MODE: HYBRID_MANIFEST\n")
         out.write("PRIMARY_READER: AI / retrieval / grep\n")
+        out.write("READ_PROTOCOL_VERSION: 1.0\n")
         out.write(f"GENERATED_AT: {generated_at.isoformat(timespec='seconds')}\n")
         out.write(f"SOURCE_REPOSITORY: {repo_root}\n")
         out.write(f"SOURCE_MKDOCS: {safe_repo_relative(mkdocs_path, repo_root)}\n")
@@ -1008,7 +1067,17 @@ def write_corpus(
         out.write("SEARCH_HINTS:\n")
         out.write("- Grep PATH:, ROLE:, AUTHORITY:, STATUS:, or a theory term.\n")
         out.write("- Use DOCUMENT_MANIFEST for fast routing before reading long bodies.\n")
-        out.write("- Do not infer publication status from physical location alone; read STATUS.\n\n")
+        out.write("- Do not infer publication status from physical location alone; read STATUS.\n")
+        out.write("- Default to targeted retrieval; do not treat corpus body order as theoretical inheritance.\n\n")
+
+        out.write("TOPOLOGY_REMINDER:\n")
+        out.write("- Civilizational Structure is the common generative root.\n")
+        out.write("- PFE, Reality/Future, Six Series, and Structural Syntheses are not a single linear parent-child chain.\n")
+        out.write("- Movement begins after the stable-structure boundary; Public Outputs are compiled projections.\n\n")
+
+        out.write("VALIDATION_REMINDER:\n")
+        out.write("- For a new article, map it to canonical node(s)/edge(s) before comparing peripheral articles.\n")
+        out.write("- Separate canonical claims from derived inference, evidence, application hypothesis, and strategic speculation.\n\n")
         out.write(separator() + "\n")
         out.write("<<< AI_READING_GUIDE_END >>>\n")
         out.write(separator() + "\n\n")
