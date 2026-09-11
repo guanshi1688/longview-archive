@@ -19,11 +19,15 @@ Default layout:
        ├─ structural-algorithm/
        │  ├─ chinese/
        │  └─ english/
+       ├─ publish/
+       │  ├─ question-pool.md
+       │  ├─ short-essay-manifest.md
+       │  └─ articles/                 # optional; future LV-xxxx working essays
        └─ current/
           └─ corpus/
              └─ Longview_Corpus_YYYY-MM-DD_HHMM.md
 
-The corpus has four source classes:
+The corpus has five source classes:
 
 1. ROUTING DOCUMENTS
    - docs/memo/theory-map.md
@@ -41,7 +45,14 @@ The corpus has four source classes:
    - existing commented .md entry -> UNPUBLISHED / INTERNAL
    - existing exclude_docs .md entry -> INTERNAL
 
-4. DIAGNOSTICS / PUBLICATION ROADMAP
+4. WORKING SHORT-ESSAY / PUBLICATION WORKSPACE
+   - <git-root>/index/publish/question-pool.md
+   - <git-root>/index/publish/short-essay-manifest.md
+   - optional additional Markdown under <git-root>/index/publish/
+   These files are working registries / derived outputs. They do not outrank theory-map
+   or canonical mother text.
+
+5. DIAGNOSTICS / PUBLICATION ROADMAP
    - commented Structural Algorithm paths in mkdocs.yml are treated as RESERVED
      FUTURE NAV PATHS when they do not yet exist under docs/. They are not errors.
    - unreferenced docs Markdown is listed only; its body is not merged.
@@ -98,6 +109,11 @@ ROUTING_DOCUMENTS: tuple[str, ...] = (
 RESERVED_FUTURE_PREFIXES: tuple[str, ...] = (
     "essays/english/structural-algorithm/",
     "essays/chinese/structural-algorithm/",
+)
+
+PUBLISH_REGISTRY_FILES: tuple[str, ...] = (
+    "question-pool.md",
+    "short-essay-manifest.md",
 )
 
 
@@ -689,6 +705,87 @@ def scan_structural_algorithm(structural_root: Path) -> tuple[list[FileRecord], 
     return records, warnings
 
 
+
+# -----------------------------------------------------------------------------
+# Working short-essay / publication workspace
+# -----------------------------------------------------------------------------
+
+def scan_publish_workspace(publish_root: Path) -> tuple[list[FileRecord], list[str]]:
+    """Scan the sibling index/publish workspace.
+
+    Registry files are control-plane working state. Other Markdown files under the
+    folder are treated as derived working short essays / publication material.
+    Nothing in this workspace outranks theory-map or canonical mother text.
+    """
+    records: list[FileRecord] = []
+    warnings: list[str] = []
+
+    if not publish_root.exists():
+        # The workspace is optional until short-essay work begins.
+        return records, warnings
+
+    if not publish_root.is_dir():
+        warnings.append(f"Publish workspace is not a directory: {publish_root}")
+        return records, warnings
+
+    seen: set[Path] = set()
+
+    for filename in PUBLISH_REGISTRY_FILES:
+        path = publish_root / filename
+        if not path.is_file():
+            warnings.append(f"Publish registry not found: {path}")
+            continue
+
+        seen.add(path.resolve())
+        body = read_text(path)
+        role = "QUESTION_POOL" if filename == "question-pool.md" else "SHORT_ESSAY_MANIFEST"
+        records.append(
+            FileRecord(
+                abs_path=path,
+                rel_path=f"index/publish/{filename}",
+                title=first_h1(body) or path.stem,
+                language="unknown",
+                status="WORKING",
+                section="WORKING PUBLICATION REGISTRY",
+                source_kind="EXTERNAL_INDEX",
+                authority="WORKING_REGISTRY",
+                role=role,
+                note=(
+                    "Local working publication registry. It routes short-essay work but "
+                    "does not outrank theory-map or canonical mother text."
+                ),
+            )
+        )
+
+    other_md = sorted(
+        (p for p in publish_root.rglob("*.md") if p.is_file() and p.resolve() not in seen),
+        key=lambda p: natural_key(p.relative_to(publish_root).as_posix()),
+    )
+
+    for path in other_md:
+        body = read_text(path)
+        inner_rel = path.relative_to(publish_root).as_posix()
+        records.append(
+            FileRecord(
+                abs_path=path,
+                rel_path=f"index/publish/{inner_rel}",
+                title=first_h1(body) or path.stem,
+                language=infer_language(inner_rel),
+                status="WORKING",
+                section="WORKING SHORT ESSAYS",
+                source_kind="EXTERNAL_INDEX",
+                authority="DERIVED_WORKING",
+                role="SHORT_ESSAY_WORKING",
+                note=(
+                    "Working short-essay/publication material. Validate against the "
+                    "question pool, theory-map, and relevant canonical mother text."
+                ),
+            )
+        )
+
+    return records, warnings
+
+
 # -----------------------------------------------------------------------------
 # Ordering and writing
 # -----------------------------------------------------------------------------
@@ -707,6 +804,7 @@ def routing_order(record: FileRecord) -> int:
 def split_records(
     docs_records: list[FileRecord],
     structural_records: list[FileRecord],
+    publish_records: list[FileRecord],
 ):
     routing = sorted(
         (r for r in docs_records if r.role == "ROUTING_DOCUMENT"),
@@ -716,6 +814,21 @@ def split_records(
     structural_core = [r for r in structural_records if r.role == "STRUCTURAL_CORE"]
     structural_bridge = [r for r in structural_records if r.role == "STRUCTURAL_BRIDGE"]
     structural_aux = [r for r in structural_records if r.role == "STRUCTURAL_AUXILIARY"]
+
+    publish_registries = [
+        r for r in publish_records
+        if r.role in {"QUESTION_POOL", "SHORT_ESSAY_MANIFEST"}
+    ]
+    publish_registry_order = {
+        "QUESTION_POOL": 0,
+        "SHORT_ESSAY_MANIFEST": 1,
+    }
+    publish_registries.sort(key=lambda r: publish_registry_order.get(r.role, 99))
+
+    working_short_essays = sorted(
+        (r for r in publish_records if r.role == "SHORT_ESSAY_WORKING"),
+        key=lambda r: natural_key(r.rel_path),
+    )
 
     # scan_structural_algorithm already emits zh before en and natural file order.
     public = sorted(
@@ -735,7 +848,16 @@ def split_records(
         )
     )
 
-    return routing, structural_core, structural_bridge, public, auxiliary_docs, structural_aux
+    return (
+        routing,
+        publish_registries,
+        structural_core,
+        structural_bridge,
+        public,
+        working_short_essays,
+        auxiliary_docs,
+        structural_aux,
+    )
 
 
 def write_file_record(out, record: FileRecord) -> None:
@@ -802,7 +924,8 @@ def write_machine_read_protocol(out) -> None:
     out.write("4. Read DOCUMENT_MANIFEST.\n")
     out.write("5. Read memo/theory-map.md for theory topology and article placement.\n")
     out.write("6. Read memo/file_map.md for repository paths and publication state.\n")
-    out.write("7. Stop broad sequential reading; retrieve further text only for the actual question.\n\n")
+    out.write("7. For short-essay discovery/drafting, read index/publish/question-pool.md and index/publish/short-essay-manifest.md.\n")
+    out.write("8. Stop broad sequential reading; retrieve further text only for the actual question.\n\n")
 
     out.write("READ_MODES:\n")
     out.write("- NORMAL: map first, then targeted retrieval. This is the default.\n")
@@ -819,7 +942,8 @@ def write_machine_read_protocol(out) -> None:
     out.write("- Theory hierarchy / article placement -> memo/theory-map.md.\n")
     out.write("- Repository paths / publication state -> memo/file_map.md.\n")
     out.write("- Concrete theoretical claim -> corresponding canonical mother text.\n")
-    out.write("- Application or public text does not outrank its canonical source merely because it is newer, longer, or more specific.\n\n")
+    out.write("- Application or public text does not outrank its canonical source merely because it is newer, longer, or more specific.\n")
+    out.write("- Short-essay registries are workflow/control state, not theoretical authority.\n\n")
 
     out.write("TOPOLOGY_GUARDRAILS:\n")
     out.write("- Physical body order is a reading order, NOT a theoretical parent-child order.\n")
@@ -827,6 +951,11 @@ def write_machine_read_protocol(out) -> None:
     out.write("- Productive-Forces Economics, Reality/Future Path, Six Series, and Structural Syntheses are distinct derived/projection/application branches of Civilizational Structure.\n")
     out.write("- Transition Dynamics / Movement begins after the boundary of stable structural explanation.\n")
     out.write("- Public Outputs are compiled projections and do not constitute a theory layer.\n\n")
+
+    out.write("SHORT_ESSAY_WORKFLOW:\n")
+    out.write("1. Use index/publish/question-pool.md to select or classify candidate problems.\n")
+    out.write("2. Use index/publish/short-essay-manifest.md to recover existing LV identity and filename.\n")
+    out.write("3. Do not assign theory authority to either registry.\n\n")
 
     out.write("ARTICLE_VALIDATION_PROTOCOL:\n")
     out.write("1. Identify the phenomenon and the Civilizational Structure node(s) or causal edge(s) used.\n")
@@ -876,6 +1005,7 @@ def write_diagnostics(
     routing_missing: list[str],
     routing_uncatalogued: list[str],
     structural_warnings: list[str],
+    publish_warnings: list[str],
 ) -> None:
     out.write(separator() + "\n")
     out.write("<<< REPOSITORY_DIAGNOSTICS_BEGIN >>>\n")
@@ -933,6 +1063,11 @@ def write_diagnostics(
         out.write(f"- {warning}\n")
     out.write("\n")
 
+    out.write(f"PUBLISH_WORKSPACE_WARNINGS: {len(publish_warnings)}\n")
+    for warning in publish_warnings:
+        out.write(f"- {warning}\n")
+    out.write("\n")
+
     out.write(f"UNREFERENCED_MARKDOWN_FILES: {len(unreferenced_md)}\n")
     out.write("CONTENT_INCLUDED: NO\n")
     out.write(
@@ -953,10 +1088,12 @@ def write_corpus(
     repo_root: Path,
     docs_dir: Path,
     structural_root: Path,
+    publish_root: Path,
     mkdocs_path: Path,
     raw_yaml: str,
     docs_records: list[FileRecord],
     structural_records: list[FileRecord],
+    publish_records: list[FileRecord],
     nav_pages: list[NavPage],
     commented_refs: list[CommentedRef],
     missing_nav: list[NavPage],
@@ -968,6 +1105,7 @@ def write_corpus(
     routing_missing: list[str],
     routing_uncatalogued: list[str],
     structural_warnings: list[str],
+    publish_warnings: list[str],
     git_commit: str,
     git_dirty: str,
     generated_at: dt.datetime,
@@ -976,27 +1114,33 @@ def write_corpus(
 
     (
         routing,
+        publish_registries,
         structural_core,
         structural_bridge,
         public,
+        working_short_essays,
         auxiliary_docs,
         structural_aux,
-    ) = split_records(docs_records, structural_records)
+    ) = split_records(docs_records, structural_records, publish_records)
 
     all_body_records = (
         routing
+        + publish_registries
         + structural_core
         + structural_bridge
         + public
+        + working_short_essays
         + auxiliary_docs
         + structural_aux
     )
 
     ordered_groups: list[tuple[str, Sequence[FileRecord]]] = [
         ("ROUTING_DOCUMENTS", routing),
+        ("WORKING_PUBLISH_REGISTRIES", publish_registries),
         ("FOUNDATIONAL_STRUCTURAL_THEORY", structural_core),
         ("STRUCTURAL_BRIDGES", structural_bridge),
         ("PUBLIC_CANONICAL_ARCHIVE", public),
+        ("WORKING_SHORT_ESSAYS", working_short_essays),
         ("AUXILIARY_CATALOGUED_DOCS", auxiliary_docs),
         ("STRUCTURAL_AUXILIARY", structural_aux),
     ]
@@ -1016,6 +1160,7 @@ def write_corpus(
         out.write(f"SOURCE_MKDOCS: {safe_repo_relative(mkdocs_path, repo_root)}\n")
         out.write(f"SOURCE_DOCS_DIR: {safe_repo_relative(docs_dir, repo_root)}\n")
         out.write(f"SOURCE_STRUCTURAL_ROOT: {structural_root}\n")
+        out.write(f"SOURCE_PUBLISH_ROOT: {publish_root}\n")
         out.write(f"SOURCE_GIT_COMMIT: {git_commit}\n")
         out.write(f"SOURCE_GIT_DIRTY: {git_dirty}\n")
         out.write(f"TOTAL_BODY_DOCUMENTS: {len(all_body_records)}\n")
@@ -1029,6 +1174,8 @@ def write_corpus(
         out.write(f"ROUTING_DOCUMENTS_INCLUDED: {len(routing)}/{len(ROUTING_DOCUMENTS)}\n")
         out.write(f"STRUCTURAL_CORE_DOCUMENTS: {len(structural_core)}\n")
         out.write(f"STRUCTURAL_BRIDGE_DOCUMENTS: {len(structural_bridge)}\n")
+        out.write(f"WORKING_PUBLISH_REGISTRIES: {len(publish_registries)}\n")
+        out.write(f"WORKING_SHORT_ESSAYS: {len(working_short_essays)}\n")
         out.write(f"RESERVED_FUTURE_NAV_REFERENCES: {len(reserved_future)}\n")
         out.write(f"ACTIVE_NAV_REFERENCES: {len(nav_pages)}\n")
         out.write(f"COMMENTED_MD_REFERENCES: {len(commented_refs)}\n")
@@ -1049,9 +1196,10 @@ def write_corpus(
         out.write("1. memo/theory-map.md -> theory hierarchy and article placement\n")
         out.write("2. index/structural-algorithm/* -> foundational canonical unpublished theory\n")
         out.write("3. structural bridge essays -> derived causal bridges\n")
-        out.write("4. active MkDocs pages -> current public canonical archive\n")
-        out.write("5. other commented/excluded material -> auxiliary context only\n")
-        out.write("6. diagnostics and raw mkdocs.yml -> repository/publication metadata\n\n")
+        out.write("4. index/publish registries -> short-essay workflow / identity routing only\n")
+        out.write("5. active MkDocs pages -> current public canonical archive\n")
+        out.write("6. other commented/excluded material -> auxiliary context only\n")
+        out.write("7. diagnostics and raw mkdocs.yml -> repository/publication metadata\n\n")
         out.write("CONFLICT_RULES:\n")
         out.write("- Theory hierarchy conflict: memo/theory-map.md wins.\n")
         out.write("- Repository path/publication-state conflict: memo/file_map.md wins.\n")
@@ -1076,7 +1224,8 @@ def write_corpus(
         out.write("- Movement begins after the stable-structure boundary; Public Outputs are compiled projections.\n\n")
 
         out.write("VALIDATION_REMINDER:\n")
-        out.write("- For a new article, map it to canonical node(s)/edge(s) before comparing peripheral articles.\n")
+        out.write("- For a new article, check index/publish/question-pool.md, then map it to canonical node(s)/edge(s).\n")
+        out.write("- For an existing LV article, route identity through index/publish/short-essay-manifest.md.\n")
         out.write("- Separate canonical claims from derived inference, evidence, application hypothesis, and strategic speculation.\n\n")
         out.write(separator() + "\n")
         out.write("<<< AI_READING_GUIDE_END >>>\n")
@@ -1091,6 +1240,12 @@ def write_corpus(
             "ROUTING_DOCUMENTS",
             routing,
             "Interpretation routers. Theory map first, repository map second.",
+        )
+        write_group(
+            out,
+            "WORKING_PUBLISH_REGISTRIES",
+            publish_registries,
+            "Question pool and short-essay identity manifest; workflow/control plane, not theory authority.",
         )
         write_group(
             out,
@@ -1109,6 +1264,12 @@ def write_corpus(
             "PUBLIC_CANONICAL_ARCHIVE",
             public,
             "Current public website edition in active MkDocs nav order.",
+        )
+        write_group(
+            out,
+            "WORKING_SHORT_ESSAYS",
+            working_short_essays,
+            "Derived working short essays/publication files from index/publish; validate against canonical theory.",
         )
         write_group(
             out,
@@ -1135,6 +1296,7 @@ def write_corpus(
             routing_missing=routing_missing,
             routing_uncatalogued=routing_uncatalogued,
             structural_warnings=structural_warnings,
+            publish_warnings=publish_warnings,
         )
 
         # 11. Raw YAML at the end: useful for humans/grep, low priority for AI reading.
@@ -1188,6 +1350,15 @@ def parse_args() -> argparse.Namespace:
             "Default: <repo-parent>/index/structural-algorithm"
         ),
     )
+    parser.add_argument(
+        "--publish-root",
+        type=Path,
+        default=None,
+        help=(
+            "Working short-essay/publication workspace. "
+            "Default: <repo-parent>/index/publish"
+        ),
+    )
 
     return parser.parse_args()
 
@@ -1202,6 +1373,11 @@ def main() -> int:
         args.structural_root.resolve()
         if args.structural_root
         else (repo_root.parent / "index" / "structural-algorithm").resolve()
+    )
+    publish_root = (
+        args.publish_root.resolve()
+        if args.publish_root
+        else (repo_root.parent / "index" / "publish").resolve()
     )
 
     if not mkdocs_path.is_file():
@@ -1256,6 +1432,7 @@ def main() -> int:
 
     unreferenced_md = find_unreferenced_markdown(docs_dir, referenced_paths)
     structural_records, structural_warnings = scan_structural_algorithm(structural_root)
+    publish_records, publish_warnings = scan_publish_workspace(publish_root)
 
     generated_at = now_local()
     stamp = generated_at.strftime("%Y-%m-%d_%H%M")
@@ -1277,10 +1454,12 @@ def main() -> int:
         repo_root=repo_root,
         docs_dir=docs_dir,
         structural_root=structural_root,
+        publish_root=publish_root,
         mkdocs_path=mkdocs_path,
         raw_yaml=raw_yaml,
         docs_records=docs_records,
         structural_records=structural_records,
+        publish_records=publish_records,
         nav_pages=nav_pages,
         commented_refs=commented_refs,
         missing_nav=missing_nav,
@@ -1292,6 +1471,7 @@ def main() -> int:
         routing_missing=routing_missing,
         routing_uncatalogued=routing_uncatalogued,
         structural_warnings=structural_warnings,
+        publish_warnings=publish_warnings,
         git_commit=git_commit,
         git_dirty=git_dirty,
         generated_at=generated_at,
@@ -1301,12 +1481,17 @@ def main() -> int:
     structural_core_count = sum(1 for r in structural_records if r.role == "STRUCTURAL_CORE")
     structural_bridge_count = sum(1 for r in structural_records if r.role == "STRUCTURAL_BRIDGE")
     structural_aux_count = sum(1 for r in structural_records if r.role == "STRUCTURAL_AUXILIARY")
+    publish_registry_count = sum(
+        1 for r in publish_records if r.role in {"QUESTION_POOL", "SHORT_ESSAY_MANIFEST"}
+    )
+    working_short_essay_count = sum(1 for r in publish_records if r.role == "SHORT_ESSAY_WORKING")
 
     print()
     print("Longview AI-friendly corpus build complete.")
     print(f"Repository                 : {repo_root}")
     print(f"Docs                       : {docs_dir}")
     print(f"Structural source          : {structural_root}")
+    print(f"Publish workspace          : {publish_root}")
     print(f"Output                     : {output_file}")
     print()
     print(f"Website records            : {len(docs_records)}")
@@ -1315,6 +1500,8 @@ def main() -> int:
     print(f"Structural core            : {structural_core_count}")
     print(f"Structural bridges         : {structural_bridge_count}")
     print(f"Structural auxiliary       : {structural_aux_count}")
+    print(f"Publish registries         : {publish_registry_count}/{len(PUBLISH_REGISTRY_FILES)}")
+    print(f"Working short essays       : {working_short_essay_count}")
     print(f"Reserved future nav refs   : {len(reserved_future)}")
     print(f"Missing active nav files   : {len(missing_nav)}")
     print(f"Missing commented refs     : {len(missing_commented)}")
@@ -1326,6 +1513,7 @@ def main() -> int:
         or routing_missing
         or routing_uncatalogued
         or structural_warnings
+        or publish_warnings
         or structural_core_count == 0
     )
 
@@ -1340,6 +1528,8 @@ def main() -> int:
         for rel in routing_uncatalogued:
             print(f"  - {rel}")
     for warning in structural_warnings:
+        print(f"WARNING: {warning}")
+    for warning in publish_warnings:
         print(f"WARNING: {warning}")
     if structural_core_count == 0:
         print("WARNING: no Structural Algorithm core Markdown was merged.")
