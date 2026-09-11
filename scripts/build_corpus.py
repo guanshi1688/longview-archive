@@ -25,6 +25,7 @@ Default layout:
        │  └─ articles/                 # optional; future LV-xxxx working essays
        └─ current/
           └─ corpus/
+             ├─ Longview_Bootstrap_YYYY-MM-DD_HHMM.md
              └─ Longview_Corpus_YYYY-MM-DD_HHMM.md
 
 The corpus has five source classes:
@@ -1083,8 +1084,179 @@ def write_diagnostics(
     out.write(separator() + "\n\n")
 
 
+def write_bootstrap(
+    bootstrap_file: Path,
+    full_corpus_file: Path,
+    repo_root: Path,
+    docs_dir: Path,
+    structural_root: Path,
+    publish_root: Path,
+    mkdocs_path: Path,
+    docs_records: list[FileRecord],
+    structural_records: list[FileRecord],
+    publish_records: list[FileRecord],
+    nav_pages: list[NavPage],
+    commented_refs: list[CommentedRef],
+    reserved_future: list[CommentedRef],
+    unreferenced_md: list[str],
+    missing_nav: list[NavPage],
+    missing_commented: list[CommentedRef],
+    duplicate_nav: list[tuple[NavPage, NavPage]],
+    git_commit: str,
+    git_dirty: str,
+    generated_at: dt.datetime,
+) -> None:
+    """Write the compact control-plane file an unfamiliar AI should read first."""
+    bootstrap_file.parent.mkdir(parents=True, exist_ok=True)
+
+    (
+        routing,
+        publish_registries,
+        structural_core,
+        structural_bridge,
+        public,
+        working_short_essays,
+        auxiliary_docs,
+        structural_aux,
+    ) = split_records(docs_records, structural_records, publish_records)
+
+    all_body_records = (
+        routing
+        + publish_registries
+        + structural_core
+        + structural_bridge
+        + public
+        + working_short_essays
+        + auxiliary_docs
+        + structural_aux
+    )
+
+    ordered_groups: list[tuple[str, Sequence[FileRecord]]] = [
+        ("ROUTING_DOCUMENTS", routing),
+        ("WORKING_PUBLISH_REGISTRIES", publish_registries),
+        ("FOUNDATIONAL_STRUCTURAL_THEORY", structural_core),
+        ("STRUCTURAL_BRIDGES", structural_bridge),
+        ("PUBLIC_CANONICAL_ARCHIVE", public),
+        ("WORKING_SHORT_ESSAYS", working_short_essays),
+        ("AUXILIARY_CATALOGUED_DOCS", auxiliary_docs),
+        ("STRUCTURAL_AUXILIARY", structural_aux),
+    ]
+
+    with bootstrap_file.open("w", encoding="utf-8", newline="\n") as out:
+        out.write("<<< MACHINE_READ_PROTOCOL_BEGIN >>>\n\n")
+        out.write("FILE_TYPE: LONGVIEW_CONTROL_PLANE_BOOTSTRAP\n")
+        out.write("DEFAULT_READ_MODE: ROUTED_RETRIEVAL\n")
+        out.write("FULL_SEQUENTIAL_SCAN: NOT_REQUIRED\n")
+        out.write("FULL_CORPUS_ROLE: ON_DEMAND_RETRIEVAL_LIBRARY\n\n")
+        out.write("BOOT_SEQUENCE:\n")
+        out.write("1. Read this Bootstrap completely.\n")
+        out.write("2. Build the theory topology and authority map from theory-map / file_map.\n")
+        out.write("3. Read question-pool / short-essay-manifest when the task concerns short essays.\n")
+        out.write("4. Accept the paired Full Corpus as a retrieval library, not a linear book.\n")
+        out.write("5. Retrieve only the canonical bodies needed for the actual question.\n")
+        out.write("6. Use FULL_AUDIT only when explicitly asked for corpus-wide reading or consistency review.\n\n")
+        out.write("AUTHORITY_RULES:\n")
+        out.write("- Theory hierarchy / article placement -> memo/theory-map.md.\n")
+        out.write("- Repository paths / publication state -> memo/file_map.md.\n")
+        out.write("- Concrete theoretical claim -> corresponding canonical mother text in the Full Corpus.\n")
+        out.write("- Short-essay registries are workflow/control state, not theoretical authority.\n\n")
+        out.write("TOPOLOGY_GUARDRAILS:\n")
+        out.write("- Physical body order is reading order, NOT theoretical parent-child order.\n")
+        out.write("- Do NOT linearize Civilizational Structure -> PFE -> Reality/Future -> Six Series.\n")
+        out.write("- PFE, Reality/Future, Six Series, and Structural Syntheses are distinct branches from Civilizational Structure.\n")
+        out.write("- Movement begins after the stable-structure boundary; Public Outputs are compiled projections.\n\n")
+        out.write("<<< MACHINE_READ_PROTOCOL_END >>>\n\n")
+
+        out.write("<<< BOOTSTRAP_METADATA >>>\n\n")
+        out.write("BOOTSTRAP: Longview Archive AI Bootstrap\n")
+        out.write("PURPOSE: Small control-plane companion to the paired Full Corpus.\n")
+        out.write("PRIMARY_READER: unfamiliar AI / retrieval agent\n")
+        out.write("READ_PROTOCOL_VERSION: 1.1\n")
+        out.write(f"GENERATED_AT: {generated_at.isoformat(timespec='seconds')}\n")
+        out.write(f"PAIR_BOOTSTRAP_FILE: {bootstrap_file.name}\n")
+        out.write(f"PAIR_FULL_CORPUS_FILE: {full_corpus_file.name}\n")
+        out.write(f"SOURCE_REPOSITORY: {repo_root}\n")
+        out.write(f"SOURCE_MKDOCS: {safe_repo_relative(mkdocs_path, repo_root)}\n")
+        out.write(f"SOURCE_DOCS_DIR: {safe_repo_relative(docs_dir, repo_root)}\n")
+        out.write(f"SOURCE_STRUCTURAL_ROOT: {structural_root}\n")
+        out.write(f"SOURCE_PUBLISH_ROOT: {publish_root}\n")
+        out.write(f"SOURCE_GIT_COMMIT: {git_commit}\n")
+        out.write(f"SOURCE_GIT_DIRTY: {git_dirty}\n")
+        out.write(f"FULL_CORPUS_BODY_DOCUMENTS: {len(all_body_records)}\n")
+        out.write(f"BOOTSTRAP_CONTROL_DOCUMENTS: {len(routing) + len(publish_registries)}\n")
+        out.write(f"ROUTING_DOCUMENTS_INCLUDED: {len(routing)}/{len(ROUTING_DOCUMENTS)}\n")
+        out.write(f"WORKING_PUBLISH_REGISTRIES: {len(publish_registries)}\n")
+        out.write(f"WORKING_SHORT_ESSAYS: {len(working_short_essays)}\n")
+        out.write(f"STRUCTURAL_CORE_DOCUMENTS: {len(structural_core)}\n")
+        out.write(f"STRUCTURAL_BRIDGE_DOCUMENTS: {len(structural_bridge)}\n")
+        out.write(f"PUBLIC_DOCUMENTS: {count_status(all_body_records, 'PUBLIC')}\n")
+        out.write(f"RESERVED_FUTURE_NAV_REFERENCES: {len(reserved_future)}\n")
+        out.write(f"ACTIVE_NAV_REFERENCES: {len(nav_pages)}\n")
+        out.write(f"COMMENTED_MD_REFERENCES: {len(commented_refs)}\n")
+        out.write(f"UNREFERENCED_MARKDOWN_FILES: {len(unreferenced_md)}\n")
+        out.write(f"MISSING_ACTIVE_NAV_FILES: {len(missing_nav)}\n")
+        out.write(f"MISSING_COMMENTED_REFERENCES: {len(missing_commented)}\n")
+        out.write(f"DUPLICATE_ACTIVE_NAV_PATHS: {len(duplicate_nav)}\n\n")
+        out.write("<<< BOOTSTRAP_METADATA_END >>>\n\n")
+
+        out.write(separator() + "\n")
+        out.write("<<< AI_READING_GUIDE_BEGIN >>>\n")
+        out.write(separator() + "\n\n")
+        out.write("PURPOSE: Establish the control plane first; use the Full Corpus only for targeted evidence retrieval.\n\n")
+        out.write("AUTHORITY_ORDER:\n")
+        out.write("1. memo/theory-map.md -> theory hierarchy and article placement\n")
+        out.write("2. index/structural-algorithm/* -> foundational canonical unpublished theory in Full Corpus\n")
+        out.write("3. structural bridge essays -> derived causal bridges in Full Corpus\n")
+        out.write("4. index/publish registries -> short-essay workflow / identity routing only\n")
+        out.write("5. active MkDocs pages -> current public canonical archive in Full Corpus\n")
+        out.write("6. auxiliary material -> context only\n\n")
+        out.write("NORMAL_USE:\n")
+        out.write("- Read this Bootstrap fully.\n")
+        out.write("- Use DOCUMENT_MANIFEST to locate candidate documents.\n")
+        out.write("- Retrieve the smallest relevant canonical body from the paired Full Corpus.\n")
+        out.write("- Expand outward only for comparison, evidence, or contradiction checks.\n\n")
+        out.write("SHORT_ESSAY_USE:\n")
+        out.write("- New problem -> question-pool.md -> mother node/edge -> canonical mother text.\n")
+        out.write("- Existing LV article -> short-essay-manifest.md -> filename / Q-ID / CS genealogy.\n")
+        out.write("- A claim in a short essay never becomes foundational merely because it was published or repeated.\n\n")
+        out.write("<<< AI_READING_GUIDE_END >>>\n")
+        out.write(separator() + "\n\n")
+
+        # Complete full-corpus manifest: this is the bootstrap's retrieval map.
+        write_manifest(out, ordered_groups)
+
+        out.write(separator() + "\n")
+        out.write("<<< BOOTSTRAP_CONTROL_DOCUMENTS_BEGIN >>>\n")
+        out.write(separator() + "\n\n")
+        out.write("Read these control-plane documents completely before retrieving long bodies.\n\n")
+
+        write_group(
+            out,
+            "ROUTING_DOCUMENTS",
+            routing,
+            "Interpretation routers. Theory map first, repository map second.",
+        )
+        write_group(
+            out,
+            "WORKING_PUBLISH_REGISTRIES",
+            publish_registries,
+            "Question pool and LV identity/file routing; workflow state, not theory authority.",
+        )
+
+        out.write(separator() + "\n")
+        out.write("<<< BOOTSTRAP_CONTROL_DOCUMENTS_END >>>\n")
+        out.write(separator() + "\n\n")
+        out.write("NEXT_ACTION_FOR_AI:\n")
+        out.write("- Finish this Bootstrap completely.\n")
+        out.write(f"- Then use {full_corpus_file.name} as an on-demand retrieval library.\n")
+        out.write("- Do not sequentially read the Full Corpus unless FULL_AUDIT is explicitly requested.\n")
+        out.write("- Route by PATH / ROLE / AUTHORITY / STATUS / Q-ID / LV-ID and retrieve only needed bodies.\n\n")
+        out.write("<<< BOOTSTRAP_END >>>\n")
+
+
 def write_corpus(
     output_file: Path,
+    bootstrap_file: Path,
     repo_root: Path,
     docs_dir: Path,
     structural_root: Path,
@@ -1154,8 +1326,9 @@ def write_corpus(
         out.write("CORPUS: Longview Archive Full Corpus\n")
         out.write("INCLUSION_MODE: HYBRID_MANIFEST\n")
         out.write("PRIMARY_READER: AI / retrieval / grep\n")
-        out.write("READ_PROTOCOL_VERSION: 1.0\n")
+        out.write("READ_PROTOCOL_VERSION: 1.1\n")
         out.write(f"GENERATED_AT: {generated_at.isoformat(timespec='seconds')}\n")
+        out.write(f"PAIR_BOOTSTRAP_FILE: {bootstrap_file.name}\n")
         out.write(f"SOURCE_REPOSITORY: {repo_root}\n")
         out.write(f"SOURCE_MKDOCS: {safe_repo_relative(mkdocs_path, repo_root)}\n")
         out.write(f"SOURCE_DOCS_DIR: {safe_repo_relative(docs_dir, repo_root)}\n")
@@ -1443,14 +1616,40 @@ def main() -> int:
         else (repo_root.parent / "index" / "current" / "corpus").resolve()
     )
     output_file = output_dir / f"Longview_Corpus_{stamp}.md"
-    if output_file.exists():
+    bootstrap_file = output_dir / f"Longview_Bootstrap_{stamp}.md"
+    if output_file.exists() or bootstrap_file.exists():
         stamp = generated_at.strftime("%Y-%m-%d_%H%M%S")
         output_file = output_dir / f"Longview_Corpus_{stamp}.md"
+        bootstrap_file = output_dir / f"Longview_Bootstrap_{stamp}.md"
 
     git_commit, git_dirty = git_metadata(repo_root)
 
+    write_bootstrap(
+        bootstrap_file=bootstrap_file,
+        full_corpus_file=output_file,
+        repo_root=repo_root,
+        docs_dir=docs_dir,
+        structural_root=structural_root,
+        publish_root=publish_root,
+        mkdocs_path=mkdocs_path,
+        docs_records=docs_records,
+        structural_records=structural_records,
+        publish_records=publish_records,
+        nav_pages=nav_pages,
+        commented_refs=commented_refs,
+        reserved_future=reserved_future,
+        unreferenced_md=unreferenced_md,
+        missing_nav=missing_nav,
+        missing_commented=missing_commented,
+        duplicate_nav=duplicate_nav,
+        git_commit=git_commit,
+        git_dirty=git_dirty,
+        generated_at=generated_at,
+    )
+
     write_corpus(
         output_file=output_file,
+        bootstrap_file=bootstrap_file,
         repo_root=repo_root,
         docs_dir=docs_dir,
         structural_root=structural_root,
@@ -1487,12 +1686,13 @@ def main() -> int:
     working_short_essay_count = sum(1 for r in publish_records if r.role == "SHORT_ESSAY_WORKING")
 
     print()
-    print("Longview AI-friendly corpus build complete.")
+    print("Longview AI bootstrap + full corpus build complete.")
     print(f"Repository                 : {repo_root}")
     print(f"Docs                       : {docs_dir}")
     print(f"Structural source          : {structural_root}")
     print(f"Publish workspace          : {publish_root}")
-    print(f"Output                     : {output_file}")
+    print(f"Bootstrap                  : {bootstrap_file}")
+    print(f"Full corpus                : {output_file}")
     print()
     print(f"Website records            : {len(docs_records)}")
     print(f"Public website docs        : {count_status(docs_records, 'PUBLIC')}")
