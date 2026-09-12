@@ -95,7 +95,7 @@ nav:
   - Standalone Essays:
       - Overview: essays/english/standalone/standalone_index_en.md
       - What DoorDash and Uber Eats Can Teach You About Economics: essays/english/standalone/economics-101-via-doordash-and-uber-eats.md
-      - China+1 101: Whose Capability Are You Actually Trying to Move?: essays/english/standalone/china_plus_one_101_en.md
+      - "China+1 101: Whose Capability Are You Actually Trying to Move?": essays/english/standalone/china_plus_one_101_en.md
   - Series:
       - Frontiers:
           - Overview: essays/notes/english/Frontiers/index.md
@@ -273,7 +273,7 @@ nav:
       - 独立短文:
           - 总览: essays/chinese/standalone/standalone_index_zh.md
           - 从美团和饿了么看懂西方经济学101: essays/chinese/standalone/economics-101-meituan-and-eleme.md
-          - 中国+1 101：到底是搬谁的东西: essays/chinese/standalone/china_plus_one_101_zh.md
+          - "中国+1 101：到底是搬谁的东西": essays/chinese/standalone/china_plus_one_101_zh.md
       
       - 中文札记:
           - 札记总览: essays/notes/chinese/index.md
