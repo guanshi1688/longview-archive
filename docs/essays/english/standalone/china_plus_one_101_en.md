@@ -1,232 +1,210 @@
 # China+1 101: Whose Capability Are You Actually Trying to Move?
 
-**In the last globalization wave, Western firms moved capabilities they already controlled. Today, in some industries, the capabilities people want to relocate were created in China itself.**
+**China+1 is easiest when a firm is choosing a new location for capabilities it already controls. It becomes harder when the capability itself is part of what has to be induced, transplanted, or rebuilt.**
 
 For years, China+1 has sounded like a straightforward supply-chain strategy.
 
-Companies do not necessarily leave China completely. They simply add production in India, Vietnam, Mexico, or somewhere else.
+Companies do not necessarily leave China.
 
-The logic seems obvious: diversify risk, reduce dependence, and avoid putting every egg in one basket.
+They add production in India, Vietnam, Mexico, or somewhere else.
 
-And history appears to support it.
+The logic is sensible:
 
-Manufacturing once moved on a massive scale from the United States, Europe, and Japan to China.
+diversify risk,
 
-If it could move into China, why should it be so difficult to move out again?
+reduce concentration,
 
-The problem is that the two movements may look similar on a map while being structurally very different.
+move closer to customers,
 
-Before asking where production can move next, there is a simpler question:
+and avoid depending on one location.
+
+History also seems to support the idea.
+
+Manufacturing once moved on a massive scale into China.
+
+Why should it be so difficult to move some of it out again?
+
+Because two movements can look similar on a map while being very different operations.
+
+Before asking where production can move next, ask:
 
 > **Whose capability are we actually trying to move?**
 
 ---
 
-## 1. In the previous wave, Western firms were moving what they already controlled
+## 1. Earlier globalization often moved capabilities controlled by the lead firm
 
-Imagine a Western company deciding thirty or forty years ago to manufacture in China.
-
-It often already possessed the key elements of production:
+In many export-manufacturing industries, Western and Japanese lead firms entering China already controlled important parts of the production architecture:
 
 product design,
 
-engineering drawings,
+engineering standards,
 
-production technology,
+equipment choices,
 
-equipment systems,
-
-quality standards,
-
-management practices,
-
-capital,
+management systems,
 
 brands,
 
-distribution,
+capital,
+
+supplier requirements,
 
 and final-market access.
 
-Its problem was roughly:
+Their problem was often:
 
-> **We already know how to produce this. Where should production take place?**
+> **We already know how to make this. Where should production take place?**
 
-China supplied a new location, new labor, factories, and increasingly strong infrastructure.
+China offered labor, infrastructure, scale, supplier development, and an increasingly capable production environment.
 
-But the original “seed” was still largely controlled by the firm that was moving.
+The balance varied by industry.
 
-It could carry its drawings.
+But in many cases, the lead firm making the relocation decision already controlled a large share of the capability being moved.
 
-Its machinery.
+That matters.
 
-Its engineers.
-
-Its quality systems.
-
-Its orders.
-
-Sometimes even its existing suppliers.
-
-That wave of globalization was therefore, to a significant extent:
-
-> **existing knowledge searching for a new production location.**
-
-The West had the seed.
-
-China offered new soil.
+Moving a capability you control is mainly a problem of cost, execution, and location.
 
 ---
 
-## 2. The important change is that China did not remain only the soil
+## 2. China did not remain only a production location
 
-If China were still merely a low-cost assembly location, China+1 would be relatively simple.
+Over several decades, Chinese firms and industrial networks accumulated capabilities of their own.
 
-Wages rise?
+In some industries they now control important parts of:
 
-Move somewhere cheaper.
+product design,
 
-Trade risk increases?
+process engineering,
 
-Move somewhere safer.
+specialized equipment,
 
-Need proximity to the United States?
+supplier coordination,
 
-Go to Mexico.
+rapid prototyping,
 
-Need more labor?
+battery systems,
 
-Go to India.
+power electronics,
 
-But this logic contains an assumption that is rarely stated:
+manufacturing software,
 
-> **The critical productive knowledge is still controlled by the party that wants to relocate production.**
+and large-scale production know-how.
 
-If the seed is mine, I can choose new soil.
+No advanced industrial system is nationally pure.
 
-But over several decades, China changed.
+Chinese firms still depend on foreign technologies, components, standards, customers, and capital in many areas.
 
-In some industries, Chinese firms no longer merely receive foreign technology and assemble products.
+But the old picture of China as merely a low-cost location for capabilities designed elsewhere is no longer sufficient.
 
-They design products themselves.
+In some sectors, part of the capability now originates inside Chinese firms and production networks themselves.
 
-Develop technologies.
-
-Improve manufacturing processes.
-
-Build specialized equipment.
-
-Train supplier networks.
-
-Accumulate engineering experience.
-
-Prototype quickly.
-
-And continuously improve products and production methods.
-
-Knowledge that once had to be imported increasingly began to emerge inside the Chinese industrial system itself.
-
-China was no longer only the soil.
-
-**It also began producing seeds.**
+That changes the relocation problem.
 
 ---
 
-## 3. That changes the meaning of China+1
+## 3. There are three very different kinds of “moving production”
 
-This is why moving manufacturing into China thirty years ago cannot simply be reversed with an arrow pointing the other way.
+The first is **relocating capability you already control**.
 
-The earlier movement often looked like:
+A firm decides to build the same system in a new place.
 
-> **Western capability → production in China**
+It can send engineers, equipment, software, and suppliers.
 
-But in some industries today, the problem increasingly looks like:
+The second is **inducing a capability owner to move**.
 
-> **Chinese capability → desired production outside China**
+A government or customer uses market access, subsidies, procurement, regulation, or strategic pressure to persuade a firm to build elsewhere.
 
-Both can be described as “relocation.”
+The capability can move — but the owner has to participate.
 
-But they are not the same operation.
+The third is **rebuilding a substitute capability**.
 
-You can decide where to move capabilities that you own and control.
+If the original capability owner does not move, another firm or country has to recreate an alternative through investment, hiring, supplier development, and learning.
 
-You cannot unilaterally decide where someone else’s capabilities will go.
+All three can produce a new factory on the map.
 
-That is the hidden question inside China+1:
-
-> **Whose capability is being moved?**
+They are not the same economic operation.
 
 ---
 
-## 4. Electric vehicles make this easy to see
+## 4. Electric vehicles make the distinction easy to see
 
-Suppose a foreign automaker twenty years ago decided to build a factory in China.
+Consider a company such as BYD.
 
-It could bring its vehicle design.
+BYD is not simply a factory located in China.
 
-Its engine technology.
+It controls important parts of its vehicle engineering, battery systems, manufacturing processes, software, production organization, and supplier relationships.
 
-Its equipment.
+Another country can invite BYD to build a plant.
 
-Its supplier standards.
+It can offer subsidies.
 
-Its engineers.
+Require local production.
 
-China could then absorb, learn, expand, and localize that system.
+Form a joint venture.
 
-Now ask a different question:
+Buy equipment or components.
 
-> **How do you move BYD out of China?**
+License some technology.
 
-The question immediately sounds different.
+Encourage suppliers to follow.
 
-BYD is not simply a foreign factory located on Chinese soil.
+Or build a competing capability over time.
 
-It is itself a capability owner.
+But the receiving country cannot treat BYD's capability as if it were an idle asset that an unrelated firm can simply pick up and move.
 
-Its battery technology is its own.
+The capability owner matters.
 
-Its vehicle engineering is its own.
-
-Its production processes are its own.
-
-Its engineering teams are its own.
-
-Its supplier relationships developed around its own operations.
-
-Its quality-control routines, accumulated failures, and organizational knowledge exist inside its own system.
-
-Another country may invite BYD to build a factory.
-
-It may form a joint venture.
-
-Buy Chinese equipment or components.
-
-License technology.
-
-Invite Chinese suppliers.
-
-Or spend years building a different capability from scratch.
-
-But one thing is not possible in the same way:
-
-> **You cannot unilaterally “move BYD” as if you were relocating one of your own factories.**
+That is the point.
 
 ---
 
-## 5. A factory is a location. Productive capability is a system.
+## 5. Capability ownership does not make relocation impossible
 
-Maps make it easy to confuse the two.
+This distinction should not be overstated.
+
+A capability owner can be pressured.
+
+It can be attracted.
+
+It can be constrained by export controls.
+
+It can respond to customer demands.
+
+It can accept subsidies.
+
+It can move because access to an important market requires local production.
+
+Political and market power matter.
+
+So the claim is not:
+
+> Someone else's capability cannot move.
+
+The more precise claim is:
+
+> **Capability ownership changes who must participate, what leverage is required, and how much of the system has to be recreated.**
+
+That is a bargaining and reconstruction problem, not a simple logistics problem.
+
+---
+
+## 6. A factory is a location. Productive capability is a system.
+
+Maps encourage us to confuse the two.
 
 A factory closes in China.
 
-A factory opens in India.
+A factory opens in another country.
 
-The map appears to show that productive capacity has moved.
+It appears that capacity has moved.
 
-But productive capability may contain things that are much harder to see:
+Sometimes that is exactly what happened.
 
-machines,
+But a productive capability may also depend on:
+
+equipment,
 
 tooling,
 
@@ -236,254 +214,162 @@ suppliers,
 
 engineers,
 
-maintenance skills,
+maintenance teams,
 
-quality control,
+quality routines,
 
 production scheduling,
 
 rapid prototyping,
 
-failure-correction routines,
+failure-correction experience,
 
-and a great deal of **tacit knowledge** that is never fully written down.
+and tacit knowledge.
 
-Some equipment, skills, and supplier relationships are also highly specific to the production systems in which they developed.
+The more standardized these elements are, the easier relocation becomes.
 
-This is where the idea of **asset specificity** becomes useful.
-
-An asset may be valuable precisely because it is embedded in a particular network of suppliers, skills, standards, and routines.
-
-Remove it from that system, and much of its value may disappear.
-
-So:
-
-> **A factory is a location.**
->
-> **Productive capability is a system.**
-
-Changing the location does not automatically recreate the system.
+The more specific and tightly coordinated they are, the more of the system has to travel or be rebuilt.
 
 ---
 
-## 6. China+1 therefore faces a bootstrapping problem
+## 7. China+1 therefore has a bootstrapping problem in some sectors
 
-Suppose a country wants to build an alternative EV, battery, solar, or advanced-manufacturing base outside China.
+Suppose a country wants to build an alternative battery, solar, EV, electronics, or advanced-manufacturing base outside China.
 
-What does it need?
+It needs:
 
-Machines.
+machines,
 
-Materials.
+materials,
 
-Components.
+components,
 
-Engineers.
+engineers,
 
-Tooling.
+tooling,
 
-Software.
+software,
 
-Production experience.
+suppliers,
 
-Suppliers.
+and production experience.
 
-Now suppose a significant share of the most mature suppliers of those things are themselves located in China.
+Now suppose some of the most mature suppliers of those inputs are themselves concentrated in China.
 
 A strange situation appears:
 
-> **To reduce dependence on the Chinese production system, you may first need to buy from the Chinese production system the tools required to build its alternative.**
-
-Chinese machinery may help build the non-Chinese factory.
-
-Chinese components may help create the non-Chinese supply chain.
-
-Chinese engineers or suppliers may help the new location reach mass production.
+> **To reduce dependence on a production system, you may first need to import from that system some of the tools required to build its alternative.**
 
 There is no contradiction here.
 
-It simply reveals that:
+This is how industrial learning often works.
 
-> **production location and productive capability are not the same thing.**
-
----
-
-## 7. “Relocation” may therefore increasingly mean Chinese firms going abroad themselves
-
-This also helps explain another pattern.
-
-If the productive capability belongs to Chinese firms, the realistic path may not be:
-
-> Western firms move Chinese capability out of China.
-
-It may instead be:
-
-> **Chinese firms carry part of their own capability abroad.**
-
-Chinese companies build overseas factories.
-
-Chinese equipment makers export production lines.
-
-Chinese suppliers follow core manufacturers abroad.
-
-Chinese companies form joint ventures.
-
-Chinese technologies are licensed into new locations.
-
-On a map, production still appears to be “moving out of China.”
-
-But from the perspective of capability, something very different is happening.
-
-The earlier model was often:
-
-> **Western capability → Chinese production location**
-
-A newer pattern can be:
-
-> **Chinese capability → overseas production location**
-
-The geography changes.
-
-**The owner of the capability may not.**
+The question is whether the new location remains permanently dependent or gradually develops more of the required capability itself.
 
 ---
 
-## 8. Technological development can therefore make simple relocation harder
+## 8. Sometimes “moving out of China” means Chinese capability moving abroad
 
-This sounds counterintuitive.
+If productive capability belongs to Chinese firms, one realistic path is not replacing those firms.
 
-We normally assume that better technology makes diffusion easier.
+It is those firms internationalizing.
 
-Drawings can be copied.
+A Chinese manufacturer builds abroad.
 
-Software can be transferred.
+Its equipment suppliers export production lines.
 
-Capital can cross borders.
+Key suppliers follow.
 
-Machines can be bought.
+Local partners join.
 
-But advanced manufacturing has another side.
+Some functions remain in China.
 
-As technology develops, productive capability can become increasingly embedded in:
+Others are recreated overseas.
 
-specialized equipment,
+On a map, production has moved.
 
-engineering teams,
+From the perspective of capability, part of the original system has expanded geographically.
 
-supplier networks,
-
-organizational routines,
-
-long-term learning,
-
-tacit knowledge,
-
-and rapid iteration.
-
-These things do not sit in a vault like cash.
-
-Nor do they move automatically when a machine is placed on a ship.
-
-The result is paradoxical:
-
-> **As some industries become more technologically advanced, they may become less like factories that can simply be moved and more like ecosystems that have to be reproduced.**
-
-You can transplant a tree.
-
-That does not mean you have recreated the forest.
+This is different from a foreign firm simply withdrawing its own production from China.
 
 ---
 
-## 9. The real China+1 question may not be “Which country comes next?”
+## 9. Technology makes the answer more sector-specific, not less
 
-People often ask:
+In mature, modular industries, China+1 can be relatively straightforward.
 
-Can India become the next China?
+The product is stable.
 
-Can Vietnam absorb more manufacturing?
+Processes are codified.
 
-Will Mexico be the biggest winner?
+Equipment is widely available.
 
-But all of these questions contain a hidden assumption:
+Suppliers are substitutable.
 
-> **There is a complete package of productive capability waiting to choose its next location.**
+Training is short.
 
-That assumption may still work reasonably well in many mature and standardized industries.
+In rapidly evolving industries, relocation can be harder because improvement depends on dense interaction among engineering teams, suppliers, equipment makers, software, and production feedback.
 
-But in sectors where Chinese firms have developed their own technologies, equipment, supplier networks, and engineering capabilities, it becomes much less obvious.
+The relevant variables are:
 
-The first question should no longer be:
+how codifiable the knowledge is,
 
-> Where is the next location?
+how specific the assets are,
 
-It should be:
+how dense the supplier relationships are,
 
-> **Who owns the capability being relocated?**
+and how quickly the product and process keep changing.
 
-If the capability already belongs to the firm making the relocation decision, then moving is mainly a problem of cost, policy, and execution.
+This is why “Can manufacturing move?” is too broad a question.
 
-If the capability has been created by Chinese firms, engineers, equipment makers, and suppliers, the problem changes.
+Some production can move quickly.
 
-You need the capability owner to participate.
+Some can move only with the firms that possess the capability.
 
-Or you need to reproduce an alternative capability over time.
+Some has to be accumulated again.
 
 ---
 
-## 10. That may be the simplest China+1 lesson
+## 10. The real China+1 question is not only “Which country comes next?”
 
-So forget India, Vietnam, and Mexico for a moment.
+India may gain some activities.
 
-Ask only one question:
+Vietnam may gain others.
 
-> **Whose capability are you trying to move?**
+Mexico may gain others.
 
-In the previous globalization wave:
+Chinese firms themselves may become major carriers of capability into all three.
 
-> **Western firms often moved productive capabilities they already controlled.**
+The useful first question is therefore not:
 
-In some advanced manufacturing sectors today:
+> Where should the next factory be?
 
-> **The capabilities being sought outside China are increasingly capabilities developed inside China.**
+It is:
 
-And that changes everything.
+> **What kind of capability is being relocated, who controls it, and how portable is it?**
 
-> **You can decide where your own capability goes.**
->
-> **You cannot unilaterally decide where someone else’s capability goes.**
+If the relocating firm already controls the capability, the problem is mainly execution.
 
-That is why today’s diversification is not simply the previous globalization wave played backward.
+If another firm controls it, that firm has to be induced to participate.
 
-The problem is shifting from **relocating production** to **reproducing productive capability**.
+If no one can or will move it, an alternative has to be built.
 
-The whole argument can be reduced to three lines:
+That is why today's diversification is not simply the previous globalization wave played backward.
 
 > **A factory is a location.**
 >
 > **Productive capability is a system.**
 >
-> **And a system first belongs to those who built and mastered it.**
+> **Relocation depends on whether that system can be moved, induced to move, or reproduced elsewhere.**
 
-So the hardest part of China+1 may no longer be:
-
-> How do we move factories out of China?
-
-It may be:
-
-> **How do we move productive capabilities that China itself created?**
-
-Some things can be relocated.
-
-Some can only be carried abroad by the firms that possess them.
-
-And some have to be accumulated again.
+That is the hidden problem inside China+1.
 
 ---
 
-星衡｜Aster Vale
-Longview Archive
-Standalone Essay
+星衡｜Aster Vale  
+Longview Archive  
+Standalone Essay  
 September 2026
 
-© 2026 Longview Archive.
+© 2026 Longview Archive.  
 Licensed under CC BY-NC-ND 4.0.
