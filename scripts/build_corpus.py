@@ -43,6 +43,7 @@ The corpus has five source classes:
 
 3. PUBLIC / CATALOGUED WEBSITE MATERIAL
    - active mkdocs.yml nav -> PUBLIC
+   - docs/essays/*/standalone/* in active nav -> PUBLIC_STANDALONE
    - existing commented .md entry -> UNPUBLISHED / INTERNAL
    - existing exclude_docs .md entry -> INTERNAL
 
@@ -110,6 +111,11 @@ ROUTING_DOCUMENTS: tuple[str, ...] = (
 RESERVED_FUTURE_PREFIXES: tuple[str, ...] = (
     "essays/english/structural-algorithm/",
     "essays/chinese/structural-algorithm/",
+)
+
+PUBLIC_STANDALONE_PREFIXES: tuple[str, ...] = (
+    "essays/english/standalone/",
+    "essays/chinese/standalone/",
 )
 
 PUBLISH_REGISTRY_FILES: tuple[str, ...] = (
@@ -424,6 +430,15 @@ def is_reserved_future_nav(rel_path: str) -> bool:
     return any(low.startswith(prefix) for prefix in RESERVED_FUTURE_PREFIXES)
 
 
+def is_public_standalone(rel_path: str) -> bool:
+    low = normalize_rel_path(rel_path).lower()
+    return any(low.startswith(prefix) for prefix in PUBLIC_STANDALONE_PREFIXES)
+
+
+def classify_public_nav_role(rel_path: str) -> str:
+    return "PUBLIC_STANDALONE" if is_public_standalone(rel_path) else "PUBLIC_ARCHIVE"
+
+
 # -----------------------------------------------------------------------------
 # Website records
 # -----------------------------------------------------------------------------
@@ -465,6 +480,13 @@ def build_docs_records(
 
         included_paths.add(rel)
         body = read_text(abs_path)
+        public_role = classify_public_nav_role(rel)
+        public_note = (
+            "Public standalone essay/index in active MkDocs nav; independent public output, "
+            "not a foundational theory layer."
+            if public_role == "PUBLIC_STANDALONE"
+            else "Referenced by active MkDocs nav."
+        )
         records.append(
             FileRecord(
                 abs_path=abs_path,
@@ -475,9 +497,9 @@ def build_docs_records(
                 section=page.breadcrumb,
                 source_kind="WEBSITE_DOCS",
                 authority="PUBLIC_CANONICAL",
-                role="PUBLIC_ARCHIVE",
+                role=public_role,
                 nav_order=page.order,
-                note="Referenced by active MkDocs nav.",
+                note=public_note,
             )
         )
 
@@ -1159,7 +1181,8 @@ def write_bootstrap(
         out.write("- Theory hierarchy / article placement -> memo/theory-map.md.\n")
         out.write("- Repository paths / publication state -> memo/file_map.md.\n")
         out.write("- Concrete theoretical claim -> corresponding canonical mother text in the Full Corpus.\n")
-        out.write("- Short-essay registries are workflow/control state, not theoretical authority.\n\n")
+        out.write("- Short-essay registries are workflow/control state, not theoretical authority.\n")
+        out.write("- PUBLIC_STANDALONE pages are independent public essays, not a new theory layer.\n\n")
         out.write("TOPOLOGY_GUARDRAILS:\n")
         out.write("- Physical body order is reading order, NOT theoretical parent-child order.\n")
         out.write("- Do NOT linearize Civilizational Structure -> PFE -> Reality/Future -> Six Series.\n")
@@ -1190,6 +1213,10 @@ def write_bootstrap(
         out.write(f"STRUCTURAL_CORE_DOCUMENTS: {len(structural_core)}\n")
         out.write(f"STRUCTURAL_BRIDGE_DOCUMENTS: {len(structural_bridge)}\n")
         out.write(f"PUBLIC_DOCUMENTS: {count_status(all_body_records, 'PUBLIC')}\n")
+        out.write(
+            f"PUBLIC_STANDALONE_DOCUMENTS: "
+            f"{sum(1 for r in docs_records if r.role == 'PUBLIC_STANDALONE')}\n"
+        )
         out.write(f"RESERVED_FUTURE_NAV_REFERENCES: {len(reserved_future)}\n")
         out.write(f"ACTIVE_NAV_REFERENCES: {len(nav_pages)}\n")
         out.write(f"COMMENTED_MD_REFERENCES: {len(commented_refs)}\n")
@@ -1214,6 +1241,7 @@ def write_bootstrap(
         out.write("- Read this Bootstrap fully.\n")
         out.write("- Use DOCUMENT_MANIFEST to locate candidate documents.\n")
         out.write("- Retrieve the smallest relevant canonical body from the paired Full Corpus.\n")
+        out.write("- PUBLIC_STANDALONE items may be used as independent applications/examples; validate deeper claims against canonical mother text.\n")
         out.write("- Expand outward only for comparison, evidence, or contradiction checks.\n\n")
         out.write("SHORT_ESSAY_USE:\n")
         out.write("- New problem -> question-pool.md -> mother node/edge -> canonical mother text.\n")
@@ -1339,6 +1367,10 @@ def write_corpus(
         out.write(f"TOTAL_BODY_DOCUMENTS: {len(all_body_records)}\n")
         out.write(f"PUBLIC_DOCUMENTS: {count_status(all_body_records, 'PUBLIC')}\n")
         out.write(
+            f"PUBLIC_STANDALONE_DOCUMENTS: "
+            f"{sum(1 for r in docs_records if r.role == 'PUBLIC_STANDALONE')}\n"
+        )
+        out.write(
             f"CANONICAL_UNPUBLISHED_DOCUMENTS: "
             f"{count_status(all_body_records, 'CANONICAL_UNPUBLISHED')}\n"
         )
@@ -1371,6 +1403,7 @@ def write_corpus(
         out.write("3. structural bridge essays -> derived causal bridges\n")
         out.write("4. index/publish registries -> short-essay workflow / identity routing only\n")
         out.write("5. active MkDocs pages -> current public canonical archive\n")
+        out.write("   - ROLE: PUBLIC_STANDALONE -> independent public essay/index; not a new theory layer\n")
         out.write("6. other commented/excluded material -> auxiliary context only\n")
         out.write("7. diagnostics and raw mkdocs.yml -> repository/publication metadata\n\n")
         out.write("CONFLICT_RULES:\n")
@@ -1387,6 +1420,7 @@ def write_corpus(
         )
         out.write("SEARCH_HINTS:\n")
         out.write("- Grep PATH:, ROLE:, AUTHORITY:, STATUS:, or a theory term.\n")
+        out.write("- Grep ROLE: PUBLIC_STANDALONE to find selected public standalone essays.\n")
         out.write("- Use DOCUMENT_MANIFEST for fast routing before reading long bodies.\n")
         out.write("- Do not infer publication status from physical location alone; read STATUS.\n")
         out.write("- Default to targeted retrieval; do not treat corpus body order as theoretical inheritance.\n\n")
@@ -1684,6 +1718,7 @@ def main() -> int:
         1 for r in publish_records if r.role in {"QUESTION_POOL", "SHORT_ESSAY_MANIFEST"}
     )
     working_short_essay_count = sum(1 for r in publish_records if r.role == "SHORT_ESSAY_WORKING")
+    public_standalone_count = sum(1 for r in docs_records if r.role == "PUBLIC_STANDALONE")
 
     print()
     print("Longview AI bootstrap + full corpus build complete.")
@@ -1696,6 +1731,7 @@ def main() -> int:
     print()
     print(f"Website records            : {len(docs_records)}")
     print(f"Public website docs        : {count_status(docs_records, 'PUBLIC')}")
+    print(f"Public standalone docs     : {public_standalone_count}")
     print(f"Routing documents          : {routing_count}/{len(ROUTING_DOCUMENTS)}")
     print(f"Structural core            : {structural_core_count}")
     print(f"Structural bridges         : {structural_bridge_count}")
