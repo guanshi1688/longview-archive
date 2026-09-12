@@ -1,29 +1,31 @@
-# Standalone Essays
+# 独立短文
 
-Standalone Essays are self-contained pieces that begin with a familiar phenomenon and follow one bounded question far enough to reveal a deeper structural problem.
+“独立短文”收录可以单独成立的文章。
 
-They are **not a sequential series** and do not require prior knowledge of the Longview framework. Each essay is designed to stand on its own.
+它们通常从一个人人熟悉的现象出发，只追踪一个有限的问题，直到一个更深的结构性问题自然出现。
 
-Only selected pieces are published here. Their purpose is not to introduce the full theoretical system, but to make one problem visible, trace one causal line, and stop where the next question begins.
+这里的文章**不是连续系列**，也不要求读者预先了解 Longview Archive 的理论框架。每一篇都应当能够独立阅读、独立闭合。
 
-## Current Essay
+这里只公开少量经过筛选的文章。它们的目的不是一次讲完整套理论，而是把一个问题讲清楚，把一条因果线走完，然后停在下一个问题开始的地方。
 
-### What DoorDash and Uber Eats Can Teach You About Economics
+## 当前文章
 
-A food-delivery app quietly contains a surprising amount of modern market society: entry, contracts, prices, information, incentives, transaction costs, market power, failure, bankruptcy, limited liability, exit and re-entry, and competition.
+### 从美团和饿了么，看懂西方经济学 101
 
-The essay follows those familiar mechanisms until a different question appears:
+一个外卖 App，实际上压缩了现代市场社会相当多的制度结构：准入、契约、价格、信息、激励、交易成本、市场力量、失败、破产、有限责任、退出与重入，以及竞争。
 
-> **Reallocating resources is not the same as reproducing capability.**
+文章沿着这些最熟悉的机制一直走下去，直到出现另一个问题：
 
-[Read the essay →](economics-101-via-doordash-and-uber-eats.md)
+> **重新配置资源，不等于重新生成能力。**
+
+[阅读全文 →](economics-101-meituan-and-eleme.md)
 
 ---
 
-Aster Vale  
-Longview Archive  
-Standalone Essays  
-September 2026
+星衡｜Aster Vale  
+Longview Archive｜观势档案  
+独立短文  
+2026.09
 
-© 2026 Longview Archive.  
-Licensed under CC BY-NC-ND 4.0.
+© 2026 Longview Archive｜观势档案。  
+本文采用 CC BY-NC-ND 4.0。
