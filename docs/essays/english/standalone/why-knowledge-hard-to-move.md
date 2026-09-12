@@ -1,92 +1,106 @@
 # Why Advanced Technology Can Make Some Industries Harder to Relocate
 
-**Technological progress can make knowledge easier to transmit while making productive capability more deeply embedded in equipment, suppliers, and organizations.**
+**Technology can make components more portable while making the system that improves them more deeply embedded.**
 
-We usually assume that better technology should make industry more mobile.
+We usually assume that better technology should make industry easier to move.
 
 Design files can be sent instantly.
 
 Software can be copied.
 
-Automation reduces reliance on manual skill.
+Automation reduces some forms of manual skill.
 
-Machines standardize production.
+Standards make components interchangeable.
 
-If knowledge is becoming more digital, why should factories become harder to move?
+Global logistics connect distant suppliers.
 
-Some parts of production really have become easier to relocate.
+All of this is real.
 
-Other parts may be moving in the opposite direction.
+Modern industry has become more mobile because knowledge has become easier to codify.
+
+But another force can move in the opposite direction.
+
+The more complex a production system becomes, the more value may accumulate in the relationships between standardized parts.
 
 ---
 
-## 1. Technology makes explicit knowledge easier to copy.
+## 1. Modularity is one of modern industry's great relocation technologies
 
-Modern industry has created enormous amounts of standardization.
+A product becomes easier to move when its production process can be divided into clear modules.
 
-CAD files.
+Interfaces are standardized.
+
+Specifications are stable.
+
+Quality can be measured objectively.
+
+Equipment is widely available.
+
+Suppliers are interchangeable.
+
+Training is short.
+
+When these conditions hold, production can be replicated across locations with surprising speed.
+
+This is one reason mature electronics assembly, garment production, and many standardized manufacturing processes have moved repeatedly across borders.
+
+So any serious theory of industrial relocation has to begin by admitting:
+
+> **Modern industry is often very good at making capability portable.**
+
+---
+
+## 2. Complexity can create a second layer of knowledge between the modules
+
+Now consider a production system in which many specialized elements must change together.
+
+Materials.
 
 Software.
 
-Machine interfaces.
+Precision processing.
 
-Quality standards.
+Power electronics.
 
-Automated control systems.
+Sensors.
 
-Global logistics.
+Testing.
 
-These reduce the cost of producing the same product in different places.
+Quality control.
 
-A mature product can often be assembled globally much more easily than in the past.
+Tooling.
 
-So technological progress does increase mobility.
+Supplier co-development.
 
-The problem is that:
+Each component may have a clear specification.
 
-> **Not every capability becomes standardized.**
+But reliable system performance can still depend on practical knowledge about how the pieces interact.
 
----
+A parameter change in one part may alter yield somewhere else.
 
-## 2. The more complex the system, the more it depends on knowledge between the interfaces.
+A new material may require tooling changes.
 
-Advanced products require many things to work together:
+A software update may change calibration requirements.
 
-materials,
+A supplier problem may only appear at high production speed.
 
-software,
-
-precision processing,
-
-power electronics,
-
-sensors,
-
-testing,
-
-quality control,
-
-and supplier co-development.
-
-Each part may have a standard.
-
-But making the parts interact reliably often requires long practical experience.
-
-Advanced industry can therefore accumulate more explicit knowledge that travels easily and more tacit systems knowledge that does not.
-
-Both happen at the same time.
+This knowledge is harder to package because it lives between interfaces rather than inside one module.
 
 ---
 
-## 3. Automation does not always reduce the capability requirement.
+## 3. Automation can reduce labor intensity while increasing engineering density
 
-Automation is often described as a way to reduce dependence on skilled labor.
+Automation often makes production more portable.
 
-Sometimes it does.
+It reduces the number of manual tasks.
 
-But automated systems require another set of capabilities:
+It stabilizes repeatable processes.
 
-integration,
+It can encode experienced operators' decisions into software.
+
+But automated production also creates new dependencies:
+
+system integration,
 
 software maintenance,
 
@@ -98,88 +112,86 @@ data analysis,
 
 spare-parts management,
 
-rapid reconfiguration.
+and rapid reconfiguration.
 
-The number of manual workers may decline while the engineering density of the system rises.
+The number of workers may fall while the importance of a smaller technical team rises.
 
-That can make production less dependent on large amounts of labor, but more dependent on small, highly capable teams and the ecosystem around them.
-
----
-
-## 4. Advanced industries also create more asset specificity.
-
-A general-purpose machine can serve many industries.
-
-A highly optimized production system is often different.
-
-Equipment, software, tooling, supplier quality systems, and skills may be developed around one particular product or customer.
-
-Those assets can still move.
-
-But their value may change once they are removed from the relationships that made them productive.
-
-A machine can be placed on a ship.
-
-That does not mean the capability around it travels unchanged.
+This can make production less dependent on abundant labor but more dependent on concentrated engineering capability.
 
 ---
 
-## 5. This produces a counterintuitive result.
+## 4. Four variables help explain why some industries move more easily than others
 
-A mature, lower-technology industry may sometimes be easier to relocate.
+Instead of asking whether an industry is simply “advanced” or “simple,” ask four more precise questions.
 
-The product is stable.
+**How codifiable is the knowledge?**  
+Can most of the process be written into software, drawings, recipes, and measurable standards?
 
-The process is well understood.
+**How specific are the assets?**  
+Can the equipment, tooling, and skills be redeployed easily, or are they optimized around one product, customer, or process?
 
-Equipment is widely available.
+**How dense are the production relationships?**  
+Can suppliers be replaced independently, or do firms need repeated co-development and rapid engineering communication?
 
-Suppliers are numerous.
+**How fast does the product or process change?**  
+Is the problem reproducing a stable line, or keeping up with a system that changes every year?
 
-The learning curve is flatter.
-
-A rapidly evolving advanced industry can be more dependent on fast engineering communication, supplier co-development, prototyping, equipment modification, and constant material change.
-
-Relocating the factory therefore means more than reproducing today's production line.
-
-It means reproducing a learning system that can create tomorrow's version of the product.
+The harder the answer becomes on these four dimensions, the less useful it is to think of relocation as moving a factory.
 
 ---
 
-## 6. The hardest thing to relocate may not be today's product.
+## 5. Technology can increase mobility at one level and embeddedness at another
 
-A production line can be copied.
+A mature product may become easier to manufacture globally because its design has stabilized.
 
-A current product can be copied.
+At the same time, the frontier version of the same industry may become more concentrated because improvement depends on a tight loop between design, equipment, materials, suppliers, and production feedback.
 
-The deeper question is:
+This produces an important distinction:
 
-> **Can the new location keep improving it next year?**
+> **Replicating today's production is not the same as reproducing tomorrow's improvement.**
 
-Can it respond to the next design change?
+A location may be perfectly capable of making the current product.
 
-Can it retrain suppliers?
+The harder question is whether it can handle the next design change, the next material, the next yield problem, and the next generation of equipment.
 
-Can it solve unknown failures?
+---
 
-Can it turn current production experience into the next generation of process improvements?
+## 6. The strongest relocation test is therefore dynamic
 
-If not, the new location has copied a state of production, not the capability to evolve production.
+Do not ask only:
+
+Can the product be made there?
+
+Ask:
+
+Can yields ramp quickly?
+
+Can local teams solve unknown failures?
+
+Can suppliers respond to design changes?
+
+Can equipment be modified without waiting for distant support?
+
+Can the location participate in the next product generation?
+
+If yes, productive capability has traveled more deeply.
+
+If no, the location may have copied a production state without reproducing the learning system that created it.
 
 Technological progress therefore creates two forces at once:
 
-> **Knowledge becomes easier to transmit.**
+> **Codification can make production easier to move.**
 >
-> **Capability can become more deeply embedded in systems.**
+> **System complexity can make improvement harder to detach from the ecosystem that learned how to do it.**
 
-That is one reason some advanced industries can look globally connected while remaining concentrated in a surprisingly small number of deep production ecosystems.
+That is why some advanced industries can be globally connected and yet remain concentrated in a surprisingly small number of deep production ecosystems.
 
 ---
 
-星衡｜Aster Vale
-Longview Archive
-Standalone Essay
+星衡｜Aster Vale  
+Longview Archive  
+Standalone Essay  
 September 2026
 
-© 2026 Longview Archive.
+© 2026 Longview Archive.  
 Licensed under CC BY-NC-ND 4.0.
