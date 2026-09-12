@@ -1,173 +1,215 @@
 # Why Foreign Investment Can Create Jobs Without Creating Domestic Capability
 
-**Employment and productive capability are both valuable outcomes. They are not the same outcome.**
+**Foreign investment can create highly productive activity inside a country without automatically making the underlying capability reusable across the domestic economy.**
 
 A multinational enters a country.
 
-It builds a factory.
+It builds an advanced factory.
 
-It hires five thousand workers.
+It hires thousands of workers.
 
-Exports rise quickly.
+Exports rise.
 
-Wages are higher than the local average.
+Wages improve.
+
+Quality reaches global standards.
 
 By many reasonable measures, the investment is a success.
 
-But ten years later, suppose the company leaves.
+The next question is not whether those gains are real.
 
-What remains?
+They are.
 
-That question separates foreign production from domestic capability.
+The next question is different:
 
----
-
-## 1. Jobs can appear quickly because foreign investment brings an existing system.
-
-One of the great advantages of foreign investment is speed.
-
-The company brings orders.
-
-Equipment.
-
-Management.
-
-Technical standards.
-
-International customers.
-
-Local workers can enter an already functioning production system.
-
-That may create employment much faster than building a domestic firm from zero.
-
-This is a real benefit.
-
-The next question is simply different:
-
-> **Do those jobs begin generating capabilities that can live beyond the original investor?**
+> **How much of the capability created by the project becomes usable beyond the original firm?**
 
 ---
 
-## 2. Having a job does not mean controlling the production process.
+## 1. Multinational firms are very good at moving organized capability across borders
 
-Modern factories are highly specialized.
+A large multinational does not arrive with capital alone.
 
-A worker may become excellent at one narrow operation without learning how the larger production system is organized.
+It can bring:
 
-A domestic supplier may serve a multinational for years while remaining confined to low-value tasks.
+product designs,
 
-Employment can improve income and stability.
+equipment,
 
-But industrial formation requires additional questions.
+management systems,
 
-Are skills transferable?
+supplier contracts,
 
-Can suppliers upgrade?
+quality standards,
 
-Are local engineers entering more complex roles?
+software,
 
-Does management knowledge spread beyond one company?
+technical teams,
 
-Do workers who leave the factory strengthen other firms?
+finance,
 
----
+and access to global customers.
 
-## 3. A factory can be inside a country while key capabilities remain outside it.
+That is one reason foreign investment can create sophisticated production in places where the surrounding industrial ecosystem is still thin.
 
-Physical location can be misleading.
+The multinational's internal hierarchy substitutes for capabilities that do not yet exist locally.
 
-The design may remain at headquarters.
+This is not a weakness of the model.
 
-Finance may remain at headquarters.
+It is one of its strengths.
 
-Critical equipment may come from the parent company's existing network.
-
-Product strategy may be decided elsewhere.
-
-Global procurement may be controlled elsewhere.
-
-Core suppliers may follow headquarters decisions.
-
-The host country has production activity, but not necessarily control over the direction of production.
-
-That is the difference between having a factory in a country and having the underlying capability rooted there.
+A country can enter advanced production much faster by joining an existing global system than by creating every element from zero.
 
 ---
 
-## 4. The deeper developmental effect appears when something can survive without permanent external command.
+## 2. Advanced production and domestic capability are still different outcomes
 
-The most important sign of successful absorption is not simply that the foreign investor expands.
+A foreign-owned plant can be world class while much of its operating system remains external.
 
-It is that capabilities begin appearing around it that can continue independently.
+Design may stay at headquarters.
 
-Local suppliers gain other customers.
+Critical procurement may be global.
 
-Engineers start new firms.
+Process engineering may be controlled by teams abroad.
 
-Training institutions serve an entire industry.
+Specialized maintenance may come from the equipment vendor.
 
-Banks learn how to finance manufacturing.
+Local workers may become excellent at operating a narrow part of the system without learning how to reproduce the whole thing.
 
-Tooling, repair, testing, and software firms emerge.
+None of this makes the factory “fake.”
 
-Domestic companies eventually become competitors.
+It simply means that production at a location and capability embedded in the wider economy are not identical.
 
-At that point, foreign investment is no longer only “an external company producing here.”
-
-It is becoming part of a wider domestic productive system.
+That distinction matters when the policy goal is not only employment or exports, but long-term industrial deepening.
 
 ---
 
-## 5. So attracting foreign investment is only the first step.
+## 3. Not every country needs the same outcome
 
-The useful question is not whether foreign investment is good or bad.
+There is an important boundary here.
 
-That is too simple.
+A country can rationally choose to become a stable, high-value production node inside multinational networks without trying to create a nationally autonomous version of every firm or technology.
 
-Foreign investment can bring capital, jobs, markets, standards, and opportunities to learn.
+That can be a successful development strategy.
 
-The deeper question is:
+Local wages may rise.
 
-> **Ten years later, what no longer depends on the original foreign company?**
+Tax revenue may grow.
 
-If the list gets longer, capability is localizing.
+Workers may gain valuable skills.
 
-If almost nothing changes, production may be successful while remaining highly dependent on external command.
+Infrastructure may improve.
+
+The economy may become deeply integrated into global production.
+
+So the question should not be:
+
+> Did foreign ownership disappear?
+
+Nor should it be:
+
+> Did a local copy of the multinational appear?
+
+A better question is:
+
+> **What new capabilities became available locally because the investment existed?**
 
 ---
 
-## 6. One simple way to evaluate foreign investment is to imagine that the investor leaves.
+## 4. Spillovers are not automatic, but they can be observed
 
-Could workers find similar jobs elsewhere?
+If foreign investment is deepening domestic capability, several things often begin to change.
 
-Could suppliers survive?
+Local suppliers move into more demanding tasks.
 
-Could local firms take over part of the production?
+Engineers take on process-development roles rather than only execution.
 
-Could engineering teams reorganize?
+Maintenance and tooling become more local.
 
-Would maintenance, finance, and customer relationships continue?
+Managers trained inside the multinational move into other firms.
 
-This thought experiment is harsh, but useful.
+Training institutions begin serving an entire industry.
 
-It does not ask how much activity foreign investment created.
+Workers carry routines and standards into new employers.
 
-It asks:
+Domestic firms become suppliers, partners, or eventually competitors.
 
-> **How much capability did it leave behind that can continue on its own?**
+Spin-offs appear.
+
+Banks and public agencies learn how the industry actually operates.
+
+These are not abstract signs of “ecosystem formation.”
+
+They are observable channels through which capability becomes reusable.
+
+---
+
+## 5. A useful test is whether dependence becomes narrower over time
+
+A foreign factory does not need to become independent of its parent company.
+
+That is usually not the point.
+
+But if the host economy is learning, some forms of dependence should change.
+
+Perhaps installation is still foreign, but maintenance becomes local.
+
+Perhaps design remains global, but process engineering deepens locally.
+
+Perhaps core components stay imported, but local suppliers enter tooling, packaging, testing, software, or materials.
+
+Perhaps the multinational remains the anchor, but the local labor market becomes valuable to other firms too.
+
+The key is movement.
+
+> **Is the local system doing more difficult things in year ten than in year one?**
+
+That is a better measure of capability formation than ownership alone.
+
+---
+
+## 6. The harsh thought experiment still helps
+
+Imagine the original investor reduces production or leaves.
+
+What survives?
+
+Do trained workers strengthen other firms?
+
+Can suppliers keep serving the industry?
+
+Can local engineering teams reorganize?
+
+Do testing, maintenance, logistics, and training services continue to have customers?
+
+Have local firms gained enough knowledge to enter adjacent activities?
+
+The answer does not have to be “everything.”
+
+Global production is interdependent by design.
+
+The useful question is how much of the capability created by the investment has become portable inside the host economy rather than remaining locked inside one corporate boundary.
 
 So:
 
-> **Jobs prove that production happened.**
+> **Foreign investment can create production before it creates local capability.**
 >
-> **Capabilities that remain and spread prove that industry took root.**
+> **The developmental question is how much of its operating knowledge, supplier depth, and human capital becomes reusable outside the original firm.**
+
+Jobs matter.
+
+Exports matter.
+
+Foreign firms matter.
+
+But when production begins generating capabilities that other local actors can use, the effect becomes larger than the original investment itself.
 
 ---
 
-星衡｜Aster Vale
-Longview Archive
-Standalone Essay
+星衡｜Aster Vale  
+Longview Archive  
+Standalone Essay  
 September 2026
 
-© 2026 Longview Archive.
+© 2026 Longview Archive.  
 Licensed under CC BY-NC-ND 4.0.
