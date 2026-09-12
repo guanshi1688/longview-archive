@@ -17,7 +17,8 @@ theme:
       accent: blue
 
 exclude_docs: |
-  file_map.md
+  memo/file_map.md
+  memo/theory-map.md
 
 nav:
   - Home: index.md
