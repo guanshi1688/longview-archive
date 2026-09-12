@@ -404,7 +404,7 @@ The second may be where the next lesson should begin.
 
 > **Reallocating resources is not the same as reproducing capability.**
 
-
+---
 
 星衡｜Aster Vale
 Longview Archive
