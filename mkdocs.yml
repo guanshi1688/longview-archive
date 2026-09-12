@@ -89,6 +89,11 @@ nav:
 #     - Open Questions: essays/english/structural-algorithm/13-open-questions.md
 #     - Core Terms: essays/english/structural-algorithm/14-core-terms.md
 #     - Methodological Appendix: essays/english/structural-algorithm/15-methodological-appendix.md
+
+
+  - Standalone Essays:
+      - Overview: essays/english/standalone/index.md
+      - What DoorDash and Uber Eats Can Teach You About Economics: essays/english/standalone/economics-101-via-doordash-and-uber-eats.md
   - Series:
       - Frontiers:
           - Overview: essays/notes/english/Frontiers/index.md
@@ -263,6 +268,10 @@ nav:
           - 09｜打破闭环与建立闭环: essays/chinese/future/09-c-the-edge-of-tomorrow.md
           - 10｜阅读后约束: essays/chinese/future/10-c-reading-after.md
 
+      - 独立短文:
+          - 总览: essays/chinese/standalone/index.md
+          - 从美团和饿了么看懂西方经济学101: essays/chinese/standalone/economics-101-meituan-and-eleme.md
+      
       - 中文札记:
           - 札记总览: essays/notes/chinese/index.md
               
