@@ -1,159 +1,205 @@
-# Why Suppliers Follow Lead Firms Abroad
+# Why Some Suppliers Follow Lead Firms Abroad
 
-**When a major manufacturer goes abroad, what moves is often not one factory but part of an already-formed network of relationships.**
+**The more value lies in the relationship rather than the part itself, the more likely part of that relationship has to move with the customer.**
 
-A familiar pattern appears whenever a large manufacturer builds an overseas plant.
+A familiar pattern appears when a major manufacturer builds an overseas plant.
 
-Soon afterward, some of its component suppliers, equipment makers, materials companies, and logistics firms begin investing nearby.
+Soon afterward, some component suppliers, equipment makers, materials companies, and engineering-service firms invest nearby.
 
 The obvious explanation is that suppliers are following orders.
 
 That is true.
 
-But there is another layer:
+But not every supplier follows.
 
-> **Mature production is not only a series of transactions. It is a capability built through repeated coordination.**
+Some can ship from the old location with little difficulty.
 
----
+Others are pulled abroad almost immediately.
 
-## 1. A supplier sells more than a component.
-
-In theory, a manufacturer can send the same drawing to suppliers around the world and buy from the lowest qualified bidder.
-
-Real manufacturing is rarely that simple.
-
-Two suppliers can meet the same formal specification and still differ greatly in stability.
-
-One can modify a part in a week. Another needs three months.
-
-One joins the customer in diagnosing a quality problem. Another argues about contractual responsibility.
-
-After years of cooperation, a supplier learns the customer's production rhythm, engineering language, tolerance for risk, and real priorities.
-
-That knowledge goes beyond the quoted price of the part.
+The difference tells us something important about how production is organized.
 
 ---
 
-## 2. A new overseas factory is often missing exactly that familiarity.
+## 1. Standardized inputs can travel without the supplier
 
-The building can be constructed quickly.
+Suppose a manufacturer uses a commodity input with clear specifications.
 
-Local suppliers still have to be qualified.
+Many firms can make it.
 
-Materials have to be tested.
+Quality is easy to verify.
 
-Delivery routines have to be learned.
+Shipping is cheap.
 
-Quality history has to be built.
+Design changes are rare.
 
-Engineering trust has to be created.
+In that case, the supplier may have little reason to build a new plant beside the customer.
 
-For simple products, this may happen quickly.
+The relationship is mainly transactional.
 
-For complex manufacturing, the cost can be substantial.
+The part moves.
 
-So the simplest way to reduce uncertainty is often:
+The supplier does not need to.
 
-> **Bring trusted suppliers with the lead firm.**
-
-The company is not merely relocating a production line.
-
-It is carrying part of its old production relationships into the new location.
+Modern standards and logistics make this kind of separation possible on a vast scale.
 
 ---
 
-## 3. This is why a supply chain is more than arrows on a map.
+## 2. Relationship-specific inputs behave differently
 
-Supply chains are often drawn as simple links:
+Now consider a supplier that has spent years co-developing a component with one lead firm.
 
-Firm A buys from Firm B.
+The supplier understands:
 
-Firm B buys from Firm C.
+the customer's engineering language,
 
-But real supply chains have memory.
+quality priorities,
 
-Who failed before?
+production rhythm,
 
-Who fixed the design?
+design-change process,
 
-Who delivered during a crisis?
+risk tolerance,
 
-Who knows which parameter matters more than the formal specification suggests?
+and crisis procedures.
 
-Who can participate in rapid product iteration?
+The component may still have a formal drawing.
 
-Much of this never appears fully in contracts.
+But the relationship contains more than the drawing.
 
-A supply chain is therefore not a set of perfectly interchangeable nodes.
+One supplier can modify the part in a week.
 
-It is also a history of tested relationships.
+Another needs three months.
 
----
+One can join a factory team to diagnose a defect.
 
-## 4. That helps explain “follow-the-customer” industrial migration.
+Another can only confirm whether the shipment met the contract.
 
-What happens if the lead firm moves abroad while every supplier stays home?
-
-Shipping time increases.
-
-Inventory rises.
-
-Communication slows.
-
-Quality problems become harder to solve on site.
-
-New-product development becomes more difficult.
-
-The lead firm therefore has an incentive to bring key suppliers closer.
-
-Suppliers have an incentive to follow their most important customer.
-
-The result is that industrial clusters are often reproduced by groups of already-connected firms, not by one company acting alone.
+The more value lies in this accumulated coordination, the less interchangeable the supplier becomes.
 
 ---
 
-## 5. Following the lead firm still does not reproduce the entire ecosystem.
+## 3. Distance becomes expensive when coordination is frequent
 
-Supplier migration can dramatically reduce relocation costs.
+Suppliers are especially likely to follow when production requires:
 
-But the new location still needs local labor, energy, logistics, maintenance, finance, institutions, and eventually a second layer of suppliers.
+frequent engineering changes,
 
-So follow-the-customer investment is best understood as transplantation.
+just-in-time delivery,
 
-It moves part of an existing capability into a new environment.
+rapid defect correction,
 
-It accelerates local capability formation, but it does not guarantee a complete copy.
+on-site troubleshooting,
+
+strict certification,
+
+bulky or fragile inputs,
+
+or close coordination during product launches.
+
+In those cases, distance creates more than freight cost.
+
+It creates delay in the learning loop.
+
+A quality problem that takes hours to solve locally may take days when engineering teams are separated by time zones and customs borders.
+
+The lead firm therefore has an incentive to pull critical suppliers closer.
+
+The supplier has an incentive to protect its relationship with a major customer.
 
 ---
 
-## 6. This gives us a simple way to read industrial relocation.
+## 4. “Follow the customer” is therefore selective
 
-The next time a major manufacturer announces an overseas factory, do not look only at the headline investment number.
+A lead firm's overseas move does not drag the entire supply chain behind it.
 
-Ask another question:
+The first suppliers to follow are often those with the highest relationship specificity.
 
-> **Who is moving with it?**
+Highly standardized or globally traded inputs may remain where they are.
 
-If equipment makers, materials companies, component suppliers, and engineering service firms follow in large numbers, that tells us something important.
+More specialized suppliers may build a local plant.
 
-The company depends on a network that cannot be replaced instantly.
+Others may send only engineers.
 
-It also reveals a basic distinction:
+Some may form joint ventures.
 
-> **Moving a company may be easy.**
+Some may license local partners.
+
+Relocation happens in layers.
+
+This is useful because it gives us a prediction:
+
+> **The more specific, iterative, and coordination-intensive the supplier relationship, the more likely part of the supplier's capability is to move with the lead firm.**
+
+---
+
+## 5. Supplier migration is a way of transplanting capability
+
+When key suppliers follow a manufacturer abroad, the new factory is not starting from zero.
+
+It imports part of an already-tested network.
+
+Existing relationships reduce uncertainty.
+
+The customer already knows the supplier.
+
+The supplier already knows the customer's tolerances.
+
+Engineers already know how to communicate.
+
+Failure histories are already shared.
+
+This can make an overseas production system stabilize much faster than one built entirely from unfamiliar local firms.
+
+That is why relocation is often performed by groups of connected companies rather than by one factory acting alone.
+
+---
+
+## 6. Transplantation still has limits
+
+Even a large supplier migration does not recreate the original ecosystem automatically.
+
+The new location still needs:
+
+labor,
+
+energy,
+
+logistics,
+
+maintenance,
+
+finance,
+
+institutions,
+
+and eventually another layer of suppliers.
+
+Some relationships travel.
+
+Others have to be built locally.
+
+That means supplier follow-the-customer investment is best understood as partial transplantation.
+
+It reduces the amount of capability that must be recreated from zero.
+
+It does not eliminate local learning.
+
+So the next time a major manufacturer announces an overseas plant, one question is unusually informative:
+
+> **Who is moving with it — and who does not need to?**
+
+The answer tells us which parts of the production system are truly modular and which parts are embedded in relationships.
+
+> **Moving a factory may move an asset.**
 >
-> **Moving a productive capability often means moving relationships too.**
-
-Suppliers following lead firms abroad are not merely chasing orders.
-
-They are helping productive capability remain continuous while geography changes.
+> **Moving relationship-specific suppliers helps move part of the capability behind the asset.**
 
 ---
 
-星衡｜Aster Vale
-Longview Archive
-Standalone Essay
+星衡｜Aster Vale  
+Longview Archive  
+Standalone Essay  
 September 2026
 
-© 2026 Longview Archive.
+© 2026 Longview Archive.  
 Licensed under CC BY-NC-ND 4.0.
