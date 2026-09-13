@@ -529,6 +529,30 @@ def build_docs_records(
 
         included_paths.add(rel)
         body = read_text(abs_path)
+
+        # PFE Essay 10 is a deliberate hidden structural bridge.
+        # It must outrank generic commented-YAML cataloguing.
+        if is_hidden_canonical_bridge(abs_path, body):
+            records.append(
+                FileRecord(
+                    abs_path=abs_path,
+                    rel_path=rel,
+                    title=ref.title or first_h1(body) or abs_path.stem,
+                    language=infer_language(rel),
+                    status="UNPUBLISHED",
+                    section="HIDDEN CANONICAL STRUCTURAL BRIDGE",
+                    source_kind="WEBSITE_DOCS",
+                    authority="DERIVED_CANONICAL",
+                    role="STRUCTURAL_BRIDGE",
+                    yaml_line=ref.line_no,
+                    note=(
+                        "Intentionally hidden PFE structural bridge; referenced by a "
+                        "commented MkDocs entry and promoted above generic catalogue status."
+                    ),
+                )
+            )
+            continue
+
         records.append(
             FileRecord(
                 abs_path=abs_path,
@@ -656,12 +680,9 @@ def is_hidden_canonical_bridge(path: Path, body: str) -> bool:
         or ("生存压力" in (first_h1(body) or "") and "消费" in (first_h1(body) or ""))
     )
 
-    # Legacy bridge names are retained for old snapshots only.
-    legacy_match = (
-        "geography-to-consumption" in name
-        or ("地理" in path.name and "消费" in path.name)
-    )
-    return english_match or chinese_match or legacy_match
+    # Retired geography-to-consumption files are NOT canonical bridges anymore.
+    # They may still exist in old snapshots, but must not be promoted by this detector.
+    return english_match or chinese_match
 
 
 def include_hidden_canonical_bridges(
@@ -736,14 +757,9 @@ def classify_structural_role(path: Path) -> tuple[str, str, str]:
     name = path.name.casefold()
 
     is_bridge = (
-        # Current bridge naming.
         "from-survival-pressure-to-consumption" in name
         or "survival-pressure-to-consumption" in name
         or ("生存压力" in path.name and "消费" in path.name)
-        # Legacy names retained only so older snapshots remain classifiable.
-        or "causal-line-from-geography-to-consumption" in name
-        or "geography-to-consumption" in name
-        or ("地理" in path.name and "消费" in path.name)
     )
     if is_bridge:
         return "STRUCTURAL_BRIDGE", "CANONICAL_UNPUBLISHED", "DERIVED_CANONICAL"
@@ -766,11 +782,12 @@ def is_generated_structural_artifact(path: Path) -> bool:
     same directory. Those bundles are review artifacts, not additional canonical bodies.
     """
     name = path.name.casefold()
+    normalized = name.replace("_", "-")
     return (
         name.startswith("_")
-        or "full-bundle" in name
-        or "review-bundle" in name
-        or name.endswith("-bundle.md")
+        or "full-bundle" in normalized
+        or "review-bundle" in normalized
+        or normalized.endswith("-bundle.md")
         or "合订本" in path.name
     )
 
