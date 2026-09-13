@@ -75,6 +75,7 @@ nav:
 # - The Structural Algorithm of Civilization:
 #     - Overview: essays/english/structural-algorithm/index.md
 #     - Preface: essays/english/structural-algorithm/00-preface.md
+#     - Foundational Premise — Continuity, Pressure, and Selection: essays/english/structural-algorithm/01a-foundational-premise-continuity-pressure-selection.md
 #     - Introduction and Method: essays/english/structural-algorithm/01-introduction-and-method.md
 #     - 00｜First Principles and Analytical Boundaries: essays/english/structural-algorithm/02-layer-00-first-principles.md
 #     - 01｜Historical Formation: essays/english/structural-algorithm/03-layer-01-historical-formation.md
@@ -207,7 +208,7 @@ nav:
           - 07｜生产系统为什么也会制造低效与格式化: essays/chinese/productive-forces-economics/07-c-inefficiency.md
           - 08｜系统怎样使用接口完成局部纠错: essays/chinese/productive-forces-economics/08-c-correction.md
           - 09｜中国现代化为什么成功又为什么必须进入下一阶段: essays/chinese/productive-forces-economics/09-c-modernization.md
-        # - 10｜一条从地理走向消费的因果线路: essays/chinese/productive-forces-economics/10-from-geography-to-consumption-chinese.md
+        # - 10｜一条从生存压力走向消费的因果线路: essays/chinese/productive-forces-economics/10-c-from-survival-pressure-to-consumption.md
           - 11｜全球化为什么成为历史必然: essays/chinese/productive-forces-economics/11-why-global-must.md
           - 12｜全球化为什么开始退缩: essays/chinese/productive-forces-economics/12-retreat-of-globalization.md
       
@@ -227,6 +228,7 @@ nav:
   # - 文明结构算法:
   #     - 总览: essays/chinese/structural-algorithm/index.md
   #     - 序言: essays/chinese/structural-algorithm/00-preface.md
+  #     - 基础前提｜持续、压力与筛选: essays/chinese/structural-algorithm/01a-foundational-premise-continuity-pressure-selection.md
   #     - 导论与方法: essays/chinese/structural-algorithm/01-introduction-and-method.md
   #     - 00｜边界、第一性与文明投影: essays/chinese/structural-algorithm/02-layer-00-first-principles.md
   #     - 01｜历史起点：治水、整体生产与碎片连接: essays/chinese/structural-algorithm/03-layer-01-historical-formation.md
@@ -273,7 +275,7 @@ nav:
       - 独立短文:
           - 总览: essays/chinese/standalone/standalone_index_zh.md
           - 从美团和饿了么看懂西方经济学101: essays/chinese/standalone/economics-101-meituan-and-eleme-zh.md
-          - "中国+1 101：到底是搬谁的东西": essays/chinese/standalone/china_plus_one_101_zh.md
+          - "中国+1 ：到底是搬谁的东西": essays/chinese/standalone/china_plus_one_101_zh.md
       
       - 中文札记:
           - 札记总览: essays/notes/chinese/index.md
