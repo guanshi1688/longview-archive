@@ -10,6 +10,12 @@ It is not a revival of classical labor theory. Marx analyzed productive forces w
 
 > **Productive-Forces Economics studies the reproduction of productive capacity itself.**
 
+### Relation to Civilizational Structure
+
+Civilizational Structure provides the generative model. Productive-Forces Economics studies its economic consequences.
+
+The deeper framework now treats a civilizational first principle not as an unexplained essence, but as a high-inertia organizational attractor formed through repeated selection under recurrent survival pressures. This series does not need to restate that full generative model in every essay. Essay Ten provides the bridge from continuity, pressure, and structural selection to responsibility, consumption, and social reproduction.
+
 ## Methodological Memorandum: How This Series Distinguishes the Mainstream, Branch Traditions, and Counterexamples
 
 This memorandum is not a local note attached to a single essay. It establishes the common standard of judgment for the entire Productive-Forces Economics series.
