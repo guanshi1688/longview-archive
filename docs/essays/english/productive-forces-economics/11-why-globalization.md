@@ -1,10 +1,12 @@
-# Why Globalization Became Historically Inevitable
+# Essay Eleven｜Why Globalization Became Historically Inevitable
 
 ## The Fusion of an Interface Economy and a Continental Production System
 
 > **Reader’s Note**
 >
-> This essay continues from the first-principles question established in *Productive-Forces Economics*: how does a society form, organize, preserve, and reproduce its productive capacity?
+> This essay continues from the causal bridge established in Essay Ten: how recurrent survival pressures, structural selection, responsibility boundaries, and subject formation can eventually shape production, consumption, and social reproduction. It now asks what happens when different long-run structures become deeply complementary at global scale.
+>
+> In this essay, **interface economy** is a working description of an economy unusually strong in connection, admission, standards, finance, pricing, settlement, exit, and reconnection. It is not treated as a civilizational first principle in itself.
 >
 > The argument follows the existing system–interface framework and its causal chain. It does not ask the reader to accept the conclusion in advance, nor does it promise conformity with established political positions, disciplinary habits, or moral intuitions. But any serious objection must identify the exact definition, node, arrow, boundary condition, or domain of application that fails.
 >
