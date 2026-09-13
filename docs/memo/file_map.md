@@ -102,6 +102,10 @@ The current top-level relationship is:
 
 ```text
 Civilizational Structure
+├── Pre-Layer Generative Premise
+│   Continuation → Pressure → Selection → First Principle
+│   (01a; not Layer -1)
+├── Layer 0–9
 ├── Productive-Forces Economics
 ├── Reality / Future Path
 ├── Six thematic series
@@ -116,6 +120,7 @@ Public outputs
 ```
 
 `Civilizational Structure` is the current foundational generative model.  
+Its pre-layer premise explains how recurrent pressure and structural selection can generate a high-inertia First Principle before Layer 0 begins.  
 `Productive-Forces Economics` is the first systematic derived analytical discipline.  
 Reality, Future Path, the six series, and structural syntheses are distinct projections or applications of the deeper structure rather than a single linear hierarchy.  
 Transition Dynamics begins where stable structural explanation gives way to open movement, leverage, strategic interaction, and branching outcomes.
@@ -129,22 +134,28 @@ Everything begins with productive forces.
 一切从生产力开始。
 ```
 
-This remains the material explanatory starting point.
+This remains the material explanatory starting point for Productive-Forces Economics and the public project slogan.
 
 It does **not** mean that Productive-Forces Economics is the lowest organizational layer of the theory.
 
 Current distinction:
 
 ```text
-Material starting point:
-Productive forces
+Shared generative constraint:
+Continuation Constraint
+
+Material explanatory starting point:
+Productive Forces
 
 Foundational theoretical organization:
 Civilizational Structure
+(including the 01a pre-layer premise + Layer 0–9)
 
 First systematic derived discipline:
 Productive-Forces Economics
 ```
+
+The deeper generative chain explains why productive forces matter: every durable society must reproduce the material and organizational conditions required for another round of life and production.
 
 ### 2.3 Routing rule
 
@@ -217,10 +228,9 @@ Chinese
 
 ### Current public page count
 
-```text
-166 navigation entries
-166 unique document paths
-```
+Do not hard-code this count in the routing memo.
+
+After any PFE navigation change, derive the authoritative count directly from the current `mkdocs.yml`. The routing authority is the actual path/state listing below, not a stale numerical snapshot.
 
 ---
 
@@ -270,6 +280,28 @@ docs/memo/theory-map.md
 
 Both routing documents remain excluded from the public build and are intended to be merged into the local corpus as `INTERNAL`.
 
+### Canonical unpublished Civilizational Structure
+
+```text
+index/structural-algorithm/chinese/
+index/structural-algorithm/english/
+```
+
+These sibling directories contain the unpublished canonical mother text used by the local Bootstrap / Corpus builder.
+
+Current internal reading order begins:
+
+```text
+00  Preface / 前言
+01a Foundational Premise: Continuity, Pressure, and Selection
+01  Introduction and Method
+02… Layer 0 onward
+```
+
+`01a` is a pre-layer premise, not Layer -1.
+
+Generated local review bundles such as `_*.md`, `*-bundle.md`, `*full-bundle*`, or `*合订本*` are review artifacts and must not be treated as additional canonical sources.
+
 ### English framework
 
 ```text
@@ -282,7 +314,15 @@ docs/essays/english/framework/
 docs/essays/english/productive-forces-economics/
 ```
 
-Current public entries: {len(english_pfe)}
+Current public entries: 13
+
+Internal / not yet in public nav:
+
+```text
+docs/essays/english/productive-forces-economics/10-from-survival-pressure-to-consumption.md
+```
+
+Essay 10 is the structural bridge between PFE 01–09 and the globalization pair 11–12. It may exist physically and enter the local Corpus while remaining absent from active MkDocs navigation.
 
 ### English public series
 
@@ -313,7 +353,15 @@ docs/essays/chinese/
 docs/essays/chinese/productive-forces-economics/
 ```
 
-Current public entries: {len(chinese_pfe)}
+Current public entries: 13
+
+Internal / not yet in public nav:
+
+```text
+docs/essays/chinese/productive-forces-economics/10-c-from-survival-pressure-to-consumption.md
+```
+
+第 10 篇是 01–09 与 11–12 之间的结构桥；文件可以存在并进入内部 Corpus，但暂不要求进入公开 YAML。
 
 ### Chinese notes
 
@@ -364,7 +412,6 @@ Keep legacy files outside `docs/` whenever possible.
 - Productive-Forces Economics
   - Overview → `essays/english/productive-forces-economics/index.md`
   - Methodological Memorandum → `essays/english/productive-forces-economics/00-methodological-memorandum.md`
-  - Causal Line → `essays/english/productive-forces-economics/from-geography-to-consumption.md`
   - 01｜Why Did Modern Western Economics Not Begin with Productive Forces? → `essays/english/productive-forces-economics/01-western-economics.md`
   - 02｜Why Did Long-Term Chinese Governance First Confront the Production System? → `essays/english/productive-forces-economics/02-chinese-governance.md`
   - 03｜How Do Production Systems and Interface Networks Handle Failure? → `essays/english/productive-forces-economics/03-failure.md`
@@ -374,6 +421,8 @@ Keep legacy files outside `docs/` whenever possible.
   - 07｜Why Can a Production System Also Generate Inefficiency and Reformatting? → `essays/english/productive-forces-economics/07-inefficiency.md`
   - 08｜How Can a System Use Interfaces for Localized Correction? → `essays/english/productive-forces-economics/08-correction.md`
   - 09｜Why Did China’s Modernization Succeed, and Why Must It Enter a New Stage? → `essays/english/productive-forces-economics/09-modernization.md`
+  - 11｜Why Globalization Became Historically Inevitable → `essays/english/productive-forces-economics/11-why-globalization.md`
+  - 12｜Why Globalization Began to Retreat → `essays/english/productive-forces-economics/12-why-globalization-retreat.md`
 - Series
   - Frontiers
     - Overview → `essays/notes/english/Frontiers/index.md`
@@ -464,7 +513,6 @@ Keep legacy files outside `docs/` whenever possible.
   - 生产力经济学
     - 总览 → `essays/chinese/productive-forces-economics/index.md`
     - 方法论备忘录 → `essays/chinese/productive-forces-economics/00-c-methodological-memorandum.md`
-    - 从地理到消费 → `essays/chinese/productive-forces-economics/from-geography-to-consumption-chinese.md`
     - 01｜为什么现代西方经济学没有从生产力出发 → `essays/chinese/productive-forces-economics/01-c-western-economics.md`
     - 02｜为什么中国长期治理首先面对生产系统 → `essays/chinese/productive-forces-economics/02-c-chinese-governance.md`
     - 03｜生产系统与接口网络如何处理失效 → `essays/chinese/productive-forces-economics/03-c-failure.md`
@@ -474,6 +522,8 @@ Keep legacy files outside `docs/` whenever possible.
     - 07｜生产系统为什么也会制造低效与格式化 → `essays/chinese/productive-forces-economics/07-c-inefficiency.md`
     - 08｜系统怎样使用接口完成局部纠错 → `essays/chinese/productive-forces-economics/08-c-correction.md`
     - 09｜中国现代化为什么成功又为什么必须进入下一阶段 → `essays/chinese/productive-forces-economics/09-c-modernization.md`
+    - 11｜全球化为什么成为历史必然 → `essays/chinese/productive-forces-economics/11-why-global-must.md`
+    - 12｜全球化为什么开始退缩 → `essays/chinese/productive-forces-economics/12-retreat-of-globalization.md`
   - Reality｜现实世界
     - 阅读前约束 → `essays/chinese/reality/00.md`
     - 01｜人类文明的三种底层模式 → `essays/chinese/reality/01.md`
@@ -562,7 +612,6 @@ Keep legacy files outside `docs/` whenever possible.
 
 - `Productive-Forces Economics / Overview` → `essays/english/productive-forces-economics/index.md`
 - `Productive-Forces Economics / Methodological Memorandum` → `essays/english/productive-forces-economics/00-methodological-memorandum.md`
-- `Productive-Forces Economics / Causal Line` → `essays/english/productive-forces-economics/from-geography-to-consumption.md`
 - `Productive-Forces Economics / 01｜Why Did Modern Western Economics Not Begin with Productive Forces?` → `essays/english/productive-forces-economics/01-western-economics.md`
 - `Productive-Forces Economics / 02｜Why Did Long-Term Chinese Governance First Confront the Production System?` → `essays/english/productive-forces-economics/02-chinese-governance.md`
 - `Productive-Forces Economics / 03｜How Do Production Systems and Interface Networks Handle Failure?` → `essays/english/productive-forces-economics/03-failure.md`
@@ -572,6 +621,8 @@ Keep legacy files outside `docs/` whenever possible.
 - `Productive-Forces Economics / 07｜Why Can a Production System Also Generate Inefficiency and Reformatting?` → `essays/english/productive-forces-economics/07-inefficiency.md`
 - `Productive-Forces Economics / 08｜How Can a System Use Interfaces for Localized Correction?` → `essays/english/productive-forces-economics/08-correction.md`
 - `Productive-Forces Economics / 09｜Why Did China’s Modernization Succeed, and Why Must It Enter a New Stage?` → `essays/english/productive-forces-economics/09-modernization.md`
+- `Productive-Forces Economics / 11｜Why Globalization Became Historically Inevitable` → `essays/english/productive-forces-economics/11-why-globalization.md`
+- `Productive-Forces Economics / 12｜Why Globalization Began to Retreat` → `essays/english/productive-forces-economics/12-why-globalization-retreat.md`
 
 ### Series
 
@@ -661,7 +712,6 @@ Keep legacy files outside `docs/` whenever possible.
 - `Chinese / 阅读规则` → `essays/chinese/reading-rules.md`
 - `Chinese / 生产力经济学 / 总览` → `essays/chinese/productive-forces-economics/index.md`
 - `Chinese / 生产力经济学 / 方法论备忘录` → `essays/chinese/productive-forces-economics/00-c-methodological-memorandum.md`
-- `Chinese / 生产力经济学 / 从地理到消费` → `essays/chinese/productive-forces-economics/from-geography-to-consumption-chinese.md`
 - `Chinese / 生产力经济学 / 01｜为什么现代西方经济学没有从生产力出发` → `essays/chinese/productive-forces-economics/01-c-western-economics.md`
 - `Chinese / 生产力经济学 / 02｜为什么中国长期治理首先面对生产系统` → `essays/chinese/productive-forces-economics/02-c-chinese-governance.md`
 - `Chinese / 生产力经济学 / 03｜生产系统与接口网络如何处理失效` → `essays/chinese/productive-forces-economics/03-c-failure.md`
@@ -671,6 +721,8 @@ Keep legacy files outside `docs/` whenever possible.
 - `Chinese / 生产力经济学 / 07｜生产系统为什么也会制造低效与格式化` → `essays/chinese/productive-forces-economics/07-c-inefficiency.md`
 - `Chinese / 生产力经济学 / 08｜系统怎样使用接口完成局部纠错` → `essays/chinese/productive-forces-economics/08-c-correction.md`
 - `Chinese / 生产力经济学 / 09｜中国现代化为什么成功又为什么必须进入下一阶段` → `essays/chinese/productive-forces-economics/09-c-modernization.md`
+- `Chinese / 生产力经济学 / 11｜全球化为什么成为历史必然` → `essays/chinese/productive-forces-economics/11-why-global-must.md`
+- `Chinese / 生产力经济学 / 12｜全球化为什么开始退缩` → `essays/chinese/productive-forces-economics/12-retreat-of-globalization.md`
 - `Chinese / Reality｜现实世界 / 阅读前约束` → `essays/chinese/reality/00.md`
 - `Chinese / Reality｜现实世界 / 01｜人类文明的三种底层模式` → `essays/chinese/reality/01.md`
 - `Chinese / Reality｜现实世界 / 02｜中国制度不是消费机器，而是做功机器` → `essays/chinese/reality/02.md`
@@ -751,8 +803,12 @@ Especially verify:
 docs/versions.md
 docs/essays/chinese/reality/08s.md
 docs/essays/english/framework/western-system.md
-docs/essays/english/productive-forces-economics/from-geography-to-consumption.md
-docs/essays/chinese/productive-forces-economics/from-geography-to-consumption-chinese.md
+docs/essays/english/productive-forces-economics/10-from-survival-pressure-to-consumption.md
+docs/essays/english/productive-forces-economics/11-why-globalization.md
+docs/essays/english/productive-forces-economics/12-why-globalization-retreat.md
+docs/essays/chinese/productive-forces-economics/10-c-from-survival-pressure-to-consumption.md
+docs/essays/chinese/productive-forces-economics/11-why-global-must.md
+docs/essays/chinese/productive-forces-economics/12-retreat-of-globalization.md
 ```
 
 ### 9.2 Western System naming
@@ -775,23 +831,47 @@ sitemap.xml
 canonical references
 ```
 
-### 9.3 Causal Line role
+### 9.3 PFE Essay 10 structural-bridge role
 
-English:
-
-```text
-Productive-Forces Economics / Causal Line
-→ essays/english/productive-forces-economics/from-geography-to-consumption.md
-```
-
-Chinese:
+English internal source:
 
 ```text
-Chinese / 生产力经济学 / 从地理到消费
-→ essays/chinese/productive-forces-economics/from-geography-to-consumption-chinese.md
+Productive-Forces Economics / Essay 10
+→ essays/english/productive-forces-economics/10-from-survival-pressure-to-consumption.md
 ```
 
-This article is the execution diagram of the framework, not an ordinary note.
+Chinese internal source:
+
+```text
+Chinese / 生产力经济学 / 第十篇
+→ essays/chinese/productive-forces-economics/10-c-from-survival-pressure-to-consumption.md
+```
+
+Essay 10 is the execution bridge of the framework, not an ordinary note.
+
+Current publication rule:
+
+```text
+01–09  public
+10     physical/internal bridge; may remain absent from active YAML
+11–12  public
+```
+
+The bridge now begins from survival pressure rather than geography:
+
+```text
+Continuation
+→ recurrent survival pressure
+→ material environment shapes pressure
+→ local/global pressure
+→ structural selection
+→ First Principle
+→ responsibility / subject formation
+→ household residual risk
+→ consumption / absorption
+```
+
+Do not restore the retired `from-geography-to-consumption*` paths as canonical filenames.
 
 ### 9.4 Sitemap
 
@@ -877,6 +957,7 @@ When continuing the project:
 - Do not moralize the three civilizational modes.
 - Do not convert structural tendencies into deterministic collapse predictions.
 - Do not describe China and the West as immutable species.
+- Do not treat `Interface`, “interface civilization,” or “interface first principle” as foundational; Interface is a system position/mechanism generated downstream of deeper responsibility, exit, and failure structures.
 - Do not equate movement along the axis with complete civilizational imitation.
 - Do not collapse democratic and liberal institutions into a single capital conspiracy.
 - Do distinguish public framework, Chinese theoretical root, private total outline, and historical legacy.
@@ -887,4 +968,4 @@ When continuing the project:
 
 ## 13. One-Paragraph Recovery Memo
 
-Longview Archive is a bilingual theoretical mother archive whose current foundational organizational model is **Civilizational Structure**. Its material explanatory starting point remains productive forces: “Everything begins with productive forces.” Civilizational Structure asks how long-run pressures generate capability ordering, responsibility allocation, subject formation, interface organization, failure processing, continuity preservation, and recovery direction. **Productive-Forces Economics** is the first systematic derived analytical discipline, examining how those deeper structures enter production, value, absorption, consumption, correction, and restart. Reality and Future Path are two large vertical projections of the same deeper structure: Reality diagnoses already-visible pressure, while Future Path examines how productive surplus may require new forms of social absorption and reproduction. The six thematic series and structural syntheses apply or recombine the same underlying variables across expansion, development, value capture, China’s production burden, technology, history, institutions, and household behavior. **Transition Dynamics / Movement** begins at the boundary where stable structural explanation gives way to open branching: marginal adaptation, structural reform, restoring forces, leverage, conflict, and unknown new equilibria. Public essays, Reddit notes, Medium/Substack pieces, policy memos, and think-tank submissions are compiled outputs rather than new theoretical layers. For repository paths and publication status, this file is authoritative; for theoretical hierarchy and article placement, `memo/theory-map.md` is authoritative; for substantive claims, return to the relevant canonical mother text.
+Longview Archive is a bilingual theoretical mother archive whose current foundational organizational model is **Civilizational Structure**. The mother model now contains an unnumbered pre-layer premise — **Continuation → recurrent Survival Pressure → local/global pressure → feasible responses → Structural Selection → First Principle** — followed by Layer 0–9. `01a` is not Layer -1. The public/material slogan remains “Everything begins with productive forces,” while the deeper generative premise explains why productive forces matter: durable societies must reproduce the material and organizational conditions of another round of life and production. Civilizational Structure then asks how First Principle, responsibility closure, institutional encoding, subject formation, failure processing, social absorption, and recovery direction are generated. **Interface** is a system position/mechanism for access, verification, pricing, settlement, exit, and reconnection; it is not a civilizational first principle. **Productive-Forces Economics** is the first systematic derived analytical discipline. PFE Essay 10, *A Causal Line from Survival Pressure to Consumption*, is the hidden structural bridge between 01–09 and the globalization pair 11–12. Reality and Future Path are two large vertical projections of the same deeper structure. The six thematic series and structural syntheses apply or recombine the same underlying variables. **Transition Dynamics / Movement** begins at the boundary where stable structural explanation gives way to open branching. Public essays, Reddit notes, Medium/Substack pieces, policy memos, and think-tank submissions are compiled outputs rather than new theoretical layers. For repository paths and publication status, this file is authoritative; for theoretical hierarchy and article placement, `memo/theory-map.md` is authoritative; for substantive claims, return to the relevant canonical mother text.
