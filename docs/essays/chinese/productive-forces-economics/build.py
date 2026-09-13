@@ -9,7 +9,6 @@ BASE_DIR = Path(__file__).resolve().parent
 FILES = [
     "index.md",
     "00-c-methodological-memorandum.md",
-    "from-geography-to-consumption-chinese.md",
     "01-c-western-economics.md",
     "02-c-chinese-governance.md",
     "03-c-failure.md",
@@ -19,8 +18,9 @@ FILES = [
     "07-c-inefficiency.md",
     "08-c-correction.md",
     "09-c-modernization.md",
-    "10-why-global-must.md",
-    "11-retreat-of-globalization.md",
+    "10-from-geography-to-consumption-chinese.md",
+    "11-why-global-must.md",
+    "12-retreat-of-globalization.md",
 ]
 
 OUTPUT_FILE = "_生产力经济学-合订本.md"
