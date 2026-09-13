@@ -9,7 +9,6 @@ BASE_DIR = Path(__file__).resolve().parent
 FILES = [
     "index.md",
     "00-methodological-memorandum.md",
-    "from-geography-to-consumption.md",
     "01-western-economics.md",
     "02-chinese-governance.md",
     "03-failure.md",
