@@ -55,7 +55,7 @@ China was therefore neither a residue of the planned economy nor a transitional 
 
 It became:
 
-> **A modern structure formed when a work-performing civilization absorbed market interfaces.**
+> **A modern structure formed when an integrated production-responsibility system absorbed market interfaces.**
 
 ## III. Why has the old structure begun to reach its limits?
 
