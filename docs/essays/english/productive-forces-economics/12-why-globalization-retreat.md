@@ -1,10 +1,10 @@
-# Why Globalization Began to Retreat
+# Essay Twelve｜Why Globalization Began to Retreat
 
 ## How Success Turned Complementarity into Imbalance—and Forced the System to Rebalance
 
 > **Reader’s Note**
 >
-> This essay continues the causal line established in *Why Globalization Became Historically Inevitable*. It asks why the same system that expanded through positive feedback eventually generated negative feedback.
+> This essay continues the causal line established in Essay Eleven, *Why Globalization Became Historically Inevitable*. It asks why the same coupled system that expanded through positive feedback eventually generated negative feedback.
 >
 > It does not reduce the present retreat of globalization to one country, one leader, one ideology, or one policy. It asks a structural question: did the original complementary arrangement accumulate enough internal imbalance to force the system to rebalance?
 >
@@ -1239,6 +1239,7 @@ Who absorbs disaster and failure?
 How are strangers connected?
 Where are the boundaries of responsibility drawn?
 How is value produced, exchanged, realized, and settled?
+```
 
 ---
 
