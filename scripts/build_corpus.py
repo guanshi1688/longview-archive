@@ -57,7 +57,9 @@ The corpus has five source classes:
 5. DIAGNOSTICS / PUBLICATION ROADMAP
    - commented Structural Algorithm paths in mkdocs.yml are treated as RESERVED
      FUTURE NAV PATHS when they do not yet exist under docs/. They are not errors.
-   - unreferenced docs Markdown is listed only; its body is not merged.
+   - unreferenced docs Markdown is listed only; its body is not merged, except for
+     explicitly recognized hidden canonical bridge essays (for example the PFE
+     survival-pressure-to-consumption bridge).
    - raw mkdocs.yml is copied at the END, not the beginning, so machine readers
      encounter semantic authority before repository diagnostics.
 
@@ -65,10 +67,16 @@ AI-oriented authority order:
 
     theory-map
       -> foundational Structural Algorithm
+         (including the unnumbered Continuity -> Pressure -> Selection premise)
       -> structural bridge essays
       -> public canonical archive
       -> auxiliary unpublished/internal material
       -> diagnostics and raw mkdocs.yml
+
+Core topology invariant:
+- Civilizational Structure provides the generative model.
+- Productive-Forces Economics studies its economic consequences.
+- Interface is a neutral system position/mechanism, not a civilizational first principle.
 
 Conflict rules:
 - Theory hierarchy / article placement: memo/theory-map.md wins.
@@ -630,6 +638,75 @@ def ensure_routing_documents(
     return missing, uncatalogued
 
 
+def is_hidden_canonical_bridge(path: Path, body: str) -> bool:
+    """Recognize intentionally hidden canonical bridge essays without opening all drafts.
+
+    This keeps the PFE bridge available to the local AI corpus even when it is deliberately
+    absent from the public MkDocs nav. Recognition is narrow and title/filename based.
+    """
+    name = path.name.casefold()
+    title = (first_h1(body) or "").casefold()
+
+    english_match = (
+        "survival-pressure-to-consumption" in name
+        or ("survival pressure" in title and "consumption" in title)
+    )
+    chinese_match = (
+        ("生存压力" in path.name and "消费" in path.name)
+        or ("生存压力" in (first_h1(body) or "") and "消费" in (first_h1(body) or ""))
+    )
+
+    # Legacy bridge names are retained for old snapshots only.
+    legacy_match = (
+        "geography-to-consumption" in name
+        or ("地理" in path.name and "消费" in path.name)
+    )
+    return english_match or chinese_match or legacy_match
+
+
+def include_hidden_canonical_bridges(
+    docs_dir: Path,
+    records: list[FileRecord],
+    referenced_paths: set[str],
+) -> list[str]:
+    """Promote only recognized hidden bridge essays into the routed corpus."""
+    included: list[str] = []
+
+    for path in sorted(
+        (p for p in docs_dir.rglob("*.md") if p.is_file()),
+        key=lambda p: natural_key(p.relative_to(docs_dir).as_posix()),
+    ):
+        rel = path.relative_to(docs_dir).as_posix()
+        if rel in referenced_paths:
+            continue
+
+        body = read_text(path)
+        if not is_hidden_canonical_bridge(path, body):
+            continue
+
+        records.append(
+            FileRecord(
+                abs_path=path,
+                rel_path=rel,
+                title=first_h1(body) or path.stem,
+                language=infer_language(rel),
+                status="UNPUBLISHED",
+                section="HIDDEN CANONICAL STRUCTURAL BRIDGE",
+                source_kind="WEBSITE_DOCS",
+                authority="DERIVED_CANONICAL",
+                role="STRUCTURAL_BRIDGE",
+                note=(
+                    "Intentionally hidden canonical bridge; included directly in the local "
+                    "AI corpus even though it is absent from active MkDocs nav."
+                ),
+            )
+        )
+        referenced_paths.add(rel)
+        included.append(rel)
+
+    return included
+
+
 def find_unreferenced_markdown(
     docs_dir: Path,
     referenced_paths: Iterable[str],
@@ -651,11 +728,20 @@ def find_unreferenced_markdown(
 # -----------------------------------------------------------------------------
 
 def classify_structural_role(path: Path) -> tuple[str, str, str]:
-    """Return (role, status, authority)."""
+    """Return (role, status, authority).
+
+    The 01a Continuity/Pressure/Selection premise is foundational core material. It is
+    intentionally not classified as a bridge and not treated as Layer -1.
+    """
     name = path.name.casefold()
 
     is_bridge = (
-        "causal-line-from-geography-to-consumption" in name
+        # Current bridge naming.
+        "from-survival-pressure-to-consumption" in name
+        or "survival-pressure-to-consumption" in name
+        or ("生存压力" in path.name and "消费" in path.name)
+        # Legacy names retained only so older snapshots remain classifiable.
+        or "causal-line-from-geography-to-consumption" in name
         or "geography-to-consumption" in name
         or ("地理" in path.name and "消费" in path.name)
     )
@@ -671,6 +757,43 @@ def classify_structural_role(path: Path) -> tuple[str, str, str]:
         return "STRUCTURAL_AUXILIARY", "INTERNAL", "NON_CANONICAL_REFERENCE"
 
     return "STRUCTURAL_CORE", "CANONICAL_UNPUBLISHED", "FOUNDATIONAL_CANONICAL"
+
+
+def is_generated_structural_artifact(path: Path) -> bool:
+    """Exclude generated review bundles from the canonical source scan.
+
+    build.py lives beside the mother-text files and may generate Markdown bundles in the
+    same directory. Those bundles are review artifacts, not additional canonical bodies.
+    """
+    name = path.name.casefold()
+    return (
+        name.startswith("_")
+        or "full-bundle" in name
+        or "review-bundle" in name
+        or name.endswith("-bundle.md")
+        or "合订本" in path.name
+    )
+
+
+def structural_source_key(path: Path, lang_dir: Path) -> tuple[Any, ...]:
+    """Stable mother-text order: 00 -> 01a -> 01 -> 02 ...
+
+    The 01a foundational premise is intentionally read before the ordinary 01
+    introduction even when a platform's filename collation would order them differently.
+    """
+    rel = path.relative_to(lang_dir).as_posix()
+    name = path.name.casefold()
+    if name.startswith("00-"):
+        return (0, 0, natural_key(rel))
+    if name.startswith("01a-"):
+        return (1, 0, natural_key(rel))
+    if name.startswith("01-"):
+        return (1, 1, natural_key(rel))
+
+    m = re.match(r"^(\d+)[-_]", name)
+    if m:
+        return (int(m.group(1)), 1, natural_key(rel))
+    return (10**6, 1, natural_key(rel))
 
 
 def scan_structural_algorithm(structural_root: Path) -> tuple[list[FileRecord], list[str]]:
@@ -693,8 +816,12 @@ def scan_structural_algorithm(structural_root: Path) -> tuple[list[FileRecord], 
             continue
 
         files = sorted(
-            (p for p in lang_dir.rglob("*.md") if p.is_file()),
-            key=lambda p: natural_key(p.relative_to(lang_dir).as_posix()),
+            (
+                p
+                for p in lang_dir.rglob("*.md")
+                if p.is_file() and not is_generated_structural_artifact(p)
+            ),
+            key=lambda p: structural_source_key(p, lang_dir),
         )
 
         for path in files:
@@ -835,7 +962,10 @@ def split_records(
     )
 
     structural_core = [r for r in structural_records if r.role == "STRUCTURAL_CORE"]
-    structural_bridge = [r for r in structural_records if r.role == "STRUCTURAL_BRIDGE"]
+    structural_bridge = (
+        [r for r in structural_records if r.role == "STRUCTURAL_BRIDGE"]
+        + [r for r in docs_records if r.role == "STRUCTURAL_BRIDGE"]
+    )
     structural_aux = [r for r in structural_records if r.role == "STRUCTURAL_AUXILIARY"]
 
     publish_registries = [
@@ -862,7 +992,7 @@ def split_records(
     auxiliary_docs = [
         r
         for r in docs_records
-        if r.role != "ROUTING_DOCUMENT" and r.status != "PUBLIC"
+        if r.role not in {"ROUTING_DOCUMENT", "STRUCTURAL_BRIDGE"} and r.status != "PUBLIC"
     ]
     auxiliary_docs.sort(
         key=lambda r: (
@@ -970,8 +1100,13 @@ def write_machine_read_protocol(out) -> None:
 
     out.write("TOPOLOGY_GUARDRAILS:\n")
     out.write("- Physical body order is a reading order, NOT a theoretical parent-child order.\n")
+    out.write("- Civilizational Structure has an unnumbered generative premise: Continuity Constraint -> recurrent Survival Pressure -> Structural Selection -> First Principle.\n")
+    out.write("- 01a is a pre-layer foundational premise, NOT Layer -1; Layers 0-9 remain numbered 0-9.\n")
     out.write("- Do NOT linearize Civilizational Structure -> Productive-Forces Economics -> Reality/Future -> Six Series.\n")
     out.write("- Productive-Forces Economics, Reality/Future Path, Six Series, and Structural Syntheses are distinct derived/projection/application branches of Civilizational Structure.\n")
+    out.write("- Civilizational Structure provides the generative model; Productive-Forces Economics studies its economic consequences.\n")
+    out.write("- Interface is a neutral system position/mechanism for access, verification, pricing, settlement, exit, and reconnection; do NOT treat Interface, 'interface civilization', or 'interface first principle' as foundational.\n")
+    out.write("- Strong interface capacity must be explained through deeper conditions such as node independence, bounded responsibility, terminable relations, and localizable failure.\n")
     out.write("- Transition Dynamics / Movement begins after the boundary of stable structural explanation.\n")
     out.write("- Public Outputs are compiled projections and do not constitute a theory layer.\n\n")
 
@@ -1185,8 +1320,13 @@ def write_bootstrap(
         out.write("- PUBLIC_STANDALONE pages are independent public essays, not a new theory layer.\n\n")
         out.write("TOPOLOGY_GUARDRAILS:\n")
         out.write("- Physical body order is reading order, NOT theoretical parent-child order.\n")
+        out.write("- Pre-layer generative premise: Continuity Constraint -> recurrent Survival Pressure -> Structural Selection -> First Principle.\n")
+        out.write("- 01a is NOT Layer -1; Layers 0-9 keep their existing numbering.\n")
         out.write("- Do NOT linearize Civilizational Structure -> PFE -> Reality/Future -> Six Series.\n")
         out.write("- PFE, Reality/Future, Six Series, and Structural Syntheses are distinct branches from Civilizational Structure.\n")
+        out.write("- Civilizational Structure provides the generative model; PFE studies its economic consequences.\n")
+        out.write("- Interface is a neutral system position/mechanism, not a civilizational first principle.\n")
+        out.write("- Derive strong interface capacity from node independence, bounded responsibility, terminable relations, and localizable failure.\n")
         out.write("- Movement begins after the stable-structure boundary; Public Outputs are compiled projections.\n\n")
         out.write("<<< MACHINE_READ_PROTOCOL_END >>>\n\n")
 
@@ -1194,7 +1334,7 @@ def write_bootstrap(
         out.write("BOOTSTRAP: Longview Archive AI Bootstrap\n")
         out.write("PURPOSE: Small control-plane companion to the paired Full Corpus.\n")
         out.write("PRIMARY_READER: unfamiliar AI / retrieval agent\n")
-        out.write("READ_PROTOCOL_VERSION: 1.1\n")
+        out.write("READ_PROTOCOL_VERSION: 1.2\n")
         out.write(f"GENERATED_AT: {generated_at.isoformat(timespec='seconds')}\n")
         out.write(f"PAIR_BOOTSTRAP_FILE: {bootstrap_file.name}\n")
         out.write(f"PAIR_FULL_CORPUS_FILE: {full_corpus_file.name}\n")
@@ -1212,6 +1352,10 @@ def write_bootstrap(
         out.write(f"WORKING_SHORT_ESSAYS: {len(working_short_essays)}\n")
         out.write(f"STRUCTURAL_CORE_DOCUMENTS: {len(structural_core)}\n")
         out.write(f"STRUCTURAL_BRIDGE_DOCUMENTS: {len(structural_bridge)}\n")
+        out.write(
+            f"HIDDEN_CANONICAL_BRIDGES: "
+            f"{sum(1 for r in docs_records if r.role == 'STRUCTURAL_BRIDGE' and r.status != 'PUBLIC')}\n"
+        )
         out.write(f"PUBLIC_DOCUMENTS: {count_status(all_body_records, 'PUBLIC')}\n")
         out.write(
             f"PUBLIC_STANDALONE_DOCUMENTS: "
@@ -1354,7 +1498,7 @@ def write_corpus(
         out.write("CORPUS: Longview Archive Full Corpus\n")
         out.write("INCLUSION_MODE: HYBRID_MANIFEST\n")
         out.write("PRIMARY_READER: AI / retrieval / grep\n")
-        out.write("READ_PROTOCOL_VERSION: 1.1\n")
+        out.write("READ_PROTOCOL_VERSION: 1.2\n")
         out.write(f"GENERATED_AT: {generated_at.isoformat(timespec='seconds')}\n")
         out.write(f"PAIR_BOOTSTRAP_FILE: {bootstrap_file.name}\n")
         out.write(f"SOURCE_REPOSITORY: {repo_root}\n")
@@ -1379,6 +1523,10 @@ def write_corpus(
         out.write(f"ROUTING_DOCUMENTS_INCLUDED: {len(routing)}/{len(ROUTING_DOCUMENTS)}\n")
         out.write(f"STRUCTURAL_CORE_DOCUMENTS: {len(structural_core)}\n")
         out.write(f"STRUCTURAL_BRIDGE_DOCUMENTS: {len(structural_bridge)}\n")
+        out.write(
+            f"HIDDEN_CANONICAL_BRIDGES: "
+            f"{sum(1 for r in docs_records if r.role == 'STRUCTURAL_BRIDGE' and r.status != 'PUBLIC')}\n"
+        )
         out.write(f"WORKING_PUBLISH_REGISTRIES: {len(publish_registries)}\n")
         out.write(f"WORKING_SHORT_ESSAYS: {len(working_short_essays)}\n")
         out.write(f"RESERVED_FUTURE_NAV_REFERENCES: {len(reserved_future)}\n")
@@ -1415,8 +1563,11 @@ def write_corpus(
             "SLOTS; absence under docs/ is intentional while the mother text lives in index/.\n"
         )
         out.write(
-            "- 'Everything begins with productive forces' remains the material explanatory starting "
-            "point; Civilizational Structure is the current foundational organizational model.\n\n"
+            "- The public/PFE slogan 'Everything begins with productive forces' remains valid at the material-economic analytical layer. "
+            "At the mother-model generative layer, Continuity Constraint precedes it: continuity -> recurrent pressure -> structural selection -> First Principle.\n"
+        )
+        out.write(
+            "- Civilizational Structure provides the generative model; Productive-Forces Economics studies the economic consequences of structures generated within that model.\n\n"
         )
         out.write("SEARCH_HINTS:\n")
         out.write("- Grep PATH:, ROLE:, AUTHORITY:, STATUS:, or a theory term.\n")
@@ -1427,7 +1578,10 @@ def write_corpus(
 
         out.write("TOPOLOGY_REMINDER:\n")
         out.write("- Civilizational Structure is the common generative root.\n")
+        out.write("- Its unnumbered pre-layer premise is: Continuity Constraint -> recurrent Survival Pressure -> Structural Selection -> First Principle.\n")
+        out.write("- 01a is a foundational premise, not Layer -1; Layer 0 still begins with First Principle.\n")
         out.write("- PFE, Reality/Future, Six Series, and Structural Syntheses are not a single linear parent-child chain.\n")
+        out.write("- Interface is a neutral connection/settlement position, not a civilizational essence or first principle.\n")
         out.write("- Movement begins after the stable-structure boundary; Public Outputs are compiled projections.\n\n")
 
         out.write("VALIDATION_REMINDER:\n")
@@ -1637,6 +1791,14 @@ def main() -> int:
         referenced_paths,
     )
 
+    # Keep intentionally hidden canonical PFE/structural bridges in the local corpus even
+    # when they are deliberately absent from public navigation.
+    hidden_bridges = include_hidden_canonical_bridges(
+        docs_dir,
+        docs_records,
+        referenced_paths,
+    )
+
     unreferenced_md = find_unreferenced_markdown(docs_dir, referenced_paths)
     structural_records, structural_warnings = scan_structural_algorithm(structural_root)
     publish_records, publish_warnings = scan_publish_workspace(publish_root)
@@ -1719,6 +1881,9 @@ def main() -> int:
     )
     working_short_essay_count = sum(1 for r in publish_records if r.role == "SHORT_ESSAY_WORKING")
     public_standalone_count = sum(1 for r in docs_records if r.role == "PUBLIC_STANDALONE")
+    hidden_bridge_count = sum(
+        1 for r in docs_records if r.role == "STRUCTURAL_BRIDGE" and r.status != "PUBLIC"
+    )
 
     print()
     print("Longview AI bootstrap + full corpus build complete.")
@@ -1734,7 +1899,8 @@ def main() -> int:
     print(f"Public standalone docs     : {public_standalone_count}")
     print(f"Routing documents          : {routing_count}/{len(ROUTING_DOCUMENTS)}")
     print(f"Structural core            : {structural_core_count}")
-    print(f"Structural bridges         : {structural_bridge_count}")
+    print(f"Structural bridges         : {structural_bridge_count + hidden_bridge_count}")
+    print(f"  hidden website bridges   : {hidden_bridge_count}")
     print(f"Structural auxiliary       : {structural_aux_count}")
     print(f"Publish registries         : {publish_registry_count}/{len(PUBLISH_REGISTRY_FILES)}")
     print(f"Working short essays       : {working_short_essay_count}")
