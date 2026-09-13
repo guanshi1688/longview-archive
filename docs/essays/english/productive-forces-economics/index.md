@@ -15,16 +15,18 @@ These levels coexist in every complex economy. The series does not divide China 
 
 ## Contents
 
-0. Methodological Memorandum
 1. Why Did Modern Western Economics Not Begin with Productive Forces?
 2. Why Did Long-Term Chinese Governance First Confront the Production System Itself?
-3. How Do Production Systems and Interface Networks Handle Failure?
+3. How Do Production Systems and Interface Networks Handle Failure?F
 4. Why Can System Contributions Not Be Fully Reflected in Price?
 5. Why Can Productive Capacity Not Automatically Become Effective Consumption?
 6. Why Can Some Productive Capacities Not Wait for the Market to Generate Them?
 7. Why Can a Production System Also Generate Inefficiency and Systemic Reformatting?
 8. How Can a System Use Interfaces for Localized Correction?
 9. Why Did China’s Modernization Succeed, and Why Must It Enter a New Stage?
+10. From Survival Pressure to Consumption
+11. Why Globalization Became Historically Inevitable
+12. Why Globalization Began to Retreat
 
 ## Core Formulation
 
