@@ -59,3 +59,7 @@ Perhaps the power of a middleman depends less on how large it is than on somethi
 The supermarket may still control the checkout counter.
 
 But if only one supplier can fill the shelves, the balance of power has already changed.
+
+---
+
+© 2026 Aster Vale / Longview Archive. All Rights Reserved
