@@ -79,4 +79,8 @@ And that leaves a larger question:
 **What happens when that background can no longer be taken for granted?**
 
 
+© 2026 Aster Vale / Longview Archive. All Rights Reserved
+
+
+
 
