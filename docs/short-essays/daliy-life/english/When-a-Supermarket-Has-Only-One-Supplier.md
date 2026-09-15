@@ -62,4 +62,4 @@ But if only one supplier can fill the shelves, the balance of power has already 
 
 ---
 
-© 2026 Aster Vale / Longview Archive. All Rights Reserved
+© 2026 星衡｜Aster Vale / Longview Archive. All Rights Reserved
