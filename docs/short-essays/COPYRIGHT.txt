@@ -1,0 +1,40 @@
+SHORT ESSAYS — COPYRIGHT AND RIGHTS NOTICE
+
+Copyright © 2026 Aster Vale / Longview Archive.
+All Rights Reserved.
+
+This notice applies to all works contained in this directory and its
+subdirectories, including the Chinese and English editions, unless a
+specific file expressly states otherwise.
+
+The works in this directory are NOT licensed under Creative Commons,
+including CC BY-NC-ND 4.0, even if other parts of the Longview Archive
+website or repository use a Creative Commons license.
+
+No license is granted to reproduce, republish, distribute, translate,
+adapt, rewrite, reorganize, compile, anthologize, commercially exploit,
+or create derivative works from these materials without prior written
+permission from the copyright holder, except where such use is permitted
+by applicable law.
+
+No permission is granted for unauthorized commercial publication,
+commercial dataset compilation, or commercial model-training use of the
+works in this directory.
+
+Limited quotation, criticism, commentary, scholarship, teaching,
+research, and other uses permitted by applicable law are not restricted
+by this notice.
+
+Public availability of these files, whether through Git, GitHub,
+Longview Archive, Reddit, Quora, Medium, Substack, or another public
+platform, does not place the works in the public domain and does not
+constitute an open-source or Creative Commons license.
+
+Chinese source texts, English editions, editorial structures, selections,
+arrangements, and human-authored revisions are separately preserved as
+part of the Longview Archive version history.
+
+Author: Aster Vale
+Archive: Longview Archive
+First applicable year: 2026
+Rights status: All Rights Reserved
