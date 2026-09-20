@@ -58,21 +58,21 @@ nav:
       - 09｜Globalisation, Feedback, and Rebalancing: essays/english/organisation_economics/09-Globalisation_Feedback_and_Rebalancing.md
       - 10｜Production–Consumption–Reproduction Circuit: essays/english/organisation_economics/10-The_Production_Consumption_Reproduction_Circuit.md
       
-  - Productive-Forces Economics:
-      - Overview: essays/english/productive-forces-economics/index.md
-      - Methodological Memorandum: essays/english/productive-forces-economics/00-methodological-memorandum.md
-      - 01｜Why Did Modern Western Economics Not Begin with Productive Forces?: essays/english/productive-forces-economics/01-western-economics.md
-      - 02｜Why Did Long-Term Chinese Governance First Confront the Production System?: essays/english/productive-forces-economics/02-chinese-governance.md
-      - 03｜How Do Production Systems and Interface Networks Handle Failure?: essays/english/productive-forces-economics/03-failure.md
-      - 04｜Why Can System Contributions Not Be Fully Reflected in Price?: essays/english/productive-forces-economics/04-system-contribution.md
-      - 05｜Why Can Productive Capacity Not Automatically Become Effective Consumption?: essays/english/productive-forces-economics/05-consumption.md
-      - 06｜Why Can Some Productive Capacities Not Wait for the Market?: essays/english/productive-forces-economics/06-market-generation.md
-      - 07｜Why Can a Production System Also Generate Inefficiency and Reformatting?: essays/english/productive-forces-economics/07-inefficiency.md
-      - 08｜How Can a System Use Interfaces for Localized Correction?: essays/english/productive-forces-economics/08-correction.md
-      - 09｜Why Did China’s Modernization Succeed, and Why Must It Enter a New Stage?: essays/english/productive-forces-economics/09-modernization.md
-     # - 10｜From Survival Pressure to Consumption: essays/english/productive-forces-economics/10-from-survival-pressure-to-consumption.md
-      - 11｜Why Globalization Became Historically Inevitable?: essays/english/productive-forces-economics/11-why-globalization.md
-      - 12｜Why Globalization Began to Retreat?: essays/english/productive-forces-economics/12-why-globalization-retreat.md
+ # - Productive-Forces Economics:
+ #     - Overview: essays/english/productive-forces-economics/index.md
+ #     - Methodological Memorandum: essays/english/productive-forces-economics/00-methodological-memorandum.md
+ #     - 01｜Why Did Modern Western Economics Not Begin with Productive Forces?: essays/english/productive-forces-economics/01-western-economics.md
+ #     - 02｜Why Did Long-Term Chinese Governance First Confront the Production System?: essays/english/productive-forces-economics/02-chinese-governance.md
+ #     - 03｜How Do Production Systems and Interface Networks Handle Failure?: essays/english/productive-forces-economics/03-failure.md
+ #     - 04｜Why Can System Contributions Not Be Fully Reflected in Price?: essays/english/productive-forces-economics/04-system-contribution.md
+ #     - 05｜Why Can Productive Capacity Not Automatically Become Effective Consumption?: essays/english/productive-forces-economics/05-consumption.md
+ #     - 06｜Why Can Some Productive Capacities Not Wait for the Market?: essays/english/productive-forces-economics/06-market-generation.md
+ #     - 07｜Why Can a Production System Also Generate Inefficiency and Reformatting?: essays/english/productive-forces-economics/07-inefficiency.md
+ #     - 08｜How Can a System Use Interfaces for Localized Correction?: essays/english/productive-forces-economics/08-correction.md
+ #     - 09｜Why Did China’s Modernization Succeed, and Why Must It Enter a New Stage?: essays/english/productive-forces-economics/09-modernization.md
+ #     - 10｜From Survival Pressure to Consumption: essays/english/productive-forces-economics/10-from-survival-pressure-to-consumption.md
+ #     - 11｜Why Globalization Became Historically Inevitable?: essays/english/productive-forces-economics/11-why-globalization.md
+ #     - 12｜Why Globalization Began to Retreat?: essays/english/productive-forces-economics/12-why-globalization-retreat.md
 
   - The Human Architecture of Industrialization:
       - Overview: essays/english/industrial-people/index.md
@@ -237,7 +237,7 @@ nav:
       # 注意：只注释导航，不会阻止 MkDocs 发布 docs/ 中的实际 Markdown 文件。
       - 组织经济学:
           - 总览: essays/chinese/organisation_economics/index.md
-          - 阅读与校验规则: essays/chinese/organisation_economics/阅读与校验规则.md
+          - 阅读与校验规则: essays/chinese/organisation_economics/阅读与校验.md
           - 核心术语: essays/chinese/organisation_economics/核心术语.md
           - 00｜说明书的对象与读法: essays/chinese/organisation_economics/00-说明书的对象与读法.md
           - 01｜生产力如何成为持续的组织能力: essays/chinese/organisation_economics/01-生产力如何成为持续的组织能力.md
@@ -251,21 +251,21 @@ nav:
           - 09｜全球化成功反馈与重新配重: essays/chinese/organisation_economics/09-全球化成功反馈与重新配重.md
           - 10｜一条生产消费再生产闭环: essays/chinese/organisation_economics/10-一条生产消费再生产闭环.md
       
-      - 生产力经济学:
-          - 总览: essays/chinese/productive-forces-economics/index.md
-          - 方法论备忘录: essays/chinese/productive-forces-economics/00-c-methodological-memorandum.md
-          - 01｜为什么现代西方经济学没有从生产力出发: essays/chinese/productive-forces-economics/01-c-western-economics.md
-          - 02｜为什么中国长期治理首先面对生产系统: essays/chinese/productive-forces-economics/02-c-chinese-governance.md
-          - 03｜生产系统与接口网络如何处理失效: essays/chinese/productive-forces-economics/03-c-failure.md
-          - 04｜为什么系统贡献无法完全进入价格: essays/chinese/productive-forces-economics/04-c-system-contribution.md
-          - 05｜为什么生产能力不能自动转化为有效消费: essays/chinese/productive-forces-economics/05-c-consumption.md
-          - 06｜为什么有些生产能力不能等待市场自动生成: essays/chinese/productive-forces-economics/06-c-market-generation.md
-          - 07｜生产系统为什么也会制造低效与格式化: essays/chinese/productive-forces-economics/07-c-inefficiency.md
-          - 08｜系统怎样使用接口完成局部纠错: essays/chinese/productive-forces-economics/08-c-correction.md
-          - 09｜中国现代化为什么成功又为什么必须进入下一阶段: essays/chinese/productive-forces-economics/09-c-modernization.md
-        # - 10｜一条从生存压力走向消费的因果线路: essays/chinese/productive-forces-economics/10-c-from-survival-pressure-to-consumption.md
-          - 11｜全球化为什么成为历史必然: essays/chinese/productive-forces-economics/11-why-global-must.md
-          - 12｜全球化为什么开始退缩: essays/chinese/productive-forces-economics/12-retreat-of-globalization.md
+     # - 生产力经济学:
+     #     - 总览: essays/chinese/productive-forces-economics/index.md
+     #     - 方法论备忘录: essays/chinese/productive-forces-economics/00-c-methodological-memorandum.md
+     #     - 01｜为什么现代西方经济学没有从生产力出发: essays/chinese/productive-forces-economics/01-c-western-economics.md
+     #     - 02｜为什么中国长期治理首先面对生产系统: essays/chinese/productive-forces-economics/02-c-chinese-governance.md
+     #     - 03｜生产系统与接口网络如何处理失效: essays/chinese/productive-forces-economics/03-c-failure.md
+     #     - 04｜为什么系统贡献无法完全进入价格: essays/chinese/productive-forces-economics/04-c-system-contribution.md
+     #     - 05｜为什么生产能力不能自动转化为有效消费: essays/chinese/productive-forces-economics/05-c-consumption.md
+     #     - 06｜为什么有些生产能力不能等待市场自动生成: essays/chinese/productive-forces-economics/06-c-market-generation.md
+     #     - 07｜生产系统为什么也会制造低效与格式化: essays/chinese/productive-forces-economics/07-c-inefficiency.md
+     #     - 08｜系统怎样使用接口完成局部纠错: essays/chinese/productive-forces-economics/08-c-correction.md
+     #     - 09｜中国现代化为什么成功又为什么必须进入下一阶段: essays/chinese/productive-forces-economics/09-c-modernization.md
+     #     - 10｜一条从生存压力走向消费的因果线路: essays/chinese/productive-forces-economics/10-c-from-survival-pressure-to-consumption.md
+     #     - 11｜全球化为什么成为历史必然: essays/chinese/productive-forces-economics/11-why-global-must.md
+     #     - 12｜全球化为什么开始退缩: essays/chinese/productive-forces-economics/12-retreat-of-globalization.md
       
       - 工业化的人力架构:
           - 总览: essays/chinese/industrial-people/index.md
