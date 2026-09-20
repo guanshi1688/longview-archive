@@ -38,8 +38,6 @@ nav:
       # Add after the file exists:
       # - The Western System: essays/english/western-system.md
 
-      # FUTURE NAV / MANUALLY COPY INSIDE nav: ONLY AFTER THE ENGLISH MD FILES EXIST IN docs/.
-# Keep commented until the new organisation_economics section is approved for publication.
 # Old productive-forces-economics/ files may stay in Git; remove/comment their old ACTIVE nav entries separately.
 # Uncommenting nav publishes navigation, but commenting nav alone does not unpublish a physical .md under docs/.
   - The Economics of Productive Organisation:
@@ -232,7 +230,6 @@ nav:
       - 核心术语: essays/chinese/core-terms-chinese.md
       - 阅读规则: essays/chinese/reading-rules.md
 
-      # 未来中文导航片段。复制到 mkdocs.yml 的 nav: 内，按实际缩进调整；正式发布前保持注释。
       # 原 productive-forces-economics/ 保留在 Git，但旧导航需自行注释或移出启用 nav。
       # 注意：只注释导航，不会阻止 MkDocs 发布 docs/ 中的实际 Markdown 文件。
       - 组织经济学:
