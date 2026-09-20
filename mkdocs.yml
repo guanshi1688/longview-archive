@@ -73,24 +73,40 @@ nav:
 # ============================================================
 
 # - The Structural Algorithm of Civilization:
-#     - Overview: essays/english/structural-algorithm/index.md
-#     - Preface: essays/english/structural-algorithm/00-preface.md
-#     - Foundational Premise — Continuity, Pressure, and Selection: essays/english/structural-algorithm/01a-foundational-premise-continuity-pressure-selection.md
-#     - Introduction and Method: essays/english/structural-algorithm/01-introduction-and-method.md
-#     - 00｜First Principles and Analytical Boundaries: essays/english/structural-algorithm/02-layer-00-first-principles.md
-#     - 01｜Historical Formation: essays/english/structural-algorithm/03-layer-01-historical-formation.md
-#     - 02｜Core Mechanisms: essays/english/structural-algorithm/04-layer-02-core-mechanisms.md
-#     - 03｜Institutional Encoding: essays/english/structural-algorithm/05-layer-03-institutional-encoding.md
-#     - 04｜Expansion and Recovery: essays/english/structural-algorithm/06-layer-04-expansion-and-recovery.md
-#     - 05｜Ideological Projection: essays/english/structural-algorithm/07-layer-05-ideological-projection.md
-#     - 06｜Modern Amplification and Structural Prediction: essays/english/structural-algorithm/08-layer-06-modern-amplification.md
-#     - 07｜Subject Formation: essays/english/structural-algorithm/09-layer-07-subject-formation.md
-#     - 08｜Systemic Inertia: essays/english/structural-algorithm/10-layer-08-systemic-inertia.md
-#     - 09｜Governance — From Command to Condition-Shaping: essays/english/structural-algorithm/11-layer-09-governance.md
-#     - Synthesis: essays/english/structural-algorithm/12-synthesis.md
-#     - Open Questions: essays/english/structural-algorithm/13-open-questions.md
-#     - Core Terms: essays/english/structural-algorithm/14-core-terms.md
-#     - Methodological Appendix: essays/english/structural-algorithm/15-methodological-appendix.md
+# English nav: REPLACE the old commented FUTURE RELEASE block.
+# Leave commented until source .md files are copied into docs/.
+# Remove the leading "# " of each nav line when publishing.
+#   - "The Structural Algorithm of Civilization":
+#       - "Reading and Verification Rules": essays/english/structural-algorithm/Reading_and_Verification_Rules.md
+#       - "Core Terms": essays/english/structural-algorithm/Core_Terms.md
+#       - "Western Civilizational Structure":
+#           - "00 | Forms of Productive Organisation and Civilizational Projection": essays/english/structural-algorithm/00_Forms_of_Productive_Organisation_and_Civilizational_Projection.md
+#           - "01 | Europe: How Did Dispersed Organisations Develop Continuing Access to Productive Capacity?": essays/english/structural-algorithm/western/01_Europe_and_the_Organisation_of_Access.md
+#           - "02 | From Acquisition Relationships to Interface Institutions: How Can Dispersed Productive Forces Be Called Upon Repeatedly?": essays/english/structural-algorithm/western/02_From_Acquisition_Relations_to_Interface_Institutions.md
+#           - "03 | From Interface Institutions to Shared Order: How Do Dispersed Societies Preserve Relationships Across Boundaries?": essays/english/structural-algorithm/western/03_From_Interface_Institutions_to_Shared_Order.md
+#           - "04 | From Local Relationships to Overseas Networks: How Do Interfaces Cross Political Boundaries?": essays/english/structural-algorithm/western/04_From_Local_Relations_to_Overseas_Networks.md
+#           - "05 | From Node Failure to Network Reorganisation: How Can Acquisition Relationships Survive the Decline of a Centre?": essays/english/structural-algorithm/western/05_From_Node_Failure_to_Network_Reorganisation.md
+#           - "06 | From Commercial Networks to Industrial Networks: How Do Interfaces Begin Organising Large-Scale Production?": essays/english/structural-algorithm/western/06_From_Commercial_to_Industrial_Networks.md
+#           - "07 | From Industrial Networks to Global Production Networks: How Do Interfaces Organise Production Across Borders?": essays/english/structural-algorithm/western/07_From_Industrial_Networks_to_Global_Production_Networks.md
+#           - "08 | From Expanding Production to Competing for Orders: How Mature Industry Changes the Conditions for Interface Expansion": essays/english/structural-algorithm/western/08_From_Expanding_Production_to_Competing_for_Orders.md
+#           - "09 | From Order Allocation to Value Capture: How Do Interfaces Organise Competition and Returns in Mature Markets?": essays/english/structural-algorithm/western/09_From_Order_Allocation_to_Value_Capture.md
+#           - "10 | From Freedom to Call Upon Production to Its Material Boundaries: Why Can an Interface Not Necessarily Switch Production Bases?": essays/english/structural-algorithm/western/10_From_Freedom_to_Call_Upon_Production_to_Its_Material_Boundaries.md
+#           - "11 | From Rebuilding Factories to Ultimate Productive Responsibility: When Production Sources Cannot Readily Be Replaced, Who Keeps Necessary Production Going?": essays/english/structural-algorithm/western/11_From_Rebuilding_Factories_to_Ultimate_Productive_Responsibility.md
+#           - "12 | Two Forms of Organisation and One Circuit of Reproduction": essays/english/structural-algorithm/12_Two_Forms_of_Organisation_and_One_Circuit_of_Reproduction.md
+#       - "Chinese Civilizational Structure":
+#           - "00 | Forms of Productive Organisation and Civilizational Projection": essays/english/structural-algorithm/00_Forms_of_Productive_Organisation_and_Civilizational_Projection.md
+#           - "01 | The Yellow River: How Does Pressure on Production Expand Organisation?": essays/english/structural-algorithm/china/01_The_Yellow_River_and_the_Expansion_of_Organisation.md
+#           - "02 | From Coordinating Capacity to State Institutions: How Is Productive Responsibility Preserved Over Time?": essays/english/structural-algorithm/china/02_From_Coordination_to_State_Institutions.md
+#           - "03 | From State Institutions to Social Order: How Does Productive Responsibility Become a Shared Norm?": essays/english/structural-algorithm/china/03_From_State_Institutions_to_Social_Order.md
+#           - "04 | From the State Centre to New Territories: How Does Productive Responsibility Cross Space?": essays/english/structural-algorithm/china/04_From_State_Centre_to_New_Territories.md
+#           - "05 | From Dynastic Failure to Productive Rebuilding: Why Is Shared Productive Responsibility Reorganised?": essays/english/structural-algorithm/china/05_From_Dynastic_Failure_to_Productive_Rebuilding.md
+#           - "06 | From Land Production to an Industrial System: How Does Shared Productive Responsibility Enter the Modern Industrial Age?": essays/english/structural-algorithm/china/06_From_Land_Production_to_an_Industrial_System.md
+#           - "07 | From Industrial System to Global Markets: How Does Productive Capacity Enter Transnational Interfaces?": essays/english/structural-algorithm/china/07_From_Industrial_System_to_Global_Markets.md
+#           - "08 | From Work-Unit Responsibility to Household Absorption: How Does Production Reallocate the Cost of Living?": essays/english/structural-algorithm/china/08_From_Work_Unit_Responsibility_to_Household_Absorption.md
+#           - "09 | From Expansion Inertia to Absorption Constraints: Why Does Success in Production Change the Next Investment Problem?": essays/english/structural-algorithm/china/09_From_Expansion_Inertia_to_Absorption_Constraints.md
+#           - "10 | From Project Lock-In to Productive Reorganisation: How Can a System Already Built Change Direction?": essays/english/structural-algorithm/china/10_From_Project_Lock_In_to_Productive_Reorganisation.md
+#           - "11 | From Commanding Production to Shaping Conditions: How Does an Organisation Change Its Mode of Action Once Production Has Matured?": essays/english/structural-algorithm/china/11_From_Commanding_Production_to_Shaping_Conditions.md
+#           - "12 | Two Forms of Organisation and One Circuit of Reproduction": essays/english/structural-algorithm/12_Two_Forms_of_Organisation_and_One_Circuit_of_Reproduction.md
 
 
   - Standalone Essays:
@@ -225,25 +241,40 @@ nav:
           # - 证据与参考线索: essays/chinese/industrial-people/references.md
           # - 旧九篇版本归档: essays/chinese/industrial-people/archive-v1-nine-chapters/index.md
 
-  # - 文明结构算法:
-  #     - 总览: essays/chinese/structural-algorithm/index.md
-  #     - 序言: essays/chinese/structural-algorithm/00-preface.md
-  #     - 基础前提｜持续、压力与筛选: essays/chinese/structural-algorithm/01a-foundational-premise-continuity-pressure-selection.md
-  #     - 导论与方法: essays/chinese/structural-algorithm/01-introduction-and-method.md
-  #     - 00｜边界、第一性与文明投影: essays/chinese/structural-algorithm/02-layer-00-first-principles.md
-  #     - 01｜历史起点：治水、整体生产与碎片连接: essays/chinese/structural-algorithm/03-layer-01-historical-formation.md
-  #     - 02｜基础机制：责任闭环、路径锁定与生产—接口—承接: essays/chinese/structural-algorithm/04-layer-02-core-mechanisms.md
-  #     - 03｜制度生成：第一性如何写进国家、市场与社会: essays/chinese/structural-algorithm/05-layer-03-institutional-encoding.md
-  #     - 04｜扩张结构：重建底盘、迁移接口与文明碰撞: essays/chinese/structural-algorithm/06-layer-04-expansion-and-recovery.md
-  #     - 05｜思想映射：制度如何被翻译为道德、法律与政治语言: essays/chinese/structural-algorithm/07-layer-05-ideological-projection.md
-  #     - 06｜现代能力：统计方向、技术放大与文明预测: essays/chinese/structural-algorithm/08-layer-06-modern-amplification.md
-  #     - 07｜主体重构：从集体责任人到契约个人与家庭兜底: essays/chinese/structural-algorithm/09-layer-07-subject-formation.md
-  #     - 08｜系统惯性：破产、消费与中美反向调整: essays/chinese/structural-algorithm/10-layer-08-systemic-inertia.md
-  #     - 09｜管理体制：从命令控制到条件塑造: essays/chinese/structural-algorithm/11-layer-09-governance.md
-  #     - 总归纳: essays/chinese/structural-algorithm/12-synthesis.md
-  #     - 开放问题: essays/chinese/structural-algorithm/13-open-questions.md
-  #     - 核心术语: essays/chinese/structural-algorithm/14-core-terms.md
-  #     - 方法论附录: essays/chinese/structural-algorithm/15-methodological-appendix.md
+# Chinese nav: REPLACE the old commented 文明结构算法 block inside "Chinese:".
+# Leave commented until source .md files are copied into docs/.
+# Remove the leading "# " of each nav line when publishing.
+#       - "文明结构算法":
+#           - "阅读与校验规则": essays/chinese/structural-algorithm/阅读与校验规则.md
+#           - "核心术语": essays/chinese/structural-algorithm/核心术语.md
+#           - "中国文明结构":
+#               - "00｜生产力的组织形式与文明投影": essays/chinese/structural-algorithm/00-生产力的组织形式与文明投影_v4_反馈校准.md
+#               - "01｜黄河：生产压力如何推动组织扩大？": essays/chinese/structural-algorithm/china/文明结构算法_生产型组织_01_黄河与组织扩大_v2_压力补强.md
+#               - "02｜从协调能力到国家制度：生产责任怎样被长期保存？": essays/chinese/structural-algorithm/china/文明结构算法_生产型组织_02_从协调能力到国家制度_v1.md
+#               - "03｜从国家制度到社会秩序：生产责任怎样成为共同规范？": essays/chinese/structural-algorithm/china/文明结构算法_生产型组织_03_从国家制度到社会秩序_v1.md
+#               - "04｜从国家中心到新地区：生产责任怎样跨越空间边界？": essays/chinese/structural-algorithm/china/文明结构算法_生产型组织_04_从国家中心到新地区_v1.md
+#               - "05｜从王朝失效到生产重建：共同生产责任为什么会被重新组织？": essays/chinese/structural-algorithm/china/文明结构算法_生产型组织_05_从王朝失效到生产重建_v1.md
+#               - "06｜从土地生产到工业体系：共同生产责任怎样进入现代工业时代？": essays/chinese/structural-algorithm/china/文明结构算法_生产型组织_06_从土地生产到工业体系_v1.md
+#               - "07｜从工业体系到全球市场：生产能力怎样接入跨国接口？": essays/chinese/structural-algorithm/china/文明结构算法_生产型组织_07_从工业体系到全球市场_v1.md
+#               - "08｜从单位责任到家庭承接：生产组织怎样重新分配生活成本？": essays/chinese/structural-algorithm/china/文明结构算法_生产型组织_08_从单位责任到家庭承接_v1.md
+#               - "09｜从扩产惯性到承接约束：生产成功为什么改变下一轮投资的难题？": essays/chinese/structural-algorithm/china/文明结构算法_生产型组织_09_从扩产惯性到承接约束_v1.md
+#               - "10｜从项目锁定到生产重组：已经造出来的体系，怎样改变方向？": essays/chinese/structural-algorithm/china/文明结构算法_生产型组织_10_从项目锁定到生产重组_v1.md
+#               - "11｜从命令生产到塑造条件：当生产已经成熟，组织怎样改变自己的作用方式？": essays/chinese/structural-algorithm/china/文明结构算法_生产型组织_11_从命令生产到塑造条件_v1.md
+#               - "12｜两种组织与同一生产循环": essays/chinese/structural-algorithm/文明结构算法_12_总结_两种组织与同一生产循环_v2_算法总图校准.md
+#           - "西方文明结构":
+#               - "00｜生产力的组织形式与文明投影": essays/chinese/structural-algorithm/00-生产力的组织形式与文明投影_v4_反馈校准.md
+#               - "01｜欧洲：分散组织怎样形成持续的获取与调用能力？": essays/chinese/structural-algorithm/western/文明结构算法_接口型组织_01_欧洲与获取关系_v2_压力补强.md
+#               - "02｜从获取关系到接口制度：分散生产力怎样被持续调用？": essays/chinese/structural-algorithm/western/文明结构算法_接口型组织_02_从获取关系到接口制度_v1.md
+#               - "03｜从接口制度到共同秩序：分散社会怎样保存跨边界关系？": essays/chinese/structural-algorithm/western/文明结构算法_接口型组织_03_从接口制度到共同秩序_v1.md
+#               - "04｜从地方关系到跨海网络：接口怎样跨越政治边界？": essays/chinese/structural-algorithm/western/文明结构算法_接口型组织_04_从地方关系到跨海网络_v2_内生扩张补强.md
+#               - "05｜从节点失效到网络重组：获取关系怎样跨越中心的衰落？": essays/chinese/structural-algorithm/western/文明结构算法_接口型组织_05_从节点失效到网络重组_v1.md
+#               - "06｜从商贸网络到工业网络：接口怎样开始组织规模化生产？": essays/chinese/structural-algorithm/western/文明结构算法_接口型组织_06_从商贸网络到工业网络_v1.md
+#               - "07｜从工业网络到全球生产网络：接口怎样跨国组织生产？": essays/chinese/structural-algorithm/western/文明结构算法_接口型组织_07_从工业网络到全球生产网络_v2_收尾校准.md
+#               - "08｜从扩张生产到争夺订单：成熟工业体系怎样改变接口的扩张条件？": essays/chinese/structural-algorithm/western/文明结构算法_接口型组织_08_从扩张生产到争夺订单_v2_餐馆例子.md
+#               - "09｜从订单分配到价值捕获：接口怎样在成熟市场中组织竞争与收益？": essays/chinese/structural-algorithm/western/文明结构算法_接口型组织_09_从订单分配到价值捕获_v1.md
+#               - "10｜从调用自由到生产边界：接口为什么未必还能换一个生产基地？": essays/chinese/structural-algorithm/western/文明结构算法_接口型组织_10_从调用自由到生产边界_v1.md
+#               - "11｜从重新建厂到最终生产责任：当接口不能轻易更换生产端，谁来使必要生产继续存在？": essays/chinese/structural-algorithm/western/文明结构算法_接口型组织_11_从重新建厂到最终生产责任_v1.md
+#               - "12｜两种组织与同一生产循环": essays/chinese/structural-algorithm/文明结构算法_12_总结_两种组织与同一生产循环_v2_算法总图校准.md
 
       - Reality｜现实世界:
           - 阅读前约束: essays/chinese/reality/00-c-reading-before.md
