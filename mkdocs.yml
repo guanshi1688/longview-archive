@@ -237,7 +237,7 @@ nav:
       # 注意：只注释导航，不会阻止 MkDocs 发布 docs/ 中的实际 Markdown 文件。
       - 组织经济学:
           - 总览: essays/chinese/organisation_economics/index.md
-          - 阅读与校验规则: essays/chinese/organisation_economics/阅读与校验.md
+          - 阅读与校验规则: essays/chinese/organisation_economics/阅读与校验规则.md
           - 核心术语: essays/chinese/organisation_economics/核心术语.md
           - 00｜说明书的对象与读法: essays/chinese/organisation_economics/00-说明书的对象与读法.md
           - 01｜生产力如何成为持续的组织能力: essays/chinese/organisation_economics/01-生产力如何成为持续的组织能力.md
