@@ -219,7 +219,7 @@ nav:
           - 11. Why the AI Shock Is Really a Structural Shock: essays/notes/english/Technology-Amplifier/11-why-the-ai-shock-is-really-a-structural-shock.md
 
   - Archive:
-      - Version Records: versions.md
+     # - Version Records: versions.md
       - Author: author.md
       - Copyright: copyright.md
 
