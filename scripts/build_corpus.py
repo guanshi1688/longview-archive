@@ -17,8 +17,12 @@ Default layout:
     │     └─ build_corpus.py
     └─ index/
        ├─ structural-algorithm/
-       │  ├─ chinese/
-       │  └─ english/
+       │  ├─ chinese/                  # four shared .md in this directory
+       │  │  ├─ china/ or Chinese_CN_Civilizational_Structure/       # 01-11
+       │  │  └─ western/ or Western_CN_Civilizational_Structure/    # 01-11
+       │  └─ english/                  # four shared .md in this directory
+       │     ├─ china/ or Chinese_Civilizational_Structure/        # 01-11
+       │     └─ western/ or Western_Civilizational_Structure/     # 01-11
        ├─ publish/
        │  ├─ question-pool.md
        │  ├─ short-essay-manifest.md
@@ -36,10 +40,15 @@ The corpus has five source classes:
    These are emitted first because they tell an AI how to interpret the rest.
 
 2. CANONICAL UNPUBLISHED STRUCTURAL THEORY
-   - <git-root>/index/structural-algorithm/chinese/*.md
-   - <git-root>/index/structural-algorithm/english/*.md
-   This material is physically outside the public site repository and is merged
-   directly by this script.
+   - shared preface in each language: Reading/Verification Rules; Core Terms;
+     common 00 (generative model); common 12 (two-line synthesis).
+   - two distinct numbered series per language: china/01-11 and western/01-11.
+   - exact expected canonical sources: 26 per language, 52 total.
+   - generated review bundles are not independent canonical sources.
+   - only whitelisted individual sources are merged; filename suffixes after the
+     01-11 number can change. Both current long directory names and future
+     china/western directory names are supported.
+   These local sources are physically outside the public site repository.
 
 3. PUBLIC / CATALOGUED WEBSITE MATERIAL
    - active mkdocs.yml nav -> PUBLIC
@@ -66,20 +75,28 @@ The corpus has five source classes:
 AI-oriented authority order:
 
     theory-map
-      -> foundational Structural Algorithm
-         (including the unnumbered Continuity -> Pressure -> Selection premise)
+      -> current Structural Algorithm (per-language shared 00 and 12;
+         china/01-11 and western/01-11; shared rules and terms)
       -> structural bridge essays
       -> public canonical archive
       -> auxiliary unpublished/internal material
       -> diagnostics and raw mkdocs.yml
 
 Core topology invariant:
-- Civilizational Structure provides the generative model.
-- Productive-Forces Economics studies its economic consequences.
+- The two languages each have ONE common 00 and ONE common 12, not copies inside two volumes.
+- Physical production/reproduction is the common material basis; production-bearing
+  and interface-oriented organisations are two non-exclusive historical directions.
+- Organisational firstness is a path-dependent ordering, not the material first principle.
+- Organisation can change conditions through its own success; both lines reconverge
+  in the global production network and in the next reproduction cycle.
+- Civilizational Structure provides the generative model; Productive-Forces Economics
+  studies its economic consequences.
 - Interface is a neutral system position/mechanism, not a civilizational first principle.
 
 Conflict rules:
 - Theory hierarchy / article placement: memo/theory-map.md wins.
+- The current chapter layout and source paths are determined by the individual
+  canonical Markdown files under index/structural-algorithm/.
 - Repository paths / publication state: memo/file_map.md wins.
 - A concrete theoretical claim: the corresponding canonical mother text wins.
 - Commented Structural Algorithm entries in mkdocs.yml are a future publication
@@ -748,72 +765,49 @@ def find_unreferenced_markdown(
 # External canonical Structural Algorithm
 # -----------------------------------------------------------------------------
 
-def classify_structural_role(path: Path) -> tuple[str, str, str]:
-    """Return (role, status, authority).
-
-    The 01a Continuity/Pressure/Selection premise is foundational core material. It is
-    intentionally not classified as a bridge and not treated as Layer -1.
-    """
-    name = path.name.casefold()
-
-    is_bridge = (
-        "from-survival-pressure-to-consumption" in name
-        or "survival-pressure-to-consumption" in name
-        or ("生存压力" in path.name and "消费" in path.name)
-    )
-    if is_bridge:
-        return "STRUCTURAL_BRIDGE", "CANONICAL_UNPUBLISHED", "DERIVED_CANONICAL"
-
-    if (
-        name == "readme.md"
-        or "submission" in name
-        or "adaptation-memorandum" in name
-        or "nav-snippet" in name
-    ):
-        return "STRUCTURAL_AUXILIARY", "INTERNAL", "NON_CANONICAL_REFERENCE"
-
-    return "STRUCTURAL_CORE", "CANONICAL_UNPUBLISHED", "FOUNDATIONAL_CANONICAL"
-
-
-def is_generated_structural_artifact(path: Path) -> bool:
-    """Exclude generated review bundles from the canonical source scan.
-
-    build.py lives beside the mother-text files and may generate Markdown bundles in the
-    same directory. Those bundles are review artifacts, not additional canonical bodies.
-    """
-    name = path.name.casefold()
-    normalized = name.replace("_", "-")
-    return (
-        name.startswith("_")
-        or "full-bundle" in normalized
-        or "review-bundle" in normalized
-        or normalized.endswith("-bundle.md")
-        or "合订本" in path.name
-    )
+# Only the following individually maintained Markdown files are canonical.
+# The two generated 15-file reading bundles are review outputs, never inputs.
+STRUCTURAL_LANGUAGE_LAYOUT: dict[str, dict[str, Any]] = {
+    "chinese": {
+        "language": "zh",
+        "front": (
+            ("阅读与校验规则.md", "READING_RULES"),
+            ("核心术语.md", "CORE_TERMS"),
+        ),
+        "common_00": "00-生产力的组织形式与文明投影*.md",
+        "common_12": "文明结构算法_12_总结*.md",
+        "series": (
+            ("china", ("china", "Chinese_CN_Civilizational_Structure"), "文明结构算法_生产型组织_{n:02d}_*.md"),
+            ("western", ("western", "Western_CN_Civilizational_Structure"), "文明结构算法_接口型组织_{n:02d}_*.md"),
+        ),
+    },
+    "english": {
+        "language": "en",
+        "front": (
+            ("Reading_and_Verification_Rules.md", "READING_RULES"),
+            ("Core_Terms.md", "CORE_TERMS"),
+        ),
+        "common_00": "00_*.md",
+        "common_12": "12_*.md",
+        "series": (
+            ("china", ("china", "Chinese_Civilizational_Structure"), "{n:02d}_*.md"),
+            ("western", ("western", "Western_Civilizational_Structure"), "{n:02d}_*.md"),
+        ),
+    },
+}
 
 
-def structural_source_key(path: Path, lang_dir: Path) -> tuple[Any, ...]:
-    """Stable mother-text order: 00 -> 01a -> 01 -> 02 ...
-
-    The 01a foundational premise is intentionally read before the ordinary 01
-    introduction even when a platform's filename collation would order them differently.
-    """
-    rel = path.relative_to(lang_dir).as_posix()
-    name = path.name.casefold()
-    if name.startswith("00-"):
-        return (0, 0, natural_key(rel))
-    if name.startswith("01a-"):
-        return (1, 0, natural_key(rel))
-    if name.startswith("01-"):
-        return (1, 1, natural_key(rel))
-
-    m = re.match(r"^(\d+)[-_]", name)
-    if m:
-        return (int(m.group(1)), 1, natural_key(rel))
-    return (10**6, 1, natural_key(rel))
+# Each language: 2 front + common 00 + 11 China + 11 Western + common 12.
+STRUCTURAL_CORE_PER_LANGUAGE = 26
 
 
 def scan_structural_algorithm(structural_root: Path) -> tuple[list[FileRecord], list[str]]:
+    """Read only current individual canonical sources, not generated bundles.
+
+    The public MkDocs commented nav is a FUTURE PATH MANIFEST; local mother text
+    is read directly from the sibling index/ tree and remains unpublished.
+    The language-level files are shared by both historical series and included ONCE.
+    """
     records: list[FileRecord] = []
     warnings: list[str] = []
 
@@ -821,56 +815,89 @@ def scan_structural_algorithm(structural_root: Path) -> tuple[list[FileRecord], 
         warnings.append(f"Structural Algorithm root not found: {structural_root}")
         return records, warnings
 
-    language_dirs = (
-        ("chinese", "zh"),
-        ("english", "en"),
-    )
-
-    for dirname, language in language_dirs:
+    for dirname, layout in STRUCTURAL_LANGUAGE_LAYOUT.items():
         lang_dir = structural_root / dirname
         if not lang_dir.is_dir():
             warnings.append(f"Structural Algorithm language directory not found: {lang_dir}")
             continue
 
-        files = sorted(
-            (
-                p
-                for p in lang_dir.rglob("*.md")
-                if p.is_file() and not is_generated_structural_artifact(p)
-            ),
-            key=lambda p: structural_source_key(p, lang_dir),
-        )
+        language = layout["language"]
+        picked: list[tuple[Path, str, str]] = []
 
-        for path in files:
-            role, status, authority = classify_structural_role(path)
+        def choose_unique(folder: Path, pattern: str, role: str, section: str) -> None:
+            matches = sorted((p for p in folder.glob(pattern) if p.is_file()), key=lambda p: natural_key(p.name))
+            if len(matches) != 1:
+                detail = ", ".join(p.name for p in matches) if matches else "NONE"
+                warnings.append(
+                    f"Canonical Structural Algorithm source must match exactly once: "
+                    f"{folder / pattern} | found {len(matches)}: {detail}"
+                )
+                return
+            picked.append((matches[0], role, section))
+
+        # Two unnumbered front files, then a SINGLE shared 00 for each language.
+        for name, section in layout["front"]:
+            choose_unique(lang_dir, name, "STRUCTURAL_CORE", f"SHARED {section}")
+        choose_unique(lang_dir, layout["common_00"], "STRUCTURAL_CORE", "SHARED 00 / GENERATIVE MODEL")
+
+        # Two independent historical series; numbers fixed, descriptive suffixes free.
+        for line, dir_aliases, template in layout["series"]:
+            existing = [lang_dir / name for name in dir_aliases if (lang_dir / name).is_dir()]
+            if len(existing) != 1:
+                detail = ", ".join(str(p) for p in existing) or "NONE"
+                warnings.append(
+                    f"Expected exactly one {dirname}/{line} source directory "
+                    f"({', '.join(dir_aliases)}); found {len(existing)}: {detail}"
+                )
+                continue
+            folder = existing[0]
+            for n in range(1, 12):
+                choose_unique(
+                    folder, template.format(n=n), "STRUCTURAL_CORE",
+                    f"{line.upper()} SERIES / {n:02d}",
+                )
+
+        # A SINGLE common synthesis concludes both historical series.
+        choose_unique(lang_dir, layout["common_12"], "STRUCTURAL_CORE", "SHARED 12 / SYNTHESIS")
+
+        if len(picked) != STRUCTURAL_CORE_PER_LANGUAGE:
+            warnings.append(
+                f"Incomplete {dirname} current structural theory: {len(picked)}/"
+                f"{STRUCTURAL_CORE_PER_LANGUAGE} individual canonical Markdown files."
+            )
+
+        for path, role, sub_section in picked:
             body = read_text(path)
+            if not body.strip():
+                warnings.append(f"Empty canonical Structural Algorithm text: {path}")
+                continue
             inner_rel = path.relative_to(lang_dir).as_posix()
             rel_path = f"index/structural-algorithm/{dirname}/{inner_rel}"
-
-            if role == "STRUCTURAL_CORE":
-                section = f"FOUNDATIONAL THEORY / Structural Algorithm / {dirname}"
-            elif role == "STRUCTURAL_BRIDGE":
-                section = f"STRUCTURAL BRIDGE / {dirname}"
-            else:
-                section = f"STRUCTURAL AUXILIARY / {dirname}"
-
             records.append(
                 FileRecord(
                     abs_path=path,
                     rel_path=rel_path,
                     title=first_h1(body) or path.stem,
                     language=language,
-                    status=status,
-                    section=section,
+                    status="CANONICAL_UNPUBLISHED",
+                    section=f"FOUNDATIONAL THEORY / Structural Algorithm / {dirname} / {sub_section}",
                     source_kind="EXTERNAL_INDEX",
-                    authority=authority,
+                    authority="FOUNDATIONAL_CANONICAL",
                     role=role,
-                    note="Physical source: sibling index/structural-algorithm tree; not served by MkDocs.",
+                    note=(
+                        "Individual canonical source from sibling index/structural-algorithm; "
+                        "shared rules/terms/00/12 are stored once per language. "
+                        "Not served by MkDocs; generated bundles are not source files."
+                    ),
                 )
             )
 
+    if len(records) != STRUCTURAL_CORE_PER_LANGUAGE * len(STRUCTURAL_LANGUAGE_LAYOUT):
+        warnings.append(
+            f"Incomplete bilingual Structural Algorithm corpus: {len(records)}/"
+            f"{STRUCTURAL_CORE_PER_LANGUAGE * len(STRUCTURAL_LANGUAGE_LAYOUT)} source files."
+        )
     return records, warnings
-
 
 
 # -----------------------------------------------------------------------------
@@ -1000,7 +1027,7 @@ def split_records(
         key=lambda r: natural_key(r.rel_path),
     )
 
-    # scan_structural_algorithm already emits zh before en and natural file order.
+    # scan_structural_algorithm emits zh then en, shared front/00, both 01-11, shared 12.
     public = sorted(
         (r for r in docs_records if r.status == "PUBLIC"),
         key=lambda r: r.nav_order if r.nav_order is not None else 10**9,
@@ -1109,7 +1136,7 @@ def write_machine_read_protocol(out) -> None:
     out.write("5. Expand outward only when comparison, evidence, or contradiction checking requires it.\n\n")
 
     out.write("AUTHORITY_RULES:\n")
-    out.write("- Theory hierarchy / article placement -> memo/theory-map.md.\n")
+    out.write("- Theory hierarchy / article placement -> memo/theory-map.md; current chapter names and paths -> individual canonical files in index/structural-algorithm/.\n")
     out.write("- Repository paths / publication state -> memo/file_map.md.\n")
     out.write("- Concrete theoretical claim -> corresponding canonical mother text.\n")
     out.write("- Application or public text does not outrank its canonical source merely because it is newer, longer, or more specific.\n")
@@ -1117,8 +1144,11 @@ def write_machine_read_protocol(out) -> None:
 
     out.write("TOPOLOGY_GUARDRAILS:\n")
     out.write("- Physical body order is a reading order, NOT a theoretical parent-child order.\n")
-    out.write("- Civilizational Structure has an unnumbered generative premise: Continuity Constraint -> recurrent Survival Pressure -> Structural Selection -> First Principle.\n")
-    out.write("- 01a is a pre-layer foundational premise, NOT Layer -1; Layers 0-9 remain numbered 0-9.\n")
+    out.write("- CURRENT SOURCE MAP: each of chinese/ and english/ has unnumbered Reading Rules and Core Terms, common 00, china/01-11, western/01-11, and common 12.\n")
+    out.write("- Source languages are parallel translations; shared 00/12 must not be duplicated in each historical series.\n")
+    out.write("- Common MATERIAL basis: continuing physical production and reproduction; two ORGANISATIONAL directions are production-bearing and interface-oriented (mixed forms possible).\n")
+    out.write("- Generative mechanism: continuing constraint -> differentiated pressure and feasible solutions -> structural selection -> persistent organisational priority -> institutions and historical paths.\n")
+    out.write("- Success changes the next environment: global production networks alter productive capacity and market access; demand growth does not automatically give orders to a new factory.\n")
     out.write("- Do NOT linearize Civilizational Structure -> Productive-Forces Economics -> Reality/Future -> Six Series.\n")
     out.write("- Productive-Forces Economics, Reality/Future Path, Six Series, and Structural Syntheses are distinct derived/projection/application branches of Civilizational Structure.\n")
     out.write("- Civilizational Structure provides the generative model; Productive-Forces Economics studies its economic consequences.\n")
@@ -1330,15 +1360,17 @@ def write_bootstrap(
         out.write("5. Retrieve only the canonical bodies needed for the actual question.\n")
         out.write("6. Use FULL_AUDIT only when explicitly asked for corpus-wide reading or consistency review.\n\n")
         out.write("AUTHORITY_RULES:\n")
-        out.write("- Theory hierarchy / article placement -> memo/theory-map.md.\n")
+        out.write("- Theory hierarchy / article placement -> memo/theory-map.md; for current chapter paths and numbering use the individual canonical sources under index/structural-algorithm/.\n")
         out.write("- Repository paths / publication state -> memo/file_map.md.\n")
         out.write("- Concrete theoretical claim -> corresponding canonical mother text in the Full Corpus.\n")
         out.write("- Short-essay registries are workflow/control state, not theoretical authority.\n")
         out.write("- PUBLIC_STANDALONE pages are independent public essays, not a new theory layer.\n\n")
         out.write("TOPOLOGY_GUARDRAILS:\n")
         out.write("- Physical body order is reading order, NOT theoretical parent-child order.\n")
-        out.write("- Pre-layer generative premise: Continuity Constraint -> recurrent Survival Pressure -> Structural Selection -> First Principle.\n")
-        out.write("- 01a is NOT Layer -1; Layers 0-9 keep their existing numbering.\n")
+        out.write("- CURRENT CANONICAL: Reading and Verification Rules -> Core Terms -> shared 00 -> China 01-11 / Western 01-11 -> shared 12 (per language).\n")
+        out.write("- Shared 00 and 12 are each physical files ONCE per language; do not mistake review bundles for source texts.\n")
+        out.write("- Same material production/reproduction basis; two non-exclusive production-bearing/interface-oriented organisational directions and their path-dependent priorities.\n")
+        out.write("- Long-run success changes the environment; both lines interact in global production networks, market orders, and the next reproduction cycle.\n")
         out.write("- Do NOT linearize Civilizational Structure -> PFE -> Reality/Future -> Six Series.\n")
         out.write("- PFE, Reality/Future, Six Series, and Structural Syntheses are distinct branches from Civilizational Structure.\n")
         out.write("- Civilizational Structure provides the generative model; PFE studies its economic consequences.\n")
@@ -1351,7 +1383,7 @@ def write_bootstrap(
         out.write("BOOTSTRAP: Longview Archive AI Bootstrap\n")
         out.write("PURPOSE: Small control-plane companion to the paired Full Corpus.\n")
         out.write("PRIMARY_READER: unfamiliar AI / retrieval agent\n")
-        out.write("READ_PROTOCOL_VERSION: 1.2\n")
+        out.write("READ_PROTOCOL_VERSION: 1.3\n")
         out.write(f"GENERATED_AT: {generated_at.isoformat(timespec='seconds')}\n")
         out.write(f"PAIR_BOOTSTRAP_FILE: {bootstrap_file.name}\n")
         out.write(f"PAIR_FULL_CORPUS_FILE: {full_corpus_file.name}\n")
@@ -1515,7 +1547,7 @@ def write_corpus(
         out.write("CORPUS: Longview Archive Full Corpus\n")
         out.write("INCLUSION_MODE: HYBRID_MANIFEST\n")
         out.write("PRIMARY_READER: AI / retrieval / grep\n")
-        out.write("READ_PROTOCOL_VERSION: 1.2\n")
+        out.write("READ_PROTOCOL_VERSION: 1.3\n")
         out.write(f"GENERATED_AT: {generated_at.isoformat(timespec='seconds')}\n")
         out.write(f"PAIR_BOOTSTRAP_FILE: {bootstrap_file.name}\n")
         out.write(f"SOURCE_REPOSITORY: {repo_root}\n")
@@ -1572,7 +1604,7 @@ def write_corpus(
         out.write("6. other commented/excluded material -> auxiliary context only\n")
         out.write("7. diagnostics and raw mkdocs.yml -> repository/publication metadata\n\n")
         out.write("CONFLICT_RULES:\n")
-        out.write("- Theory hierarchy conflict: memo/theory-map.md wins.\n")
+        out.write("- Theory hierarchy conflict: memo/theory-map.md wins; current Structural Algorithm chapter paths and numbering follow the individual canonical sources in index/structural-algorithm/.\n")
         out.write("- Repository path/publication-state conflict: memo/file_map.md wins.\n")
         out.write("- Concrete argument conflict: use the corresponding canonical mother text.\n")
         out.write(
@@ -1595,8 +1627,9 @@ def write_corpus(
 
         out.write("TOPOLOGY_REMINDER:\n")
         out.write("- Civilizational Structure is the common generative root.\n")
-        out.write("- Its unnumbered pre-layer premise is: Continuity Constraint -> recurrent Survival Pressure -> Structural Selection -> First Principle.\n")
-        out.write("- 01a is a foundational premise, not Layer -1; Layer 0 still begins with First Principle.\n")
+        out.write("- CURRENT mother text in EACH language: shared Reading Rules -> Core Terms -> 00 -> China 01-11 / Western 01-11 -> shared 12.\n")
+        out.write("- Common physical production/reproduction basis differs from historically selected organisational priority; production-bearing and interface-oriented forms may coexist.\n")
+        out.write("- Historical success changes the conditions for subsequent organisation; global demand growth does not guarantee orders for a new production base.\n")
         out.write("- PFE, Reality/Future, Six Series, and Structural Syntheses are not a single linear parent-child chain.\n")
         out.write("- Interface is a neutral connection/settlement position, not a civilizational essence or first principle.\n")
         out.write("- Movement begins after the stable-structure boundary; Public Outputs are compiled projections.\n\n")
