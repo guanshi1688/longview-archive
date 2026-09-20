@@ -37,6 +37,26 @@ nav:
       - Value Capture and the Western System: essays/english/framework/western-system.md
       # Add after the file exists:
       # - The Western System: essays/english/western-system.md
+
+      # FUTURE NAV / MANUALLY COPY INSIDE nav: ONLY AFTER THE ENGLISH MD FILES EXIST IN docs/.
+# Keep commented until the new organisation_economics section is approved for publication.
+# Old productive-forces-economics/ files may stay in Git; remove/comment their old ACTIVE nav entries separately.
+# Uncommenting nav publishes navigation, but commenting nav alone does not unpublish a physical .md under docs/.
+  - The Economics of Productive Organisation:
+      - Overview: essays/english/organisation_economics/index.md
+      - Reading and Verification Rules: essays/english/organisation_economics/Reading_and_Verification_Rules.md
+      - Core Terms: essays/english/organisation_economics/Core_Terms.md
+      - 00｜The Subject and Use of This Manual: essays/english/organisation_economics/00-The_Subject_and_Use_of_This_Manual.md
+      - 01｜Productive Capacity as Durable Organisational Capability: essays/english/organisation_economics/01-Productive_Capacity_as_Durable_Organisational_Capability.md
+      - 02｜Production Systems and Interfaces: essays/english/organisation_economics/02-Production_Systems_and_Interfaces.md
+      - 03｜Failure, Exit, and Restart: essays/english/organisation_economics/03-Failure_Exit_and_Restart.md
+      - 04｜System Contribution, Price, and Value Capture: essays/english/organisation_economics/04-System_Contribution_Price_and_Value_Capture.md
+      - 05｜From Growing Demand to Sustainable Orders: essays/english/organisation_economics/05-From_Growing_Demand_to_Sustainable_Orders.md
+      - 06｜Productive Surplus, Consumption, and Social Absorption: essays/english/organisation_economics/06-Productive_Surplus_Consumption_and_Social_Absorption.md
+      - 07｜Capabilities That Cannot Simply Wait for the Market: essays/english/organisation_economics/07-Capabilities_That_Cannot_Simply_Wait_for_the_Market.md
+      - 08｜Localised Correction and Productive Reorganisation: essays/english/organisation_economics/08-Localised_Correction_and_Productive_Reorganisation.md
+      - 09｜Globalisation, Feedback, and Rebalancing: essays/english/organisation_economics/09-Globalisation_Feedback_and_Rebalancing.md
+      - 10｜Production–Consumption–Reproduction Circuit: essays/english/organisation_economics/10-The_Production_Consumption_Reproduction_Circuit.md
       
   - Productive-Forces Economics:
       - Overview: essays/english/productive-forces-economics/index.md
@@ -211,6 +231,25 @@ nav:
       - 中文总览: essays/chinese/index.md
       - 核心术语: essays/chinese/core-terms-chinese.md
       - 阅读规则: essays/chinese/reading-rules.md
+
+      # 未来中文导航片段。复制到 mkdocs.yml 的 nav: 内，按实际缩进调整；正式发布前保持注释。
+      # 原 productive-forces-economics/ 保留在 Git，但旧导航需自行注释或移出启用 nav。
+      # 注意：只注释导航，不会阻止 MkDocs 发布 docs/ 中的实际 Markdown 文件。
+      - 组织经济学:
+          - 总览: essays/chinese/organisation_economics/index.md
+          - 阅读与校验规则: essays/chinese/organisation_economics/阅读与校验规则.md
+          - 核心术语: essays/chinese/organisation_economics/核心术语.md
+          - 00｜说明书的对象与读法: essays/chinese/organisation_economics/00-说明书的对象与读法.md
+          - 01｜生产力如何成为持续的组织能力: essays/chinese/organisation_economics/01-生产力如何成为持续的组织能力.md
+          - 02｜生产系统与接口如何共同组织经济: essays/chinese/organisation_economics/02-生产系统与接口如何共同组织经济.md
+          - 03｜失败退出与重启: essays/chinese/organisation_economics/03-失败退出与重启.md
+          - 04｜系统贡献价格与价值捕获: essays/chinese/organisation_economics/04-系统贡献价格与价值捕获.md
+          - 05｜从需求增长到持续订单: essays/chinese/organisation_economics/05-从需求增长到持续订单.md
+          - 06｜生产富余消费与社会承接: essays/chinese/organisation_economics/06-生产富余消费与社会承接.md
+          - 07｜不能只等待市场的能力: essays/chinese/organisation_economics/07-不能只等待市场的能力.md
+          - 08｜局部纠错与生产重组: essays/chinese/organisation_economics/08-局部纠错与生产重组.md
+          - 09｜全球化成功反馈与重新配重: essays/chinese/organisation_economics/09-全球化成功反馈与重新配重.md
+          - 10｜一条生产消费再生产闭环: essays/chinese/organisation_economics/10-一条生产消费再生产闭环.md
       
       - 生产力经济学:
           - 总览: essays/chinese/productive-forces-economics/index.md
